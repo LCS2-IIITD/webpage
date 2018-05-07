@@ -1,0 +1,219 @@
+
+# prof-a:
+#     display_name: "Prof. Tanmoy Chakraborty"
+#     role: faculty
+
+# prof-b:
+#     display_name: "Prof B"
+#     role: faculty
+
+# prof-c:
+#     display_name: "Prof C"
+    # role: faculty
+
+profx:
+    display_name: "Dr. Tanmoy Chakraborty"
+    webpage: "https://sites.google.com/site/tanmoychakra88/"
+    github: profx
+    role: faculty
+    image: /img/people/prof-x.png
+    bio: Assistant Professor
+
+scott:
+    display_name: "Ankur Singh"
+    webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
+    role: intern
+    image: /img/people/scott.png
+    bio: aka Cyclops
+
+# wolverine:
+#     display_name: "Wolverine"
+#     webpage: "http://en.wikipedia.org/wiki/Wolverine_%28comics%29"
+#     github: wolverine
+#     role: postdoc
+
+# storm:
+#     display_name: "Storm"
+#     webpage: "http://en.wikipedia.org/wiki/Storm_%28Marvel_Comics%29"
+#     role: grad
+#     image: /img/people/storm.png
+
+grad-a:
+    display_name: "Hridoy Sankar Dutta"
+    role: grad
+    webpage: "http://hridaydutta123.github.io"
+    image: /img/people/hriday.jpeg
+    bio: PhD Scholar
+
+# grad-b:
+#     display_name: "Graduate Student B With Long Name"
+#     role: grad
+
+# grad-c:
+#     display_name: "Grad C"
+#     role: grad
+
+# grad-d:
+#     display_name: "Grad D"
+#     role: grad
+
+# grad-e:
+#     display_name: "Grad E"
+#     role: grad
+
+# grad-f:
+#     display_name: "Grad F"
+#     role: grad
+
+# grad-g:
+#     display_name: "Grad G"
+#     role: grad
+
+# grad-h:
+#     display_name: "Grad H"
+#     role: grad
+
+# grad-i:
+#     display_name: "Grad I"
+#     role: grad
+
+# alum-a:
+#     display_name: "Alum A"
+#     role: alum
+#     bio: "Ph.D., 2013. Now at Microsoft Research."
+
+# alum-b:
+#     display_name: "Alum B With Way Longer Name"
+#     role: alum
+
+# alum-c:
+#     display_name: "Alum C"
+#     role: alum
+#     webpage: "https://www.google.com"
+
+# alum-d:
+#     display_name: "Alum D"
+#     role: alum
+
+# alum-e:
+#     display_name: "Alum E"
+#     role: alum
+
+# alum-f:
+#     display_name: "Alum F"
+#     role: alum
+
+# alum-g:
+#     display_name: "Alum G"
+#     role: alum
+
+# alum-h:
+#     display_name: "Alum H"
+#     role: alum
+
+# alum-i:
+#     display_name: "Alum I"
+#     role: alum
+
+collab-a:
+    display_name: "Soumen Chakraborti (IIT-Bombay)"
+    webpage: "https://www.cse.iitb.ac.in/~soumen/"
+    role: collab
+
+collab-b:
+    display_name: "Jaegul Chao (Korea University, Korea)"
+    webpage: "https://sites.google.com/site/jaegulchoo/"
+    role: collab
+
+collab-c:
+    display_name: "Noseong Park (University of North Carolina, Charlotte)"
+    webpage: "https://cci.uncc.edu/directory/park-noseong"
+    role: collab
+
+collab-d:
+    display_name: "Amitava Das (IIIT, Sri City India)"
+    webpage: "http://www.amitavadas.com/"
+    role: collab
+
+collab-e:
+    display_name: "Viswanath Gunturi (IIT Ropar, India)"
+    webpage: "http://www.iitrpr.ac.in/gunturi/"
+    role: collab
+
+ugrad-a:
+    display_name: "Aditya Chetan"
+    role: ugrad
+    image: /img/people/aditya.jpeg
+    bio: Undergrad student
+    webpage: "https://github.com/adsrc"
+
+ugrad-b:
+    display_name: "Brihi Joshi"
+    role: ugrad
+    image: /img/people/brihi.jpeg
+    bio: Undergrad student
+    webpage: "http://bri-hi.co/"
+
+ugrad-c:
+    display_name: "VIshal Raj Dutta"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-d:
+    display_name: "Aditya Adhikary"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-e:
+    display_name: "Viraj Parimi"
+    bio: Undergrad student
+    webpage: "https://viraj96.github.io/"
+    role: ugrad
+
+ugrad-f:
+    display_name: "Dattatreya Mohapatra"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-g:
+    display_name: "Tushar Kataria"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-h:
+    display_name: "Vasu Agarwal"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-i:
+    display_name: "Deepak Thukral"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-j:
+    display_name: "Sarthika Dhawan"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-k:
+    display_name: "Kushagra Arora"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-l:
+    display_name: "Subhankar Adak"
+    bio: Masters student
+    role: ugrad
+
+ugrad-m:
+    display_name: "Arpan Mukherjee"
+    bio: Masters student
+    role: ugrad
+
+ugrad-alum-a:
+    display_name: "Past Ugrad A"
+    role: ugrad-alum
+
+ugrad-alum-b:
+    display_name: "Past Ugrad Student B With Long Name"
+    role: ugrad-alum

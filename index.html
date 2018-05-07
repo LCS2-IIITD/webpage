@@ -1,0 +1,98 @@
+---
+layout: default
+title: Home
+notitle: true
+
+# groups of columns of {roles: list, width: num, image: bool}
+role-tables:
+- - roles: [faculty, postdoc, staff]
+    width: 4
+    image: true
+  - roles: [grad]
+    width: 8
+    image: true
+- - roles: [collab, ugrad, ugrad-alum]
+    width: 5
+    image: false
+  - roles: [alum]
+    width: 7
+    image: false
+
+---
+  <div class="slider" id="main-slider"><!-- outermost container element -->
+                    <div class="slider-wrapper"><!-- innermost wrapper element -->
+                      <img src="{{ site.base }}/img/lab-photos/3.jpg" alt="First" class="slide" /><!-- slides -->
+                      <!-- <img src="{{ site.base }}/img/lab-photos/2.jpg" alt="Second" class="slide" /> -->
+                      <img src="{{ site.base }}/img/lab-photos/1.jpg" alt="Third" class="slide" />
+                    </div>
+                  </div> 
+<div class="jumbotron">
+    <p>
+        Laboratory for Computation Social Systems (LCS2) is a research group led by <b>Dr. Tanmoy Chakraborty</b> at the Department of Computer Science and Engineering at Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi). The group works on diverse aspects of Data Science for Social goods. 
+    </p>
+</div>
+
+<section>
+    <h2>News</h2>
+    <ul class="news list-unstyled">
+        {% for post in site.posts limit: site.front_page_news %}
+            {% include news-item.html item=post %}
+        {% endfor %}
+    </ul>
+    {% assign numposts = site.posts | size %}
+    {% if numposts >= 1 %}
+        <p>
+            <span class="fa fa-fw fa-history"></span>
+            <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
+        </p>
+    {% endif %}
+</section>
+
+<!--< section>
+    <h2>Research</h2>
+    <div class="card-columns">
+        {% comment %}
+        Sort the projects by date, putting those without dates last
+        {% endcomment %}
+        {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
+        {% assign projects_by_date = projects_by_date | reverse %}
+        {% for p in projects_by_date %}
+            {% if p.status != "inactive" %}
+                {% include project-card.html project=p %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section> -->
+<!-- 
+<div id="people">
+    <h2>People</h2>
+    {% for role-table in page.role-tables %}
+        <section class="people row justify-content-between">
+            {% for role-column in role-table %}
+                <div class="col-md-{{ role-column.width }}">
+                    {% for role in role-column.roles %}
+                        {% include role-people.html role=role image=role-column.image %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </section>
+    {% endfor %}
+</div> -->
+<script> 
+    window.intergramId = "123";
+    window.intergramCustomizations = {
+        titleClosed: 'Chat with us',
+        titleOpen: 'LCS2 group chat',
+        introMessage: 'Hi! You can chat with us here. Please drop your Name and Email.',
+        autoResponse: 'Your message was redirected to our telegram bot. If you don\'t receive a reply now, please make sure you have entered your name and email. We will surely reply you. :-)',
+        autoNoResponse: 'We will contact you soon. Thanks. :-)',
+        mainColor: "#3551ff", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+        alwaysUseFloatingButton: true, // Use the mobile floating button also on large screens
+        closedChatAvatarUrl: 'https://raw.githubusercontent.com/snade-lab-iiitd/snade-lab-iiitd.github.io/master/img/logo.png',
+        closedStyle: 'button',
+    };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+<!-- Start of SimpleHitCounter Code -->
+<div align="center"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=2360732&f=16777215&b=0" border="0" height="18" width="83" alt="web counter"></a></div>
+<!-- End of SimpleHitCounter Code -->
