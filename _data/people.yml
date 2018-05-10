@@ -45,9 +45,11 @@ grad-a:
     image: /img/people/hriday.jpeg
     bio: PhD Scholar
 
-# grad-b:
-#     display_name: "Graduate Student B With Long Name"
-#     role: grad
+grad-b:
+    display_name: "Shivangi Singhal"
+    role: grad
+    image: /img/people/shivangi.jpg
+    bio: PhD Scholar
 
 # grad-c:
 #     display_name: "Grad C"
@@ -116,7 +118,7 @@ grad-a:
 #     role: alum
 
 collab-a:
-    display_name: "Soumen Chakraborti (IIT-Bombay)"
+    display_name: "Soumen Chakrabarti (IIT-Bombay)"
     webpage: "https://www.cse.iitb.ac.in/~soumen/"
     role: collab
 
@@ -140,80 +142,167 @@ collab-e:
     webpage: "http://www.iitrpr.ac.in/gunturi/"
     role: collab
 
+collab-f:
+    display_name: "Subrata Nandi (NIT Durgapur, India)"
+    webpage: "http://www.nitdgp.ac.in/cse/s_nandi/s_nandi.php"
+    role: collab
+
+collab-g:
+    display_name: "Dipankar Das (Jadavpur University, India)"
+    webpage: "http://www.dasdipankar.com/"
+    role: collab
+
+collab-h:
+    display_name: "Sushil Jajodia (George Mason University, USA)"
+    webpage: "http://csis.gmu.edu/jajodia/"
+    role: collab
+
+collab-i:
+    display_name: "Edoardo Serra (Boise State University, USA)"
+    webpage: "https://coen.boisestate.edu/faculty-staff/edoardoserra/"
+    role: collab
+
+collab-j:
+    display_name: "Andrea Pugliese (University of Calabria, Italy)"
+    webpage: "http://people.dimes.unical.it/andreapugliese/"
+    role: collab
+
+collab-k:
+    display_name: "Saptarshi Ghosh (IIT Kharagpur, India)"
+    webpage: "https://sites.google.com/site/saptarshighosh/"
+    role: collab
+
+collab-l:
+    display_name: "Ponnurangam Kumaraguru (IIIT-Delhi, India)"
+    webpage: "https://www.iiitd.ac.in/pk"
+    role: collab
 ugrad-a:
-    display_name: "Aditya Chetan"
+    display_name: "Deepak Thukral"
+    bio: Undergrad student (2014-2018)
     role: ugrad
-    image: /img/people/aditya.jpeg
-    bio: Undergrad student
-    webpage: "https://github.com/adsrc"
 
 ugrad-b:
-    display_name: "Brihi Joshi"
+    display_name: "Kushagra Singh"
+    bio: Undergrad student (2014-2018)
     role: ugrad
-    image: /img/people/brihi.jpeg
-    bio: Undergrad student
-    webpage: "http://bri-hi.co/"
 
 ugrad-c:
-    display_name: "VIshal Raj Dutta"
-    bio: Undergrad student
+    display_name: "Divam Gupta"
+    bio: Undergrad student (2014-2018)
     role: ugrad
 
 ugrad-d:
-    display_name: "Aditya Adhikary"
-    bio: Undergrad student
+    display_name: "Ayush Agarwal"
+    bio: Undergrad student (2014-2018)
     role: ugrad
 
 ugrad-e:
-    display_name: "Viraj Parimi"
-    bio: Undergrad student
-    webpage: "https://viraj96.github.io/"
+    display_name: "Vishal Raj Dutta"
+    bio: Undergrad student (2015-2019)
     role: ugrad
 
 ugrad-f:
-    display_name: "Dattatreya Mohapatra"
-    bio: Undergrad student
+    display_name: "Aditya Adhikary"
+    bio: Undergrad student (2015-2019)
     role: ugrad
 
 ugrad-g:
-    display_name: "Tushar Kataria"
-    bio: Undergrad student
+    display_name: "Viraj Parimi"
+    bio: Undergrad student (2015-2019)
+    webpage: "https://viraj96.github.io/"
     role: ugrad
 
 ugrad-h:
-    display_name: "Vasu Agarwal"
-    bio: Undergrad student
+    display_name: "Dattatreya Mohapatra"
+    bio: Undergrad student (2015-2019)
     role: ugrad
 
 ugrad-i:
-    display_name: "Deepak Thukral"
-    bio: Undergrad student
+    display_name: "Tushar Kataria"
+    bio: Undergrad student (2015-2019)
     role: ugrad
 
 ugrad-j:
-    display_name: "Sarthika Dhawan"
-    bio: Undergrad student
+    display_name: "Vasu Agarwal"
+    bio: Undergrad student (2015-2019)
     role: ugrad
 
 ugrad-k:
     display_name: "Kushagra Arora"
-    bio: Undergrad student
+    bio: Undergrad student (2015-2019)
     role: ugrad
 
-ugrad-l:
-    display_name: "Subhankar Adak"
-    bio: Masters student
+grad-l:
+    display_name: "Sarthika Dhawan"
+    bio: Undergrad student (2016-2020)
     role: ugrad
+
 
 ugrad-m:
-    display_name: "Arpan Mukherjee"
-    bio: Masters student
+    display_name: "Pulkit Madaan"
+    bio: Undergrad student (2016-2020)
     role: ugrad
 
-ugrad-alum-a:
-    display_name: "Past Ugrad A"
-    role: ugrad-alum
+ugrad-n:
+    display_name: "Gyanesh Anand"
+    bio: Undergrad student (2016-2020)
+    role: ugrad
 
+
+ugrad-o:
+    display_name: "Viresh Gupta"
+    bio: Undergrad student (2016-2020)
+    role: ugrad
+
+ugrad-p:
+    display_name: "Aayush Aggarwal"
+    bio: Undergrad student (2016-2020)
+    role: ugrad
+
+ugrad-q:
+    display_name: "Abhishek Maiti"
+    bio: Undergrad student (2016-2020)
+    role: ugrad
+
+
+
+ugrad-r:
+    display_name: "Baani Leen Kaur Jolly"
+    bio: Undergrad student (2016-2020)
+    role: ugrad
+
+ugrad-s:
+    display_name: "Aditya Chetan"
+    role: ugrad
+    image: /img/people/aditya.jpeg
+    bio: Undergrad student (2016-2020)
+    webpage: "https://github.com/adsrc"
+
+ugrad-t:
+    display_name: "Brihi Joshi"
+    role: ugrad
+    image: /img/people/brihi.jpeg
+    bio: Undergrad student (2016-2020)
+    webpage: "http://bri-hi.co/"
+
+
+
+# ugrad-u:
+#     display_name: "Subhankar Adak"
+#     bio: Masters student (2017-2019)
+#     role: ugrad
+
+
+# ugrad-v:
+#     display_name: "Arpan Mukherjee"
+#     bio: Masters student (2017-2019)
+#     role: ugrad
+
+ugrad-alum-a:
+    display_name: "Subhankar Adak"
+    bio: Masters student (2017-2019)
+    role: ugrad-alum
 ugrad-alum-b:
-    display_name: "Past Ugrad Student B With Long Name"
+    display_name: "Arpan Mukherjee"
+    bio: Masters student (2017-2019)
     role: ugrad-alum

@@ -38,7 +38,7 @@
 				}
 				self._slideTo( self.index );
 				
-			}, 3000);
+			}, 5000);
 		},
 		stopStart: function() {
 			var self = this;

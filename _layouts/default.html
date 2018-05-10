@@ -16,7 +16,15 @@
         <script type="text/javascript" src="{{ site.base }}/js/slider.js"></script>
     </head>
     <body>
-         
+         <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=1826983947579454&autoLogAppEvents=1';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="https://www.facebook.com/Laboratory-for-Computational-Social-Systems-IIIT-Delhi-306180076581946/" data-layout="standard" data-action="like" style="float:right; padding-top: 1.2%;" data-size="small" data-show-faces="true" data-share="true"></div>
         <div class="container">
             <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
             <div class="header d-flex
@@ -70,9 +78,9 @@
 
             <div class="footer">
                 <p>
-                    <a href="http://dept.example.edu/">Laboratory for Computation Social Systems (LCS2)</a>
+                    <a href="http://lcs2.iiitd.edu.in/">Laboratory for Computation Social Systems (LCS2)</a>
                     at
-                    <a href="http://example.edu/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a>
+                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a>
                 </p>
             </div>
 

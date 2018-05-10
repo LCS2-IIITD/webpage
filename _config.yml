@@ -1,6 +1,6 @@
 name: Laboratory for Computational Social Systems (LCS2)
-url: http://snade-lab-iiitd.github.io
-
+url: http://lcs2.iiitd.edu.in/www/
+environment: prod
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
 # colorize code snippets with the pygments module
@@ -19,10 +19,10 @@ roles:
     name: Research Associates
   - key: grad
     name: Graduate Students
-  - key: ugrad
-    name: Undergraduate & Post-Graduate Students
   - key: ugrad-alum
-    name: Past Undergraduate Students
+    name: Post-Graduate Students
+  - key: ugrad
+    name: Undergraduate Students
   - key: collab
     name: Collaborators
   - key: alum
