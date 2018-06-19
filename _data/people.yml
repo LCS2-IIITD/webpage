@@ -120,70 +120,144 @@ grad-b:
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
     webpage: "https://www.cse.iitb.ac.in/~soumen/"
+    image: /img/people/soumen.JPG
     role: collab
 
 collab-b:
     display_name: "Jaegul Chao (Korea University, Korea)"
     webpage: "https://sites.google.com/site/jaegulchoo/"
+    image: /img/people/jaegul.jpg
     role: collab
 
 collab-c:
     display_name: "Noseong Park (University of North Carolina, Charlotte)"
     webpage: "https://cci.uncc.edu/directory/park-noseong"
+    image: /img/people/noseong.jpeg
     role: collab
 
-collab-d:
-    display_name: "Amitava Das (IIIT, Sri City India)"
-    webpage: "http://www.amitavadas.com/"
-    role: collab
+# collab-d:
+#     display_name: "Amitava Das (IIIT, Sri City India)"
+#     webpage: "http://www.amitavadas.com/"
+#     role: collab
 
 collab-e:
     display_name: "Viswanath Gunturi (IIT Ropar, India)"
     webpage: "http://www.iitrpr.ac.in/gunturi/"
+    image: /img/people/vishwanath.jpg
     role: collab
 
 collab-f:
     display_name: "Subrata Nandi (NIT Durgapur, India)"
     webpage: "http://www.nitdgp.ac.in/cse/s_nandi/s_nandi.php"
+    image: /img/people/subratanand.jpg
     role: collab
 
 collab-g:
     display_name: "Dipankar Das (Jadavpur University, India)"
     webpage: "http://www.dasdipankar.com/"
+    image: /img/people/dipankar.JPG
     role: collab
 
 collab-h:
     display_name: "Sushil Jajodia (George Mason University, USA)"
     webpage: "http://csis.gmu.edu/jajodia/"
+    image: /img/people/Jajodia.jpg
     role: collab
 
 collab-i:
     display_name: "Edoardo Serra (Boise State University, USA)"
     webpage: "https://coen.boisestate.edu/faculty-staff/edoardoserra/"
+    image: /img/people/serraz.jpg
     role: collab
 
 collab-j:
     display_name: "Andrea Pugliese (University of Calabria, Italy)"
     webpage: "http://people.dimes.unical.it/andreapugliese/"
+    image: /img/people/Pugliese.jpg
     role: collab
 
 collab-k:
     display_name: "Saptarshi Ghosh (IIT Kharagpur, India)"
     webpage: "https://sites.google.com/site/saptarshighosh/"
+    image: /img/people/saptarshi.jpeg
     role: collab
 
 collab-l:
     display_name: "Ponnurangam Kumaraguru (IIIT-Delhi, India)"
     webpage: "https://www.iiitd.ac.in/pk"
+    image: /img/people/pk_0.jpg
     role: collab
+
+collab-m:
+    display_name: "Rajiv Ratn Shah (IIIT-Delhi, India)"
+    webpage: "https://www.iiitd.ac.in/rajivratn"
+    image: /img/people/ratn.jpg
+    role: collab
+
+collab-n:
+    display_name: "Nishtha Madaan (IBM Research, India)"
+    webpage: "https://researcher.watson.ibm.com/researcher/view.php?person=in-nishthamadaan"
+    image: /img/people/nisththa.jpg
+    role: collab
+
+collab-o:
+    display_name: "Sameep Mehta (IBM Research, India)"
+    webpage: "https://researcher.watson.ibm.com/researcher/view.php?person=in-sameepmehta"
+    image: /img/people/sameep.jpeg
+    role: collab
+
+collab-p:
+    display_name: "Sumit Bhatia (IBM Research, India)"
+    webpage: "http://sumitbhatia.net/"
+    image: /img/people/sumit.jpg
+    role: collab
+
+collab-q:
+    display_name: "Vijay Arya (IBM Research, India)"
+    webpage: "https://researcher.watson.ibm.com/researcher/view.php?person=in-vijay.arya"
+    image: /img/people/vijay.jpg
+    role: collab
+
+collab-r:
+    display_name: "Amitava Das (IIIT Sri City, India)"
+    webpage: "http://amitavadas.com/"
+    image: /img/people/amitava.jpg
+    role: collab
+
+collab-s:
+    display_name: "Siddharth Pal (Raytheon BBN Technologiey, USA)"
+    webpage: "https://www.linkedin.com/in/siddharth-pal-0a8aab23"
+    image: /img/people/siddharth.jpeg
+    role: collab
+
+collab-t:
+    display_name: "Soham De (University of Maryland, College Park, USA)"
+    webpage: "https://www.cs.umd.edu/~sohamde/"
+    image: /img/people/soham.jpeg
+    role: collab
+
+collab-u:
+    display_name: "Arindam Pal (TCS Research, India)"
+    webpage: "http://www.cse.iitd.ernet.in/~arindamp/"
+    image: /img/people/arindam.jpeg
+    role: collab
+
+collab-v:
+    display_name: "Sushmita Ruj (ISI Kolkata, India)"
+    webpage: "https://www.isical.ac.in/~sush/"
+    image: /img/people/sushmitaruj.JPG
+    role: collab
+
 ugrad-a:
     display_name: "Deepak Thukral"
     bio: Undergrad student (2014-2018)
+    image: /img/people/deepak.jpg
     role: ugrad
 
 ugrad-b:
     display_name: "Kushagra Singh"
     bio: Undergrad student (2014-2018)
+    image: /img/people/kushagra.jpg
     role: ugrad
 
 ugrad-c:
@@ -194,53 +268,63 @@ ugrad-c:
 ugrad-d:
     display_name: "Ayush Agarwal"
     bio: Undergrad student (2014-2018)
+    image: /img/people/ayush.jpeg
     role: ugrad
 
 ugrad-e:
     display_name: "Vishal Raj Dutta"
     bio: Undergrad student (2015-2019)
+    image: /img/people/vishalrajdutta.png
     role: ugrad
 
 ugrad-f:
     display_name: "Aditya Adhikary"
     bio: Undergrad student (2015-2019)
+    image: /img/people/aditya.jpg
     role: ugrad
 
 ugrad-g:
     display_name: "Viraj Parimi"
     bio: Undergrad student (2015-2019)
+    image: /img/people/viraj.jpg
     webpage: "https://viraj96.github.io/"
     role: ugrad
 
 ugrad-h:
     display_name: "Dattatreya Mohapatra"
     bio: Undergrad student (2015-2019)
+    image: /img/people/datta.jpg
     role: ugrad
 
 ugrad-i:
     display_name: "Tushar Kataria"
     bio: Undergrad student (2015-2019)
+    image: /img/people/tushar.jpg
     role: ugrad
 
 ugrad-j:
     display_name: "Vasu Agarwal"
     bio: Undergrad student (2015-2019)
+    image: /img/people/vasu.jpg
     role: ugrad
 
 ugrad-k:
     display_name: "Kushagra Arora"
     bio: Undergrad student (2015-2019)
+    image: /img/people/kushagraarora.jpg
     role: ugrad
 
 grad-l:
     display_name: "Sarthika Dhawan"
     bio: Undergrad student (2016-2020)
+    image: /img/people/sarthika.jpg
     role: ugrad
 
 
 ugrad-m:
     display_name: "Pulkit Madaan"
     bio: Undergrad student (2016-2020)
+    image: /img/people/gyanesh.jpg
     role: ugrad
 
 ugrad-n:
@@ -252,16 +336,19 @@ ugrad-n:
 ugrad-o:
     display_name: "Viresh Gupta"
     bio: Undergrad student (2016-2020)
+    image: /img/people/viresh.jpeg
     role: ugrad
 
 ugrad-p:
     display_name: "Aayush Aggarwal"
     bio: Undergrad student (2016-2020)
+    image: /img/people/aayush.png
     role: ugrad
 
 ugrad-q:
     display_name: "Abhishek Maiti"
     bio: Undergrad student (2016-2020)
+    image: /img/people/maiti.jpeg
     role: ugrad
 
 
@@ -269,6 +356,7 @@ ugrad-q:
 ugrad-r:
     display_name: "Baani Leen Kaur Jolly"
     bio: Undergrad student (2016-2020)
+    image: /img/people/baani.jpeg
     role: ugrad
 
 ugrad-s:
@@ -286,6 +374,12 @@ ugrad-t:
     webpage: "http://bri-hi.co/"
 
 
+ugrad-u:
+    display_name: "Karan Dabas"
+    bio: Undergrad student (2015-2019)
+    image: /img/people/karan.jpg
+    role: ugrad
+
 
 # ugrad-u:
 #     display_name: "Subhankar Adak"
@@ -301,8 +395,10 @@ ugrad-t:
 ugrad-alum-a:
     display_name: "Subhankar Adak"
     bio: Masters student (2017-2019)
+    image: /img/people/subhankar.jpg
     role: ugrad-alum
 ugrad-alum-b:
     display_name: "Arpan Mukherjee"
+    image: /img/people/arpan.jpg
     bio: Masters student (2017-2019)
     role: ugrad-alum

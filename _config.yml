@@ -35,7 +35,11 @@ front_page_news: 8
 base: ''
 
 # make pages for the _projects folder
-collections:
+collections:  
+  projects3:
+    output: true
+  projects2:
+    output: true
   projects:
     output: true
 
@@ -47,6 +51,8 @@ navigation:
     link: /people.html
   - title: Research
     link: /research.html
+  - title: Funding
+    link: /funding.html
   - title: Publications
     link: /publications.html
   - title: Resources
