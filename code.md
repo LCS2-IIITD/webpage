@@ -2,5 +2,5 @@
 layout: default
 title: Resources and Tools
 ---
- * [Github Organization](https://github.com/snade-lab-iiitd/)
+ * [Github Organization](https://github.com/lcs2-IIITD)
  
