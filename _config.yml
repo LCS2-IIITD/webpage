@@ -19,7 +19,7 @@ roles:
     name: Research Associates
   - key: grad
     name: Graduate Students
-  - key: ugrad-alum
+  - key: pgrad
     name: Post-Graduate Students
   - key: ugrad
     name: Undergraduate Students
@@ -38,6 +38,7 @@ base: ''
 collections:  
   projects3:
     output: true
+    permalink: /projects/:path/
   projects2:
     output: true
   projects:

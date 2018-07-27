@@ -2,7 +2,7 @@
 title: Detecting and Mitigating Hate-speech Propagation 
 
 people:
-  - ugrad-alum-a
+  - pgrad-a
   - collab-r
   - profx
 

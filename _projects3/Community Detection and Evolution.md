@@ -3,7 +3,6 @@ title: Community Detection and Evolution
 
 people:
   - ugrad-d
-  - ugrad-k
   - profx
 
 layout: project3

@@ -140,11 +140,11 @@ collab-c:
 #     webpage: "http://www.amitavadas.com/"
 #     role: collab
 
-collab-e:
-    display_name: "Viswanath Gunturi (IIT Ropar, India)"
-    webpage: "http://www.iitrpr.ac.in/gunturi/"
-    image: /img/people/vishwanath.jpg
-    role: collab
+# collab-e:
+#     display_name: "Viswanath Gunturi (IIT Ropar, India)"
+#     webpage: "http://www.iitrpr.ac.in/gunturi/"
+#     image: /img/people/vishwanath.jpg
+#     role: collab
 
 collab-f:
     display_name: "Subrata Nandi (NIT Durgapur, India)"
@@ -158,23 +158,23 @@ collab-g:
     image: /img/people/dipankar.JPG
     role: collab
 
-collab-h:
-    display_name: "Sushil Jajodia (George Mason University, USA)"
-    webpage: "http://csis.gmu.edu/jajodia/"
-    image: /img/people/Jajodia.jpg
-    role: collab
+# collab-h:
+#     display_name: "Sushil Jajodia (George Mason University, USA)"
+#     webpage: "http://csis.gmu.edu/jajodia/"
+#     image: /img/people/Jajodia.jpg
+#     role: collab
 
-collab-i:
-    display_name: "Edoardo Serra (Boise State University, USA)"
-    webpage: "https://coen.boisestate.edu/faculty-staff/edoardoserra/"
-    image: /img/people/serraz.jpg
-    role: collab
+# collab-i:
+#     display_name: "Edoardo Serra (Boise State University, USA)"
+#     webpage: "https://coen.boisestate.edu/faculty-staff/edoardoserra/"
+#     image: /img/people/serraz.jpg
+#     role: collab
 
-collab-j:
-    display_name: "Andrea Pugliese (University of Calabria, Italy)"
-    webpage: "http://people.dimes.unical.it/andreapugliese/"
-    image: /img/people/Pugliese.jpg
-    role: collab
+# collab-j:
+#     display_name: "Andrea Pugliese (University of Calabria, Italy)"
+#     webpage: "http://people.dimes.unical.it/andreapugliese/"
+#     image: /img/people/Pugliese.jpg
+#     role: collab
 
 collab-k:
     display_name: "Saptarshi Ghosh (IIT Kharagpur, India)"
@@ -230,11 +230,11 @@ collab-s:
     image: /img/people/siddharth.jpeg
     role: collab
 
-collab-t:
-    display_name: "Soham De (University of Maryland, College Park, USA)"
-    webpage: "https://www.cs.umd.edu/~sohamde/"
-    image: /img/people/soham.jpeg
-    role: collab
+# collab-t:
+#     display_name: "Soham De (University of Maryland, College Park, USA)"
+#     webpage: "https://www.cs.umd.edu/~sohamde/"
+#     image: /img/people/soham.jpeg
+#     role: collab
 
 collab-u:
     display_name: "Arindam Pal (TCS Research, India)"
@@ -252,24 +252,24 @@ ugrad-a:
     display_name: "Deepak Thukral"
     bio: Undergrad student (2014-2018)
     image: /img/people/deepak.jpg
-    role: ugrad
+    role: alum
 
 ugrad-b:
     display_name: "Kushagra Singh"
     bio: Undergrad student (2014-2018)
     image: /img/people/kushagra.jpg
-    role: ugrad
+    role: alum
 
 ugrad-c:
     display_name: "Divam Gupta"
     bio: Undergrad student (2014-2018)
-    role: ugrad
+    role: alum
 
 ugrad-d:
     display_name: "Ayush Agarwal"
     bio: Undergrad student (2014-2018)
     image: /img/people/ayush.jpeg
-    role: ugrad
+    role: alum
 
 ugrad-e:
     display_name: "Vishal Raj Dutta"
@@ -308,11 +308,11 @@ ugrad-j:
     image: /img/people/vasu.jpg
     role: ugrad
 
-ugrad-k:
-    display_name: "Kushagra Arora"
-    bio: Undergrad student (2015-2019)
-    image: /img/people/kushagraarora.jpg
-    role: ugrad
+# ugrad-k:
+#     display_name: "Kushagra Arora"
+#     bio: Undergrad student (2015-2019)
+#     image: /img/people/kushagraarora.jpg
+#     role: ugrad
 
 grad-l:
     display_name: "Sarthika Dhawan"
@@ -392,13 +392,17 @@ ugrad-u:
 #     bio: Masters student (2017-2019)
 #     role: ugrad
 
-ugrad-alum-a:
+pgrad-a:
     display_name: "Subhankar Adak"
     bio: Masters student (2017-2019)
     image: /img/people/subhankar.jpg
-    role: ugrad-alum
-ugrad-alum-b:
+    role: pgrad
+pgrad-b:
     display_name: "Arpan Mukherjee"
     image: /img/people/arpan.jpg
     bio: Masters student (2017-2019)
-    role: ugrad-alum
+    role: pgrad
+pgrad-c:
+    display_name: "Sarika"
+    bio: Masters student (2016-2018)
+    role: alum

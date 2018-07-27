@@ -4,7 +4,6 @@ title: Modeling Network Evolution
 people:
   - ugrad-h
   - collab-s
-  - collab-t
   - profx
 layout: project3
 last-updated: 2015-05-05
