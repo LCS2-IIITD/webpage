@@ -2,16 +2,47 @@
 layout: default
 title: Contact Us
 ---
+<style type="text/css">
+  /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+</style>
 <section id="contact">
-  <div class="container">
-	
+  
 	<div class="row">
 	  <div class="col-md-7">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8599961833356!2d77.2692578154063!3d28.543927594835793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce36d07074563%3A0x899f8bbdbff7da90!2sIIITD+New+Academic+Block!5e0!3m2!1sen!2sin!4v1532875838153" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="col-md-5">
-          <h4><strong>Get in Touch</strong></h4>
+        <h4><strong>Get in Touch</strong></h4>
         <form method="POST" action="https://formspree.io/lcs2@iiitd.ac.in">
           <div class="form-group">
             <input type="email" class="form-control" name="email" value="" placeholder="E-mail">
@@ -23,6 +54,15 @@ title: Contact Us
               Submit
           </button>
         </form>
+        <br/>
+      <div class="container">
+      <div class="row">
+        <div id="socialicons">
+          <a class="icon" href="https://twitter.com/lcs2iiitd" title="Follow with Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a class="icon" href="https://www.facebook.com/lcs2iiitd/" title="Follow with Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a class="icon" href="https://www.linkedin.com/company/lcs2iiitd/" title="Follow with Instagram" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
       </div>
     </div>
   </div>
