@@ -1,8 +1,11 @@
 ---
 layout: default
-title: Funding Projects
+title: Funded Projects
 ---
 <br/>
+ * ##### Data science for Financial markets
+	> <b>Project Duration:</b> Aug 2018 - May 2018 <br/>
+	> <b>Funding Agency:</b> Egregore Labs
  * ##### Understanding Collective Behavior in Online Social Networks
 	> <b>Project Duration:</b> 3 years <br/>
 	> <b>Funding Agency:</b> SERB, DST (Early Career Award)
