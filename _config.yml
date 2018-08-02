@@ -15,8 +15,8 @@ roles:
     name: Faculty
   - key: intern
     name: Intern
-  - key: postdoc
-    name: Research Associates
+  - key: ra
+    name: Research Assistants
   - key: grad
     name: Graduate Students
   - key: pgrad

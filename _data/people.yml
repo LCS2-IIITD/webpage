@@ -51,9 +51,20 @@ grad-b:
     image: /img/people/shivangi.jpg
     bio: PhD Scholar
 
-# grad-c:
-#     display_name: "Grad C"
-#     role: grad
+grad-c:
+    display_name: "Vinayak Kumar"
+    role: grad
+    webpage: "https://drive.google.com/a/iith.ac.in/file/d/1sWmgda0vy-TDjr2xdtSx6cFvUQa5Gea9/view?usp=drivesdk"
+    image: /img/people/vinayak.jpg
+    bio: PhD Scholar
+
+ra-a:
+    display_name: "Udit Arora"
+    role: ra
+    image: /img/people/udit.jpg
+    webpage: "https://www.linkedin.com/in/uditarora09/"
+    bio: Research Associate
+       
 
 # grad-d:
 #     display_name: "Grad D"
@@ -288,7 +299,7 @@ ugrad-g:
     bio: Undergrad student (2015-2019)
     image: /img/people/viraj.jpg
     webpage: "https://viraj96.github.io/"
-    role: ugrad
+    role: alum
 
 ugrad-h:
     display_name: "Dattatreya Mohapatra"
