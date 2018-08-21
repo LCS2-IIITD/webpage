@@ -19,12 +19,12 @@ profx:
     image: /img/people/prof-x.png
     bio: Assistant Professor
 
-scott:
-    display_name: "Ankur Singh"
-    webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
-    role: intern
-    image: /img/people/scott.png
-    bio: aka Cyclops
+postdoc-a:
+    display_name: "Dr. Nitish Prajapati"
+    webpage: "https://www.linkedin.com/in/nitish-prajapati-9834a0b7/"
+    role: postdoc
+    image: /img/people/nitish.jpeg
+    bio: Postdoctoral Researcher
 
 # wolverine:
 #     display_name: "Wolverine"
