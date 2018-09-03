@@ -259,6 +259,12 @@ collab-v:
     image: /img/people/sushmitaruj.JPG
     role: collab
 
+collab-w:
+    display_name: "Debdoot Mukherjee (Hike Messenger, India)"
+    webpage: "https://blog.hike.in/@debdoot_87680"
+    image: /img/people/debdoot.jpg
+    role: collab
+
 ugrad-a:
     display_name: "Deepak Thukral"
     bio: Undergrad student (2014-2018)
@@ -319,11 +325,6 @@ ugrad-j:
     image: /img/people/vasu.jpg
     role: ugrad
 
-# ugrad-k:
-#     display_name: "Kushagra Arora"
-#     bio: Undergrad student (2015-2019)
-#     image: /img/people/kushagraarora.jpg
-#     role: ugrad
 
 grad-l:
     display_name: "Sarthika Dhawan"
@@ -362,8 +363,6 @@ ugrad-q:
     image: /img/people/maiti.jpeg
     role: ugrad
 
-
-
 ugrad-r:
     display_name: "Baani Leen Kaur Jolly"
     bio: Undergrad student (2016-2020)
@@ -391,6 +390,23 @@ ugrad-u:
     image: /img/people/karan.jpg
     role: ugrad
 
+ugrad-v:
+    display_name: "Aman Roy"
+    bio: Undergrad student (2016-2020)
+    image: /img/people/aman.jpg
+    role: ugrad
+
+ugrad-w:
+    display_name: "Suyash Singh"
+    bio: Undergrad student (2016-2020)
+    image: /img/people/suyash.jpg
+    role: ugrad
+
+ugrad-x:
+    display_name: "Mahika Wason"
+    bio: Undergrad student (2016-2020)
+    image: /img/people/mahika.jpg
+    role: ugrad
 
 # ugrad-u:
 #     display_name: "Subhankar Adak"
