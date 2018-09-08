@@ -18,6 +18,20 @@ profx:
     role: faculty
     image: /img/people/prof-x.png
     bio: Assistant Professor
+profy:
+    display_name: "Dr. Mayank Vatsa"
+    webpage: "https://sites.google.com/site/tanmoychakra88/"
+    github: profy
+    role: faculty
+    image: /img/people/mayank.jpeg
+    bio: Associate Professor, IIIT-Delhi
+profz:
+    display_name: "Dr. Richa Singh"
+    webpage: "https://sites.google.com/site/tanmoychakra88/"
+    github: profx
+    role: faculty
+    image: /img/people/richa.jpg
+    bio: Associate Professor, IIIT-Delhi
 
 postdoc-a:
     display_name: "Dr. Nitish Prajapati"
@@ -200,10 +214,11 @@ collab-l:
     role: collab
 
 collab-m:
-    display_name: "Rajiv Ratn Shah (IIIT-Delhi, India)"
+    display_name: "Rajiv Ratn Shah"
     webpage: "https://www.iiitd.ac.in/rajivratn"
     image: /img/people/ratn.jpg
     role: collab
+    bio: Assistant Professor, IIIT-Delhi
 
 collab-n:
     display_name: "Nishtha Madaan (IBM Research, India)"
