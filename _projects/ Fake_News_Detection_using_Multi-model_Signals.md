@@ -6,8 +6,6 @@ people:
   - grad-l
   - collab-m
   - profx
-  - profy
-  - profz
 
 layout: project
 last-updated: 2015-05-05
