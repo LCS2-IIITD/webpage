@@ -3,6 +3,9 @@ layout: default
 title: Funded Projects
 ---
 <br/>
+ * ##### Problems on Data Mining and Modeling
+	> <b>Project Duration:</b> N.A. <br/>
+	> <b>Funding Agency:</b> Google (unrestricted faculty award)
  * ##### Application of Deep Learning Techniques in Information Networks
 	> <b>Project Duration:</b> Aug 2018 - July 2019 <br/>
 	> <b>Funding Agency:</b> Hike Messenger (unrestricted faculty award)
