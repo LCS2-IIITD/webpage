@@ -2,6 +2,7 @@
 title: Collusion in Online Social Networks
 people:
   - grad-a
+  - ra-a
   - ugrad-a
   - ugrad-s
   - ugrad-t
@@ -10,7 +11,6 @@ people:
   - ugrad-p
   - ugrad-e
   - ugrad-f
-  - ugrad-alum-b
   - profx
 layout: project
 last-updated: 2015-05-05
