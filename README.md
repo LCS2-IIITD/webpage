@@ -1,6 +1,6 @@
 # Laboratory for Computational Social Systems (LCS2)
 <p align="center">
-<img src="img/lab-photos/1.jpg" width="387" height="225" alt="screenshot of the template">
+<img src="img/lab-photos/1.jpg" alt="screenshot of the template">
 </p>
 
 The project template is originated at the University of Washington.  You can see the machinery working live at [our site][sampa].
