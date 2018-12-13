@@ -58,6 +58,12 @@ grad-c:
     image: /img/people/vinayak.jpg
     bio: PhD Scholar
 
+grad-d:
+    display_name: "Sivacharan Gangireddy"
+    role: grad
+    image: /img/people/siva.jpg
+    bio: PhD Scholar
+
 ra-a:
     display_name: "Udit Arora"
     role: ra
