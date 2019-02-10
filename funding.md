@@ -2,6 +2,9 @@
 layout: default
 title: Funded Projects
 ---
+ * ##### Collusion and Fake News: Are social networks being orchestrated in favor of fake news?
+	> <b>Project Duration:</b> 2 years <br/>
+	> <b>Funding Agency:</b> Ministry of Human Resource Development (SPARC Program) 
  * ##### Problems on Data Mining and Modeling
 	> <b>Project Duration:</b> N.A. <br/>
 	> <b>Funding Agency:</b> Google (unrestricted faculty award)
@@ -30,5 +33,5 @@ title: Funded Projects
 	> <b>Project Duration:</b> Jan 2018 - Dec 2018 <br/>
 	> <b>Funding Agency:</b> IIIT Delhi, India
  * ##### Fake activities in E-commerce sites
- 	> <b> Project Duration:</b> Jan 2018 - Dec 2018 <br/>
+	> <b> Project Duration:</b> Jan 2018 - Dec 2018 <br/>
 	> <b> Funding Agency:</b> Flipkart, India		
