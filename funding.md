@@ -2,6 +2,9 @@
 layout: default
 title: Funded Projects
 ---
+ * ##### Multi-Objective Text Data Augmentation for Multi-Label Datasets
+	> <b>Project Duration:</b> 1 year <br/>
+	> <b>Funding Agency:</b> IBM (OSCP Program) 
  * ##### Collusion and Fake News: Are social networks being orchestrated in favor of fake news?
 	> <b>Project Duration:</b> 2 years <br/>
 	> <b>Funding Agency:</b> Ministry of Human Resource Development (SPARC Program) 
