@@ -3,7 +3,7 @@
 <img src="img/lab-photos/1.jpg" alt="screenshot of the template">
 </p>
 
-The project template is originated at the University of Washington.  You can see the machinery working live at [our site][sampa].
+The project template is originated at the University of Washington.  You can see the machinery working live at [their site][sampa].
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License][license].
 
