@@ -53,7 +53,7 @@ managing, mining, and understanding scientific data. Topics of interest include,
 * Applications of mining from scientific data
 <br>
 <h4><b>Papers Considered for the Special Issue:</b></h4>
-We plan to have about 6-7 top quality papers to be published in the special issue. We will invite authors
+We plan to have about 4-6 top quality papers to be published in the special issue. We will invite authors
 of top 3 papers published in ​ BIRDNL workshop (Joint Workshop on Bibliometric-enhanced Information
 Retrieval and Natural Language Processing for Digital Libraries), collocated with SIGIR 2019 ​ to extend
 the content (at least 30%) and submit the extended version to the special issue. The remaining papers will
