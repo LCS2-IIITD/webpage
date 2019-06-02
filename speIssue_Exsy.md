@@ -2,7 +2,7 @@
 layout: default
 title: CALL FOR PAPERS
 ---
-<h2><b> Expert Systems (Wiley Online Library)</b><br/>
+<h2><b>Expert Systems (Wiley Online Library)</b><br/>
 <i>Special Issue on Mining Knowledge from Scientific Data</i></h2>
 <br>
 <h4><b>Guest Editors:</b></h4>
@@ -51,9 +51,6 @@ managing, mining, and understanding scientific data. Topics of interest include,
 * Human-computer interaction for efficient access of scholar data
 * Role of online media in the spread of scientific knowledge
 * Applications of mining from scientific data
-<br>
-<h4><b>Papers Considered for the Special Issue:</b></h4>
-We will invite authors of top few papers published in <a href="http://wing.comp.nus.edu.sg/~birndl2019/">BIRDNL workshop</a> (Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries), collocated with SIGIR 2019 to extend the content (at least 30%) and submit the extended version to the special issue. The remaining papers will be selected through the regular call. All papers will go through peer review by at least three reviewers.
 <br>
 <h4><b>Submission Instructions:</b></h4>
 Manuscripts must be submitted through the Expert Systems electronic submission system at
