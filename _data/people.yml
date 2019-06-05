@@ -51,12 +51,11 @@ grad-b:
     image: /img/people/shivangi.jpg
     bio: PhD Scholar
 
-# grad-c:
-#     display_name: "Vinayak Kumar"
-#     role: grad
-#     webpage: "https://drive.google.com/a/iith.ac.in/file/d/1sWmgda0vy-TDjr2xdtSx6cFvUQa5Gea9/view?usp=drivesdk"
-#     image: /img/people/vinayak.jpg
-#     bio: PhD Scholar
+grad-c:
+    display_name: "Subhabrata Dutta"
+    role: grad
+    image: /img/people/subha.jpg
+    bio: PhD Scholar
 
 grad-d:
     display_name: "Sivacharan Gangireddy"
