@@ -62,7 +62,7 @@ interest of contributions will be assessed in terms of technical and scientific 
 knowledge and understanding of the problem, methodological advancements, and/or applicative value.
 <br>
 <h4><b>Important Dates</b></h4>
-Paper submission due: Aug 15, 2019<br>
-Initial review Feedback: October 15, 2019<br>
-Revision Due: December 15, 2019<br>
-Final review decision: January 15, 2020<br>
+Paper submission due: Sep 30, 2019<br>
+Initial review Feedback: Nov 15, 2019<br>
+Revision Due: December 31, 2019<br>
+Final review decision: January 31, 2020<br>
