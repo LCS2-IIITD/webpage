@@ -46,7 +46,7 @@ grad-a:
     bio: PhD Scholar
 
 grad-b:
-    display_name: "Shivangi Singhal"
+    display_name: "Shivangi Singhal (TCS PhD Fellow)"
     role: grad
     image: /img/people/shivangi.jpg
     bio: PhD Scholar
@@ -58,7 +58,7 @@ grad-c:
     bio: PhD Scholar
 
 grad-d:
-    display_name: "Sivacharan Gangireddy"
+    display_name: "Sivacharan Gangireddy (TCS PhD Fellow)"
     role: grad
     image: /img/people/siva.jpg
     bio: PhD Scholar
@@ -77,12 +77,12 @@ grad-f:
 
 
 
-#ra-a:
-#    display_name: "Udit Arora"
-#    role: ra
-#    image: /img/people/udit.jpg
-#    webpage: "https://uditarora.github.io/"
-#    bio: Research Associate
+ra-a:
+    display_name: "Udit Arora"
+    role: alum
+    image: /img/people/udit.jpg
+    webpage: "https://uditarora.github.io/"
+    bio: Research Associate
 
 ra-b:
     display_name: "Sarah Masaud"
@@ -270,7 +270,7 @@ ugrad-e:
     display_name: "Vishal Raj Dutta"
     bio: Undergrad student (2015-2019)
     image: /img/people/vishalrajdutta.png
-    role: ugrad
+    role: alum
 
 ugrad-f:
     display_name: "Aditya Adhikary"
@@ -308,7 +308,7 @@ ugrad-l:
     display_name: "Sarthika Dhawan"
     bio: Undergrad student (2016-2020)
     image: /img/people/sarthika.jpg
-    role: ugrad
+    role: alum
 
 
 ugrad-m:
@@ -350,14 +350,14 @@ ugrad-r:
 
 ugrad-s:
     display_name: "Aditya Chetan"
-    role: ugrad
+    role: alum
     image: /img/people/aditya.jpeg
     bio: Undergrad student (2016-2020)
     webpage: "https://github.com/adsrc"
 
 ugrad-t:
     display_name: "Brihi Joshi"
-    role: ugrad
+    role: alum
     image: /img/people/brihi.jpeg
     bio: Undergrad student (2016-2020)
     webpage: "http://bri-hi.co/"
@@ -383,7 +383,7 @@ ugrad-w:
 
 ugrad-x:
     display_name: "Siddharth Yadav"
-    bio: Undergrad student (2017-2019)
+    bio: Undergrad student (2017-2021)
     role: ugrad
 
 ugrad-y:
@@ -394,7 +394,7 @@ ugrad-y:
 ugrad-z:
     display_name: "Gunkirat Kaur"
     bio: Undergrad student (2015-2019)
-    role: ugrad
+    role: alum
 
 ugrad-aa:
     display_name: "Shravika Mittal"
@@ -404,12 +404,12 @@ ugrad-aa:
 ugrad-ab:
     display_name: "Shreyans Mongia"
     bio: Undergrad student (2015-2019)
-    role: ugrad
+    role: alum
 
 ugrad-ac:
     display_name: "Shreyash Arya"
     bio: Undergrad student (2015-2019)
-    role: ugrad
+    role: alum
 
 pgrad-a:
     display_name: "Subhankar Adak"
@@ -420,7 +420,7 @@ pgrad-b:
     display_name: "Arpan Mukherjee"
     image: /img/people/arpan.jpg
     bio: Masters student (2017-2019)
-    role: pgrad
+    role: alum
 pgrad-c:
     display_name: "Sarika"
     bio: Masters student (2016-2018)
@@ -440,4 +440,8 @@ pgrad-f:
 pgrad-g:
     display_name: "Sutapa Mondal"
     bio: Masters student (2018-2020)
+    role: alum
+pgrad-h:
+    display_name: "Sakshi Makkar"
+    bio: Masters student (2019-2020)
     role: pgrad
