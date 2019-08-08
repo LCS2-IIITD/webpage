@@ -67,6 +67,7 @@ grad-e:
     display_name: "Annu Joshi"
     role: grad
     image: /img/people/annu.jpg
+    webpage: "https://www.linkedin.com/in/annu-joshi/"
     bio: PhD Scholar
 
 grad-f:
@@ -102,8 +103,8 @@ ra-c:
 ra-d:
     display_name: "Mayank Jobanputra"
     role: ra
-    #image: /img/people/mayank.jpg
-    webpage: ""
+    image: /img/people/mayank.jpg
+    webpage: "https://www.linkedin.com/in/mayankjobanputra/"
     bio: Research Associate
 
 collab-a:
