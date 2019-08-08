@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laboratory for Computational Social Systems (LCS2): 1.0.0 (unreleased)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="/css/slider.css">
+        <script type="text/javascript" src="/js/slider.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/logo.png"
+                         srcset="/img/logo@2x.png 2x"
+                         alt="Awesome" id="logo">
+                </a>
+               
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/research.html">
+                                Research
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/funding.html">
+                                Funded Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/achievements.html">
+                                Achievements
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+           
+            
+
+            
+                <h1>1.0.0 (unreleased)</h1>
+            
+
+            <h3 id="100-unreleased">1.0.0 (unreleased)</h3>
+
+<p><strong>Fixes</strong>:</p>
+
+<ul>
+  <li>Catch a buffer overflow when formatting the error message</li>
+  <li>Import latest upstream sds. This breaks applications that are linked against the old hiredis v0.13</li>
+  <li>Fix warnings, when compiled with -Wshadow</li>
+  <li>Make hiredis compile in Cygwin on Windows, now CI-tested</li>
+</ul>
+
+<p><strong>BREAKING CHANGES</strong>:</p>
+
+<ul>
+  <li>Change <code class="highlighter-rouge">redisReply.len</code> to <code class="highlighter-rouge">size_t</code>, as it denotes the the size of a string</li>
+</ul>
+
+<p>User code should compare this to <code class="highlighter-rouge">size_t</code> values as well.
+If it was used to compare to other values, casting might be necessary or can be removed, if casting was applied before.</p>
+
+<ul>
+  <li>Remove backwards compatibility macro’s</li>
+</ul>
+
+<p>This removes the following old function aliases, use the new name now:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Old</th>
+      <th>New</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>redisReplyReaderCreate</td>
+      <td>redisReaderCreate</td>
+    </tr>
+    <tr>
+      <td>redisReplyReaderCreate</td>
+      <td>redisReaderCreate</td>
+    </tr>
+    <tr>
+      <td>redisReplyReaderFree</td>
+      <td>redisReaderFree</td>
+    </tr>
+    <tr>
+      <td>redisReplyReaderFeed</td>
+      <td>redisReaderFeed</td>
+    </tr>
+    <tr>
+      <td>redisReplyReaderGetReply</td>
+      <td>redisReaderGetReply</td>
+    </tr>
+    <tr>
+      <td>redisReplyReaderSetPrivdata</td>
+      <td>redisReaderSetPrivdata</td>
+    </tr>
+    <tr>
+      <td>redisReplyReaderGetObject</td>
+      <td>redisReaderGetObject</td>
+    </tr>
+    <tr>
+      <td>redisReplyReaderGetError</td>
+      <td>redisReaderGetError</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>The <code class="highlighter-rouge">DEBUG</code> variable in the Makefile was renamed to <code class="highlighter-rouge">DEBUG_FLAGS</code></li>
+</ul>
+
+<p>Previously it broke some builds for people that had <code class="highlighter-rouge">DEBUG</code> set to some arbitrary value,
+due to debugging other software.
+By renaming we avoid unintentional name clashes.</p>
+
+<p>Simply rename <code class="highlighter-rouge">DEBUG</code> to <code class="highlighter-rouge">DEBUG_FLAGS</code> in your environment to make it working again.</p>
+
+<h3 id="0133-2015-09-16">0.13.3 (2015-09-16)</h3>
+
+<ul>
+  <li>Revert “Clear <code class="highlighter-rouge">REDIS_CONNECTED</code> flag when connection is closed”.</li>
+  <li>Make tests pass on FreeBSD (Thanks, Giacomo Olgeni)</li>
+</ul>
+
+<p>If the <code class="highlighter-rouge">REDIS_CONNECTED</code> flag is cleared,
+the async onDisconnect callback function will never be called.
+This causes problems as the disconnect is never reported back to the user.</p>
+
+<h3 id="0132-2015-08-25">0.13.2 (2015-08-25)</h3>
+
+<ul>
+  <li>Prevent crash on pending replies in async code (Thanks, @switch-st)</li>
+  <li>Clear <code class="highlighter-rouge">REDIS_CONNECTED</code> flag when connection is closed (Thanks, Jerry Jacobs)</li>
+  <li>Add MacOS X addapter (Thanks, @dizzus)</li>
+  <li>Add Qt adapter (Thanks, Pietro Cerutti)</li>
+  <li>Add Ivykis adapter (Thanks, Gergely Nagy)</li>
+</ul>
+
+<p>All adapters are provided as is and are only tested where possible.</p>
+
+<h3 id="0131-2015-05-03">0.13.1 (2015-05-03)</h3>
+
+<p>This is a bug fix release.
+The new <code class="highlighter-rouge">reconnect</code> method introduced new struct members, which clashed with pre-defined names in pre-C99 code.
+Another commit forced C99 compilation just to make it work, but of course this is not desirable for outside projects.
+Other non-C99 code can now use hiredis as usual again.
+Sorry for the inconvenience.</p>
+
+<ul>
+  <li>Fix memory leak in async reply handling (Salvatore Sanfilippo)</li>
+  <li>Rename struct member to avoid name clash with pre-c99 code (Alex Balashov, ncopa)</li>
+</ul>
+
+<h3 id="0130-2015-04-16">0.13.0 (2015-04-16)</h3>
+
+<p>This release adds a minimal Windows compatibility layer.
+The parser, standalone since v0.12.0, can now be compiled on Windows
+(and thus used in other client libraries as well)</p>
+
+<ul>
+  <li>Windows compatibility layer for parser code (tzickel)</li>
+  <li>Properly escape data printed to PKGCONF file (Dan Skorupski)</li>
+  <li>Fix tests when assert() undefined (Keith Bennett, Matt Stancliff)</li>
+  <li>Implement a reconnect method for the client context, this changes the structure of <code class="highlighter-rouge">redisContext</code> (Aaron Bedra)</li>
+</ul>
+
+<h3 id="0121-2015-01-26">0.12.1 (2015-01-26)</h3>
+
+<ul>
+  <li>Fix <code class="highlighter-rouge">make install</code>: DESTDIR support, install all required files, install PKGCONF in proper location</li>
+  <li>Fix <code class="highlighter-rouge">make test</code> as 32 bit build on 64 bit platform</li>
+</ul>
+
+<h3 id="0120-2015-01-22">0.12.0 (2015-01-22)</h3>
+
+<ul>
+  <li>
+    <p>Add optional KeepAlive support</p>
+  </li>
+  <li>
+    <p>Try again on EINTR errors</p>
+  </li>
+  <li>
+    <p>Add libuv adapter</p>
+  </li>
+  <li>
+    <p>Add IPv6 support</p>
+  </li>
+  <li>
+    <p>Remove possiblity of multiple close on same fd</p>
+  </li>
+  <li>
+    <p>Add ability to bind source address on connect</p>
+  </li>
+  <li>
+    <p>Add redisConnectFd() and redisFreeKeepFd()</p>
+  </li>
+  <li>
+    <p>Fix getaddrinfo() memory leak</p>
+  </li>
+  <li>
+    <p>Free string if it is unused (fixes memory leak)</p>
+  </li>
+  <li>
+    <p>Improve redisAppendCommandArgv performance 2.5x</p>
+  </li>
+  <li>
+    <p>Add support for SO_REUSEADDR</p>
+  </li>
+  <li>
+    <p>Fix redisvFormatCommand format parsing</p>
+  </li>
+  <li>
+    <p>Add GLib 2.0 adapter</p>
+  </li>
+  <li>
+    <p>Refactor reading code into read.c</p>
+  </li>
+  <li>
+    <p>Fix errno error buffers to not clobber errors</p>
+  </li>
+  <li>
+    <p>Generate pkgconf during build</p>
+  </li>
+  <li>
+    <p>Silence _BSD_SOURCE warnings</p>
+  </li>
+  <li>
+    <p>Improve digit counting for multibulk creation</p>
+  </li>
+</ul>
+
+<h3 id="0110">0.11.0</h3>
+
+<ul>
+  <li>
+    <p>Increase the maximum multi-bulk reply depth to 7.</p>
+  </li>
+  <li>
+    <p>Increase the read buffer size from 2k to 16k.</p>
+  </li>
+  <li>
+    <p>Use poll(2) instead of select(2) to support large fds (&gt;= 1024).</p>
+  </li>
+</ul>
+
+<h3 id="0101">0.10.1</h3>
+
+<ul>
+  <li>
+    <p>Makefile overhaul. Important to check out if you override one or more
+variables using environment variables or via arguments to the “make” tool.</p>
+  </li>
+  <li>
+    <p>Issue #45: Fix potential memory leak for a multi bulk reply with 0 elements
+being created by the default reply object functions.</p>
+  </li>
+  <li>
+    <p>Issue #43: Don’t crash in an asynchronous context when Redis returns an error
+reply after the connection has been made (this happens when the maximum
+number of connections is reached).</p>
+  </li>
+</ul>
+
+<h3 id="0100">0.10.0</h3>
+
+<ul>
+  <li>See commit log.</li>
+</ul>
+
+
+
+            <div class="footer">
+                <p>
+                    <a href="/">Laboratory for Computation Social Systems (LCS2)</a>
+                    at
+                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a><br/>Template by <a href="https://github.com/uwsampa/research-group-web">Research Group Website Template</a> </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        </div>
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129817111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-129817111-1');
+        </script>
+
+    </body>
+</html>

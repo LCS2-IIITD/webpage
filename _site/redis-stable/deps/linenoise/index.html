@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laboratory for Computational Social Systems (LCS2): Linenoise</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="/css/slider.css">
+        <script type="text/javascript" src="/js/slider.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/logo.png"
+                         srcset="/img/logo@2x.png 2x"
+                         alt="Awesome" id="logo">
+                </a>
+               
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/research.html">
+                                Research
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/funding.html">
+                                Funded Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/achievements.html">
+                                Achievements
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+           
+            
+
+            
+                <h1>Linenoise</h1>
+            
+
+            <h1 id="linenoise">Linenoise</h1>
+
+<p>A minimal, zero-config, BSD licensed, readline replacement used in Redis,
+MongoDB, and Android.</p>
+
+<ul>
+  <li>Single and multi line editing mode with the usual key bindings implemented.</li>
+  <li>History handling.</li>
+  <li>Completion.</li>
+  <li>Hints (suggestions at the right of the prompt as you type).</li>
+  <li>About 1,100 lines of BSD license source code.</li>
+  <li>Only uses a subset of VT100 escapes (ANSI.SYS compatible).</li>
+</ul>
+
+<h2 id="can-a-line-editing-library-be-20k-lines-of-code">Can a line editing library be 20k lines of code?</h2>
+
+<p>Line editing with some support for history is a really important feature for command line utilities. Instead of retyping almost the same stuff again and again it’s just much better to hit the up arrow and edit on syntax errors, or in order to try a slightly different command. But apparently code dealing with terminals is some sort of Black Magic: readline is 30k lines of code, libedit 20k. Is it reasonable to link small utilities to huge libraries just to get a minimal support for line editing?</p>
+
+<p>So what usually happens is either:</p>
+
+<ul>
+  <li>Large programs with configure scripts disabling line editing if readline is not present in the system, or not supporting it at all since readline is GPL licensed and libedit (the BSD clone) is not as known and available as readline is (Real world example of this problem: Tclsh).</li>
+  <li>Smaller programs not using a configure script not supporting line editing at all (A problem we had with Redis-cli for instance).</li>
+</ul>
+
+<p>The result is a pollution of binaries without line editing support.</p>
+
+<p>So I spent more or less two hours doing a reality check resulting in this little library: is it <em>really</em> needed for a line editing library to be 20k lines of code? Apparently not, it is possibe to get a very small, zero configuration, trivial to embed library, that solves the problem. Smaller programs will just include this, supporing line editing out of the box. Larger programs may use this little library or just checking with configure if readline/libedit is available and resorting to Linenoise if not.</p>
+
+<h2 id="terminals-in-2010">Terminals, in 2010.</h2>
+
+<p>Apparently almost every terminal you can happen to use today has some kind of support for basic VT100 escape sequences. So I tried to write a lib using just very basic VT100 features. The resulting library appears to work everywhere I tried to use it, and now can work even on ANSI.SYS compatible terminals, since no
+VT220 specific sequences are used anymore.</p>
+
+<p>The library is currently about 1100 lines of code. In order to use it in your project just look at the <em>example.c</em> file in the source distribution, it is trivial. Linenoise is BSD code, so you can use both in free software and commercial software.</p>
+
+<h2 id="tested-with">Tested with…</h2>
+
+<ul>
+  <li>Linux text only console ($TERM = linux)</li>
+  <li>Linux KDE terminal application ($TERM = xterm)</li>
+  <li>Linux xterm ($TERM = xterm)</li>
+  <li>Linux Buildroot ($TERM = vt100)</li>
+  <li>Mac OS X iTerm ($TERM = xterm)</li>
+  <li>Mac OS X default Terminal.app ($TERM = xterm)</li>
+  <li>OpenBSD 4.5 through an OSX Terminal.app ($TERM = screen)</li>
+  <li>IBM AIX 6.1</li>
+  <li>FreeBSD xterm ($TERM = xterm)</li>
+  <li>ANSI.SYS</li>
+  <li>Emacs comint mode ($TERM = dumb)</li>
+</ul>
+
+<p>Please test it everywhere you can and report back!</p>
+
+<h2 id="lets-push-this-forward">Let’s push this forward!</h2>
+
+<p>Patches should be provided in the respect of Linenoise sensibility for small
+easy to understand code.</p>
+
+<p>Send feedbacks to antirez at gmail</p>
+
+<h1 id="the-api">The API</h1>
+
+<p>Linenoise is very easy to use, and reading the example shipped with the
+library should get you up to speed ASAP. Here is a list of API calls
+and how to use them.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *linenoise(const char *prompt);
+</code></pre></div></div>
+
+<p>This is the main Linenoise call: it shows the user a prompt with line editing
+and history capabilities. The prompt you specify is used as a prompt, that is,
+it will be printed to the left of the cursor. The library returns a buffer
+with the line composed by the user, or NULL on end of file or when there
+is an out of memory condition.</p>
+
+<p>When a tty is detected (the user is actually typing into a terminal session)
+the maximum editable line length is <code class="highlighter-rouge">LINENOISE_MAX_LINE</code>. When instead the
+standard input is not a tty, which happens every time you redirect a file
+to a program, or use it in an Unix pipeline, there are no limits to the
+length of the line that can be returned.</p>
+
+<p>The returned line should be freed with the <code class="highlighter-rouge">free()</code> standard system call.
+However sometimes it could happen that your program uses a different dynamic
+allocation library, so you may also used <code class="highlighter-rouge">linenoiseFree</code> to make sure the
+line is freed with the same allocator it was created.</p>
+
+<p>The canonical loop used by a program using Linenoise will be something like
+this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while((line = linenoise("hello&gt; ")) != NULL) {
+    printf("You wrote: %s\n", line);
+    linenoiseFree(line); /* Or just free(line) if you use libc malloc. */
+}
+</code></pre></div></div>
+
+<h2 id="single-line-vs-multi-line-editing">Single line VS multi line editing</h2>
+
+<p>By default, Linenoise uses single line editing, that is, a single row on the
+screen will be used, and as the user types more, the text will scroll towards
+left to make room. This works if your program is one where the user is
+unlikely to write a lot of text, otherwise multi line editing, where multiple
+screens rows are used, can be a lot more comfortable.</p>
+
+<p>In order to enable multi line editing use the following API call:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetMultiLine(1);
+</code></pre></div></div>
+
+<p>You can disable it using <code class="highlighter-rouge">0</code> as argument.</p>
+
+<h2 id="history">History</h2>
+
+<p>Linenoise supporst history, so that the user does not have to retype
+again and again the same things, but can use the down and up arrows in order
+to search and re-edit already inserted lines of text.</p>
+
+<p>The followings are the history API calls:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int linenoiseHistoryAdd(const char *line);
+int linenoiseHistorySetMaxLen(int len);
+int linenoiseHistorySave(const char *filename);
+int linenoiseHistoryLoad(const char *filename);
+</code></pre></div></div>
+
+<p>Use <code class="highlighter-rouge">linenoiseHistoryAdd</code> every time you want to add a new element
+to the top of the history (it will be the first the user will see when
+using the up arrow).</p>
+
+<p>Note that for history to work, you have to set a length for the history
+(which is zero by default, so history will be disabled if you don’t set
+a proper one). This is accomplished using the <code class="highlighter-rouge">linenoiseHistorySetMaxLen</code>
+function.</p>
+
+<p>Linenoise has direct support for persisting the history into an history
+file. The functions <code class="highlighter-rouge">linenoiseHistorySave</code> and <code class="highlighter-rouge">linenoiseHistoryLoad</code> do
+just that. Both functions return -1 on error and 0 on success.</p>
+
+<h2 id="completion">Completion</h2>
+
+<p>Linenoise supports completion, which is the ability to complete the user
+input when she or he presses the <code class="highlighter-rouge">&lt;TAB&gt;</code> key.</p>
+
+<p>In order to use completion, you need to register a completion callback, which
+is called every time the user presses <code class="highlighter-rouge">&lt;TAB&gt;</code>. Your callback will return a
+list of items that are completions for the current string.</p>
+
+<p>The following is an example of registering a completion callback:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetCompletionCallback(completion);
+</code></pre></div></div>
+
+<p>The completion must be a function returning <code class="highlighter-rouge">void</code> and getting as input
+a <code class="highlighter-rouge">const char</code> pointer, which is the line the user has typed so far, and
+a <code class="highlighter-rouge">linenoiseCompletions</code> object pointer, which is used as argument of
+<code class="highlighter-rouge">linenoiseAddCompletion</code> in order to add completions inside the callback.
+An example will make it more clear:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void completion(const char *buf, linenoiseCompletions *lc) {
+    if (buf[0] == 'h') {
+        linenoiseAddCompletion(lc,"hello");
+        linenoiseAddCompletion(lc,"hello there");
+    }
+}
+</code></pre></div></div>
+
+<p>Basically in your completion callback, you inspect the input, and return
+a list of items that are good completions by using <code class="highlighter-rouge">linenoiseAddCompletion</code>.</p>
+
+<p>If you want to test the completion feature, compile the example program
+with <code class="highlighter-rouge">make</code>, run it, type <code class="highlighter-rouge">h</code> and press <code class="highlighter-rouge">&lt;TAB&gt;</code>.</p>
+
+<h2 id="hints">Hints</h2>
+
+<p>Linenoise has a feature called <em>hints</em> which is very useful when you
+use Linenoise in order to implement a REPL (Read Eval Print Loop) for
+a program that accepts commands and arguments, but may also be useful in
+other conditions.</p>
+
+<p>The feature shows, on the right of the cursor, as the user types, hints that
+may be useful. The hints can be displayed using a different color compared
+to the color the user is typing, and can also be bold.</p>
+
+<p>For example as the user starts to type <code class="highlighter-rouge">"git remote add"</code>, with hints it’s
+possible to show on the right of the prompt a string <code class="highlighter-rouge">&lt;name&gt; &lt;url&gt;</code>.</p>
+
+<p>The feature works similarly to the history feature, using a callback.
+To register the callback we use:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetHintsCallback(hints);
+</code></pre></div></div>
+
+<p>The callback itself is implemented like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *hints(const char *buf, int *color, int *bold) {
+    if (!strcasecmp(buf,"git remote add")) {
+        *color = 35;
+        *bold = 0;
+        return " &lt;name&gt; &lt;url&gt;";
+    }
+    return NULL;
+}
+</code></pre></div></div>
+
+<p>The callback function returns the string that should be displayed or NULL
+if no hint is available for the text the user currently typed. The returned
+string will be trimmed as needed depending on the number of columns available
+on the screen.</p>
+
+<p>It is possible to return a string allocated in dynamic way, by also registering
+a function to deallocate the hint string once used:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void linenoiseSetFreeHintsCallback(linenoiseFreeHintsCallback *);
+</code></pre></div></div>
+
+<p>The free hint callback will just receive the pointer and free the string
+as needed (depending on how the hits callback allocated it).</p>
+
+<p>As you can see in the example above, a <code class="highlighter-rouge">color</code> (in xterm color terminal codes)
+can be provided together with a <code class="highlighter-rouge">bold</code> attribute. If no color is set, the
+current terminal foreground color is used. If no bold attribute is set,
+non-bold text is printed.</p>
+
+<p>Color codes are:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>red = 31
+green = 32
+yellow = 33
+blue = 34
+magenta = 35
+cyan = 36
+white = 37;
+</code></pre></div></div>
+
+<h2 id="screen-handling">Screen handling</h2>
+
+<p>Sometimes you may want to clear the screen as a result of something the
+user typed. You can do this by calling the following function:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void linenoiseClearScreen(void);
+</code></pre></div></div>
+
+
+            <div class="footer">
+                <p>
+                    <a href="/">Laboratory for Computation Social Systems (LCS2)</a>
+                    at
+                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a><br/>Template by <a href="https://github.com/uwsampa/research-group-web">Research Group Website Template</a> </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        </div>
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129817111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-129817111-1');
+        </script>
+
+    </body>
+</html>

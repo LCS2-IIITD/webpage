@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laboratory for Computational Social Systems (LCS2): </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="/css/slider.css">
+        <script type="text/javascript" src="/js/slider.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/logo.png"
+                         srcset="/img/logo@2x.png 2x"
+                         alt="Awesome" id="logo">
+                </a>
+               
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/research.html">
+                                Research
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/funding.html">
+                                Funded Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/achievements.html">
+                                Achievements
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+           
+            
+
+            
+                <h1></h1>
+            
+
+            <p>This directory contains all Redis dependencies, except for the libc that
+should be provided by the operating system.</p>
+
+<ul>
+  <li><strong>Jemalloc</strong> is our memory allocator, used as replacement for libc malloc on Linux by default. It has good performances and excellent fragmentation behavior. This component is upgraded from time to time.</li>
+  <li><strong>geohash-int</strong> is inside the dependencies directory but is actually part of the Redis project, since it is our private fork (heavily modified) of a library initially developed for Ardb, which is in turn a fork of Redis.</li>
+  <li><strong>hiredis</strong> is the official C client library for Redis. It is used by redis-cli, redis-benchmark and Redis Sentinel. It is part of the Redis official ecosystem but is developed externally from the Redis repository, so we just upgrade it as needed.</li>
+  <li><strong>linenoise</strong> is a readline replacement. It is developed by the same authors of Redis but is managed as a separated project and updated as needed.</li>
+  <li><strong>lua</strong> is Lua 5.1 with minor changes for security and additional libraries.</li>
+</ul>
+
+<h1 id="how-to-upgrade-the-above-dependencies">How to upgrade the above dependencies</h1>
+
+<h2 id="jemalloc">Jemalloc</h2>
+
+<p>Jemalloc is unmodified. We only change settings via the <code class="highlighter-rouge">configure</code> script of Jemalloc using the <code class="highlighter-rouge">--with-lg-quantum</code> option, setting it to the value of 3 instead of 4. This provides us with more size classes that better suit the Redis data structures, in order to gain memory efficiency.</p>
+
+<p>So in order to upgrade jemalloc:</p>
+
+<ol>
+  <li>Remove the jemalloc directory.</li>
+  <li>Substitute it with the new jemalloc source tree.</li>
+</ol>
+
+<h2 id="geohash">Geohash</h2>
+
+<p>This is never upgraded since it’s part of the Redis project. If there are changes to merge from Ardb there is the need to manually check differences, but at this point the source code is pretty different.</p>
+
+<h2 id="hiredis">Hiredis</h2>
+
+<p>Hiredis uses the SDS string library, that must be the same version used inside Redis itself. Hiredis is also very critical for Sentinel. Historically Redis often used forked versions of hiredis in a way or the other. In order to upgrade it is adviced to take a lot of care:</p>
+
+<ol>
+  <li>Check with diff if hiredis API changed and what impact it could have in Redis.</li>
+  <li>Make sure thet the SDS library inside Hiredis and inside Redis are compatible.</li>
+  <li>After the upgrade, run the Redis Sentinel test.</li>
+  <li>Check manually that redis-cli and redis-benchmark behave as expecteed, since we have no tests for CLI utilities currently.</li>
+</ol>
+
+<h2 id="linenoise">Linenoise</h2>
+
+<p>Linenoise is rarely upgraded as needed. The upgrade process is trivial since
+Redis uses a non modified version of linenoise, so to upgrade just do the
+following:</p>
+
+<ol>
+  <li>Remove the linenoise directory.</li>
+  <li>Substitute it with the new linenoise source tree.</li>
+</ol>
+
+<h2 id="lua">Lua</h2>
+
+<p>We use Lua 5.1 and no upgrade is planned currently, since we don’t want to break
+Lua scripts for new Lua features: in the context of Redis Lua scripts the
+capabilities of 5.1 are usually more than enough, the release is rock solid,
+and we definitely don’t want to break old scripts.</p>
+
+<p>So upgrading of Lua is up to the Redis project maintainers and should be a
+manual procedure performed by taking a diff between the different versions.</p>
+
+<p>Currently we have at least the following differences between official Lua 5.1
+and our version:</p>
+
+<ol>
+  <li>Makefile is modified to allow a different compiler than GCC.</li>
+  <li>We have the implementation source code, and directly link to the following external libraries: <code class="highlighter-rouge">lua_cjson.o</code>, <code class="highlighter-rouge">lua_struct.o</code>, <code class="highlighter-rouge">lua_cmsgpack.o</code> and <code class="highlighter-rouge">lua_bit.o</code>.</li>
+  <li>There is a security fix in <code class="highlighter-rouge">ldo.c</code>, line 498: The check for <code class="highlighter-rouge">LUA_SIGNATURE[0]</code> is removed in order toa void direct bytecode exectuion.</li>
+</ol>
+
+
+
+            <div class="footer">
+                <p>
+                    <a href="/">Laboratory for Computation Social Systems (LCS2)</a>
+                    at
+                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a><br/>Template by <a href="https://github.com/uwsampa/research-group-web">Research Group Website Template</a> </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        </div>
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129817111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-129817111-1');
+        </script>
+
+    </body>
+</html>
