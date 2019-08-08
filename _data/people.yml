@@ -63,13 +63,49 @@ grad-d:
     image: /img/people/siva.jpg
     bio: PhD Scholar
 
-ra-a:
-    display_name: "Udit Arora"
+grad-e:
+    display_name: "Annu Joshi"
+    role: grad
+    image: /img/people/annu.jpg
+    bio: PhD Scholar
+
+grad-f:
+    display_name: "Shivani Kumar"
+    role: grad
+    image: /img/people/shivani.jpg
+    bio: PhD Scholar
+
+
+
+#ra-a:
+#    display_name: "Udit Arora"
+#    role: ra
+#    image: /img/people/udit.jpg
+#    webpage: "https://uditarora.github.io/"
+#    bio: Research Associate
+
+ra-b:
+    display_name: "Sarah Masaud"
     role: ra
-    image: /img/people/udit.jpg
-    webpage: "https://uditarora.github.io/"
+    image: /img/people/sarah.jpg
+    webpage: "https://github.com/sara-02"
     bio: Research Associate
-       
+
+
+ra-c:
+    display_name: "Kartik Sharma"
+    role: ra
+    image: /img/people/kartik.jpg
+    webpage: ""
+    bio: Research Associate
+
+ra-d:
+    display_name: "Mayank Jobanputra"
+    role: ra
+    #image: /img/people/mayank.jpg
+    webpage: ""
+    bio: Research Associate
+
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
     webpage: "https://www.cse.iitb.ac.in/~soumen/"
@@ -373,7 +409,7 @@ ugrad-ab:
 ugrad-ac:
     display_name: "Shreyash Arya"
     bio: Undergrad student (2015-2019)
-    role: ugrad    
+    role: ugrad
 
 pgrad-a:
     display_name: "Subhankar Adak"
