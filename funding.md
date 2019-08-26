@@ -2,12 +2,26 @@
 layout: default
 title: Funded Projects
 ---
+
+* ##### English to Hindi Machine Transliteration
+	> <b>Project Duration:</b> Aug - Nov, 2019  <br/>
+	> <b>Funding Agency:</b> Process9
+
+
+* ##### DRONA: An AI-enabled Assistive Technology for Smart Searching and Browsing Online Educational Content
+	> <b>Project Duration:</b> 3 year <br/>
+	> <b>Funding Agency:</b> IMPRINT, DST
+
+* ##### Prediction, Detection and Monitoring System for Landslide in Hilly Regions
+	> <b>Project Duration:</b> 2 year <br/>
+	> <b>Funding Agency:</b> Indo-Japan collabative project, DST
+
  * ##### Multi-Objective Text Data Augmentation for Multi-Label Datasets
 	> <b>Project Duration:</b> 1 year <br/>
-	> <b>Funding Agency:</b> IBM (OSCP Program) 
+	> <b>Funding Agency:</b> IBM (OSCP Program)
  * ##### Collusion and Fake News: Are social networks being orchestrated in favor of fake news?
 	> <b>Project Duration:</b> 2 years <br/>
-	> <b>Funding Agency:</b> Ministry of Human Resource Development (SPARC Program) 
+	> <b>Funding Agency:</b> Ministry of Human Resource Development (SPARC Program)
  * ##### Problems on Data Mining and Modeling
 	> <b>Project Duration:</b> N.A. <br/>
 	> <b>Funding Agency:</b> Google (unrestricted faculty award)
@@ -37,4 +51,4 @@ title: Funded Projects
 	> <b>Funding Agency:</b> IIIT Delhi, India
  * ##### Fake activities in E-commerce sites
 	> <b> Project Duration:</b> Jan 2018 - Dec 2018 <br/>
-	> <b> Funding Agency:</b> Flipkart, India		
+	> <b> Funding Agency:</b> Flipkart, India
