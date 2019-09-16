@@ -108,6 +108,13 @@ ra-d:
     webpage: "https://www.linkedin.com/in/mayankjobanputra/"
     bio: Research Associate
 
+ra-e:
+    display_name: "Yash Kumar Atri "
+    role: ra
+    image: /img/people/yash.jpg
+    webpage: "https://www.linkedin.com/in/yashkumaratri/"
+    bio: Research Associate
+
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
     webpage: "https://www.cse.iitb.ac.in/~soumen/"
