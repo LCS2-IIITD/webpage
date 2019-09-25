@@ -1,6 +1,7 @@
 ---
 title: Citation Analysis
-
+description: |
+    We developed a novel metric(NID) to predict the award winning papers in the field of computer science. We are now extending this work by applying this metric on a different domain.
 people:
   - ugrad-u
   - collab-n
@@ -10,7 +11,7 @@ people:
   - profx
 
 layout: project2
-last-updated: 2019-09-24
+last-updated: 2019-09-22
 ---
 
 <b>Funding Agency</b>:
