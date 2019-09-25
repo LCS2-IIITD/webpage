@@ -37,7 +37,11 @@ front_page_news: 8
 base: ''
 
 # make pages for the _projects folder
-collections:  
+collections:
+   projects5:
+    output: true
+  projects4:
+    output: true
   projects3:
     output: true
   projects2:

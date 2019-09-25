@@ -3,7 +3,7 @@ layout: default
 title: Research Projects
 ---
 <br/>
-<h2> Social Network Analysis</h2>
+<h2> Text Summarization</h2>
 <div class="card-columns">
     {% comment %}
     Sort the projects by date, putting those without dates last
@@ -15,7 +15,7 @@ title: Research Projects
     {% endfor %}
 </div>
 <br/>
-<h2> Natural Language Processing </h2>
+<h2> Scientific Document Processing </h2>
 <div class="card-columns">
     {% comment %}
     Sort the projects by date, putting those without dates last
@@ -26,7 +26,8 @@ title: Research Projects
         {% include project-card2.html project2=p %}
     {% endfor %}
 </div>
-<h2> Complex Networks </h2>
+<br/>
+<h2> Malicious Activites in Online Media </h2>
 <div class="card-columns">
     {% comment %}
     Sort the projects by date, putting those without dates last
@@ -35,5 +36,29 @@ title: Research Projects
     {% assign projects_by_date = projects_by_date | reverse %}
     {% for p in projects_by_date %}
         {% include project-card3.html project3=p %}
+    {% endfor %}
+</div>
+<br/>
+<h2> Computational Studies of Dialogue conversation </h2>
+<div class="card-columns">
+    {% comment %}
+    Sort the projects by date, putting those without dates last
+    {% endcomment %}
+    {% assign projects_by_date = site.projects3 | sort: 'last-updated', 'first' %}
+    {% assign projects_by_date = projects_by_date | reverse %}
+    {% for p in projects_by_date %}
+        {% include project-card3.html project3=p %}
+    {% endfor %}
+</div>
+<br/>
+<h2> Mining Massive Networks  </h2>
+<div class="card-columns">
+    {% comment %}
+    Sort the projects by date, putting those without dates last
+    {% endcomment %}
+    {% assign projects_by_date = site.projects2 | sort: 'last-updated', 'first' %}
+    {% assign projects_by_date = projects_by_date | reverse %}
+    {% for p in projects_by_date %}
+        {% include project-card2.html project2=p %}
     {% endfor %}
 </div>

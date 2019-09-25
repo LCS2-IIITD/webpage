@@ -1,8 +1,8 @@
 
-{% assign project = include.project %}
+{% assign project = include.project4 %}
 
-{% if project.link %}
-    {% assign proj-url = project.link %}
+{% if project4.link %}
+    {% assign proj-url = project4.link %}
 {% else %}
     {% capture proj-url %}{{site.base}}{{project.url}}.html{% endcapture %}
 {% endif %}
