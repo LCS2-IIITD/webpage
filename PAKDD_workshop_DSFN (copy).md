@@ -67,9 +67,19 @@ The key organizers would be the co-chairs of this workshop, who will be:
  * Tanmoy Chakraborty, Indraprastha Institute of Information Technology, tanmoy@iiitd.ac.in
  * Deepak P, Queen’s University Belfast, deepaksp@acm.org
  * Cheng Long, Nanyang Technological University, c.long@ntu.edu.sg
- * Santhosh Kumar, Cochin University of Science and Technology, san@cusat.ac.in
+ *  Santhosh Kumar, Cochin University of Science and Technology, san@cusat.ac.in
 
-<b>Web Chair:</b> Hridoy Sankar Dutta, Indraprastha Institute of Information Technology, hridoyd@iiitd.ac.in
+Tentative Program Committee members are as follows:
+ * Dinesh Garg, IBM Research - India, India
+ * Srikanta Bedathur, IIT Delhi, India
+ * Sutanu Chakraborti, IIT Madras, India
+ * Anna Jurek-Loughrey, Queen’s University Belfast, United Kingdom
+ * Sahely Bhadra, IIT Palakkad, India
+ * Joemon Jose, University of Glasgow, United Kingdom
+ * Xin Huang, Hong Kong Baptist University, Hong Kong
+ * Yixiang Fang, Guangzhou University, China
+ * Xin Cao, University of New South Wales, Australia
+ * Sarana Yi Nutanong, VISTECH, Thailand
 
 <h4><b>Program:</b></h4>
 We look to organize this as a full-day workshop. We expect to receive at least
