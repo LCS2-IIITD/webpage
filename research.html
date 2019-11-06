@@ -37,3 +37,14 @@ title: Research Projects
         {% include project-card3.html project3=p %}
     {% endfor %}
 </div>
+<h2> asdasd </h2>
+<div class="card-columns">
+    {% comment %}
+    Sort the projects by date, putting those without dates last
+    {% endcomment %}
+    {% assign projects_by_date = site.projects4 | sort: 'last-updated', 'first' %}
+    {% assign projects_by_date = projects_by_date | reverse %}
+    {% for p in projects_by_date %}
+        {% include project-card4.html project4=p %}
+    {% endfor %}
+</div>
