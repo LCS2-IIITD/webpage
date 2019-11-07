@@ -67,25 +67,14 @@ The key organizers would be the co-chairs of this workshop, who will be:
  * Tanmoy Chakraborty, Indraprastha Institute of Information Technology, tanmoy@iiitd.ac.in
  * Deepak P, Queen’s University Belfast, deepaksp@acm.org
  * Cheng Long, Nanyang Technological University, c.long@ntu.edu.sg
- * Santhosh Kumar, Cochin University of Science and Technology, san@cusat.ac.in
+ * Santhosh Kumar G., Cochin University of Science and Technology, san@cusat.ac.in
 
 <b>Web Chair:</b> Hridoy Sankar Dutta, Indraprastha Institute of Information Technology, hridoyd@iiitd.ac.in
 
 <h4><b>Program:</b></h4>
-We look to organize this as a full-day workshop. We expect to receive at least
+We look to organize this as a half-day workshop. We expect to receive at least
 20 submissions, and expect to accept around 10 submissions for the technical
 program. In the event that there are more than 25 submissions, we might
 consider organizing some presentations as posters to accommodate more than
 10 papers. Each paper would be given around 20 minutes for presentation and
-5 minutes of QA, thus making up 3.5 hours of the technical program. The
-tentative program schedule would be as follows:
- * 9am: Opening Remarks from Co-Chairs (10 minutes)
- * 9.15am: Keynote Talk followed by QA (we expect to invite one of our reputed PC members to give a keynote talk)
- * 10.30am: Tea Break
- * 11am: Paper Session 1 (4 papers)
- * 12.45pm: Lunch Break
- * 1.45pm: Paper Session 2 (3 papers)
- * 3pm: Tea Break
- * 3.15pm: Paper Session 3 (3 papers)
- * 4.30pm: Panel Discussion
- * 5.30pm: Closing Remarks and Close
+5 minutes of QA, thus making up 3.5 hours of the technical program.
