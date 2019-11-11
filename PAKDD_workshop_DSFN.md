@@ -74,7 +74,11 @@ The key organizers would be the co-chairs of this workshop, who will be:
 <h4><b>Program Committee:</b></h4>
 TBD
 
-<h4><b>Important Dates</b></h4>
+<h4><b>Submission Instructions</b></h4>
+Manuscripts must be submitted through the EasyChair electronic submission system at <a href="https://easychair.org/conferences/?conf=dsfn2020">https://easychair.org/conferences/?conf=dsfn2020</a>
+
+
+<h4><b>Important Dates:</b></h4>
 Paper submission due: TBD<br>
 Acceptance notification: TBD<br>
 Camera ready due: TBD<br>
