@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ site.name }}: {{ page.title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ site.base }}/css/group.css">
+        <link rel="stylesheet" href="{{ site.base }}/css/font-awesome-animation.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="{{ site.base }}/css/slider.css">
+        <script type="text/javascript" src="{{ site.base }}/js/slider.js"></script>
+    </head>
+    <body>
+
+        <div class="container" style="margin-top: 2%;">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+                      
+            {% if page.image %}
+                <img src="{{ page.image }}"
+                     alt="{{ page.title }}"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+            {% endif %}
+
+            {% if page.notitle != true %}
+                <h1>{{ page.title }}</h1>
+            {% endif %}
+
+            {{ content }}
+
+            <div class="footer">
+                <p>
+                    <a href="/">Laboratory for Computation Social Systems (LCS2)</a>
+                    at
+                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a><br/>Template by <a href="https://github.com/uwsampa/research-group-web">Research Group Website Template</a> </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        </div>
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="{{ site.base }}/js/srcset-polyfill.js"></script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129817111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-129817111-1');
+        </script>
+
+    </body>
+</html>
