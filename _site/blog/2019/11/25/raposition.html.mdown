@@ -1,0 +1,10 @@
+<b> LCS2 is inviting applications for RA position. </b>
+<br />
+The position is open for one year starting <i>December 2019</i> and is likely to be extended upto one year. Salary will be as per institute norms. Eligible candidates will be encouraged to apply for PhD position.
+<br />
+Interested candidates please email your CV to <b>lcs2@iiitd.ac.in </b> and <b>tanmoy@iiitd.ac.in</b>
+
+<br />
+
+Desirable Skills :
+Strong knowledge on programming (Python), Machine learning, Deep Learning and NLP
