@@ -37,9 +37,9 @@ front_page_news: 8
 base: ''
 
 # make pages for the _projects folder
-collections: 
+collections:
   projects4:
-    output: true 
+    output: true
   projects3:
     output: true
   projects2:
@@ -61,6 +61,8 @@ navigation:
     link: /publications.html
   - title: Achievements
     link: /achievements.html
+  - title: Events
+    link: /events.html
   - title: Gallery
     link: /gallery.html
   - title: Contact Us
