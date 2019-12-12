@@ -20,7 +20,7 @@ a > .fa { display: inline; }
 .jumbotron { text-align: justify; padding-top: 1.5em; padding-bottom: 0.5em; font-size: 125%; }
 
 /* Group logo */
-#logo { width: 220px; height: 120px; margin: 2px 0 8px 0; }
+#logo { width: 150px; height: 100px; margin: 25px 0 6px 0; }
 
 /* Front page news. */
 ul.news .date { color: #999; font-weight: bold; }
