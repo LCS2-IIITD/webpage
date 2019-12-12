@@ -27,10 +27,10 @@ postdoc-a:
     bio: Postdoctoral Researcher
 
 postdoc-b:
-    display_name: "Dr. "
-    webpage: " "
+    display_name: "Dr. Shaurya Shriyam"
+    webpage: "https://scholar.google.com/citations?hl=en&user=FlvGeckAAAAJ"
     role: postdoc
-    image:
+    image: /img/people/shaurya.jpg
     bio: Postdoctoral Researcher
 
 grad-a:

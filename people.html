@@ -7,6 +7,9 @@ role-tables:
 - - roles: [faculty, staff]
     width: 12
     image: true
+  - roles: [postdoc]
+    width: 12
+    image: true
   - roles: [grad,ra]
     width: 12
     image: true
@@ -14,6 +17,8 @@ role-tables:
     width: 12
     image: false
 ---
+
+<!-- Calling role-people.html -->
 
     {% for role-table in page.role-tables %}
         <section class="people row justify-content-between">
@@ -26,4 +31,5 @@ role-tables:
             {% endfor %}
         </section>
     {% endfor %}
+
 
