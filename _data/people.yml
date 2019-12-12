@@ -26,17 +26,12 @@ postdoc-a:
     image: /img/people/nitish.jpeg
     bio: Postdoctoral Researcher
 
-# wolverine:
-#     display_name: "Wolverine"
-#     webpage: "http://en.wikipedia.org/wiki/Wolverine_%28comics%29"
-#     github: wolverine
-#     role: postdoc
-
-# storm:
-#     display_name: "Storm"
-#     webpage: "http://en.wikipedia.org/wiki/Storm_%28Marvel_Comics%29"
-#     role: grad
-#     image: /img/people/storm.png
+postdoc-b:
+    display_name: "Dr. "
+    webpage: " "
+    role: postdoc
+    image:
+    bio: Postdoctoral Researcher
 
 grad-a:
     display_name: "Hridoy Sankar Dutta"
@@ -77,7 +72,19 @@ grad-f:
     bio: PhD Scholar
     webpage: "https://sites.google.com/iiitd.ac.in/shivani-kumar/home"
 
+grad-g:
+    display_name: "Sarah Masaud"
+    role: grad
+    image: /img/people/sarah.jpg
+    webpage: "https://github.com/sara-02"
+    bio: Research Associate
 
+grad-h:
+    display_name: "Yash Kumar Atri "
+    role: grad
+    image: /img/people/yash.jpg
+    webpage: "https://www.linkedin.com/in/yashkumaratri/"
+    bio: Research Associate
 
 ra-a:
     display_name: "Udit Arora"
@@ -86,34 +93,22 @@ ra-a:
     webpage: "https://uditarora.github.io/"
     bio: Research Associate
 
-ra-b:
-    display_name: "Sarah Masaud"
-    role: ra
-    image: /img/people/sarah.jpg
-    webpage: "https://github.com/sara-02"
-    bio: Research Associate
-
 
 ra-c:
     display_name: "Kartik Sharma"
-    role: ra
+    role: alum
     image: /img/people/kartik.jpg
     webpage: ""
     bio: Research Associate
 
 ra-d:
     display_name: "Mayank Jobanputra"
-    role: ra
+    role: alum
     image: /img/people/mayank.jpg
     webpage: "https://www.linkedin.com/in/mayankjobanputra/"
     bio: Research Associate
 
-ra-e:
-    display_name: "Yash Kumar Atri "
-    role: ra
-    image: /img/people/yash.jpg
-    webpage: "https://www.linkedin.com/in/yashkumaratri/"
-    bio: Research Associate
+
 
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
@@ -337,7 +332,7 @@ ugrad-o:
     display_name: "Viresh Gupta"
     bio: Undergrad student (2016-2020)
     image: /img/people/viresh.jpeg
-    role: ugrad
+    role: alum
 
 ugrad-p:
     display_name: "Aayush Aggarwal"
@@ -382,7 +377,7 @@ ugrad-v:
     display_name: "Aman Roy"
     bio: Undergrad student (2016-2020)
     image: /img/people/aman.jpg
-    role: ugrad
+    role: alum
 
 ugrad-w:
     display_name: "Suyash Singh"
@@ -393,12 +388,12 @@ ugrad-w:
 ugrad-x:
     display_name: "Siddharth Yadav"
     bio: Undergrad student (2017-2021)
-    role: ugrad
+    role: alum
 
 ugrad-y:
     display_name: "Chaitanya Agrawal"
     bio: Undergrad student (2016-2020)
-    role: ugrad
+    role: alum
 
 ugrad-z:
     display_name: "Gunkirat Kaur"
