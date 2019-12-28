@@ -4,3 +4,6 @@
 [submodule "cofad"]
 	path = cofad
 	url = https://github.com/AnnuJoshi/cofad2020.git
+[submodule "acss2020"]
+	path = acss2020
+	url = https://github.com/AnnuJoshi/acss2020.git
