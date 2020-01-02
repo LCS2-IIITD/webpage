@@ -77,14 +77,14 @@ grad-g:
     role: grad
     image: /img/people/sarah.jpg
     webpage: "https://github.com/sara-02"
-    bio: Research Associate
+    bio: PhD Scholar
 
 grad-h:
     display_name: "Yash Kumar Atri "
     role: grad
     image: /img/people/yash.jpg
     webpage: "https://www.linkedin.com/in/yashkumaratri/"
-    bio: Research Associate
+    bio: PhD Scholar
 
 ra-a:
     display_name: "Udit Arora"
@@ -108,7 +108,12 @@ ra-d:
     webpage: "https://www.linkedin.com/in/mayankjobanputra/"
     bio: Research Associate
 
-
+ra-e:
+    display_name: "Manjot Bedi"
+    role: ra
+    image: /img/people/manjot.jpeg
+    webpage: "https://www.linkedin.com/in/manjot-bedi-42843333/"
+    bio: Research Associate
 
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
@@ -412,9 +417,14 @@ ugrad-ab:
     role: alum
 
 ugrad-ac:
-    display_name: "Shreyash Arya"
-    bio: Undergrad student (2015-2019)
-    role: alum
+    display_name: "Samiya"
+    bio: Undergrad student (2020-2021)
+    role: ugrad
+
+ugrad-ad:
+    display_name: "Arushi"
+    bio: Undergrad student (2020-2021)
+    role: ugrad
 
 pgrad-a:
     display_name: "Subhankar Adak"
@@ -449,4 +459,16 @@ pgrad-g:
 pgrad-h:
     display_name: "Sakshi Makkar"
     bio: Masters student (2019-2020)
+    role: pgrad
+pgrad-i:
+    display_name: "Himanshu Sundriyal"
+    bio: Masters student (2020-2021)
+    role: pgrad
+pgrad-j:
+    display_name: "Divyanshu"
+    bio: Masters student (2020-2021)
+    role: pgrad
+pgrad-k:
+    display_name: "Anubhav Shrimal"
+    bio: Masters student (2020-2021)
     role: pgrad
