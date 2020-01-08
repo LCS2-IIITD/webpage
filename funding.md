@@ -52,5 +52,5 @@ title: Funded Projects
 	> <b>Project Duration:</b> Aug 2018 - July 2019 <br/>
 	> <b>Funding Agency:</b> Hike Messenger (unrestricted faculty award)
  * ##### Data science for Financial markets
-	> <b>Project Duration:</b> Aug 2018 - May 2018 <br/>
+	> <b>Project Duration:</b> Aug 2018 - May 2019 <br/>
 	> <b>Funding Agency:</b> Egregore Labs
