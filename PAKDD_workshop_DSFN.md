@@ -38,8 +38,8 @@ The key organizers would be the co-chairs of this workshop, who will be:
 
 
 <h4><b>Important Dates:</b></h4>
-Paper submission due: January 10, 2020<br>
-Acceptance notification: February 10, 2020<br>
+Paper submission due: <strike>January 10, 2020 </strike> January 24, 2020 <br>
+Acceptance notification: February 20, 2020<br>
 
 
 <h4><b>Submission and Peer Review</b></h4>

@@ -19,6 +19,14 @@ profx:
     image: /img/people/prof-x.png
     bio: Assistant Professor
 
+profx-a:
+    display_name: "Dr. Md. Shad Akhtar"
+    webpage: "https://iiitd.ac.in/shad"
+    github: profx
+    role: faculty
+    image: /img/people/shad.jpg
+    bio: Assistant Professor
+
 postdoc-a:
     display_name: "Dr. Nitish Prajapati"
     webpage: "https://www.linkedin.com/in/nitish-prajapati-9834a0b7/"
