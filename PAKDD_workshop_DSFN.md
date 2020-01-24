@@ -38,9 +38,9 @@ The key organizers would be the co-chairs of this workshop, who will be:
 
 
 <h4><b>Important Dates:</b></h4>
-Paper submission due: <strike>January 10, 2020 </strike> January 24, 2020 <br>
+Paper submission due (Final): <strike>January 24, 2020 </strike> January 31, 2020 <br>
 Acceptance notification: February 20, 2020<br>
 
 
 <h4><b>Submission and Peer Review</b></h4>
-Regular papers (maximum 8 pages) should be prepared in English and follow the Springer Lecture Notes in Computer Science (LNCS) template, downloadable from <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">here</a>. All papers must be submitted via our <a href="https://easychair.org/conferences/?conf=dsfn2020">EasyChair submission page</a> and will go through a single-blind peer-review process. Only manuscripts in PDF or Microsoft Word format will be accepted. Submitting a paper to the workshop means that the authors agree that at least one author should attend the workshop to present the paper if the paper is accepted. For no-show authors, their affiliations will receive a notification.
+Regular papers (maximum 8 pages) should be prepared in English and follow the Springer Lecture Notes in Computer Science (LNCS) template, downloadable from <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">here</a>. All papers must be submitted via our <a href="https://easychair.org/conferences/?conf=dsfn2020">EasyChair submission page</a> and will go through a single-blind peer-review process. Only manuscripts in PDF or Microsoft Word format will be accepted.
