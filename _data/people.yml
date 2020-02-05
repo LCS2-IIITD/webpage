@@ -435,7 +435,7 @@ ugrad-ad:
     role: ugrad
 
 ugrad-ae:
-    display_name: "Nirav"
+    display_name: "Nirav Diwan"
     bio: Undergrad student (2020-2021)
     role: ugrad
 
@@ -473,15 +473,19 @@ pgrad-h:
     display_name: "Sakshi Makkar"
     bio: Masters student (2019-2020)
     role: pgrad
-# pgrad-i:
+pgrad-i:
+    display_name: "Chhavi Jain"
+    bio: Masters student (2020-2021)
+    role: pgrad
+pgrad-j:
+    display_name: "Anubhav Shrimal"
+    bio: Masters student (2020-2021)
+    role: alum
+# pgrad-k:
 #     display_name: "Himanshu Sundriyal"
 #     bio: Masters student (2020-2021)
 #     role: alum
-# pgrad-j:
+# pgrad-l:
 #     display_name: "Divyanshu"
 #     bio: Masters student (2020-2021)
 #     role: alum
-pgrad-k:
-    display_name: "Anubhav Shrimal"
-    bio: Masters student (2020-2021)
-    role: pgrad
