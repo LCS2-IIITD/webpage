@@ -439,6 +439,11 @@ ugrad-ae:
     bio: Undergrad student (2020-2021)
     role: ugrad
 
+ugrad-af:
+    display_name: "Shreyash Arya"
+    bio: Undergrad student (2015-2019)
+    role: alum
+
 pgrad-a:
     display_name: "Subhankar Adak"
     bio: Masters student (2017-2019)
