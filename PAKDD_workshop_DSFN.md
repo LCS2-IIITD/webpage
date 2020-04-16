@@ -27,6 +27,35 @@ under the following heads in terms of methods:
 <br><br>
 We will particularly encourage papers that cover multiple such methodological building blocks in building a technology to combat fake news.
 
+<h4><b>Program Schedule:</b></h4>
+
+* 10:00 - 11:00am (10 mins for Q&A)
+    * Talk: TBD
+    * Keynote Speaker: Huan Liu, Arizona State University, USA
+
+
+* 11:00 - 11:15am
+    * Break
+
+
+* 11:15 - 11:35am (5 mins for Q&A)
+    * Talk: Adversarial Deep Factorization for Recommender Systems
+    * Speakers: Ziqing Chen (University of Waterloo), Yiwei Zhang (Kings college London), and Zongyang Li (The University of Sydney)
+
+
+* 11:35 - 11:55am (5 mins for Q&A)
+    * Talk: Detection of spammers using modified diffusion convolution neural network
+    * Speakers: Hui Li (School of Software, Dalian University of Technology), Wenxin Liang (School of Software, Dalian University of Technology) and Zihan Liao (School of Software, Dalian University of Technology)
+
+
+* 11:55 - 12:15am (5 mins for Q&A)
+    * Talk:  Dynamics Of Online Toxicity In The Asia-Pacific Region
+    * Speakers: Thomas Marcoux (University of Arkansas at Little Rock), Adewale Obadimu (University of Arkansas at Little Rock) and Nitin Agarwal (University of Arkansas at Little Rock)
+
+
+
+
+
 <h4><b>Organizing Committee:</b></h4>
 The key organizers would be the co-chairs of this workshop, who will be:
  * Tanmoy Chakraborty, Indraprastha Institute of Information Technology, tanmoy@iiitd.ac.in
@@ -35,6 +64,9 @@ The key organizers would be the co-chairs of this workshop, who will be:
  * Santhosh Kumar G., Cochin University of Science and Technology, san@cusat.ac.in
 
 <b>Web Chair:</b> Hridoy Sankar Dutta, Indraprastha Institute of Information Technology, hridoyd@iiitd.ac.in
+
+<!-- <h4><b>Keynote Speaker:</b></h4>
+* Huan Liu, Arizona State University, USA, huanliu@asu.edu -->
 
 
 <h4><b>Important Dates:</b></h4>
