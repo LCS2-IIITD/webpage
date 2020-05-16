@@ -30,9 +30,8 @@ We will particularly encourage papers that cover multiple such methodological bu
 <h4><b>Program Schedule:</b></h4>
 
 * 10:00 - 11:00am (10 mins for Q&A)
-    * Talk: TBD
-    * Keynote Speaker: Huan Liu, Arizona State University, USA
-
+    * Talk: Some Lessons Learned in Detecting and Explaining Fake News on Social Media
+    * Keynote Speaker: Huan Liu and Kai Shu, Arizona State University, USA
 
 * 11:00 - 11:15am
     * Break
@@ -54,7 +53,22 @@ We will particularly encourage papers that cover multiple such methodological bu
 
 
 
+<h4><b>Keynote</b></h4>
+<b>Title:</b> Some Lessons Learned in Detecting and Explaining Fake News on Social Media
 
+Huan Liu and Kai Shu<br>
+Arizona State University, Tempe, AZ
+
+<b>Abstract</b>
+
+In recent years, fake news has become a global phenomenon, particularly so during the pandemic, COVID-19. The wide dissemination of fake news can have detrimental societal effects on individuals and the society. Despite the recent progress in detecting fake news, it remains a challenging task due to its complexity, diversity, multi-modality, speed, and costs of fact-checking or annotation. In this talk, we look at some lessons learned when exploring effective and explainable detecting strategies of fake news, and discuss challenges in fake news research and the need for interdisciplinary research.
+
+<b>Bio</b>
+
+
+Huan Liu is a professor of Computer Science and Engineering at Arizona State University. Before he joined ASU, he worked at Telecom Australia Research Labs and was on the faculty at National University of Singapore. He is a co-author of a text, Social Media Mining: An Introduction, Cambridge University Press and a recent monograph, Detecting Fake News on Social Media, Morgan & Claypool Publishers. He is a founding organizer of the International Conference Series on Social Computing, Behavioral-Cultural Modeling, and Prediction, and Field Chief Editor of Frontiers in Big Data  and its Specialty Chief Editor of Data Mining and Management. He is a Fellow of ACM, AAAI, AAAS, and IEEE. More can be found at <a href="http://www.public.asu.edu/~huanliu">http://www.public.asu.edu/~huanliu</a>.
+
+Kai Shu is a Ph.D. candidate and research assistant in the Data Mining and Machine Learning (DMML) Lab at Arizona State University. His research lies in machine learning, data mining, social computing, and applications in disinformation, education, healthcare. He is the leading author of a monograph, Detecting Fake News on Social Media, Morgan & Claypool Publishers, and the leading editor of a book, Disinformation, Misinformation and Fake News in Social Media, Springer Press. He was awarded the ASU CIDSE Doctoral Fellowship 2015 and 2020, and the 1st place of SBP Disinformation Challenge 2018. He co-presented two tutorials in KDD 2019 and WSDM 2019, and has published innovative works in highly ranked journals and top conference proceedings such as ACM KDD, SIGIR, WSDM, WWW, CIKM, IEEE ICDM, IJCAI, and AAAI. He interned at Microsoft Research, Yahoo! Research, and HP Labs. More can be found at <a href="http://www.public.asu.edu/~skai2/">http://www.public.asu.edu/~skai2/</a>.
 
 <h4><b>Organizing Committee:</b></h4>
 The key organizers would be the co-chairs of this workshop, who will be:
