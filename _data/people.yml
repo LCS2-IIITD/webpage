@@ -66,21 +66,21 @@ grad-d:
     image: /img/people/siva.jpg
     bio: PhD Scholar
 
-grad-f:
+grad-e:
     display_name: "Shivani Kumar"
     role: grad
     image: /img/people/shivani.jpg
     bio: PhD Scholar
     webpage: "https://sites.google.com/iiitd.ac.in/shivani-kumar/home"
 
-grad-g:
+grad-f:
     display_name: "Sarah Masud"
     role: grad
     image: /img/people/sarah.jpg
     webpage: "https://github.com/sara-02"
     bio: PhD Scholar
 
-grad-h:
+grad-g:
     display_name: "Yash Kumar Atri "
     role: grad
     image: /img/people/yash.jpg
