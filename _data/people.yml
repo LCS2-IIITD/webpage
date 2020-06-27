@@ -66,13 +66,6 @@ grad-d:
     image: /img/people/siva.jpg
     bio: PhD Scholar
 
-grad-e:
-    display_name: "Annu Joshi"
-    role: grad
-    image: /img/people/annu.jpg
-    webpage: "https://www.linkedin.com/in/annu-joshi/"
-    bio: PhD Scholar
-
 grad-f:
     display_name: "Shivani Kumar"
     role: grad

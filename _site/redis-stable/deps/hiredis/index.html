@@ -202,66 +202,66 @@ Redis version &gt;= 1.2.0.</p>
 <p>The library comes with multiple APIs. There is the
 <em>synchronous API</em>, the <em>asynchronous API</em> and the <em>reply parsing API</em>.</p>
 
-<h2 id="upgrading-to-100">Upgrading to <code class="highlighter-rouge">1.0.0</code></h2>
+<h2 id="upgrading-to-100">Upgrading to <code class="language-plaintext highlighter-rouge">1.0.0</code></h2>
 
 <p>Version 1.0.0 marks a stable release of hiredis.
 It includes some minor breaking changes, mostly to make the exposed API more uniform and self-explanatory.
-It also bundles the updated <code class="highlighter-rouge">sds</code> library, to sync up with upstream and Redis.
+It also bundles the updated <code class="language-plaintext highlighter-rouge">sds</code> library, to sync up with upstream and Redis.
 For most applications a recompile against the new hiredis should be enough.
 For code changes see the <a href="/redis-stable/deps/hiredis/CHANGELOG">Changelog</a>.</p>
 
-<h2 id="upgrading-from-090">Upgrading from <code class="highlighter-rouge">&lt;0.9.0</code></h2>
+<h2 id="upgrading-from-090">Upgrading from <code class="language-plaintext highlighter-rouge">&lt;0.9.0</code></h2>
 
 <p>Version 0.9.0 is a major overhaul of hiredis in every aspect. However, upgrading existing
 code using hiredis should not be a big pain. The key thing to keep in mind when
-upgrading is that hiredis &gt;= 0.9.0 uses a <code class="highlighter-rouge">redisContext*</code> to keep state, in contrast to
+upgrading is that hiredis &gt;= 0.9.0 uses a <code class="language-plaintext highlighter-rouge">redisContext*</code> to keep state, in contrast to
 the stateless 0.0.1 that only has a file descriptor to work with.</p>
 
 <h2 id="synchronous-api">Synchronous API</h2>
 
 <p>To consume the synchronous API, there are only a few function calls that need to be introduced:</p>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">redisContext</span> <span class="o">*</span><span class="n">redisConnect</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">ip</span><span class="p">,</span> <span class="kt">int</span> <span class="n">port</span><span class="p">);</span>
-<span class="kt">void</span> <span class="o">*</span><span class="n">redisCommand</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="p">...);</span>
-<span class="kt">void</span> <span class="n">freeReplyObject</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">reply</span><span class="p">);</span>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">redisContext</span> <span class="o">*</span><span class="nf">redisConnect</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">ip</span><span class="p">,</span> <span class="kt">int</span> <span class="n">port</span><span class="p">);</span>
+<span class="kt">void</span> <span class="o">*</span><span class="nf">redisCommand</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="p">...);</span>
+<span class="kt">void</span> <span class="nf">freeReplyObject</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">reply</span><span class="p">);</span>
 </code></pre></div></div>
 
 <h3 id="connecting">Connecting</h3>
 
-<p>The function <code class="highlighter-rouge">redisConnect</code> is used to create a so-called <code class="highlighter-rouge">redisContext</code>. The
-context is where Hiredis holds state for a connection. The <code class="highlighter-rouge">redisContext</code>
-struct has an integer <code class="highlighter-rouge">err</code> field that is non-zero when the connection is in
-an error state. The field <code class="highlighter-rouge">errstr</code> will contain a string with a description of
+<p>The function <code class="language-plaintext highlighter-rouge">redisConnect</code> is used to create a so-called <code class="language-plaintext highlighter-rouge">redisContext</code>. The
+context is where Hiredis holds state for a connection. The <code class="language-plaintext highlighter-rouge">redisContext</code>
+struct has an integer <code class="language-plaintext highlighter-rouge">err</code> field that is non-zero when the connection is in
+an error state. The field <code class="language-plaintext highlighter-rouge">errstr</code> will contain a string with a description of
 the error. More information on errors can be found in the <strong>Errors</strong> section.
-After trying to connect to Redis using <code class="highlighter-rouge">redisConnect</code> you should
-check the <code class="highlighter-rouge">err</code> field to see if establishing the connection was successful:</p>
+After trying to connect to Redis using <code class="language-plaintext highlighter-rouge">redisConnect</code> you should
+check the <code class="language-plaintext highlighter-rouge">err</code> field to see if establishing the connection was successful:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span> <span class="o">=</span> <span class="n">redisConnect</span><span class="p">(</span><span class="s">"127.0.0.1"</span><span class="p">,</span> <span class="mi">6379</span><span class="p">);</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="nb">NULL</span> <span class="o">||</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">printf</span><span class="p">(</span><span class="s">"Error: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">errstr</span><span class="p">);</span>
-        <span class="c1">// handle error
-</span>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// handle error</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
         <span class="n">printf</span><span class="p">(</span><span class="s">"Can't allocate redis context</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p><em>Note: A <code class="highlighter-rouge">redisContext</code> is not thread-safe.</em></p>
+<p><em>Note: A <code class="language-plaintext highlighter-rouge">redisContext</code> is not thread-safe.</em></p>
 
 <h3 id="sending-commands">Sending commands</h3>
 
 <p>There are several ways to issue commands to Redis. The first that will be introduced is
-<code class="highlighter-rouge">redisCommand</code>. This function takes a format similar to printf. In the simplest form,
+<code class="language-plaintext highlighter-rouge">redisCommand</code>. This function takes a format similar to printf. In the simplest form,
 it is used like this:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="s">"SET foo bar"</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p>The specifier <code class="highlighter-rouge">%s</code> interpolates a string in the command, and uses <code class="highlighter-rouge">strlen</code> to
+<p>The specifier <code class="language-plaintext highlighter-rouge">%s</code> interpolates a string in the command, and uses <code class="language-plaintext highlighter-rouge">strlen</code> to
 determine the length of the string:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="s">"SET foo %s"</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
 </code></pre></div></div>
-<p>When you need to pass binary safe strings in a command, the <code class="highlighter-rouge">%b</code> specifier can be
-used. Together with a pointer to the string, it requires a <code class="highlighter-rouge">size_t</code> length argument
+<p>When you need to pass binary safe strings in a command, the <code class="language-plaintext highlighter-rouge">%b</code> specifier can be
+used. Together with a pointer to the string, it requires a <code class="language-plaintext highlighter-rouge">size_t</code> length argument
 of the string:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="s">"SET foo %b"</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="kt">size_t</span><span class="p">)</span> <span class="n">valuelen</span><span class="p">);</span>
 </code></pre></div></div>
@@ -274,62 +274,62 @@ anywhere in an argument:</p>
 
 <h3 id="using-replies">Using replies</h3>
 
-<p>The return value of <code class="highlighter-rouge">redisCommand</code> holds a reply when the command was
-successfully executed. When an error occurs, the return value is <code class="highlighter-rouge">NULL</code> and
-the <code class="highlighter-rouge">err</code> field in the context will be set (see section on <strong>Errors</strong>).
+<p>The return value of <code class="language-plaintext highlighter-rouge">redisCommand</code> holds a reply when the command was
+successfully executed. When an error occurs, the return value is <code class="language-plaintext highlighter-rouge">NULL</code> and
+the <code class="language-plaintext highlighter-rouge">err</code> field in the context will be set (see section on <strong>Errors</strong>).
 Once an error is returned the context cannot be reused and you should set up
 a new connection.</p>
 
-<p>The standard replies that <code class="highlighter-rouge">redisCommand</code> are of the type <code class="highlighter-rouge">redisReply</code>. The
-<code class="highlighter-rouge">type</code> field in the <code class="highlighter-rouge">redisReply</code> should be used to test what kind of reply
+<p>The standard replies that <code class="language-plaintext highlighter-rouge">redisCommand</code> are of the type <code class="language-plaintext highlighter-rouge">redisReply</code>. The
+<code class="language-plaintext highlighter-rouge">type</code> field in the <code class="language-plaintext highlighter-rouge">redisReply</code> should be used to test what kind of reply
 was received:</p>
 
 <ul>
-  <li><strong><code class="highlighter-rouge">REDIS_REPLY_STATUS</code></strong>:
+  <li><strong><code class="language-plaintext highlighter-rouge">REDIS_REPLY_STATUS</code></strong>:
     <ul>
-      <li>The command replied with a status reply. The status string can be accessed using <code class="highlighter-rouge">reply-&gt;str</code>.
-The length of this string can be accessed using <code class="highlighter-rouge">reply-&gt;len</code>.</li>
+      <li>The command replied with a status reply. The status string can be accessed using <code class="language-plaintext highlighter-rouge">reply-&gt;str</code>.
+The length of this string can be accessed using <code class="language-plaintext highlighter-rouge">reply-&gt;len</code>.</li>
     </ul>
   </li>
-  <li><strong><code class="highlighter-rouge">REDIS_REPLY_ERROR</code></strong>:
+  <li><strong><code class="language-plaintext highlighter-rouge">REDIS_REPLY_ERROR</code></strong>:
     <ul>
-      <li>The command replied with an error. The error string can be accessed identical to <code class="highlighter-rouge">REDIS_REPLY_STATUS</code>.</li>
+      <li>The command replied with an error. The error string can be accessed identical to <code class="language-plaintext highlighter-rouge">REDIS_REPLY_STATUS</code>.</li>
     </ul>
   </li>
-  <li><strong><code class="highlighter-rouge">REDIS_REPLY_INTEGER</code></strong>:
+  <li><strong><code class="language-plaintext highlighter-rouge">REDIS_REPLY_INTEGER</code></strong>:
     <ul>
       <li>The command replied with an integer. The integer value can be accessed using the
-<code class="highlighter-rouge">reply-&gt;integer</code> field of type <code class="highlighter-rouge">long long</code>.</li>
+<code class="language-plaintext highlighter-rouge">reply-&gt;integer</code> field of type <code class="language-plaintext highlighter-rouge">long long</code>.</li>
     </ul>
   </li>
-  <li><strong><code class="highlighter-rouge">REDIS_REPLY_NIL</code></strong>:
+  <li><strong><code class="language-plaintext highlighter-rouge">REDIS_REPLY_NIL</code></strong>:
     <ul>
       <li>The command replied with a <strong>nil</strong> object. There is no data to access.</li>
     </ul>
   </li>
-  <li><strong><code class="highlighter-rouge">REDIS_REPLY_STRING</code></strong>:
+  <li><strong><code class="language-plaintext highlighter-rouge">REDIS_REPLY_STRING</code></strong>:
     <ul>
-      <li>A bulk (string) reply. The value of the reply can be accessed using <code class="highlighter-rouge">reply-&gt;str</code>.
-The length of this string can be accessed using <code class="highlighter-rouge">reply-&gt;len</code>.</li>
+      <li>A bulk (string) reply. The value of the reply can be accessed using <code class="language-plaintext highlighter-rouge">reply-&gt;str</code>.
+The length of this string can be accessed using <code class="language-plaintext highlighter-rouge">reply-&gt;len</code>.</li>
     </ul>
   </li>
-  <li><strong><code class="highlighter-rouge">REDIS_REPLY_ARRAY</code></strong>:
+  <li><strong><code class="language-plaintext highlighter-rouge">REDIS_REPLY_ARRAY</code></strong>:
     <ul>
       <li>A multi bulk reply. The number of elements in the multi bulk reply is stored in
-<code class="highlighter-rouge">reply-&gt;elements</code>. Every element in the multi bulk reply is a <code class="highlighter-rouge">redisReply</code> object as well
-and can be accessed via <code class="highlighter-rouge">reply-&gt;element[..index..]</code>.
+<code class="language-plaintext highlighter-rouge">reply-&gt;elements</code>. Every element in the multi bulk reply is a <code class="language-plaintext highlighter-rouge">redisReply</code> object as well
+and can be accessed via <code class="language-plaintext highlighter-rouge">reply-&gt;element[..index..]</code>.
 Redis may reply with nested arrays but this is fully supported.</li>
     </ul>
   </li>
 </ul>
 
-<p>Replies should be freed using the <code class="highlighter-rouge">freeReplyObject()</code> function.
+<p>Replies should be freed using the <code class="language-plaintext highlighter-rouge">freeReplyObject()</code> function.
 Note that this function will take care of freeing sub-reply objects
 contained in arrays and nested arrays, so there is no need for the user to
 free the sub replies (it is actually harmful and will corrupt the memory).</p>
 
 <p><strong>Important:</strong> the current version of hiredis (0.10.0) frees replies when the
-asynchronous API is used. This means you should not call <code class="highlighter-rouge">freeReplyObject</code> when
+asynchronous API is used. This means you should not call <code class="language-plaintext highlighter-rouge">freeReplyObject</code> when
 you use this API. The reply is cleaned up by hiredis <em>after</em> the callback
 returns. This behavior will probably change in future releases, so make sure to
 keep an eye on the changelog when upgrading (see issue #39).</p>
@@ -337,33 +337,33 @@ keep an eye on the changelog when upgrading (see issue #39).</p>
 <h3 id="cleaning-up">Cleaning up</h3>
 
 <p>To disconnect and free the context the following function can be used:</p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">redisFree</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">);</span>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">redisFree</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">);</span>
 </code></pre></div></div>
 <p>This function immediately closes the socket and then frees the allocations done in
 creating the context.</p>
 
 <h3 id="sending-commands-contd">Sending commands (cont’d)</h3>
 
-<p>Together with <code class="highlighter-rouge">redisCommand</code>, the function <code class="highlighter-rouge">redisCommandArgv</code> can be used to issue commands.
+<p>Together with <code class="language-plaintext highlighter-rouge">redisCommand</code>, the function <code class="language-plaintext highlighter-rouge">redisCommandArgv</code> can be used to issue commands.
 It has the following prototype:</p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="o">*</span><span class="n">redisCommandArgv</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="o">*</span><span class="n">argvlen</span><span class="p">);</span>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="o">*</span><span class="nf">redisCommandArgv</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="o">*</span><span class="n">argvlen</span><span class="p">);</span>
 </code></pre></div></div>
-<p>It takes the number of arguments <code class="highlighter-rouge">argc</code>, an array of strings <code class="highlighter-rouge">argv</code> and the lengths of the
-arguments <code class="highlighter-rouge">argvlen</code>. For convenience, <code class="highlighter-rouge">argvlen</code> may be set to <code class="highlighter-rouge">NULL</code> and the function will
-use <code class="highlighter-rouge">strlen(3)</code> on every argument to determine its length. Obviously, when any of the arguments
-need to be binary safe, the entire array of lengths <code class="highlighter-rouge">argvlen</code> should be provided.</p>
+<p>It takes the number of arguments <code class="language-plaintext highlighter-rouge">argc</code>, an array of strings <code class="language-plaintext highlighter-rouge">argv</code> and the lengths of the
+arguments <code class="language-plaintext highlighter-rouge">argvlen</code>. For convenience, <code class="language-plaintext highlighter-rouge">argvlen</code> may be set to <code class="language-plaintext highlighter-rouge">NULL</code> and the function will
+use <code class="language-plaintext highlighter-rouge">strlen(3)</code> on every argument to determine its length. Obviously, when any of the arguments
+need to be binary safe, the entire array of lengths <code class="language-plaintext highlighter-rouge">argvlen</code> should be provided.</p>
 
-<p>The return value has the same semantic as <code class="highlighter-rouge">redisCommand</code>.</p>
+<p>The return value has the same semantic as <code class="language-plaintext highlighter-rouge">redisCommand</code>.</p>
 
 <h3 id="pipelining">Pipelining</h3>
 
 <p>To explain how Hiredis supports pipelining in a blocking connection, there needs to be
 understanding of the internal execution flow.</p>
 
-<p>When any of the functions in the <code class="highlighter-rouge">redisCommand</code> family is called, Hiredis first formats the
+<p>When any of the functions in the <code class="language-plaintext highlighter-rouge">redisCommand</code> family is called, Hiredis first formats the
 command according to the Redis protocol. The formatted command is then put in the output buffer
 of the context. This output buffer is dynamic, so it can hold any number of commands.
-After the command is put in the output buffer, <code class="highlighter-rouge">redisGetReply</code> is called. This function has the
+After the command is put in the output buffer, <code class="language-plaintext highlighter-rouge">redisGetReply</code> is called. This function has the
 following two execution paths:</p>
 
 <ol>
@@ -381,66 +381,66 @@ following two execution paths:</p>
   </li>
 </ol>
 
-<p>The function <code class="highlighter-rouge">redisGetReply</code> is exported as part of the Hiredis API and can be used when a reply
+<p>The function <code class="language-plaintext highlighter-rouge">redisGetReply</code> is exported as part of the Hiredis API and can be used when a reply
 is expected on the socket. To pipeline commands, the only things that needs to be done is
 filling up the output buffer. For this cause, two commands can be used that are identical
-to the <code class="highlighter-rouge">redisCommand</code> family, apart from not returning a reply:</p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">redisAppendCommand</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="p">...);</span>
-<span class="kt">void</span> <span class="n">redisAppendCommandArgv</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="o">*</span><span class="n">argvlen</span><span class="p">);</span>
+to the <code class="language-plaintext highlighter-rouge">redisCommand</code> family, apart from not returning a reply:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">redisAppendCommand</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="p">...);</span>
+<span class="kt">void</span> <span class="nf">redisAppendCommandArgv</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="o">*</span><span class="n">argvlen</span><span class="p">);</span>
 </code></pre></div></div>
-<p>After calling either function one or more times, <code class="highlighter-rouge">redisGetReply</code> can be used to receive the
-subsequent replies. The return value for this function is either <code class="highlighter-rouge">REDIS_OK</code> or <code class="highlighter-rouge">REDIS_ERR</code>, where
+<p>After calling either function one or more times, <code class="language-plaintext highlighter-rouge">redisGetReply</code> can be used to receive the
+subsequent replies. The return value for this function is either <code class="language-plaintext highlighter-rouge">REDIS_OK</code> or <code class="language-plaintext highlighter-rouge">REDIS_ERR</code>, where
 the latter means an error occurred while reading a reply. Just as with the other commands,
-the <code class="highlighter-rouge">err</code> field in the context can be used to find out what the cause of this error is.</p>
+the <code class="language-plaintext highlighter-rouge">err</code> field in the context can be used to find out what the cause of this error is.</p>
 
-<p>The following examples shows a simple pipeline (resulting in only a single call to <code class="highlighter-rouge">write(2)</code> and
-a single call to <code class="highlighter-rouge">read(2)</code>):</p>
+<p>The following examples shows a simple pipeline (resulting in only a single call to <code class="language-plaintext highlighter-rouge">write(2)</code> and
+a single call to <code class="language-plaintext highlighter-rouge">read(2)</code>):</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">redisReply</span> <span class="o">*</span><span class="n">reply</span><span class="p">;</span>
 <span class="n">redisAppendCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="s">"SET foo bar"</span><span class="p">);</span>
 <span class="n">redisAppendCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="s">"GET foo"</span><span class="p">);</span>
-<span class="n">redisGetReply</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="o">&amp;</span><span class="n">reply</span><span class="p">);</span> <span class="c1">// reply for SET
-</span><span class="n">freeReplyObject</span><span class="p">(</span><span class="n">reply</span><span class="p">);</span>
-<span class="n">redisGetReply</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="o">&amp;</span><span class="n">reply</span><span class="p">);</span> <span class="c1">// reply for GET
-</span><span class="n">freeReplyObject</span><span class="p">(</span><span class="n">reply</span><span class="p">);</span>
+<span class="n">redisGetReply</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="o">&amp;</span><span class="n">reply</span><span class="p">);</span> <span class="c1">// reply for SET</span>
+<span class="n">freeReplyObject</span><span class="p">(</span><span class="n">reply</span><span class="p">);</span>
+<span class="n">redisGetReply</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="o">&amp;</span><span class="n">reply</span><span class="p">);</span> <span class="c1">// reply for GET</span>
+<span class="n">freeReplyObject</span><span class="p">(</span><span class="n">reply</span><span class="p">);</span>
 </code></pre></div></div>
 <p>This API can also be used to implement a blocking subscriber:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="s">"SUBSCRIBE foo"</span><span class="p">);</span>
 <span class="n">freeReplyObject</span><span class="p">(</span><span class="n">reply</span><span class="p">);</span>
 <span class="k">while</span><span class="p">(</span><span class="n">redisGetReply</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="o">&amp;</span><span class="n">reply</span><span class="p">)</span> <span class="o">==</span> <span class="n">REDIS_OK</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// consume message
-</span>    <span class="n">freeReplyObject</span><span class="p">(</span><span class="n">reply</span><span class="p">);</span>
+    <span class="c1">// consume message</span>
+    <span class="n">freeReplyObject</span><span class="p">(</span><span class="n">reply</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></div>
 <h3 id="errors">Errors</h3>
 
-<p>When a function call is not successful, depending on the function either <code class="highlighter-rouge">NULL</code> or <code class="highlighter-rouge">REDIS_ERR</code> is
-returned. The <code class="highlighter-rouge">err</code> field inside the context will be non-zero and set to one of the
+<p>When a function call is not successful, depending on the function either <code class="language-plaintext highlighter-rouge">NULL</code> or <code class="language-plaintext highlighter-rouge">REDIS_ERR</code> is
+returned. The <code class="language-plaintext highlighter-rouge">err</code> field inside the context will be non-zero and set to one of the
 following constants:</p>
 
 <ul>
   <li>
-    <p><strong><code class="highlighter-rouge">REDIS_ERR_IO</code></strong>:
+    <p><strong><code class="language-plaintext highlighter-rouge">REDIS_ERR_IO</code></strong>:
   There was an I/O error while creating the connection, trying to write
-  to the socket or read from the socket. If you included <code class="highlighter-rouge">errno.h</code> in your
-  application, you can use the global <code class="highlighter-rouge">errno</code> variable to find out what is
+  to the socket or read from the socket. If you included <code class="language-plaintext highlighter-rouge">errno.h</code> in your
+  application, you can use the global <code class="language-plaintext highlighter-rouge">errno</code> variable to find out what is
   wrong.</p>
   </li>
   <li>
-    <p><strong><code class="highlighter-rouge">REDIS_ERR_EOF</code></strong>:
+    <p><strong><code class="language-plaintext highlighter-rouge">REDIS_ERR_EOF</code></strong>:
   The server closed the connection which resulted in an empty read.</p>
   </li>
   <li>
-    <p><strong><code class="highlighter-rouge">REDIS_ERR_PROTOCOL</code></strong>:
+    <p><strong><code class="language-plaintext highlighter-rouge">REDIS_ERR_PROTOCOL</code></strong>:
   There was an error while parsing the protocol.</p>
   </li>
   <li>
-    <p><strong><code class="highlighter-rouge">REDIS_ERR_OTHER</code></strong>:
+    <p><strong><code class="language-plaintext highlighter-rouge">REDIS_ERR_OTHER</code></strong>:
   Any other error. Currently, it is only used when a specified hostname to connect
   to cannot be resolved.</p>
   </li>
 </ul>
 
-<p>In every case, the <code class="highlighter-rouge">errstr</code> field in the context will be set to hold a string representation
+<p>In every case, the <code class="language-plaintext highlighter-rouge">errstr</code> field in the context will be set to hold a string representation
 of the error.</p>
 
 <h2 id="asynchronous-api">Asynchronous API</h2>
@@ -451,19 +451,19 @@ and <a href="http://monkey.org/~provos/libevent/">libevent</a>.</p>
 
 <h3 id="connecting-1">Connecting</h3>
 
-<p>The function <code class="highlighter-rouge">redisAsyncConnect</code> can be used to establish a non-blocking connection to
-Redis. It returns a pointer to the newly created <code class="highlighter-rouge">redisAsyncContext</code> struct. The <code class="highlighter-rouge">err</code> field
+<p>The function <code class="language-plaintext highlighter-rouge">redisAsyncConnect</code> can be used to establish a non-blocking connection to
+Redis. It returns a pointer to the newly created <code class="language-plaintext highlighter-rouge">redisAsyncContext</code> struct. The <code class="language-plaintext highlighter-rouge">err</code> field
 should be checked after creation to see if there were errors creating the connection.
 Because the connection that will be created is non-blocking, the kernel is not able to
 instantly return if the specified host and port is able to accept a connection.</p>
 
-<p><em>Note: A <code class="highlighter-rouge">redisAsyncContext</code> is not thread-safe.</em></p>
+<p><em>Note: A <code class="language-plaintext highlighter-rouge">redisAsyncContext</code> is not thread-safe.</em></p>
 
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">c</span> <span class="o">=</span> <span class="n">redisAsyncConnect</span><span class="p">(</span><span class="s">"127.0.0.1"</span><span class="p">,</span> <span class="mi">6379</span><span class="p">);</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">"Error: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">errstr</span><span class="p">);</span>
-    <span class="c1">// handle error
-</span><span class="p">}</span>
+    <span class="c1">// handle error</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <p>The asynchronous context can hold a disconnect callback function that is called when the
@@ -471,16 +471,16 @@ connection is disconnected (either because of an error or per user request). Thi
 have the following prototype:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span><span class="p">(</span><span class="k">const</span> <span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="kt">int</span> <span class="n">status</span><span class="p">);</span>
 </code></pre></div></div>
-<p>On a disconnect, the <code class="highlighter-rouge">status</code> argument is set to <code class="highlighter-rouge">REDIS_OK</code> when disconnection was initiated by the
-user, or <code class="highlighter-rouge">REDIS_ERR</code> when the disconnection was caused by an error. When it is <code class="highlighter-rouge">REDIS_ERR</code>, the <code class="highlighter-rouge">err</code>
+<p>On a disconnect, the <code class="language-plaintext highlighter-rouge">status</code> argument is set to <code class="language-plaintext highlighter-rouge">REDIS_OK</code> when disconnection was initiated by the
+user, or <code class="language-plaintext highlighter-rouge">REDIS_ERR</code> when the disconnection was caused by an error. When it is <code class="language-plaintext highlighter-rouge">REDIS_ERR</code>, the <code class="language-plaintext highlighter-rouge">err</code>
 field in the context can be accessed to find out the cause of the error.</p>
 
 <p>The context object is always freed after the disconnect callback fired. When a reconnect is needed,
 the disconnect callback is a good point to do so.</p>
 
 <p>Setting the disconnect callback can only be done once per context. For subsequent calls it will
-return <code class="highlighter-rouge">REDIS_ERR</code>. The function to set the disconnect callback has the following prototype:</p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">redisAsyncSetDisconnectCallback</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisDisconnectCallback</span> <span class="o">*</span><span class="n">fn</span><span class="p">);</span>
+return <code class="language-plaintext highlighter-rouge">REDIS_ERR</code>. The function to set the disconnect callback has the following prototype:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">redisAsyncSetDisconnectCallback</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisDisconnectCallback</span> <span class="o">*</span><span class="n">fn</span><span class="p">);</span>
 </code></pre></div></div>
 <h3 id="sending-commands-and-their-callbacks">Sending commands and their callbacks</h3>
 
@@ -490,43 +490,43 @@ Because commands are sent to Redis asynchronously, issuing a command requires a 
 that is called when the reply is received. Reply callbacks should have the following prototype:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">reply</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">privdata</span><span class="p">);</span>
 </code></pre></div></div>
-<p>The <code class="highlighter-rouge">privdata</code> argument can be used to curry arbitrary data to the callback from the point where
+<p>The <code class="language-plaintext highlighter-rouge">privdata</code> argument can be used to curry arbitrary data to the callback from the point where
 the command is initially queued for execution.</p>
 
 <p>The functions that can be used to issue commands in an asynchronous context are:</p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">redisAsyncCommand</span><span class="p">(</span>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">redisAsyncCommand</span><span class="p">(</span>
   <span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisCallbackFn</span> <span class="o">*</span><span class="n">fn</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">privdata</span><span class="p">,</span>
   <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="p">...);</span>
-<span class="kt">int</span> <span class="n">redisAsyncCommandArgv</span><span class="p">(</span>
+<span class="kt">int</span> <span class="nf">redisAsyncCommandArgv</span><span class="p">(</span>
   <span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisCallbackFn</span> <span class="o">*</span><span class="n">fn</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">privdata</span><span class="p">,</span>
   <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="o">*</span><span class="n">argvlen</span><span class="p">);</span>
 </code></pre></div></div>
-<p>Both functions work like their blocking counterparts. The return value is <code class="highlighter-rouge">REDIS_OK</code> when the command
-was successfully added to the output buffer and <code class="highlighter-rouge">REDIS_ERR</code> otherwise. Example: when the connection
-is being disconnected per user-request, no new commands may be added to the output buffer and <code class="highlighter-rouge">REDIS_ERR</code> is
-returned on calls to the <code class="highlighter-rouge">redisAsyncCommand</code> family.</p>
+<p>Both functions work like their blocking counterparts. The return value is <code class="language-plaintext highlighter-rouge">REDIS_OK</code> when the command
+was successfully added to the output buffer and <code class="language-plaintext highlighter-rouge">REDIS_ERR</code> otherwise. Example: when the connection
+is being disconnected per user-request, no new commands may be added to the output buffer and <code class="language-plaintext highlighter-rouge">REDIS_ERR</code> is
+returned on calls to the <code class="language-plaintext highlighter-rouge">redisAsyncCommand</code> family.</p>
 
-<p>If the reply for a command with a <code class="highlighter-rouge">NULL</code> callback is read, it is immediately freed. When the callback
-for a command is non-<code class="highlighter-rouge">NULL</code>, the memory is freed immediately following the callback: the reply is only
+<p>If the reply for a command with a <code class="language-plaintext highlighter-rouge">NULL</code> callback is read, it is immediately freed. When the callback
+for a command is non-<code class="language-plaintext highlighter-rouge">NULL</code>, the memory is freed immediately following the callback: the reply is only
 valid for the duration of the callback.</p>
 
-<p>All pending callbacks are called with a <code class="highlighter-rouge">NULL</code> reply when the context encountered an error.</p>
+<p>All pending callbacks are called with a <code class="language-plaintext highlighter-rouge">NULL</code> reply when the context encountered an error.</p>
 
 <h3 id="disconnecting">Disconnecting</h3>
 
 <p>An asynchronous connection can be terminated using:</p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">redisAsyncDisconnect</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">);</span>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">redisAsyncDisconnect</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">);</span>
 </code></pre></div></div>
 <p>When this function is called, the connection is <strong>not</strong> immediately terminated. Instead, new
 commands are no longer accepted and the connection is only terminated when all pending commands
 have been written to the socket, their respective replies have been read and their respective
 callbacks have been executed. After this, the disconnection callback is executed with the
-<code class="highlighter-rouge">REDIS_OK</code> status and the context object is freed.</p>
+<code class="language-plaintext highlighter-rouge">REDIS_OK</code> status and the context object is freed.</p>
 
 <h3 id="hooking-it-up-to-event-library-x">Hooking it up to event library <em>X</em></h3>
 
 <p>There are a few hooks that need to be set on the context object after it is created.
-See the <code class="highlighter-rouge">adapters/</code> directory for bindings to <em>libev</em> and <em>libevent</em>.</p>
+See the <code class="language-plaintext highlighter-rouge">adapters/</code> directory for bindings to <em>libev</em> and <em>libevent</em>.</p>
 
 <h2 id="reply-parsing-api">Reply parsing API</h2>
 
@@ -534,10 +534,10 @@ See the <code class="highlighter-rouge">adapters/</code> directory for bindings 
 level language bindings.</p>
 
 <p>The reply parsing API consists of the following functions:</p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">redisReader</span> <span class="o">*</span><span class="n">redisReaderCreate</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="kt">void</span> <span class="n">redisReaderFree</span><span class="p">(</span><span class="n">redisReader</span> <span class="o">*</span><span class="n">reader</span><span class="p">);</span>
-<span class="kt">int</span> <span class="n">redisReaderFeed</span><span class="p">(</span><span class="n">redisReader</span> <span class="o">*</span><span class="n">reader</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">buf</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">);</span>
-<span class="kt">int</span> <span class="n">redisReaderGetReply</span><span class="p">(</span><span class="n">redisReader</span> <span class="o">*</span><span class="n">reader</span><span class="p">,</span> <span class="kt">void</span> <span class="o">**</span><span class="n">reply</span><span class="p">);</span>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">redisReader</span> <span class="o">*</span><span class="nf">redisReaderCreate</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">redisReaderFree</span><span class="p">(</span><span class="n">redisReader</span> <span class="o">*</span><span class="n">reader</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">redisReaderFeed</span><span class="p">(</span><span class="n">redisReader</span> <span class="o">*</span><span class="n">reader</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">buf</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">redisReaderGetReply</span><span class="p">(</span><span class="n">redisReader</span> <span class="o">*</span><span class="n">reader</span><span class="p">,</span> <span class="kt">void</span> <span class="o">**</span><span class="n">reply</span><span class="p">);</span>
 </code></pre></div></div>
 <p>The same set of functions are used internally by hiredis when creating a
 normal Redis context, the above API just exposes it to the user for a direct
@@ -545,15 +545,15 @@ usage.</p>
 
 <h3 id="usage">Usage</h3>
 
-<p>The function <code class="highlighter-rouge">redisReaderCreate</code> creates a <code class="highlighter-rouge">redisReader</code> structure that holds a
+<p>The function <code class="language-plaintext highlighter-rouge">redisReaderCreate</code> creates a <code class="language-plaintext highlighter-rouge">redisReader</code> structure that holds a
 buffer with unparsed data and state for the protocol parser.</p>
 
 <p>Incoming data – most likely from a socket – can be placed in the internal
-buffer of the <code class="highlighter-rouge">redisReader</code> using <code class="highlighter-rouge">redisReaderFeed</code>. This function will make a
-copy of the buffer pointed to by <code class="highlighter-rouge">buf</code> for <code class="highlighter-rouge">len</code> bytes. This data is parsed
-when <code class="highlighter-rouge">redisReaderGetReply</code> is called. This function returns an integer status
-and a reply object (as described above) via <code class="highlighter-rouge">void **reply</code>. The returned status
-can be either <code class="highlighter-rouge">REDIS_OK</code> or <code class="highlighter-rouge">REDIS_ERR</code>, where the latter means something went
+buffer of the <code class="language-plaintext highlighter-rouge">redisReader</code> using <code class="language-plaintext highlighter-rouge">redisReaderFeed</code>. This function will make a
+copy of the buffer pointed to by <code class="language-plaintext highlighter-rouge">buf</code> for <code class="language-plaintext highlighter-rouge">len</code> bytes. This data is parsed
+when <code class="language-plaintext highlighter-rouge">redisReaderGetReply</code> is called. This function returns an integer status
+and a reply object (as described above) via <code class="language-plaintext highlighter-rouge">void **reply</code>. The returned status
+can be either <code class="language-plaintext highlighter-rouge">REDIS_OK</code> or <code class="language-plaintext highlighter-rouge">REDIS_ERR</code>, where the latter means something went
 wrong (either a protocol error, or an out of memory error).</p>
 
 <p>The parser limits the level of nesting for multi bulk payloads to 7. If the
@@ -561,13 +561,13 @@ multi bulk nesting level is higher than this, the parser returns an error.</p>
 
 <h3 id="customizing-replies">Customizing replies</h3>
 
-<p>The function <code class="highlighter-rouge">redisReaderGetReply</code> creates <code class="highlighter-rouge">redisReply</code> and makes the function
-argument <code class="highlighter-rouge">reply</code> point to the created <code class="highlighter-rouge">redisReply</code> variable. For instance, if
-the response of type <code class="highlighter-rouge">REDIS_REPLY_STATUS</code> then the <code class="highlighter-rouge">str</code> field of <code class="highlighter-rouge">redisReply</code>
+<p>The function <code class="language-plaintext highlighter-rouge">redisReaderGetReply</code> creates <code class="language-plaintext highlighter-rouge">redisReply</code> and makes the function
+argument <code class="language-plaintext highlighter-rouge">reply</code> point to the created <code class="language-plaintext highlighter-rouge">redisReply</code> variable. For instance, if
+the response of type <code class="language-plaintext highlighter-rouge">REDIS_REPLY_STATUS</code> then the <code class="language-plaintext highlighter-rouge">str</code> field of <code class="language-plaintext highlighter-rouge">redisReply</code>
 will hold the status as a vanilla C string. However, the functions that are
-responsible for creating instances of the <code class="highlighter-rouge">redisReply</code> can be customized by
-setting the <code class="highlighter-rouge">fn</code> field on the <code class="highlighter-rouge">redisReader</code> struct. This should be done
-immediately after creating the <code class="highlighter-rouge">redisReader</code>.</p>
+responsible for creating instances of the <code class="language-plaintext highlighter-rouge">redisReply</code> can be customized by
+setting the <code class="language-plaintext highlighter-rouge">fn</code> field on the <code class="language-plaintext highlighter-rouge">redisReader</code> struct. This should be done
+immediately after creating the <code class="language-plaintext highlighter-rouge">redisReader</code>.</p>
 
 <p>For example, <a href="https://github.com/pietern/hiredis-rb/blob/master/ext/hiredis_ext/reader.c">hiredis-rb</a>
 uses customized reply object functions to create Ruby objects.</p>
@@ -582,7 +582,7 @@ KiB in order to avoid wasting memory in unused buffers</p>
 
 <p>However when working with very big payloads destroying the buffer may slow
 down performances considerably, so it is possible to modify the max size of
-an idle buffer changing the value of the <code class="highlighter-rouge">maxbuf</code> field of the reader structure
+an idle buffer changing the value of the <code class="language-plaintext highlighter-rouge">maxbuf</code> field of the reader structure
 to the desired value. The special value of 0 means that there is no maximum
 value for an idle buffer, so the buffer will never get freed.</p>
 
@@ -591,7 +591,7 @@ buffer to zero (unlimited) just with:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">context</span><span class="o">-&gt;</span><span class="n">reader</span><span class="o">-&gt;</span><span class="n">maxbuf</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 </code></pre></div></div>
 <p>This should be done only in order to maximize performances when working with
-large payloads. The context should be set back to <code class="highlighter-rouge">REDIS_READER_MAX_BUF</code> again
+large payloads. The context should be set back to <code class="language-plaintext highlighter-rouge">REDIS_READER_MAX_BUF</code> again
 as soon as possible in order to prevent allocation of useless memory.</p>
 
 <h2 id="authors">AUTHORS</h2>

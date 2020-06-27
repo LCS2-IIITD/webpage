@@ -245,7 +245,7 @@ easy to understand code.</p>
 library should get you up to speed ASAP. Here is a list of API calls
 and how to use them.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *linenoise(const char *prompt);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *linenoise(const char *prompt);
 </code></pre></div></div>
 
 <p>This is the main Linenoise call: it shows the user a prompt with line editing
@@ -255,20 +255,20 @@ with the line composed by the user, or NULL on end of file or when there
 is an out of memory condition.</p>
 
 <p>When a tty is detected (the user is actually typing into a terminal session)
-the maximum editable line length is <code class="highlighter-rouge">LINENOISE_MAX_LINE</code>. When instead the
+the maximum editable line length is <code class="language-plaintext highlighter-rouge">LINENOISE_MAX_LINE</code>. When instead the
 standard input is not a tty, which happens every time you redirect a file
 to a program, or use it in an Unix pipeline, there are no limits to the
 length of the line that can be returned.</p>
 
-<p>The returned line should be freed with the <code class="highlighter-rouge">free()</code> standard system call.
+<p>The returned line should be freed with the <code class="language-plaintext highlighter-rouge">free()</code> standard system call.
 However sometimes it could happen that your program uses a different dynamic
-allocation library, so you may also used <code class="highlighter-rouge">linenoiseFree</code> to make sure the
+allocation library, so you may also used <code class="language-plaintext highlighter-rouge">linenoiseFree</code> to make sure the
 line is freed with the same allocator it was created.</p>
 
 <p>The canonical loop used by a program using Linenoise will be something like
 this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while((line = linenoise("hello&gt; ")) != NULL) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while((line = linenoise("hello&gt; ")) != NULL) {
     printf("You wrote: %s\n", line);
     linenoiseFree(line); /* Or just free(line) if you use libc malloc. */
 }
@@ -284,10 +284,10 @@ screens rows are used, can be a lot more comfortable.</p>
 
 <p>In order to enable multi line editing use the following API call:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetMultiLine(1);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetMultiLine(1);
 </code></pre></div></div>
 
-<p>You can disable it using <code class="highlighter-rouge">0</code> as argument.</p>
+<p>You can disable it using <code class="language-plaintext highlighter-rouge">0</code> as argument.</p>
 
 <h2 id="history">History</h2>
 
@@ -297,46 +297,46 @@ to search and re-edit already inserted lines of text.</p>
 
 <p>The followings are the history API calls:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int linenoiseHistoryAdd(const char *line);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int linenoiseHistoryAdd(const char *line);
 int linenoiseHistorySetMaxLen(int len);
 int linenoiseHistorySave(const char *filename);
 int linenoiseHistoryLoad(const char *filename);
 </code></pre></div></div>
 
-<p>Use <code class="highlighter-rouge">linenoiseHistoryAdd</code> every time you want to add a new element
+<p>Use <code class="language-plaintext highlighter-rouge">linenoiseHistoryAdd</code> every time you want to add a new element
 to the top of the history (it will be the first the user will see when
 using the up arrow).</p>
 
 <p>Note that for history to work, you have to set a length for the history
 (which is zero by default, so history will be disabled if you don’t set
-a proper one). This is accomplished using the <code class="highlighter-rouge">linenoiseHistorySetMaxLen</code>
+a proper one). This is accomplished using the <code class="language-plaintext highlighter-rouge">linenoiseHistorySetMaxLen</code>
 function.</p>
 
 <p>Linenoise has direct support for persisting the history into an history
-file. The functions <code class="highlighter-rouge">linenoiseHistorySave</code> and <code class="highlighter-rouge">linenoiseHistoryLoad</code> do
+file. The functions <code class="language-plaintext highlighter-rouge">linenoiseHistorySave</code> and <code class="language-plaintext highlighter-rouge">linenoiseHistoryLoad</code> do
 just that. Both functions return -1 on error and 0 on success.</p>
 
 <h2 id="completion">Completion</h2>
 
 <p>Linenoise supports completion, which is the ability to complete the user
-input when she or he presses the <code class="highlighter-rouge">&lt;TAB&gt;</code> key.</p>
+input when she or he presses the <code class="language-plaintext highlighter-rouge">&lt;TAB&gt;</code> key.</p>
 
 <p>In order to use completion, you need to register a completion callback, which
-is called every time the user presses <code class="highlighter-rouge">&lt;TAB&gt;</code>. Your callback will return a
+is called every time the user presses <code class="language-plaintext highlighter-rouge">&lt;TAB&gt;</code>. Your callback will return a
 list of items that are completions for the current string.</p>
 
 <p>The following is an example of registering a completion callback:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetCompletionCallback(completion);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetCompletionCallback(completion);
 </code></pre></div></div>
 
-<p>The completion must be a function returning <code class="highlighter-rouge">void</code> and getting as input
-a <code class="highlighter-rouge">const char</code> pointer, which is the line the user has typed so far, and
-a <code class="highlighter-rouge">linenoiseCompletions</code> object pointer, which is used as argument of
-<code class="highlighter-rouge">linenoiseAddCompletion</code> in order to add completions inside the callback.
+<p>The completion must be a function returning <code class="language-plaintext highlighter-rouge">void</code> and getting as input
+a <code class="language-plaintext highlighter-rouge">const char</code> pointer, which is the line the user has typed so far, and
+a <code class="language-plaintext highlighter-rouge">linenoiseCompletions</code> object pointer, which is used as argument of
+<code class="language-plaintext highlighter-rouge">linenoiseAddCompletion</code> in order to add completions inside the callback.
 An example will make it more clear:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void completion(const char *buf, linenoiseCompletions *lc) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void completion(const char *buf, linenoiseCompletions *lc) {
     if (buf[0] == 'h') {
         linenoiseAddCompletion(lc,"hello");
         linenoiseAddCompletion(lc,"hello there");
@@ -345,10 +345,10 @@ An example will make it more clear:</p>
 </code></pre></div></div>
 
 <p>Basically in your completion callback, you inspect the input, and return
-a list of items that are good completions by using <code class="highlighter-rouge">linenoiseAddCompletion</code>.</p>
+a list of items that are good completions by using <code class="language-plaintext highlighter-rouge">linenoiseAddCompletion</code>.</p>
 
 <p>If you want to test the completion feature, compile the example program
-with <code class="highlighter-rouge">make</code>, run it, type <code class="highlighter-rouge">h</code> and press <code class="highlighter-rouge">&lt;TAB&gt;</code>.</p>
+with <code class="language-plaintext highlighter-rouge">make</code>, run it, type <code class="language-plaintext highlighter-rouge">h</code> and press <code class="language-plaintext highlighter-rouge">&lt;TAB&gt;</code>.</p>
 
 <h2 id="hints">Hints</h2>
 
@@ -361,18 +361,18 @@ other conditions.</p>
 may be useful. The hints can be displayed using a different color compared
 to the color the user is typing, and can also be bold.</p>
 
-<p>For example as the user starts to type <code class="highlighter-rouge">"git remote add"</code>, with hints it’s
-possible to show on the right of the prompt a string <code class="highlighter-rouge">&lt;name&gt; &lt;url&gt;</code>.</p>
+<p>For example as the user starts to type <code class="language-plaintext highlighter-rouge">"git remote add"</code>, with hints it’s
+possible to show on the right of the prompt a string <code class="language-plaintext highlighter-rouge">&lt;name&gt; &lt;url&gt;</code>.</p>
 
 <p>The feature works similarly to the history feature, using a callback.
 To register the callback we use:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetHintsCallback(hints);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linenoiseSetHintsCallback(hints);
 </code></pre></div></div>
 
 <p>The callback itself is implemented like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *hints(const char *buf, int *color, int *bold) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *hints(const char *buf, int *color, int *bold) {
     if (!strcasecmp(buf,"git remote add")) {
         *color = 35;
         *bold = 0;
@@ -390,20 +390,20 @@ on the screen.</p>
 <p>It is possible to return a string allocated in dynamic way, by also registering
 a function to deallocate the hint string once used:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void linenoiseSetFreeHintsCallback(linenoiseFreeHintsCallback *);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void linenoiseSetFreeHintsCallback(linenoiseFreeHintsCallback *);
 </code></pre></div></div>
 
 <p>The free hint callback will just receive the pointer and free the string
 as needed (depending on how the hits callback allocated it).</p>
 
-<p>As you can see in the example above, a <code class="highlighter-rouge">color</code> (in xterm color terminal codes)
-can be provided together with a <code class="highlighter-rouge">bold</code> attribute. If no color is set, the
+<p>As you can see in the example above, a <code class="language-plaintext highlighter-rouge">color</code> (in xterm color terminal codes)
+can be provided together with a <code class="language-plaintext highlighter-rouge">bold</code> attribute. If no color is set, the
 current terminal foreground color is used. If no bold attribute is set,
 non-bold text is printed.</p>
 
 <p>Color codes are:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>red = 31
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>red = 31
 green = 32
 yellow = 33
 blue = 34
@@ -417,7 +417,7 @@ white = 37;
 <p>Sometimes you may want to clear the screen as a result of something the
 user typed. You can do this by calling the following function:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void linenoiseClearScreen(void);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void linenoiseClearScreen(void);
 </code></pre></div></div>
 
 

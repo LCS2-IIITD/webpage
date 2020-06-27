@@ -193,7 +193,7 @@ should be provided by the operating system.</p>
 
 <h2 id="jemalloc">Jemalloc</h2>
 
-<p>Jemalloc is unmodified. We only change settings via the <code class="highlighter-rouge">configure</code> script of Jemalloc using the <code class="highlighter-rouge">--with-lg-quantum</code> option, setting it to the value of 3 instead of 4. This provides us with more size classes that better suit the Redis data structures, in order to gain memory efficiency.</p>
+<p>Jemalloc is unmodified. We only change settings via the <code class="language-plaintext highlighter-rouge">configure</code> script of Jemalloc using the <code class="language-plaintext highlighter-rouge">--with-lg-quantum</code> option, setting it to the value of 3 instead of 4. This provides us with more size classes that better suit the Redis data structures, in order to gain memory efficiency.</p>
 
 <p>So in order to upgrade jemalloc:</p>
 
@@ -243,8 +243,8 @@ and our version:</p>
 
 <ol>
   <li>Makefile is modified to allow a different compiler than GCC.</li>
-  <li>We have the implementation source code, and directly link to the following external libraries: <code class="highlighter-rouge">lua_cjson.o</code>, <code class="highlighter-rouge">lua_struct.o</code>, <code class="highlighter-rouge">lua_cmsgpack.o</code> and <code class="highlighter-rouge">lua_bit.o</code>.</li>
-  <li>There is a security fix in <code class="highlighter-rouge">ldo.c</code>, line 498: The check for <code class="highlighter-rouge">LUA_SIGNATURE[0]</code> is removed in order toa void direct bytecode exectuion.</li>
+  <li>We have the implementation source code, and directly link to the following external libraries: <code class="language-plaintext highlighter-rouge">lua_cjson.o</code>, <code class="language-plaintext highlighter-rouge">lua_struct.o</code>, <code class="language-plaintext highlighter-rouge">lua_cmsgpack.o</code> and <code class="language-plaintext highlighter-rouge">lua_bit.o</code>.</li>
+  <li>There is a security fix in <code class="language-plaintext highlighter-rouge">ldo.c</code>, line 498: The check for <code class="language-plaintext highlighter-rouge">LUA_SIGNATURE[0]</code> is removed in order toa void direct bytecode exectuion.</li>
 </ol>
 
 

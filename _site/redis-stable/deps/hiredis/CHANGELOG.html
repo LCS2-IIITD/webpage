@@ -192,10 +192,10 @@
 <p><strong>BREAKING CHANGES</strong>:</p>
 
 <ul>
-  <li>Change <code class="highlighter-rouge">redisReply.len</code> to <code class="highlighter-rouge">size_t</code>, as it denotes the the size of a string</li>
+  <li>Change <code class="language-plaintext highlighter-rouge">redisReply.len</code> to <code class="language-plaintext highlighter-rouge">size_t</code>, as it denotes the the size of a string</li>
 </ul>
 
-<p>User code should compare this to <code class="highlighter-rouge">size_t</code> values as well.
+<p>User code should compare this to <code class="language-plaintext highlighter-rouge">size_t</code> values as well.
 If it was used to compare to other values, casting might be necessary or can be removed, if casting was applied before.</p>
 
 <ul>
@@ -248,23 +248,23 @@ If it was used to compare to other values, casting might be necessary or can be 
 </table>
 
 <ul>
-  <li>The <code class="highlighter-rouge">DEBUG</code> variable in the Makefile was renamed to <code class="highlighter-rouge">DEBUG_FLAGS</code></li>
+  <li>The <code class="language-plaintext highlighter-rouge">DEBUG</code> variable in the Makefile was renamed to <code class="language-plaintext highlighter-rouge">DEBUG_FLAGS</code></li>
 </ul>
 
-<p>Previously it broke some builds for people that had <code class="highlighter-rouge">DEBUG</code> set to some arbitrary value,
+<p>Previously it broke some builds for people that had <code class="language-plaintext highlighter-rouge">DEBUG</code> set to some arbitrary value,
 due to debugging other software.
 By renaming we avoid unintentional name clashes.</p>
 
-<p>Simply rename <code class="highlighter-rouge">DEBUG</code> to <code class="highlighter-rouge">DEBUG_FLAGS</code> in your environment to make it working again.</p>
+<p>Simply rename <code class="language-plaintext highlighter-rouge">DEBUG</code> to <code class="language-plaintext highlighter-rouge">DEBUG_FLAGS</code> in your environment to make it working again.</p>
 
 <h3 id="0133-2015-09-16">0.13.3 (2015-09-16)</h3>
 
 <ul>
-  <li>Revert “Clear <code class="highlighter-rouge">REDIS_CONNECTED</code> flag when connection is closed”.</li>
+  <li>Revert “Clear <code class="language-plaintext highlighter-rouge">REDIS_CONNECTED</code> flag when connection is closed”.</li>
   <li>Make tests pass on FreeBSD (Thanks, Giacomo Olgeni)</li>
 </ul>
 
-<p>If the <code class="highlighter-rouge">REDIS_CONNECTED</code> flag is cleared,
+<p>If the <code class="language-plaintext highlighter-rouge">REDIS_CONNECTED</code> flag is cleared,
 the async onDisconnect callback function will never be called.
 This causes problems as the disconnect is never reported back to the user.</p>
 
@@ -272,7 +272,7 @@ This causes problems as the disconnect is never reported back to the user.</p>
 
 <ul>
   <li>Prevent crash on pending replies in async code (Thanks, @switch-st)</li>
-  <li>Clear <code class="highlighter-rouge">REDIS_CONNECTED</code> flag when connection is closed (Thanks, Jerry Jacobs)</li>
+  <li>Clear <code class="language-plaintext highlighter-rouge">REDIS_CONNECTED</code> flag when connection is closed (Thanks, Jerry Jacobs)</li>
   <li>Add MacOS X addapter (Thanks, @dizzus)</li>
   <li>Add Qt adapter (Thanks, Pietro Cerutti)</li>
   <li>Add Ivykis adapter (Thanks, Gergely Nagy)</li>
@@ -283,7 +283,7 @@ This causes problems as the disconnect is never reported back to the user.</p>
 <h3 id="0131-2015-05-03">0.13.1 (2015-05-03)</h3>
 
 <p>This is a bug fix release.
-The new <code class="highlighter-rouge">reconnect</code> method introduced new struct members, which clashed with pre-defined names in pre-C99 code.
+The new <code class="language-plaintext highlighter-rouge">reconnect</code> method introduced new struct members, which clashed with pre-defined names in pre-C99 code.
 Another commit forced C99 compilation just to make it work, but of course this is not desirable for outside projects.
 Other non-C99 code can now use hiredis as usual again.
 Sorry for the inconvenience.</p>
@@ -303,14 +303,14 @@ The parser, standalone since v0.12.0, can now be compiled on Windows
   <li>Windows compatibility layer for parser code (tzickel)</li>
   <li>Properly escape data printed to PKGCONF file (Dan Skorupski)</li>
   <li>Fix tests when assert() undefined (Keith Bennett, Matt Stancliff)</li>
-  <li>Implement a reconnect method for the client context, this changes the structure of <code class="highlighter-rouge">redisContext</code> (Aaron Bedra)</li>
+  <li>Implement a reconnect method for the client context, this changes the structure of <code class="language-plaintext highlighter-rouge">redisContext</code> (Aaron Bedra)</li>
 </ul>
 
 <h3 id="0121-2015-01-26">0.12.1 (2015-01-26)</h3>
 
 <ul>
-  <li>Fix <code class="highlighter-rouge">make install</code>: DESTDIR support, install all required files, install PKGCONF in proper location</li>
-  <li>Fix <code class="highlighter-rouge">make test</code> as 32 bit build on 64 bit platform</li>
+  <li>Fix <code class="language-plaintext highlighter-rouge">make install</code>: DESTDIR support, install all required files, install PKGCONF in proper location</li>
+  <li>Fix <code class="language-plaintext highlighter-rouge">make test</code> as 32 bit build on 64 bit platform</li>
 </ul>
 
 <h3 id="0120-2015-01-22">0.12.0 (2015-01-22)</h3>
