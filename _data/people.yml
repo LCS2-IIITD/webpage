@@ -46,46 +46,52 @@ grad-a:
     role: grad
     webpage: "http://hridaydutta123.github.io"
     image: /img/people/hriday.jpeg
-    bio: PhD Scholar
+    bio: PhD Scholar (Aug, 2017 - Present)
+    area: "Topic: Malicious activities in OSNs"
 
-grad-b:
-    display_name: "Shivangi Singhal (TCS PhD Fellow)"
-    role: grad
-    image: /img/people/shivangi.jpg
-    bio: PhD Scholar
+# grad-b:
+#     display_name: "Shivangi Singhal (TCS PhD Fellow)"
+#     role: grad
+#     image: /img/people/shivangi.jpg
+#     bio: PhD Scholar
 
 grad-c:
     display_name: "Subhabrata Dutta"
     role: grad
     image: /img/people/subha.jpg
-    bio: PhD Scholar
+    bio: PhD Scholar (Jan 2018 - Present)
+    area: "Topic: Argumentation mining in online media"
 
 grad-d:
     display_name: "Sivacharan Gangireddy (TCS PhD Fellow)"
     role: grad
     image: /img/people/siva.jpg
-    bio: PhD Scholar
+    bio: PhD Scholar (Dec 2018 - Present)
+    area: "Topic: Collective deception in online discussion platforms"
 
-grad-e:
+grad-f:
     display_name: "Shivani Kumar"
     role: grad
     image: /img/people/shivani.jpg
-    bio: PhD Scholar
+    bio: PhD Scholar (Aug 2019 - Present)
     webpage: "https://sites.google.com/iiitd.ac.in/shivani-kumar/home"
+    area: "Topic: Conversation Analysis"
 
-grad-f:
+grad-g:
     display_name: "Sarah Masud"
     role: grad
     image: /img/people/sarah.jpg
     webpage: "https://github.com/sara-02"
-    bio: PhD Scholar
+    bio: PhD Scholar (Jan 2020 - Present)
+    area: "Topic: Hate speech diffusion"
 
-grad-g:
+grad-h:
     display_name: "Yash Kumar Atri "
     role: grad
     image: /img/people/yash.jpg
     webpage: "https://www.linkedin.com/in/yashkumaratri/"
-    bio: PhD Scholar
+    bio: PhD Scholar (Jan 2020 - Present)
+    area: "Topic: AI for financial documents"
 
 ra-a:
     display_name: "Udit Arora"
@@ -114,6 +120,27 @@ ra-e:
     role: ra
     image: /img/people/manjot.jpeg
     webpage: "https://www.linkedin.com/in/manjot-bedi-42843333/"
+    bio: Research Associate
+
+ra-f:
+    display_name: "Shreya Gupta"
+    role: ra
+    image: /img/people/shreya.jpeg
+    # webpage: ""
+    bio: Research Associate
+
+ra-g:
+    display_name: "Kartik Aggarwal"
+    role: ra
+    image: /img/people/kartikAgg.jpg
+    webpage: "http://www.kartikaggarwal.me/"
+    bio: Research Associate
+
+ra-h:
+    display_name: "Shraman Pramanick"
+    role: ra
+    image: /img/people/shraman.jpg
+    webpage: "https://www.linkedin.com/in/shramanpramanick/"
     bio: Research Associate
 
 collab-a:
@@ -410,7 +437,7 @@ ugrad-z:
 ugrad-aa:
     display_name: "Shravika Mittal"
     bio: Undergrad student (2016-2020)
-    role: ugrad
+    role: alum
 
 ugrad-ab:
     display_name: "Shreyans Mongia"
@@ -420,16 +447,16 @@ ugrad-ab:
 ugrad-ac:
     display_name: "Samiya"
     bio: Undergrad student (2020-2021)
-    role: ugrad
+    role: alum
 
 ugrad-ad:
     display_name: "Arushi"
     bio: Undergrad student (2020-2021)
-    role: ugrad
+    role: alum
 
 ugrad-ae:
     display_name: "Nirav Diwan"
-    bio: Undergrad student (2020-2021)
+    bio: Undergrad student
     role: ugrad
 
 ugrad-af:
@@ -437,6 +464,51 @@ ugrad-af:
     bio: Undergrad student (2015-2019)
     role: alum
     webpage : "https://www.linkedin.com/in/shreyash-arya-60254810a/?originalSubdomain=in"
+
+ugrad-ag:
+    display_name: "Suchet Aggarwal"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ah:
+    display_name: "Kushagr Arora"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ai:
+    display_name: "Vasu Goel"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-aj:
+    display_name: "Dhruv Sahnan"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ak:
+    display_name: "Nishant Grover"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-al:
+    display_name: "Siddharth Sadhwani"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-am:
+    display_name: "Rahul Kukreja"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-an:
+    display_name: "Ansh Kumar Sharma"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ao:
+    display_name: "Mukul"
+    bio: Undergrad student
+    role: ugrad
 
 pgrad-a:
     display_name: "Subhankar Adak"
@@ -455,15 +527,15 @@ pgrad-c:
 pgrad-d:
     display_name: "Tanya Gautam"
     bio: Masters student (2018-2020)
-    role: pgrad
+    role: alum
 pgrad-e:
     display_name: "Suraj Pandey"
     bio: Masters student (2018-2020)
-    role: pgrad
+    role: alum
 pgrad-f:
     display_name: "William Scott Paka"
     bio: Masters student (2018-2020)
-    role: pgrad
+    role: alum
 pgrad-g:
     display_name: "Sutapa Mondal"
     bio: Masters student (2018-2020)
@@ -471,15 +543,40 @@ pgrad-g:
 pgrad-h:
     display_name: "Sakshi Makkar"
     bio: Masters student (2019-2020)
-    role: pgrad
+    role: alum
 pgrad-i:
     display_name: "Chhavi Jain"
-    bio: Masters student (2020-2021)
+    bio: Masters student
     role: pgrad
 pgrad-j:
     display_name: "Anubhav Shrimal"
     bio: Masters student (2020-2021)
     role: alum
+
+pgrad-k:
+    display_name: "Snehil"
+    bio: Masters student
+    role: pgrad
+pgrad-l:
+    display_name: "Sanjana Soni"
+    bio: Masters student
+    role: pgrad
+pgrad-m:
+    display_name: "Mohit Bhardwaj"
+    bio: Masters student
+    role: pgrad
+pgrad-n:
+    display_name: "Shubham Dedeja"
+    bio: Masters student
+    role: pgrad
+pgrad-o:
+    display_name: "Desai Poorav Akshay"
+    bio: Masters student
+    role: pgrad
+pgrad-p:
+    display_name: "Krishna Yadav"
+    bio: Masters student
+    role: pgrad
 # pgrad-k:
 #     display_name: "Himanshu Sundriyal"
 #     bio: Masters student (2020-2021)
