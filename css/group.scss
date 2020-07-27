@@ -74,7 +74,9 @@ ul.news {
 }
 
 @media (min-width: 768px) {
+    .role.faculty   { column-count: 2 }
     .role.grad      { column-count: 2 }
+    .role.ra        { column-count: 2 }
     .project-people { column-count: 3 }
     .card-columns   { column-count: 3 }
 }
