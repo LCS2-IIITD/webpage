@@ -7,3 +7,6 @@
 [submodule "acss2020"]
 	path = acss2020
 	url = https://github.com/AnnuJoshi/acss2020.git
+[submodule "CONSTRAINT-2021"]
+	path = CONSTRAINT-2021
+	url = https://github.com/LCS2-IIITD/CONSTRAINT-2021
