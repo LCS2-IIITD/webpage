@@ -1,7 +1,7 @@
 ---
 layout: post
 shortnews: true
-icon: newspaper-o faa-vertical animated
+icon: newspaper-o
 award: false
 ---
 
