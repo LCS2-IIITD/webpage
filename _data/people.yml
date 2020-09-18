@@ -143,6 +143,13 @@ ra-h:
     webpage: "https://www.linkedin.com/in/shramanpramanick/"
     bio: Research Associate
 
+ra-i:
+    display_name: "Rituparna Mukherjee"
+    role: ra
+    image: /img/people/rituparna.jpeg
+    # webpage: ""
+    bio: Research Associate
+
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
     webpage: "https://www.cse.iitb.ac.in/~soumen/"
@@ -510,6 +517,11 @@ ugrad-ao:
     bio: Undergrad student
     role: ugrad
 
+ugrad-ap:
+    display_name: "Atishay Jain"
+    bio: Undergrad student
+    role: ugrad
+
 pgrad-a:
     display_name: "Subhankar Adak"
     bio: Masters student (2017-2019)
@@ -566,7 +578,7 @@ pgrad-m:
     bio: Masters student
     role: pgrad
 pgrad-n:
-    display_name: "Shubham Dedeja"
+    display_name: "Shubham Dudeja"
     bio: Masters student
     role: pgrad
 pgrad-o:
