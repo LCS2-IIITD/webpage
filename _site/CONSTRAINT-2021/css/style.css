@@ -11,21 +11,21 @@ Author: uiCookies.com
 1. Body
     2. Global Typography
     3. Section Background / .gray-bg / .white-bg
-	4. Header /
-	    4.1. .top-bar
-		4.2. Navigation / .navbar
-	5. Hero Slider / .hero-slide
-	6. Services / .services
-	7. About Us / .about-us
-	8. Testimonial / .testimonialOne
-	9. Team / .team
-	10. Pricing Table / .pricing-section
-	11. Client Logo / .client-logo
-	12. Contact Section
-	    12.1. #googleMap
-	    12.2. Contact Form
-	13. Footer / .footer
-	14. Preloader / #preloader
+    4. Header /
+        4.1. .top-bar
+        4.2. Navigation / .navbar
+    5. Hero Slider / .hero-slide
+    6. Services / .services
+    7. About Us / .about-us
+    8. Testimonial / .testimonialOne
+    9. Team / .team
+    10. Pricing Table / .pricing-section
+    11. Client Logo / .client-logo
+    12. Contact Section
+        12.1. #googleMap
+        12.2. Contact Form
+    13. Footer / .footer
+    14. Preloader / #preloader
 
 
 # [Color codes]
@@ -754,3 +754,109 @@ button:focus,
     text-align : center;
     top        : 65%;
     }
+
+
+/* updated */
+
+#link-site {
+    background-image: linear-gradient(to right,#e1e8fa,#ffffff);
+    padding: 2%;
+    color: #4744bc !important;
+}
+
+#link-site span {
+    font-weight: 600;
+}
+
+#link-site a {
+    animation: blink 1.5s linear infinite;
+    
+}
+
+#task-main {
+    font-size: 25px;
+}
+
+.subtask {
+    background-image: linear-gradient(to right,#e1e8fa,#ffffff);
+    padding: 0.5%;
+    font-weight: 600;
+}
+
+.extra {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#example {
+    margin-left: 5%;
+}
+
+#real {
+    background-color: #e9f2e4;
+    color: green;
+}
+
+
+.trow td i{
+    animation: color-change 2s linear infinite;
+    transition: 0.3s;
+}
+
+@keyframes color-change {
+    0% {
+        color: purple;
+    }
+    10% {
+        color: #bbb;
+    }
+}
+
+@keyframes blink {
+    30% {
+        color: purple;
+    }
+    50% {
+        color: #bbb;
+    }
+}
+
+#mail {
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 2%;
+    font-weight: 600;
+    width: 490px;
+    padding-left: 2%;
+}
+
+#mail a {
+    margin-left: 5%;
+}
+
+#section-contact {
+    padding: 5%;
+}
+
+#socialicons span h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+ @media only screen and (max-width: 600px) {
+     #mail {
+         width: 300px;
+         margin-left: 5%;
+         padding-left: 7%;
+     }
+     #mail a {
+         margin-top: 4%;
+         margin-bottom: 2%;
+         margin-left: 15%;
+     }
+     
+     #section-contact {
+        padding: 3%;
+    }
+}
