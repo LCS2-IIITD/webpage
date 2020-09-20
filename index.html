@@ -31,13 +31,13 @@ role-tables:
 </div>
 </div>
 
-<div class="jumbotron">
+<!-- <div class="jumbotron">
     <p>
         <a href="http://lcs2.iiitd.edu.in/"><b>Laboratory for Computational Social Systems (LCS2)</b></a> is a research group led by <a href="http://faculty.iiitd.ac.in/~tanmoy/index.html#home"><b>Dr. Tanmoy Chakraborty</b></a> and <a href="https://iiitd.ac.in/shad"><b>Dr. Md. Shad Akhtar </b></a>at <a href="http://www.iiitd.ac.in"> <b>Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</b></a>. Broad research interests of this group include <b>Data Mining</b>, <b>Complex Networks</b>, <b>Social Computing</b>, <b>Natural Language Processing</b> and <b>Data-driven Cybersecurity</b>.
     </p>
-</div>
+</div> -->
 
-<section>
+<!-- <section>
 
 <div class="jumbotron">
   <div style="width: 5%; float: left;"><i class="fa fa-hand-o-right faa-horizontal animated fa-2x" style="color:#0000ff;" aria-hidden="true"></i></div>
@@ -57,7 +57,7 @@ role-tables:
     We are organising the first <b>Workshop on​ Combating​ On​line Ho​st​ile Posts in​ Regional L​anguages dur​ing Emerge​ncy Si​tuation</b>, collocated with <b>AAAI 2021</b>.
     For more details, refer <a href="http://lcs2.iiitd.edu.in/CONSTRAINT-2021/">here</a>.
   </div>
-  </section>
+  </section> -->
 
 <!-- <section>
 
@@ -134,21 +134,60 @@ Interested candidates please email your CV to lcs2@iiitd.ac.in and tanmoy@iiitd.
     <div style="float:left;"> <h3><a href="https://tinyurl.com/y2brp9wn">LCS2 summer internship portal</a></h3><b>Last date:</b> March 20, 2019<br/><b>Notification of the results:</b> April 10, 2019</div>
 </div> -->
 
-<section>
-    <h2>News</h2>
-    <ul class="news list-unstyled">
-        {% for post in site.posts limit: site.front_page_news %}
-            {% include news-item.html item=post %}
-        {% endfor %}
-    </ul>
-    {% assign numposts = site.posts | size %}
-    {% if numposts >= 1 %}
+<div class="row">
+  <div class="col-md-3">
+    <div class="row" style="width: 260px; border-radius: 5px; border: 3px solid #E9ECEF; border-block-start: ">
+      <h4 style="text-align: center; border-radius: 5px; width: 260px; padding: 10px;"><b>Latest Notifications</b></h4>
+      <marquee direction = "up" scrollamount="2" style="height:300px; width: 260px; background-color: #E9ECEF; padding-left: 20px; padding-right: 20px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;" onmouseover="this.stop();" onmouseout="this.start();">
         <p>
-            <span class="fa fa-fw fa-history"></span>
-            <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
+          <i class='fa fa-hand-o-right faa-horizontal animated' style="color:red;"></i> <a href="http://lcs2.iiitd.edu.in/CONSTRAINT-2021/">CONSTRAINT 2021: <b>Workshop on​ Combating​ On​line Ho​st​ile Posts in​ Regional L​anguages dur​ing Emerge​ncy Si​tuation</b>, collocated with <b>AAAI 2021</b></a>
+        </p><hr style="background-color: black;">
+
+        <p>
+          <i class='fa fa-hand-o-right faa-horizontal animated' style="color:red;"></i> <a href="{{site.base}}/ads/Advertisement-Lexicographer-PostDoc-LCS2-2.pdf">Applications for the positions of <b>postdoctoral research associate</b> and <b>lexicographer</b> in sponsored R&D projects (Social Computing and NLP)</a>
+        </p> <hr style="background-color: black;">
+
+        <p>
+          <i class='fa fa-hand-o-right faa-horizontal animated' style="color:red;"></i> <a href="https://www.iiitd.ac.in/sites/default/files/docs/admissions/2020/Result_PhD(CSE)_Apr%202020.pdf">List of selected candidates for Ph.D. (CSE) admission</a>
+        </p><hr style="background-color: black;">
+
+        <!-- <p>New element</p><hr style="background-color: black;"> -->
+      </marquee>
+    </div>
+    <div class="row">
+      <a class="twitter-timeline" data-width="260" data-height="400" href="https://twitter.com/lcs2iiitd?ref_src=twsrc%5Etfw">Tweets by lcs2iiitd</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="row">
+      <a href="https://twitter.com/lcs2iiitd?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @lcs2iiitd</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="row">
+      <div class="jumbotron">
+        <p>
+            <a href="http://lcs2.iiitd.edu.in/"><b>Laboratory for Computational Social Systems (LCS2)</b></a> is a research group led by <a href="http://faculty.iiitd.ac.in/~tanmoy/index.html#home"><b>Dr. Tanmoy Chakraborty</b></a> and <a href="https://iiitd.ac.in/shad"><b>Dr. Md. Shad Akhtar </b></a>at <a href="http://www.iiitd.ac.in"> <b>Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</b></a>. Broad research interests of this group include <b>Data Mining</b>, <b>Complex Networks</b>, <b>Social Computing</b>, <b>Natural Language Processing</b> and <b>Data-driven Cybersecurity</b>.
         </p>
-    {% endif %}
-</section>
+    </div>
+    </div>
+    <div class="row">
+      <section>
+        <h2>News</h2>
+        <ul class="news list-unstyled">
+            {% for post in site.posts limit: site.front_page_news %}
+                {% include news-item.html item=post %}
+            {% endfor %}
+        </ul>
+        {% assign numposts = site.posts | size %}
+        {% if numposts >= 1 %}
+            <p>
+                <span class="fa fa-fw fa-history"></span>
+                <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
+            </p>
+        {% endif %}
+    </section>
+    </div>
+  </div>
+</div>
 
 <!-- <div style="width: 5%; float: left;"> <i class='fa fa-calendar faa-vertical animated fa-2x' style="color:#0000ff;"></i></div>
   <h2>Past Events</h2>

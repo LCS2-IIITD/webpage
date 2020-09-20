@@ -1,0 +1,108 @@
+---
+layout: project
+title: Graph Mining / Complex Networks
+---
+<head>
+<style>
+.section-slantedcard {
+    overflow: hidden;
+    padding: 20px 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-slantedcard {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    max-width: 1000px;
+    max-width: 900px;
+}
+
+.section-slantedcard-card {
+    padding: 60px 90px 35px;
+    box-shadow: 0 2px 4px 0 rgba(136,144,195,0.2), 0 5px 15px 0 rgba(37,44,97,0.15);
+    background-color: white;
+}
+
+.section-slantedcard-bottom {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    transform: rotate(-2deg);
+    box-shadow: 0 2px 4px 0 rgba(136,144,195,0.2), 0 5px 15px 0 rgba(37,44,97,0.15);
+    background-color: white;
+}
+
+.section-slantedcard-top {
+    position: relative;
+    z-index: 10;
+}
+
+.content-slantedcard-img img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    height: 60px;
+    text-align: center;
+}
+
+.content-slantedcard-text {
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {    
+    .section-slantedcard-card {
+        padding: 60px 45px 35px;
+    }
+    
+    .section-slantedcard-bottom {
+        display: none;
+    }
+    
+    .section-slantedcard-top {
+        position: relative;
+        z-index: 10;
+    }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<a href="{{ site.base }}/research.html">Research</a> > <a href="{{ site.base }}/research_2.html">Graph Mining / Complex Networks</a> > Node Influence in Network Growth Models
+
+	<div class="section-slantedcard">
+		<div class="content-slantedcard">
+			<div style="position: relative">
+				<div class="section-slantedcard-card section-slantedcard-bottom"></div>
+				<div class="section-slantedcard-card section-slantedcard-top">
+					<!-- <div class="content-slantedcard-img">
+						<img src="https://images.vexels.com/media/users/3/156615/isolated/preview/a0f4a7664336f8c73c77bfef12c2028f-chimpanzee-monkey-illustration-by-vexels.png" class="">
+					</div> -->
+                    <h1>Node Influence in Network Growth Models</h1>
+                    <h2 style="color: #428bca;">Overview</h2>
+					<div class="content-slantedcard-text">
+						<p>
+                            Several network growth models have been proposed in literature that capture growth of evolving networks. An interesting characteristic that can be studied for growing networks is how influential nodes, or “leaders” are able to gather and maintain their prominence over time (by attracting new connections). Looking into the behavior of influential nodes is important since they are potential spreaders of information that play an essential role in real-world applications like viral marketing, epidemic control, and protection from spam attacks.
+                            <br/><br/>
+                            To study them, we introduce a new metric called “visibility of a node” that captures the probability for a node to form new connections in an evolving network. Different classes of network growth models were studied to see how influential nodes behave under their respective settings. We analyse the BA or preferential attachment model, fitness-based models (additive, multiplicative, and nonlinear), and spatial models. 
+                            For each type of network growth model, the project covers thorough theoretical proofs on how the visibility of influential nodes changes over time and supports these claims with the help of comprehensive experimental analysis.
+                        </p>
+                    </div>
+                    <!-- <h2 style="color: #428bca;">People</h2>
+					<div class="content-slantedcard-text">
+						<p>
+                            <b>PI: </b> Dr. Tanmoy Chakraborty<br/>
+                            <b>PhD Students: </b> Hridoy Sankar Dutta
+                        </p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>

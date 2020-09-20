@@ -1,50 +1,240 @@
 ---
 layout: default
-title: Research Projects
+title:
 ---
 <br/>
-<h2> Social Network Analysis</h2>
-<div class="card-columns">
-    {% comment %}
-    Sort the projects by date, putting those without dates last
-    {% endcomment %}
-    {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
-    {% assign projects_by_date = projects_by_date | reverse %}
-    {% for p in projects_by_date %}
-        {% include project-card.html project=p %}
-    {% endfor %}
-</div>
-<br/>
-<h2> Natural Language Processing </h2>
-<div class="card-columns">
-    {% comment %}
-    Sort the projects by date, putting those without dates last
-    {% endcomment %}
-    {% assign projects_by_date = site.projects2 | sort: 'last-updated', 'first' %}
-    {% assign projects_by_date = projects_by_date | reverse %}
-    {% for p in projects_by_date %}
-        {% include project-card2.html project2=p %}
-    {% endfor %}
-</div>
-<h2> Complex Networks </h2>
-<div class="card-columns">
-    {% comment %}
-    Sort the projects by date, putting those without dates last
-    {% endcomment %}
-    {% assign projects_by_date = site.projects3 | sort: 'last-updated', 'first' %}
-    {% assign projects_by_date = projects_by_date | reverse %}
-    {% for p in projects_by_date %}
-        {% include project-card3.html project3=p %}
-    {% endfor %}
-</div>
-<!-- <h2> asdasd </h2>
-<div class="card-columns">
-    {% comment %}
-    Sort the projects by date, putting those without dates last
-    {% endcomment %}
-    {% assign projects_by_date = site.projects4 | sort: 'last-updated', 'first' %}
-    {% assign projects_by_date = projects_by_date | reverse %}
-    {% for p in projects_by_date %}
-        {% include project-card4.html project4=p %}
-    {% endfor %}
-</div> -->
+
+<style>
+  ul {
+    margin: 0px;
+    padding: 0px;
+}
+a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
+    color: #2B96CC;
+    text-decoration: none;
+}
+.section-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: rgb(0, 123, 255);
+    bottom: -25px;
+    margin-left: -30px;
+}
+.section-title.service-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+.blog-area {
+    background: #ffffff;
+    min-height: 100vh;
+}
+.blog-wrapper {
+  background: #fff;
+  overflow: hidden;
+  padding: 20px;
+}
+.home-blog-wrapper{
+  transition: .3s;
+}
+.blog-wrapper.home-blog-wrapper:hover {
+  box-shadow: 10px 20px 30px rgba(0,0,0,.12);
+}
+.blog-thumb {
+  margin-bottom: 20px;
+}
+.blog-title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 10px 0 15px;
+  padding: 0;
+  text-align: left;
+}
+.blog-content.home-blog h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.blog-content.home-blog p {
+  margin-bottom: 10px;
+}
+.link-box.home-blog-link a {
+  font-size: 14px;
+  color: rgb(0, 123, 255);
+}
+.blog-title a {
+  color: #222;
+}
+.link-box a {
+  color: #555;
+}
+.link-box a:hover {
+  color: rgb(0, 123, 255);
+}
+.blog-title a:hover {
+  color: rgb(0, 123, 255);
+}
+.meta-info ul li {
+  color: #9e9e9e;
+  display: inline-block;
+  font-size: 11px;
+  padding: 0 12px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.embed-responsive {
+  margin-bottom: 20px;
+}
+.meta-info ul li:first-child{padding-left:0}
+.meta-info ul li a{color:rgb(0, 123, 255)}
+.meta-info ul li a:hover{color:#444}
+.meta-info ul li::before {
+  border: 1px solid #999;
+  border-radius: 5px;
+  content: "";
+  height: 5px;
+  left: -4px;
+  position: absolute;
+  top: 6px;
+  width: 5px;
+}
+.meta-info ul li:first-child:before{display:none}
+.blog-thumb img {
+  width: 100%;
+}
+.link-box a {
+  font-weight: 600;
+}
+
+</style>
+
+<section class="blog-area pt-5 pb-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-12 text-center pb-3">
+              <div class="section-title service-title">
+                  <h2>Research @ LCS2</h2>
+                  <p>We work on five primary verticals. Visit particular dimension for a detailed view of projects and related works.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="blog-wrapper home-blog-wrapper white-bg">
+                  <div class="blog-thumb">
+                          <img src="{{ site.base }}/img/1.jpg" alt="" />
+                  </div>
+                  <div class="meta-info">
+                      <ul>
+                          <li class="posts-time">5 projects</li>
+                      </ul>
+                  </div>
+                  <div class="blog-content home-blog">
+                      <h2 class="blog-title">
+                        Cyber informatics
+                      </h2>
+                      <p>We design models for detecting and mitigating various cybercrimes on online social media including the spread of fake news, misinformation, fraud activities, black-market driven collusion, hate and offensive speech, and cyberbullying. </p>
+                  </div>
+                  <div class="link-box home-blog-link">
+                      <a href="{{ site.base }}/research_1.html">Explore More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="blog-wrapper home-blog-wrapper white-bg">
+                <div class="blog-thumb">
+                        <img src="{{ site.base }}/img/2.jpg" alt="620x349" />
+                </div>
+                <div class="meta-info">
+                    <ul>
+                        <li class="posts-time">4 projects</li>
+                    </ul>
+                </div>
+                <div class="blog-content home-blog">
+                    <h2 class="blog-title">
+                      Graph Mining / Complex Networks
+                    </h2>
+                    <p>We study social, information and scientific networks to explore various structural (community, network growth, cascade) and behavioural (influence, trust) properties of nodes and edges.</p>
+                </div>
+                <div class="link-box home-blog-link">
+                    <a href="{{ site.base }}/research_2.html">Explore More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="blog-wrapper home-blog-wrapper white-bg">
+              <div class="blog-thumb">
+                      <img class="Pic" src="{{ site.base }}/img/3.jpg" alt="" />
+              </div>
+              <div class="meta-info">
+                  <ul>
+                      <li class="posts-time">4 Projects</li>
+                  </ul>
+              </div>
+              <div class="blog-content home-blog">
+                  <h2 class="blog-title">
+                    Conversational Dialogs			
+                  </h2>
+                  <p>We regard various modules of a dialog system, such as intent classification, slot-filling, dialog-act classification, dialog management, and dialog generation, for both goal-oriented and generic conversational chatbots. Moreover, we inspect conversational dialogs for various supplementary tasks as well, e.g., speaker profiling, emotion-flip reasoning, etc. </p>
+              </div>
+              <div class="link-box home-blog-link">
+                  <a href="{{ site.base }}/research_3.html">Explore More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+        <div class="blog-wrapper home-blog-wrapper white-bg">
+            <div class="blog-thumb">
+                    <img src="{{ site.base }}/img/4.jpg" alt="" />
+            </div>
+            <div class="meta-info">
+                <ul>
+                    <li class="posts-time">3 projects</li>
+                </ul>
+            </div>
+            <div class="blog-content home-blog">
+                <h2 class="blog-title">
+                  Code-mixed and Low Resource Language Processing
+                </h2>
+                <p>We explore a wide range of natural language processing tasks in the vicinity of code-mixed and low-resource languages in Indian context. The prime objective is to facilitate the technology to a vast non-native English speakers. </p>
+            </div>
+            <div class="link-box home-blog-link">
+                <a href="{{ site.base }}/research_4.html">Explore More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+      <div class="blog-wrapper home-blog-wrapper white-bg">
+          <div class="blog-thumb">
+                  <img src="{{ site.base }}/img/5.jpg" alt="" />
+          </div>
+          <div class="meta-info">
+              <ul>
+                  <li class="posts-time">3 projects</li>
+              </ul>
+          </div>
+          <div class="blog-content home-blog">
+              <h2 class="blog-title">
+                Multimodality
+              </h2>
+              <p>We study the interdisciplinary domain of speech and/or vision modalities with the textual processing for a number of traditional and recent natural language processing tasks such as summarization, opinion mining, emotion analysis, sarcasm detection, offensive post detection, etc.  </p>
+          </div>
+          <div class="link-box home-blog-link">
+              <a href="{{ site.base }}/research_5.html">Explore More</a>
+          </div>
+      </div>
+  </div>
+      </div>
+  </div>
+</section>
