@@ -1,0 +1,188 @@
+---
+layout: project
+title: Cyber informatics
+---
+<style>
+	.card {
+		border-color: lightgray;
+		border-radius:1rem;
+		-webkit-transition: transform 200ms ease-in-out;
+		-moz-transition: transform 200ms ease-in-out;
+		-o-transition: transform 200ms ease-in-out;
+		transition: 200ms ease-in-out;
+	}
+
+	.card:hover {
+		border-color: transparent;
+		transform: translateY(-5px);
+		box-shadow: 0 .5rem 1rem #428bca;
+	}
+
+	.card-body {
+		padding-bottom: 0;
+	}
+
+	.card-footer {
+		padding: .75rem 1.25rem;
+		background-color: transparent;
+		border-top: transparent;
+	}
+</style>
+
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xs-6">
+				{% comment %}
+				Sort the projects by date, putting those without dates last
+				{% endcomment %}
+				{% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
+				{% assign projects_by_date = projects_by_date | reverse %}
+				{% for p in projects_by_date %}
+						{% include project-card.html project=p %}
+				{% endfor %}
+			</div>
+		</div>
+			</div> -->
+	<!-- <div class="container mt-5">
+		<div class="card-deck">
+				{% comment %}
+				Sort the projects by date, putting those without dates last
+				{% endcomment %}
+				{% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
+				{% assign projects_by_date = projects_by_date | reverse %}
+				{% for p in projects_by_date %}
+						{% include project-card.html project=p %}
+				{% endfor %}
+		</div>
+	</div> -->
+
+<a href="{{ site.base }}/research.html">Research</a> > Cyber Informatics
+
+<div class="container mt-5">
+<div class="card-deck">
+
+	<a href="{{ site.base }}/projects/hate_speech.html" class="card mb-4 text-dark text-decoration-none">
+	<div class="card-body">
+		<h3 class="card-title">Hate Speech</h3>
+		<div class="mb-1 text-muted"></div>
+		<div class="card-text d-inline-block">Building automatic models for hate speech detection and diffusion on online platforms</div>
+
+	</div>
+	<div class="card-footer">
+		<hr class="solid">
+		<small class="text-muted">Last updated: 19 September 2020</small>
+	</div>
+	</a>
+
+	<a href="{{ site.base }}/projects/combating_fake_news.html" class="card mb-4 text-dark text-decoration-none">
+		<div class="card-body">
+			<h3 class="card-title">Combating Fake News</h3>
+			<div class="mb-1 text-muted"></div>
+			<div class="card-text d-inline-block">Building efficient models to fight COVID-19 related fake news</div>
+	
+		</div>
+		<div class="card-footer">
+			<hr class="solid">
+			<small class="text-muted">Last updated: 19 September 2020</small>
+		</div>
+		</a>
+</div>
+</div>
+
+<!-- <div class="container mt-5">
+<div class="card-deck">
+	<a href="{{ site.base }}/projects/combating_fake_news.html" class="card mb-4 text-dark text-decoration-none">
+	<div class="card-body">
+		<h3 class="card-title">Combating Fake News</h3>
+		<div class="mb-1 text-muted"></div>
+		<div class="card-text d-inline-block">Building efficient models to fight COVID-19 related fake news</div>
+
+	</div>
+	<div class="card-footer">
+		<hr class="solid">
+		<small class="text-muted">Last updated: 19 September 2020</small>
+	</div>
+	</a>
+</div>
+</div> -->
+
+<div class="container mt-5">
+<div class="card-deck">
+
+	<a href="{{ site.base }}/projects/collusion_on_web.html" class="card mb-4 text-dark text-decoration-none">
+	<div class="card-body">
+		<h3 class="card-title">Collusion on the Web</h3>
+		<div class="mb-1 text-muted"></div>
+		<div class="card-text d-inline-block">Detecting collusive entities on online social networks</div>
+
+	</div>
+	<div class="card-footer">
+		<hr class="solid">
+		<small class="text-muted">Last updated: 19 September 2020</small>
+	</div>
+	</a>
+
+	<a href="{{ site.base }}/projects/spread_of_misinformation.html" class="card mb-4 text-dark text-decoration-none">
+		<div class="card-body">
+			<h3 class="card-title">Spread of Misinformation</h3>
+			<div class="mb-1 text-muted"></div>
+			<div class="card-text d-inline-block">Designing frameworks to model the spread of misinformation</div>
+	
+		</div>
+		<div class="card-footer">
+			<hr class="solid">
+			<small class="text-muted">Last updated: 19 September 2020</small>
+		</div>
+	</a>
+
+</div>
+</div>
+
+<!-- <div class="container mt-5">
+	<div class="card-deck">
+	
+		<a href="{{ site.base }}/projects/spread_of_misinformation.html" class="card mb-4 text-dark text-decoration-none">
+		<div class="card-body">
+			<h3 class="card-title">Spread of Misinformation</h3>
+			<div class="mb-1 text-muted"></div>
+			<div class="card-text d-inline-block">Designing frameworks to model the spread of misinformation</div>
+	
+		</div>
+		<div class="card-footer">
+			<hr class="solid">
+			<small class="text-muted">Last updated: 19 September 2020</small>
+		</div>
+		</a>
+	
+	</div>
+</div> -->
+
+<div class="container mt-5">
+	<div class="card-deck">
+	
+		<a href="{{ site.base }}/projects/claim_detection_verification.html" class="card mb-4 text-dark text-decoration-none">
+		<div class="card-body">
+			<h3 class="card-title">Claim Detection and Verification</h3>
+			<div class="mb-1 text-muted"></div>
+			<div class="card-text d-inline-block">Building models to identify claims in online content and verify their veracity</div>
+	
+		</div>
+		<div class="card-footer">
+			<hr class="solid">
+			<small class="text-muted">Last updated: 19 September 2020</small>
+		</div>
+		</a>
+
+		<div class="card-body">
+			<!-- <h3 class="card-title">Claim Detection and Verification</h3>
+			<div class="mb-1 text-muted"></div>
+			<div class="card-text d-inline-block">Building models to identify claims in online content and verify their veracity</div> -->
+	
+		</div>
+		<div class="card-footer">
+			<!-- <hr class="solid">
+			<small class="text-muted">Last updated: 19 September 2020</small> -->
+		</div>
+	
+	</div>
+</div>

@@ -38,6 +38,8 @@ base: ''
 
 # make pages for the _projects folder
 collections:
+  projects5:
+    output: true
   projects4:
     output: true
   projects3:
