@@ -147,7 +147,7 @@ ra-i:
     display_name: "Rituparna Mukherjee"
     role: ra
     image: /img/people/rituparna.jpeg
-    # webpage: ""
+    webpage: "https://www.linkedin.com/in/mritu/"
     bio: Research Associate
 
 collab-a:
@@ -512,10 +512,10 @@ ugrad-an:
     bio: Undergrad student
     role: ugrad
 
-ugrad-ao:
-    display_name: "Mukul"
-    bio: Undergrad student
-    role: ugrad
+# ugrad-ao:
+#     display_name: "Mukul"
+#     bio: Undergrad student
+#     role: ugrad
 
 ugrad-ap:
     display_name: "Atishay Jain"
