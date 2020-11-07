@@ -41,6 +41,13 @@ postdoc-b:
     image: /img/people/shaurya.jpg
     bio: Postdoctoral Researcher
 
+postdoc-c:
+    display_name: "Dr. Partha Sarathi Paul"
+    webpage: "https://scholar.google.co.in/citations?user=crCsIoUAAAAJ&hl=en"
+    role: postdoc
+    image: /img/people/partha.jpeg
+    # bio: Postdoctoral Researcher
+
 grad-a:
     display_name: "Hridoy Sankar Dutta"
     role: grad
@@ -78,7 +85,7 @@ grad-f:
     area: "Topic: Conversation Analysis"
 
 grad-g:
-    display_name: "Sarah Masud"
+    display_name: "Sarah Masud (Prime Minister PhD Fellow)"
     role: grad
     image: /img/people/sarah.jpg
     webpage: "https://github.com/sara-02"
