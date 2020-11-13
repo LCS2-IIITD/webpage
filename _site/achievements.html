@@ -19,173 +19,71 @@
     <body>
 
         <div class="container">
-            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
-            <div class="header d-flex
-                        flex-column
-                        flex-md-row justify-content-md-between">
-                <a href="/" class="">
-                    <img src="/img/logo.png"
-                         srcset="/img/logo@2x.png 2x"
-                         alt="Awesome" id="logo">
-                </a>
-               
-                <ul class="nav nav-pills justify-content-center">
+            <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+      <a class="navbar-brand" href="/"><img src="https://i.ibb.co/wp9mMXd/lcs2.jpg" alt="" height="60"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="/people.html">People</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Research
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/research.html">Research@LCS2</a>
+          <a class="dropdown-item" href="/funding.html">Funded Projects</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/job_post.html">Research Internship 2021</a>
+        </div>
+        </li>
 
-                    
-                    
+        <li class="nav-item">
+        <a class="nav-link" href="/publications.html">Publications</a>
+        </li>
 
-                        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/events.html">Events@LCS2</a>
+            <a class="dropdown-item" href="/media.html">Media Coverage</a>
+          </div>
+        </li>
 
-                        
-                        
-                        
 
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/">
-                                Home
-                            </a>
-                        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Others
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/achievements.html">Achievements</a>
+            <a class="dropdown-item" href="/gallery.html">Gallery</a>
+            <!-- <a class="dropdown-item" href="/contact.html">Contacts</a> -->
+          </div>
+        </li>
 
-                    
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contacts</a>
+        </li>
 
-                        
+      </ul>
+      </div>
+      </nav>  
+    </div>
+  </div>
+  
+            
 
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/people.html">
-                                People
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/research.html">
-                                Research
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/funding.html">
-                                Funded Projects
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/publications.html">
-                                Publications
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                               href="/achievements.html">
-                                Achievements
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/events.html">
-                                Events
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/media.html">
-                                Media Coverage
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/gallery.html">
-                                Gallery
-                            </a>
-                        </li>
-
-                    
-
-                        
-
-                        
-                        
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link "
-                               href="/contact.html">
-                                Contact Us
-                            </a>
-                        </li>
-
-                    
-
-                </ul>
-            </div>
+            <div class="row" style="margin-top: 100px;">
            
             
 
@@ -1671,5 +1569,8 @@ Teaching Awards: <b>Dr. Tanmoy Chakraborty (Both Monsoon 2017 and Winter 2018)</
           gtag('config', 'UA-129817111-1');
         </script>
 
-    </body>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
