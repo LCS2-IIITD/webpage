@@ -5,4 +5,4 @@ icon: newspaper-o
 award: false
 ---
 
-<b>Aditya Chetan</b> has got Research Fellow position at Microsoft Research.
+<b>Aditya Chetan</b> has got an internship (with a possibility to upgrade to research fellow) at Microsoft Research, India.
