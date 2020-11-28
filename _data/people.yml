@@ -48,6 +48,13 @@ postdoc-c:
     image: /img/people/partha.jpeg
     # bio: Postdoctoral Researcher
 
+postdoc-d:
+    display_name: "Dr. Tanujit Chakraborty"
+    webpage: "https://www.ctanujit.org/"
+    role: postdoc
+    image: /img/people/tanujit.jpeg
+    # bio: Postdoctoral Researcher
+
 grad-a:
     display_name: "Hridoy Sankar Dutta"
     role: grad
