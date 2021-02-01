@@ -152,7 +152,7 @@ ra-g:
 
 ra-h:
     display_name: "Shraman Pramanick"
-    role: ra
+    role: alum
     image: /img/people/shraman.jpg
     webpage: "https://www.linkedin.com/in/shramanpramanick/"
     bio: Research Associate
@@ -494,7 +494,7 @@ ugrad-ag:
 ugrad-ah:
     display_name: "Kushagr Arora"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-ai:
     display_name: "Vasu Goel"
@@ -533,6 +533,16 @@ ugrad-an:
 
 ugrad-ap:
     display_name: "Atishay Jain"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-aq:
+    display_name: "Aditya Rastogi"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ar:
+    display_name: "Anunay Yadav"
     bio: Undergrad student
     role: ugrad
 
@@ -601,6 +611,14 @@ pgrad-o:
     role: pgrad
 pgrad-p:
     display_name: "Krishna Yadav"
+    bio: Masters student
+    role: pgrad
+pgrad-q:
+    display_name: "Priya Mehta"
+    bio: Masters student
+    role: pgrad
+pgrad-r:
+    display_name: "Meet Maheshwari"
     bio: Masters student
     role: pgrad
 # pgrad-k:
