@@ -1,7 +1,7 @@
 ---
 layout: post
 shortnews: true
-icon: calendar faa-vertical animated
+icon: calendar
 award: false
 ---
 
