@@ -1,7 +1,7 @@
 ---
 layout: post
 shortnews: true
-icon: bullhorn
+icon: bullhorn faa-vertical animated
 award: false
 ---
 
