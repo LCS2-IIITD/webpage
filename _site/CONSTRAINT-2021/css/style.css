@@ -276,7 +276,7 @@ button:focus,
 .main-menu .nav li a {
     color       : #ffffff;
     font-weight : 500;
-    padding     : 15px 0 15px 30px;
+    padding     : 15px 0 10px 15px;
     }
 
 .main-menu .nav li a:hover,
