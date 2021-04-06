@@ -44,16 +44,16 @@ postdoc-b:
 postdoc-c:
     display_name: "Dr. Partha Sarathi Paul"
     webpage: "https://scholar.google.co.in/citations?user=crCsIoUAAAAJ&hl=en"
-    role: postdoc
+    role: alum
     image: /img/people/partha.jpeg
-    # bio: Postdoctoral Researcher
+    bio: Postdoctoral Researcher
 
 postdoc-d:
     display_name: "Dr. Tanujit Chakraborty"
     webpage: "https://www.ctanujit.org/"
-    role: postdoc
+    role: alum
     image: /img/people/tanujit.jpeg
-    # bio: Postdoctoral Researcher
+    bio: Postdoctoral Researcher
 
 grad-a:
     display_name: "Hridoy Sankar Dutta"
@@ -131,7 +131,7 @@ ra-d:
 
 ra-e:
     display_name: "Manjot Bedi"
-    role: ra
+    role: alum
     image: /img/people/manjot.jpeg
     webpage: "https://www.linkedin.com/in/manjot-bedi-42843333/"
     bio: Research Associate
@@ -157,17 +157,24 @@ ra-h:
     webpage: "https://www.linkedin.com/in/shramanpramanick/"
     bio: Research Associate
 
-intern-a:
-    display_name: "Rachit Bansal"
-    role: alum
-    bio: Intern
-
 ra-i:
     display_name: "Rituparna Mukherjee"
     role: ra
     image: /img/people/rituparna.jpeg
     webpage: "https://www.linkedin.com/in/mritu/"
     bio: Research Associate
+
+ra-j:
+    display_name: "Tanmay Garg"
+    role: ra
+    image: /img/people/tanmay.jpg
+    webpage: "http://www.linkedin.com/in/tanmay17061"
+    bio: Research Associate
+
+intern-a:
+    display_name: "Rachit Bansal"
+    role: alum
+    bio: Intern
 
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
