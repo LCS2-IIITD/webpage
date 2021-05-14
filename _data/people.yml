@@ -501,7 +501,7 @@ ugrad-af:
 ugrad-ag:
     display_name: "Suchet Aggarwal"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-ah:
     display_name: "Kushagr Arora"
@@ -631,6 +631,14 @@ pgrad-q:
     role: pgrad
 pgrad-r:
     display_name: "Meet Maheshwari"
+    bio: Masters student
+    role: pgrad
+pgrad-s:
+    display_name: "Abhishek"
+    bio: Masters student
+    role: pgrad
+pgrad-t:
+    display_name: "Neha"
     bio: Masters student
     role: pgrad
 # pgrad-k:
