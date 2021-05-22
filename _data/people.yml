@@ -171,6 +171,13 @@ ra-j:
     webpage: "http://www.linkedin.com/in/tanmay17061"
     bio: Research Associate
 
+ra-k:
+    display_name: "Atharva"
+    role: ra
+    image: /img/people/atharva.jpg
+    webpage: "https://mr-atharva-kulkarni.github.io/"
+    bio: Research Associate
+
 intern-a:
     display_name: "Rachit Bansal"
     role: alum
