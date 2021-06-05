@@ -326,11 +326,11 @@ ugrad-a:
     image: /img/people/deepak.jpg
     role: alum
 
-ugrad-b:
-    display_name: "Kushagra Singh"
-    bio: Undergrad student (2014-2018)
-    image: /img/people/kushagra.jpg
-    role: alum
+# ugrad-b:
+#     display_name: "Kushagra Singh"
+#     bio: Undergrad student (2014-2018)
+#     image: /img/people/kushagra.jpg
+#     role: alum
 
 ugrad-c:
     display_name: "Divam Gupta"
