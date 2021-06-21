@@ -13,9 +13,15 @@ role-tables:
   - roles: [ra]
     width: 12
     image: true
-- - roles: [pgrad, ugrad, alum]
+- - roles: [pgrad, ugrad]
+    width: 12
+    image: 
+
+alum-role:
+- - roles: [alum]
     width: 12
     image: false
+
 ---
 
 <!-- Add this above for postdoc -->
@@ -37,4 +43,15 @@ role-tables:
         </section>
     {% endfor %}
 
-
+<!-- Showing Alum role separately -->
+    {% for role-table in page.alum-role %}
+        <section class="people row justify-content-between">
+            {% for role-column in role-table %}
+                <div class="col-md-12">
+                    {% for role in role-column.roles %}
+                        {% include role-people.html role=role image=role-column.image %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </section>
+    {% endfor %}

@@ -119,7 +119,7 @@ ra-c:
     display_name: "Kartik Sharma"
     role: alum
     image: /img/people/kartik.jpg
-    webpage: ""
+    webpage: https://www.linkedin.com/in/iamkartik/
     bio: Research Associate
 
 ra-d:
@@ -182,6 +182,7 @@ intern-a:
     display_name: "Rachit Bansal"
     role: alum
     bio: Intern
+    webpage: https://linkedin.com/in/rachit-bansal
 
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
@@ -354,6 +355,7 @@ ugrad-f:
     bio: Undergrad student (2015-2019)
     image: /img/people/aditya.jpg
     role: alum
+    webpage: https://www.linkedin.com/in/aditya-adhikary
 
 ugrad-g:
     display_name: "Viraj Parimi"
@@ -367,12 +369,14 @@ ugrad-h:
     bio: Undergrad student (2015-2019)
     image: /img/people/datta.jpg
     role: alum
+    webpage: https://www.linkedin.com/in/dattatreya-m-63241410a
 
 ugrad-i:
     display_name: "Tushar Kataria"
     bio: Undergrad student (2015-2019)
     image: /img/people/tushar.jpg
     role: alum
+    webpage: 
 
 ugrad-j:
     display_name: "Vasu Agarwal"
@@ -395,17 +399,19 @@ ugrad-m:
     role: alum
 
 
+
 ugrad-n:
     display_name: "Gyanesh Anand"
     bio: Undergrad student (2016-2020)
     role: alum
-
+    webpage: https://www.linkedin.com/in/gyaneshanand/
 
 ugrad-o:
     display_name: "Viresh Gupta"
     bio: Undergrad student (2016-2020)
     image: /img/people/viresh.jpeg
     role: alum
+    webpage: https://www.linkedin.com/in/virresh/
 
 ugrad-p:
     display_name: "Aayush Aggarwal"
@@ -425,6 +431,7 @@ ugrad-r:
     bio: Undergrad student (2016-2020)
     image: /img/people/baani.jpeg
     role: alum
+    webpage: https://www.linkedin.com/in/baanileen/ 
 
 ugrad-s:
     display_name: "Aditya Chetan"
@@ -452,12 +459,14 @@ ugrad-v:
     bio: Undergrad student (2016-2020)
     image: /img/people/aman.jpg
     role: alum
+    webpage: https://www.linkedin.com/in/aman-roy-4759a7136
 
 ugrad-w:
     display_name: "Suyash Singh"
     bio: Undergrad student (2016-2020)
     image: /img/people/suyash.jpg
     role: alum
+    webpage: https://www.linkedin.com/in/suyash-singh-a66b2113a/
 
 ugrad-x:
     display_name: "Siddharth Yadav"
@@ -468,6 +477,7 @@ ugrad-y:
     display_name: "Chaitanya Agrawal"
     bio: Undergrad student (2016-2020)
     role: alum
+    webpage: http://www.linkedin.com/in/chaitanyaagarwal98
 
 ugrad-z:
     display_name: "Gunkirat Kaur"
@@ -478,6 +488,7 @@ ugrad-aa:
     display_name: "Shravika Mittal"
     bio: Undergrad student (2016-2020)
     role: alum
+    webpage: https://www.linkedin.com/in/shravikamittal/
 
 ugrad-ab:
     display_name: "Shreyans Mongia"
@@ -497,7 +508,8 @@ ugrad-ad:
 ugrad-ae:
     display_name: "Nirav Diwan"
     bio: Undergrad student
-    role: ugrad
+    role: alum
+    webpage: https://twitter.com/ocean_drifters
 
 ugrad-af:
     display_name: "Shreyash Arya"
@@ -583,6 +595,8 @@ pgrad-d:
     display_name: "Tanya Gautam"
     bio: Masters student (2018-2020)
     role: alum
+    webpage: linkedin.com/in/gautam-tanya
+
 pgrad-e:
     display_name: "Suraj Pandey"
     bio: Masters student (2018-2020)
@@ -591,22 +605,27 @@ pgrad-f:
     display_name: "William Scott Paka"
     bio: Masters student (2018-2020)
     role: alum
+    webpage: https://www.linkedin.com/in/williamscottp/
+
 pgrad-g:
     display_name: "Sutapa Mondal"
     bio: Masters student (2018-2020)
     role: alum
+
 pgrad-h:
     display_name: "Sakshi Makkar"
     bio: Masters student (2019-2020)
     role: alum
+    webpage: https://www.linkedin.com/in/sakshi-makkar-681730188
 pgrad-i:
     display_name: "Chhavi Jain"
     bio: Masters student
     role: pgrad
 pgrad-j:
     display_name: "Anubhav Shrimal"
-    bio: Masters student (2020-2021)
+    bio: Masters student (2018-2020)
     role: alum
+    webpage: https://www.linkedin.com/in/anubhavshrimal
 
 pgrad-k:
     display_name: "Snehil"

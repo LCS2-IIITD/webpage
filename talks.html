@@ -3,111 +3,417 @@ layout: default
 title: 
 ---
 
-<div class="container my-5">
+<style type="text/css">
+  
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-<h3> Upcoming Talks </h3>
-    <div class="row">
-         
-          <div class="col-md-4 p-2">
-            <div class="p-4 border">
-              <div class="border-bottom mb-3 pb-3 px-2 d-flex justify-content-between">
-                <div class="d-flex align-items-center">
-                  <div style="color: #9B5DE5; font-size: 16px; height: 20px;" class="text-capitalize font-weight-bold mb-0"><a href="https://www.linkedin.com/in/nitendra-rajput/">Nitendra Rajput</a></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <img style="height: 200px; width: 20px;" class="w-100 mb-3" src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/ai-accelerate-festival-apac-copy/HgV4VQbfRLnMHFCQq8FLi9_square_large.png">
-                <small class="text-secondary"><b>Talk Title:</b> Machine Learning Portfolio at AI Garage and Research Problems in the FinTech World</small></br>
-                <small class="text-secondary"><b>Date:</b> 15th June 2021</small></br>
-              </div>
-            </div>
-          </div> 
+:root {
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  --text-gray: hsl(0, 0%, 30%);
+}
 
-          <div class="col-md-4 p-2">
-            <div class="p-4 border">
-              <div class="border-bottom mb-3 pb-3 px-2 d-flex justify-content-between">
-                <div class="d-flex align-items-center">
-                  <div style="color: #9B5DE5; font-size: 16px; height: 20px;" class="text-capitalize font-weight-bold mb-0"><a href="https://sameersingh.org">Sameer Singh</a></div>
+body {
+  background: whitesmoke;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.85em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+.description {
+  white-space: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: flex;
+  justify: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 14px;
+  background: #fff;
+}
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.box-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+.user-follow-info {
+  color: hsl(0, 0%, 60%);
+}
+
+.button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 9px;
+  color: #000;
+  background: transparent;
+  box-shadow: 0px 0px 0px 1px black inset;
+  transition: background 0.4s ease;
+}
+
+.button:hover {
+  background: var(--purple);
+}
+
+.fill-one {
+  background: var(--light-bg);
+}
+
+.fill-two {
+  background: var(--pink);
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (min-width: 320px) {
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
+  }
+}
+
+</style>
+
+
+<!-- == = ==== == = == = = == = = == = = = == = = ==  -->
+
+
+
+<!-- Past Talks -->
+<h2>Previous Talks</h2>
+<div class="wrap">
+  
+
+
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" 
+      src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/ai-accelerate-festival-apac-copy/HgV4VQbfRLnMHFCQq8FLi9_square_large.png">
+      <div class="title-flex">
+        <h3 class="box-title">Nitendra Rajput</h3>
+        <p class="user-follow-info">VP & Head | AI Garage<br> <strong>Mastercard</strong></p>
+      </div>
+      <p class="description"> <b>Talk Title: </b> Machine Learning Portfolio at AI Garage and Research Problems in the Fintech World <br> <b>Date: </b> June 15, 2021</p>
+    </div>
+    <button type="button" class=" button btn btn-primary" data-toggle="modal" data-target="#Nitendra">
+      Abstract
+    </button>
+  </div>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="Nitendra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Abstract</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  In this talk, we will spend some time on what AI Garage is and what are its deliverables. Then we will take a sample of industry business problems that AI Garage is solving using machine learning. Finally, we will touch upon some of the open machine learning problems that can provide exciting opportunities for the research community to work on.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
               </div>
-              <div class="mb-3">
-                <img style="height: 200px; width: 20px;" class="w-100 mb-3" src="https://sameersingh.org/img/face/mr-singh-face.jpg">
-                <small class="text-secondary"><b>Talk Title:</b> TBA</small></br>
-                <small class="text-secondary"><b>Date:</b> 8th July 2021</small></br>
-              </div>
             </div>
-          </div> 
-          
-          
-        <div class="col-md-4 p-2">
- <!--
-            <div class="p-4 border">
-              <div class="border-bottom mb-3 pb-3 px-2 d-flex justify-content-between">
-                <div class="d-flex align-items-center">
-                  <div style="color: #9B5DE5; font-size: 16px; height: 20px;" class="text-capitalize font-weight-bold mb-0"><a href="https://www.cse.iitb.ac.in/~pb/">Pushpak Bhattacharyya</a></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <img style="height: 200px; width: 20px;" class="w-100 mb-3" src="img/talks/pushpak.png">
-                <small class="text-secondary"><b>Talk Title:</b> Explainable AI</small></br>
-                <small class="text-secondary"><b>Date:</b> 10th April 2021</small></br>
-              </div>
-            </div>
-     -->
           </div>
 
 
+  <!-- next speaker -->
+
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" 
+      src="https://sites.cs.ucsb.edu/~william/profile20.png">
+      <div class="title-flex">
+        <h3 class="box-title">William Wang</h3>
+        <p class="user-follow-info">Assistant Professor <br><strong>UCSB</strong></p>
+      </div>
+      <p class="description"> <b>Talk Title: </b> Table Based Question Answering and Zero Shot Fact Checking <br><b>Date: </b> June 10, 2021</p>
+
     </div>
-
-<hr>
-<h3> Previous Talks </h3>
-    <div class="row">
-          <div class="col-md-4 p-2">
-            <div class="p-4 border">
-              <div class="border-bottom mb-3 pb-3 px-2 d-flex justify-content-between">
-                <div class="d-flex align-items-center">
-                  <div style="color: #9B5DE5; font-size: 16px; height: 20px;" class="text-capitalize font-weight-bold mb-0"><a href="https://sites.cs.ucsb.edu/~william/">William Wang</a></div>
+<!--     <button type="button" class=" button btn btn-primary" data-toggle="modal" data-target="#william">
+      Abstract
+    </button> -->
+  </div>
+  
+          <!-- Modal -->
+  <!--         <div class="modal fade" id="william" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Abstract & Bio</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mb-3">
-                <img style="height: 200px; width: 20px;" class="w-100 mb-3" src="img/talks/william.png">
-                <small class="text-secondary"><b>Talk Title:</b> Table Based Question Answering and Zero Shot Fact Checking</small></br>
-                <small class="text-secondary"><b>Date:</b> 10th June 2021</small></br>
+                <div class="modal-body">
+                  In this talk, we will spend some time on what AI Garage is and what are its deliverables. Then we will take a sample of industry business problems that AI Garage is solving using machine learning. Finally, we will touch upon some of the open machine learning problems that can provide exciting opportunities for the research community to work on.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
-          </div> 
+          </div> -->
 
-          <div class="col-md-4 p-2">
-            <div class="p-4 border">
-              <div class="border-bottom mb-3 pb-3 px-2 d-flex justify-content-between">
-                <div class="d-flex align-items-center">
-                  <div style="color: #9B5DE5; font-size: 16px; height: 20px;" class="text-capitalize font-weight-bold mb-0"><a href="https://www.si.umich.edu/people/daniel-romero">Daniel Romero</a></div>
+   <!-- next speaker -->
+
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" 
+      src="https://www.si.umich.edu/sites/default/files/styles/profile_image/public/profiles/romero_daniel_5x7v.jpg">
+      <div class="title-flex">
+        <h3 class="box-title">Daniel Romero</h3>
+        <p class="user-follow-info">Associate Professor <br><strong>UMich</strong></p>
+      </div>
+      <p class="description"> <b>Talk Title: </b> Examining the Impact of Shocks on Collaborative Crowdsourcing<br><b>Date: </b> April 13, 2021</p>
+
+    </div>
+    <button type="button" class=" button btn btn-primary" data-toggle="modal" data-target="#Daniel">
+      Abstract
+    </button>
+  </div>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="Daniel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Abstract</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mb-3">
-                <img style="height: 200px; width: 20px;" class="w-100 mb-3" src="img/talks/daniel.jpg">
-                <small class="text-secondary"><b>Talk Title:</b> Examining the Impact of Shocks on Collaborative Crowdsourcing</small></br>
-                <small class="text-secondary"><b>Date:</b> 13th April 2021</small></br>
-              </div>
-            </div>
-          </div> 
-          
-          
-        <div class="col-md-4 p-2">
-            <div class="p-4 border">
-              <div class="border-bottom mb-3 pb-3 px-2 d-flex justify-content-between">
-                <div class="d-flex align-items-center">
-                  <div style="color: #9B5DE5; font-size: 16px; height: 20px;" class="text-capitalize font-weight-bold mb-0"><a href="https://www.cse.iitb.ac.in/~pb/">Pushpak Bhattacharyya</a></div>
+                <div class="modal-body">
+                    His main research interest is in the empirical and theoretical analysis of Social and Information Networks. In the talk, we will discuss understanding the mechanisms involved in network evolution, information diffusion, and user interactions on the Web. 
                 </div>
-              </div>
-              <div class="mb-3">
-                <img style="height: 200px; width: 20px;" class="w-100 mb-3" src="img/talks/pushpak.png">
-                <small class="text-secondary"><b>Talk Title:</b> Explainable AI</small></br>
-                <small class="text-secondary"><b>Date:</b> 10th April 2021</small></br>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
 
 
+
+  <!-- next speaker -->
+
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" 
+      src="https://analyticsindiamag.com/wp-content/uploads/2018/06/pushpak.png">
+      <div class="title-flex">
+        <h3 class="box-title">Pushpak Bhattacharyya</h3>
+        <p class="user-follow-info">Professor <br><strong>IIT Bombay</strong></p>
+      </div>
+      <p class="description"> <b>Talk Title: </b> Explainable Artifical Intelligence<br><b>Date: </b> April 13, 2021</p>
+
     </div>
+    <!-- <button type="button" class=" button btn btn-primary" data-toggle="modal" data-target="#pushpak">
+      Abstract
+    </button> -->
+  </div>
+  
+          <!-- Modal -->
+<!--           <div class="modal fade" id="pushpak" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Abstract</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    His main research interest is in the empirical and theoretical analysis of Social and Information Networks. In the talk, we will discuss understanding the mechanisms involved in network evolution, information diffusion, and user interactions on the Web. 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+  
+
 </div>
+
+
+
+
+
+
+
+
+<!-- upcoming talks -->
+<h2>Upcoming Talks</h2> 
+<div class="wrap">
+
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" 
+      src="https://sameersingh.org/img/face/mr-singh-face.jpg">
+      <div class="title-flex">
+        <h3 class="box-title">Sameer Singh</h3>
+        <p class="user-follow-info">Assistant Professor <br> <strong>UCI</strong></p>
+      </div>
+      <p class="description">
+        <b>Talk Title: </b> TBD <br> <b>Date: </b> July 08, 2021
+      </p>
+    </div>
+<!--     <button type="button" class=" button btn btn-primary" data-toggle="modal" data-target="#sameer">
+      Abstract
+    </button> -->
+  </div>
+         <!-- Modal -->
+  <!--         <div class="modal fade" id="sameer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Abstract & Bio</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  In this talk, we will spend some time on what AI Garage is and what are its deliverables. Then we will take a sample of industry business problems that AI Garage is solving using machine learning. Finally, we will touch upon some of the open machine learning problems that can provide exciting opportunities for the research community to work on.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+<!-- next speaker (copy paste above div box and modal DOnt forget to change MoDAL ID) -->
+
+</div>
+
+
