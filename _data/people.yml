@@ -630,7 +630,7 @@ pgrad-j:
 pgrad-k:
     display_name: "Snehil"
     bio: Masters student
-    role: pgrad
+    role: alum
 pgrad-l:
     display_name: "Sanjana Soni"
     bio: Masters student
@@ -642,7 +642,7 @@ pgrad-m:
 pgrad-n:
     display_name: "Shubham Dudeja"
     bio: Masters student
-    role: pgrad
+    role: alum
 pgrad-o:
     display_name: "Desai Poorav Akshay"
     bio: Masters student
