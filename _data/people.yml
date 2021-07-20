@@ -1,4 +1,3 @@
-
 # prof-a:
 #     display_name: "Prof. Tanmoy Chakraborty"
 #     role: faculty
@@ -33,6 +32,7 @@ postdoc-a:
     role: alum
     image: /img/people/nitish.jpeg
     bio: Postdoctoral Researcher
+    current_affiliation: 
 
 postdoc-b:
     display_name: "Dr. Shaurya Shriyam"
@@ -40,13 +40,15 @@ postdoc-b:
     role: alum
     image: /img/people/shaurya.jpg
     bio: Postdoctoral Researcher
+    current_affiliation: Assistant Professor, IIT Delhi
 
 postdoc-c:
     display_name: "Dr. Partha Sarathi Paul"
     webpage: "https://scholar.google.co.in/citations?user=crCsIoUAAAAJ&hl=en"
     role: alum
     image: /img/people/partha.jpeg
-    bio: Postdoctoral Researcher
+    bio: Postdoctoral 
+    current_affiliation: Senior Project Officer, IIT Kharagpur
 
 postdoc-d:
     display_name: "Dr. Tanujit Chakraborty"
@@ -54,6 +56,7 @@ postdoc-d:
     role: alum
     image: /img/people/tanujit.jpeg
     bio: Postdoctoral Researcher
+    current_affiliation: Centre for Data Sciences, IIIT Bangalore
 
 grad-a:
     display_name: "Hridoy Sankar Dutta"
@@ -113,6 +116,7 @@ ra-a:
     image: /img/people/udit.jpg
     webpage: "https://uditarora.github.io/"
     bio: Research Associate
+    current_affiliation: New York University
 
 
 ra-c:
@@ -121,13 +125,16 @@ ra-c:
     image: /img/people/kartik.jpg
     webpage: https://www.linkedin.com/in/iamkartik/
     bio: Research Associate
+    current_affiliation: Northeastern University
 
-ra-d:
-    display_name: "Mayank Jobanputra"
-    role: alum
-    image: /img/people/mayank.jpg
-    webpage: "https://www.linkedin.com/in/mayankjobanputra/"
-    bio: Research Associate
+
+
+# ra-d:
+#     display_name: "Mayank Jobanputra"
+#     role: alum
+#     image: /img/people/mayank.jpg
+#     webpage: "https://www.linkedin.com/in/mayankjobanputra/"
+#     bio: Research Associate
 
 ra-e:
     display_name: "Manjot Bedi"
@@ -135,6 +142,7 @@ ra-e:
     image: /img/people/manjot.jpeg
     webpage: "https://www.linkedin.com/in/manjot-bedi-42843333/"
     bio: Research Associate
+    current_affiliation: Northeastern University
 
 ra-f:
     display_name: "Shreya Gupta"
@@ -142,6 +150,7 @@ ra-f:
     image: /img/people/shreya.png
     webpage: "http://linkedin.com/in/shreya-gupta-dtu"
     bio: Research Associate
+    current_affiliation: Stanford University
 
 ra-g:
     display_name: "Kartik Aggarwal"
@@ -156,6 +165,7 @@ ra-h:
     image: /img/people/shraman.jpg
     webpage: "https://www.linkedin.com/in/shramanpramanick/"
     bio: Research Associate
+    current_affiliation: PhD Student, Johns Hopkins University
 
 ra-i:
     display_name: "Rituparna Mukherjee"
@@ -183,6 +193,7 @@ intern-a:
     role: alum
     bio: Intern
     webpage: https://linkedin.com/in/rachit-bansal
+    current_affiliation: Adobe
 
 collab-a:
     display_name: "Soumen Chakrabarti (IIT-Bombay)"
@@ -343,6 +354,7 @@ ugrad-d:
     bio: Undergrad student (2014-2018)
     image: /img/people/ayush.jpeg
     role: alum
+    current_affiliation: Iterable
 
 ugrad-e:
     display_name: "Vishal Raj Dutta"
@@ -356,13 +368,14 @@ ugrad-f:
     image: /img/people/aditya.jpg
     role: alum
     webpage: https://www.linkedin.com/in/aditya-adhikary
-
+    current_affiliation: MathWorks
 ugrad-g:
     display_name: "Viraj Parimi"
     bio: Undergrad student (2015-2019)
     image: /img/people/viraj.jpg
     webpage: "https://viraj96.github.io/"
     role: alum
+    current_affiliation: Carnegie Mellon University
 
 ugrad-h:
     display_name: "Dattatreya Mohapatra"
@@ -370,13 +383,14 @@ ugrad-h:
     image: /img/people/datta.jpg
     role: alum
     webpage: https://www.linkedin.com/in/dattatreya-m-63241410a
-
+    current_affiliation: University of Illinois at Urbana-Champaign
 ugrad-i:
     display_name: "Tushar Kataria"
     bio: Undergrad student (2015-2019)
     image: /img/people/tushar.jpg
     role: alum
     webpage: 
+    current_affiliation: Myntra
 
 ugrad-j:
     display_name: "Vasu Agarwal"
@@ -390,6 +404,7 @@ ugrad-l:
     bio: Undergrad student (2016-2020)
     image: /img/people/sarthika.jpg
     role: alum
+    current_affiliation: Microsoft
 
 
 ugrad-m:
@@ -397,6 +412,7 @@ ugrad-m:
     bio: Undergrad student (2016-2020)
     image: /img/people/gyanesh.jpg
     role: alum
+    current_affiliation: Wadhwani AI
 
 
 
@@ -405,6 +421,7 @@ ugrad-n:
     bio: Undergrad student (2016-2020)
     role: alum
     webpage: https://www.linkedin.com/in/gyaneshanand/
+    current_affiliation: Flobiz
 
 ugrad-o:
     display_name: "Viresh Gupta"
@@ -412,6 +429,7 @@ ugrad-o:
     image: /img/people/viresh.jpeg
     role: alum
     webpage: https://www.linkedin.com/in/virresh/
+    current_affiliation: Adobe
 
 ugrad-p:
     display_name: "Aayush Aggarwal"
@@ -425,6 +443,7 @@ ugrad-q:
     image: /img/people/maiti.jpeg
     role: alum
     webpage: "http://abhishekmaiti.com/"
+    current_affiliation: Wadhwani AI
 
 ugrad-r:
     display_name: "Baani Leen Kaur Jolly"
@@ -432,6 +451,7 @@ ugrad-r:
     image: /img/people/baani.jpeg
     role: alum
     webpage: https://www.linkedin.com/in/baanileen/ 
+    current_affiliation: Salesforce Engineering
 
 ugrad-s:
     display_name: "Aditya Chetan"
@@ -439,6 +459,7 @@ ugrad-s:
     image: /img/people/aditya.jpeg
     bio: Undergrad student (2016-2020)
     webpage: "https://github.com/adsrc"
+    current_affiliation: Microsoft Research
 
 ugrad-t:
     display_name: "Brihi Joshi"
@@ -446,6 +467,7 @@ ugrad-t:
     image: /img/people/brihi.jpeg
     bio: Undergrad student (2016-2020)
     webpage: "http://bri-hi.co/"
+    current_affiliation: University of Southern California
 
 
 ugrad-u:
@@ -460,25 +482,26 @@ ugrad-v:
     image: /img/people/aman.jpg
     role: alum
     webpage: https://www.linkedin.com/in/aman-roy-4759a7136
-
+    current_affiliation: Daily Hunt
 ugrad-w:
     display_name: "Suyash Singh"
     bio: Undergrad student (2016-2020)
     image: /img/people/suyash.jpg
     role: alum
     webpage: https://www.linkedin.com/in/suyash-singh-a66b2113a/
-
+    current_affiliation: Cadence Design System
 ugrad-x:
     display_name: "Siddharth Yadav"
     bio: Undergrad student (2017-2021)
     role: alum
+    current_affiliation: Zeta Suite
 
 ugrad-y:
     display_name: "Chaitanya Agrawal"
     bio: Undergrad student (2016-2020)
     role: alum
     webpage: http://www.linkedin.com/in/chaitanyaagarwal98
-
+    current_affiliation: New York University
 ugrad-z:
     display_name: "Gunkirat Kaur"
     bio: Undergrad student (2015-2019)
@@ -489,6 +512,7 @@ ugrad-aa:
     bio: Undergrad student (2016-2020)
     role: alum
     webpage: https://www.linkedin.com/in/shravikamittal/
+    current_affiliation: Adobe
 
 ugrad-ab:
     display_name: "Shreyans Mongia"
@@ -510,6 +534,7 @@ ugrad-ae:
     bio: Undergrad student
     role: alum
     webpage: https://twitter.com/ocean_drifters
+    current_affiliation: Barco Electronics
 
 ugrad-af:
     display_name: "Shreyash Arya"
@@ -531,6 +556,7 @@ ugrad-ai:
     display_name: "Vasu Goel"
     bio: Undergrad student
     role: ugrad
+    current_affiliation: Goldman Sachs
 
 ugrad-aj:
     display_name: "Dhruv Sahnan"
@@ -582,11 +608,14 @@ pgrad-a:
     bio: Masters student (2017-2019)
     image: /img/people/subhankar.jpg
     role: alum
+    current_affiliation: Dell Technologies
+
 pgrad-b:
     display_name: "Arpan Mukherjee"
     image: /img/people/arpan.jpg
     bio: Masters student (2017-2019)
     role: alum
+    current_affiliation: Amazon India
 pgrad-c:
     display_name: "Sarika"
     bio: Masters student (2016-2018)
@@ -596,16 +625,19 @@ pgrad-d:
     bio: Masters student (2018-2020)
     role: alum
     webpage: linkedin.com/in/gautam-tanya
+    current_affiliation: Dell EMC
 
 pgrad-e:
     display_name: "Suraj Pandey"
     bio: Masters student (2018-2020)
     role: alum
+    current_affiliation: Applied Scientist, Amazon
 pgrad-f:
     display_name: "William Scott Paka"
     bio: Masters student (2018-2020)
     role: alum
     webpage: https://www.linkedin.com/in/williamscottp/
+    current_affiliation: TCS Research
 
 pgrad-g:
     display_name: "Sutapa Mondal"
@@ -617,6 +649,8 @@ pgrad-h:
     bio: Masters student (2019-2020)
     role: alum
     webpage: https://www.linkedin.com/in/sakshi-makkar-681730188
+    current_affiliation: Dell Technologies
+
 pgrad-i:
     display_name: "Chhavi Jain"
     bio: Masters student
@@ -626,23 +660,28 @@ pgrad-j:
     bio: Masters student (2018-2020)
     role: alum
     webpage: https://www.linkedin.com/in/anubhavshrimal
+    current_affiliation: Applied Scientist, Amazon
 
 pgrad-k:
     display_name: "Snehil"
-    bio: Masters student
+    bio: Masters student (2019 - 2021)
     role: alum
+    current_affiliation: Goldman Sachs
+    webpage: https://www.linkedin.com/in/snehil-dahiya-935b27151
 pgrad-l:
     display_name: "Sanjana Soni"
-    bio: Masters student
-    role: pgrad
+    bio: Masters student (2019 - 2021)
+    role: alum
 pgrad-m:
     display_name: "Mohit Bhardwaj"
-    bio: Masters student
-    role: pgrad
+    bio: Masters student (2019 - 2021)
+    role: alum
 pgrad-n:
     display_name: "Shubham Dudeja"
-    bio: Masters student
-    role: alum
+    bio: Masters student (2019 - 2021)
+    role: alum 
+    current_affiliation: McKinsey & Company
+    webpage: https://www.linkedin.com/in/shubhamdudeja/
 pgrad-o:
     display_name: "Desai Poorav Akshay"
     bio: Masters student

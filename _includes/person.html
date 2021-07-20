@@ -46,12 +46,26 @@ there by default by Bootstrap columns.
     </div>
 {% else %}
     <div class="person person-without-image">
-        {{ name }}
         {% if person.bio %}
             {% if person.role == "alum" %}
-                <span class="bio">{{person.bio}}</span>
+                
+                <table style="width: 100%">
+                    <tr> 
+                    <td style="width: 50%">{{ name }}, <i class="bio">{{person.bio}}</i></td>
+                    <!-- <td style="width: 30%"></td> -->
+                    {% if person.current_affiliation %}
+                    <td style="width: 40%" class="bio">{{person.current_affiliation}} </td>
+                    {% else %}
+                    <td></td>
+                    {% endif %}
+                </tr>
+                </table>
+
+            {% else %}
+                {{ name }} 
             {% endif %}
         {% endif %}
+        
         <!-- {% if person.bio %}
             <span class="bio">{{person.bio}}</span>
         {% endif %} -->
