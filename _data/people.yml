@@ -32,7 +32,7 @@ postdoc-a:
     role: alum
     image: /img/people/nitish.jpeg
     bio: Postdoctoral Researcher
-    current_affiliation: 
+    current_affiliation: Founder and Managing Director, Exponential Learning Centre
 
 postdoc-b:
     display_name: "Dr. Shaurya Shriyam"
@@ -47,7 +47,7 @@ postdoc-c:
     webpage: "https://scholar.google.co.in/citations?user=crCsIoUAAAAJ&hl=en"
     role: alum
     image: /img/people/partha.jpeg
-    bio: Postdoctoral 
+    bio: Postdoctoral Researcher
     current_affiliation: Senior Project Officer, IIT Kharagpur
 
 postdoc-d:
