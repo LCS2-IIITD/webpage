@@ -77,14 +77,15 @@ grad-c:
     role: grad
     image: /img/people/subha.jpg
     bio: PhD Scholar (Jan 2018 - Present)
+    webpage: "https://scholar.google.co.in/citations?user=aoaCs08AAAAJ&hl=en"
     area: "Topic: Argumentation mining in online media"
 
-grad-d:
-    display_name: "Sivacharan Gangireddy (TCS PhD Fellow)"
-    role: grad
-    image: /img/people/siva.jpg
-    bio: PhD Scholar (Dec 2018 - Present)
-    area: "Topic: Collective deception in online discussion platforms"
+# grad-d:
+#     display_name: "Sivacharan Gangireddy (TCS PhD Fellow)"
+#     role: grad
+#     image: /img/people/siva.jpg
+#     bio: PhD Scholar (Dec 2018 - Present)
+#     area: "Topic: Collective deception in online discussion platforms"
 
 grad-f:
     display_name: "Shivani Kumar"
@@ -103,12 +104,44 @@ grad-g:
     area: "Topic: Hate speech diffusion"
 
 grad-h:
-    display_name: "Yash Kumar Atri "
+    display_name: "Yash Kumar Atri"
     role: grad
     image: /img/people/yash.jpg
     webpage: "https://www.linkedin.com/in/yashkumaratri/"
     bio: PhD Scholar (Jan 2020 - Present)
     area: "Topic: Summarization"
+
+grad-i:
+    display_name: "Megha Sundriyal"
+    role: grad
+    image: /img/people/megha.jpg
+    webpage: "https://www.linkedin.com/in/sundriyalmegha"
+    bio: PhD Scholar (August 2020 - Present)
+    area: "Topic: Fake News and Claims"
+
+grad-j:
+    display_name: "Aseem Srivastava"
+    role: grad
+    image: /img/people/aseem.jfif
+    webpage: "https://www.linkedin.com/in/as3eem"
+    bio: PhD Scholar (August 2020 - Present)
+    area: "Topic: Conversational AI for Healthcare"
+
+grad-k:
+    display_name: "Mayank Kharbanda"
+    role: grad
+    image: /img/people/mayank_kharbanda.jpg
+    webpage: "https://www.linkedin.com/in/mayankkharbanda"
+    bio: PhD Scholar (August 2020 - Present)
+    area: "Topic: Community Detection and Deception"
+
+grad-l:
+    display_name: "Shivam Sharma"
+    role: grad
+    image: /img/people/shivam.jfif
+    webpage: "https://www.linkedin.com/in/shivam-sharma-36221040"
+    bio: PhD Scholar (August 2020 - Present)
+    area: "Topic: Meme Analysis"
 
 ra-a:
     display_name: "Udit Arora"
@@ -169,7 +202,7 @@ ra-h:
 
 ra-i:
     display_name: "Rituparna Mukherjee"
-    role: ra
+    role: alum
     image: /img/people/rituparna.jpeg
     webpage: "https://www.linkedin.com/in/mritu/"
     bio: Research Associate
