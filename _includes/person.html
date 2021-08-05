@@ -48,10 +48,11 @@ there by default by Bootstrap columns.
     <div class="person person-without-image">
         {% if person.bio %}
             {% if person.role == "alum" %}
-                
+                <!-- {{person}} -->
+
                 <table style="width: 100%">
                     <tr> 
-                    <td style="width: 50%">{{ name }}, <i class="bio">{{person.bio}}</i></td>
+                    <td style="width: 20%">{{ name }}</i></td>
                     <!-- <td style="width: 30%"></td> -->
                     {% if person.current_affiliation %}
                     <td style="width: 40%" class="bio">{{person.current_affiliation}} </td>

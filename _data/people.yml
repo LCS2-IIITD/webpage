@@ -705,10 +705,14 @@ pgrad-l:
     display_name: "Sanjana Soni"
     bio: Masters student (2019 - 2021)
     role: alum
+    webpage: https://www.linkedin.com/in/sanjana-soni-30a63b132/
+    current_affiliation: IBM
 pgrad-m:
     display_name: "Mohit Bhardwaj"
     bio: Masters student (2019 - 2021)
     role: alum
+    webpage: https://www.linkedin.com/in/mohit-bhardwaj-36a3b1158/
+    current_affiliation: TCS Research
 pgrad-n:
     display_name: "Shubham Dudeja"
     bio: Masters student (2019 - 2021)

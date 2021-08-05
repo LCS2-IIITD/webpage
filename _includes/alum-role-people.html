@@ -1,18 +1,142 @@
 <!-- calling person.html -->
 {% assign role-key = include.role %}
+{% assign postdoc_flag = 0 %}
+{% assign ra_flag = 0 %}
+{% assign master_flag = 0 %}
+{% assign bach_flag = 0 %}
+
 
 {% for role in site.roles %}
     {% if role.key == role-key %}
         <h3 class="pt-3"> {{ role.name }} </h3>
         <!-- <div class="role {{ role.key }}"> -->
         <div>
+
             {% for item in site.data.people %}
                 {% assign person = item[1] %}
+                {% if person.role == "alum" %}
+                    {% if person.bio == "Postdoctoral Researcher" %}
+                        {% if postdoc_flag == 0 %}
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        <h5> <i>Postdoctoral Researcher </i></h5>
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        
+                        {% assign postdoc_flag = 1 %}
+                        {% endif %}
+                    {% else %}
+                    {% continue %} 
+                    {% endif %}
+
+
+                {% endif %}
+                <!-- if laga ke for loop banan padega to call each category manually -->
+                
                 {% if person.role == role.key %}
                     {% include person.html person=person image=include.image %}
                 {% endif %}
             {% endfor %}
+
+
+
+
+
+
+            {% for item in site.data.people %}
+                {% assign person = item[1] %}
+                {% if person.role == "alum" %}
+
+                    {% if person.bio  == "Research Associate" %}
+                        {% if ra_flag == 0 %}
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        <h5> <i> Research Associate </i></h5>
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        
+                        {% assign ra_flag = 1 %}
+                        {% endif %}
+                    {% else %}
+                    {% continue %} 
+                    {% endif %}
+                {% endif %}
+                <!-- if laga ke for loop banan padega to call each category manually -->
+                
+                {% if person.role == role.key %}
+                    {% include person.html person=person image=include.image %}
+                {% endif %}
+            {% endfor %}
+
+
+
+
+            {% for item in site.data.people %}
+                {% assign person = item[1] %}
+                {% if person.role == "alum" %}
+                    {% assign temp2 = person.bio | slice: 0, 3 %}
+                    {% if temp2  == "Mas" %}
+                        {% if master_flag == 0 %}
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        <h5> <i> Masters Student </i> </h5>
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>
+                        {% assign master_flag = 1 %}
+                        {% endif %}
+                    
+                    {% else %}
+                    {% continue %} 
+                    {% endif %}
+
+                {% endif %}
+                
+                {% if person.role == role.key %}
+                    {% include person.html person=person image=include.image %}
+                {% endif %}
+            {% endfor %}
+
+
+
+
+            {% for item in site.data.people %}
+                {% assign person = item[1] %}
+                {% if person.role == "alum" %}
+
+                    
+                    {% assign temp = person.bio | slice: 0, 3 %}
+                    {% if temp  == "Und" %}
+                        {% if bach_flag == 0 %}
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        <h5> <i> Undergrad Student </i></h5>
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        
+                        {% assign bach_flag = 1 %}
+                        {% endif %}
+
+                    {% else %}
+                    {% continue %} 
+                    {% endif %}
+                    
+                {% endif %}
+                <!-- if laga ke for loop banan padega to call each category manually -->
+                
+                {% if person.role == role.key %}
+                    {% include person.html person=person image=include.image %}
+                {% endif %}
+            {% endfor %}
+
+            
+
+            
+
+
         </div>
     <hr>
     {% endif %}
 {% endfor %}
+
+
+
+
+
+
+
+
+
+
+                    
