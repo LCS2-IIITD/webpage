@@ -30,7 +30,7 @@ ul.news > li { margin-top: 1em; }
   .card-columns { column-count: 2; } }
 @media (min-width: 768px) { .role.faculty { column-count: 2; }
   .role.postdoc { column-count: 2; }
-  .role.grad { column-count: 3; }
+  .role.grad { column-count: 2; }
   .role.ugrad { column-count: 4; }
   .role.pgrad { column-count: 4; }
   .role.ra { column-count: 3; }
