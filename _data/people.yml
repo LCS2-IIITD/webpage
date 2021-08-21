@@ -148,7 +148,7 @@ grad-m:
     role: grad
     image: /img/people/karangoyal.jpg
     webpage: "https://www.linkedin.com/in/karan-goyal-757727a6/?originalSubdomain=in"
-    bio: PhD Scholar (August 2020 - Present)
+    bio: PhD Scholar (July 2021 - Present)
     area: "Misinformation"
 
 
@@ -715,8 +715,8 @@ pgrad-i:
     display_name: "Chhavi Jain"
     bio: Masters student
     role: alum
-    webpage:
-    current_affiliation: 
+    webpage: https://www.linkedin.com/in/chhavijain2212
+    current_affiliation: Morgan Stanley
 
 pgrad-j:
     display_name: "Anubhav Shrimal"
@@ -757,7 +757,10 @@ pgrad-o:
 pgrad-p:
     display_name: "Krishna Yadav"
     bio: Masters student
-    role: pgrad
+    role: alum
+    webpage: https://www.linkedin.com/in/krishna1432
+    current_affiliation: Amazon India
+
 pgrad-q:
     display_name: "Priya Mehta"
     bio: Masters student
@@ -784,12 +787,12 @@ pgrad-t:
 #     bio: Masters student (2020-2021)
 #     role: alum
 
-pgrad-m:
+pgrad-u:
     display_name: "Srishti Sahni"
     bio: Masters student
     role: pgrad
 
-pgrad-n:
+pgrad-v:
     display_name: "T G Narayanan"
     bio: Masters student
     role: pgrad
