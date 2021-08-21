@@ -1,21 +1,12 @@
 ---
 layout: default
-title: People
+title: 
 
 # groups of columns of {roles: list, width: num, image: bool}
 role-tables:
 - - roles: [faculty, staff]
     width: 12
     image: true
-  - roles: [grad]
-    width: 12
-    image: true
-  - roles: [ra]
-    width: 12
-    image: true
-- - roles: [pgrad, ugrad]
-    width: 12
-    image: 
 
 alum-role:
 - - roles: [alum]
@@ -29,17 +20,16 @@ alum-role:
     width: 12
     image: true -->
 
-<!-- Calling role-people.html -->
 
-    {% for role-table in page.role-tables %}
+<!-- Showing Alum role separately -->
+    {% for role-table in page.alum-role %}
         <section class="people row justify-content-between">
             {% for role-column in role-table %}
-                <div class="col-md-{{ role-column.width }}">
+                <div class="col-md-12">
                     {% for role in role-column.roles %}
-                        {% include role-people.html role=role image=role-column.image %}
+                        {% include alum-role-people.html role=role image=role-column.image %}
                     {% endfor %}
                 </div>
             {% endfor %}
         </section>
     {% endfor %}
-

@@ -143,6 +143,15 @@ grad-l:
     bio: PhD Scholar (August 2020 - Present)
     area: "Topic: Meme Analysis"
 
+grad-m:
+    display_name: "Karan Goyal"
+    role: grad
+    image: /img/people/karangoyal.jpg
+    webpage: "https://www.linkedin.com/in/karan-goyal-757727a6/?originalSubdomain=in"
+    bio: PhD Scholar (August 2020 - Present)
+    area: "Misinformation"
+
+
 ra-a:
     display_name: "Udit Arora"
     role: alum
@@ -636,6 +645,24 @@ ugrad-ar:
     bio: Undergrad student
     role: ugrad
 
+ugrad-as:
+    display_name: "Mohammad Aflah Khan"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-at:
+    display_name: "Harman Singh"
+    bio: Undergrad student
+    role: ugrad
+
+
+ugrad-au:
+    display_name: "Himanshi Mathur"
+    bio: Masters student
+    role: ugrad
+
+
+
 pgrad-a:
     display_name: "Subhankar Adak"
     bio: Masters student (2017-2019)
@@ -687,7 +714,10 @@ pgrad-h:
 pgrad-i:
     display_name: "Chhavi Jain"
     bio: Masters student
-    role: pgrad
+    role: alum
+    webpage:
+    current_affiliation: 
+
 pgrad-j:
     display_name: "Anubhav Shrimal"
     bio: Masters student (2018-2020)
@@ -705,20 +735,21 @@ pgrad-l:
     display_name: "Sanjana Soni"
     bio: Masters student (2019 - 2021)
     role: alum
-    webpage: https://www.linkedin.com/in/sanjana-soni-30a63b132/
+    webpage: https://www.linkedin.com/in/sanjana-soni-30a63b132
     current_affiliation: IBM
 pgrad-m:
     display_name: "Mohit Bhardwaj"
     bio: Masters student (2019 - 2021)
     role: alum
-    webpage: https://www.linkedin.com/in/mohit-bhardwaj-36a3b1158/
+    webpage: https://www.linkedin.com/in/mohit-bhardwaj-36a3b1158
     current_affiliation: TCS Research
 pgrad-n:
     display_name: "Shubham Dudeja"
     bio: Masters student (2019 - 2021)
     role: alum 
     current_affiliation: McKinsey & Company
-    webpage: https://www.linkedin.com/in/shubhamdudeja/
+    webpage: https://www.linkedin.com/in/shubhamdudeja
+
 pgrad-o:
     display_name: "Desai Poorav Akshay"
     bio: Masters student
@@ -743,6 +774,7 @@ pgrad-t:
     display_name: "Neha"
     bio: Masters student
     role: pgrad
+
 # pgrad-k:
 #     display_name: "Himanshu Sundriyal"
 #     bio: Masters student (2020-2021)
@@ -751,3 +783,13 @@ pgrad-t:
 #     display_name: "Divyanshu"
 #     bio: Masters student (2020-2021)
 #     role: alum
+
+pgrad-m:
+    display_name: "Srishti Sahni"
+    bio: Masters student
+    role: pgrad
+
+pgrad-n:
+    display_name: "T G Narayanan"
+    bio: Masters student
+    role: pgrad
