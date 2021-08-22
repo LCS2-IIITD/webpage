@@ -661,6 +661,11 @@ ugrad-au:
     bio: Masters student
     role: ugrad
 
+ugrad-av:
+    display_name: "Manvi Goel"
+    bio: Undergrad student
+    role: ugrad
+
 
 
 pgrad-a:
@@ -753,7 +758,7 @@ pgrad-n:
 pgrad-o:
     display_name: "Desai Poorav Akshay"
     bio: Masters student
-    role: pgrad
+    role: alum
 pgrad-p:
     display_name: "Krishna Yadav"
     bio: Masters student
