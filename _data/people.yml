@@ -666,6 +666,11 @@ ugrad-av:
     bio: Undergrad student
     role: ugrad
 
+ugrad-aw:
+    display_name: "Jahnvi Kumari"
+    bio: Undergrad student
+    role: ugrad
+
 
 
 pgrad-a:
@@ -775,11 +780,11 @@ pgrad-r:
     bio: Masters student
     role: pgrad
 pgrad-s:
-    display_name: "Abhishek"
+    display_name: "Abhishek Madaan"
     bio: Masters student
     role: pgrad
 pgrad-t:
-    display_name: "Neha"
+    display_name: "Neha Rana"
     bio: Masters student
     role: pgrad
 
@@ -799,5 +804,20 @@ pgrad-u:
 
 pgrad-v:
     display_name: "T G Narayanan"
+    bio: Masters student
+    role: pgrad
+
+pgrad-w:
+    display_name: "Yash Aggarwal"
+    bio: Masters student
+    role: pgrad
+
+pgrad-x:
+    display_name: "Karish Grover"
+    bio: Masters student
+    role: pgrad
+
+pgrad-y:
+    display_name: "Tharun Suresh"
     bio: Masters student
     role: pgrad
