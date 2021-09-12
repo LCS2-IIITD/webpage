@@ -11,15 +11,18 @@ title: Funded Projects
 	> <b>Funding Agency:</b> IMPRINT, DST -->
 
 
+ * ##### Leveraging Multi-modality in Understanding and Summarizing Task-Oriented Dialog Systems
+	> <b>Project Duration:</b> 3 years <br/>
+	> <b>Funding Agency:</b> iHuB Anubhuti
  * ##### Misinformation detection in the LinkedIn platform
 	> <b>Project Duration:</b> 1 year <br/>
 	> <b>Funding Agency:</b> LinkedIn
   * ##### Analysing and Reasoning the spread of misinformation on social media
 	> <b>Project Duration:</b> 2 years <br/>
 	> <b>Funding Agency:</b> Logically
- * ##### Technology Innovation Hub on Cognitive Computing and Social Sensing, IIITD
+ <!-- * ##### Technology Innovation Hub on Cognitive Computing and Social Sensing, IIITD
 	> <b>Project Duration:</b> 5 years <br/>
-	> <b>Funding Agency:</b> SERB, NM-ICPS
+	> <b>Funding Agency:</b> SERB, NM-ICPS -->
  * ##### Designing AI-based tools to combat COVID misinformation
 	> <b>Project Duration:</b> 1 year <br/>
 	> <b>Funding Agency:</b> Accenture LLP
@@ -29,9 +32,6 @@ title: Funded Projects
  * ##### Collusion and Fake News: Are social networks being orchestrated in favor of fake news?
 	> <b>Project Duration:</b> 2 years <br/>
 	> <b>Funding Agency:</b> Ministry of Human Resource Development (SPARC Program)
- * ##### Understanding Collective Behavior in Online Social Networks
-	> <b>Project Duration:</b> 3 years <br/>
-	> <b>Funding Agency:</b> SERB, DST (Early Career Award)
  * ##### Understanding groups in Online Social Networks
 	> <b>Project Duration:</b> 5 years <br/>
 	> <b>Funding Agency:</b> Ramanujan Fellowship, SERB, DST
@@ -39,6 +39,12 @@ title: Funded Projects
 
 <br/>
 # Past Projects
+ * ##### Designing AI-based tools to combat COVID misinformation
+	> <b>Project Duration:</b> 1 year <br/>
+	> <b>Funding Agency:</b> Accenture LLP
+ * ##### Understanding Collective Behavior in Online Social Networks
+	> <b>Project Duration:</b> 3 years <br/>
+	> <b>Funding Agency:</b> SERB, DST (Early Career Award)
  * ##### An In-depth Analysis of Abuses in Social Media – Integrating Cues from Language, Behavior and Networks
 	> <b>Project Duration:</b> April, 2018 - March, 2020 <br/>
 	> <b>Funding Agency:</b> DST (Indo-UK collaboration through UKEIRI)
@@ -54,9 +60,9 @@ title: Funded Projects
 * ##### Prediction, Detection and Monitoring System for Landslide in Hilly Regions
 	> <b>Project Duration:</b> 2 year <br/>
 	> <b>Funding Agency:</b> Indo-Japan collabative project, DST
- * ##### Application of Deep Learning Techniques in Information Networks
+ <!-- * ##### Application of Deep Learning Techniques in Information Networks
 	> <b>Project Duration:</b> Aug 2018 - July 2019 <br/>
-	> <b>Funding Agency:</b> Hike Messenger (unrestricted faculty award)
+	> <b>Funding Agency:</b> Hike Messenger (unrestricted faculty award) -->
  * ##### First Summer School on Artificial Intelligence and Machine Learning
 	> <b>Project Duration:</b> N.A. (Ended) <br/>
 	> <b>Funding Agency:</b> Artificial Intelligence Journal

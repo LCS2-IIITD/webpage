@@ -151,6 +151,14 @@ grad-m:
     bio: PhD Scholar (July 2021 - Present)
     area: "Topic: Misinformation"
 
+grad-n:
+    display_name: "Ayan Sengupta"
+    role: grad
+    image: /img/people/ayan.jpg
+    webpage: "https://www.linkedin.com/in/ayans2017"
+    bio: PhD Scholar (August 2021 - Present)
+    area: "Topic: Natural Language Processing"
+
 
 ra-a:
     display_name: "Udit Arora"
