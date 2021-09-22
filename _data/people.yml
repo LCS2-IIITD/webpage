@@ -60,11 +60,12 @@ postdoc-d:
 
 grad-a:
     display_name: "Hridoy Sankar Dutta"
-    role: grad
+    role: alum
     webpage: "http://hridaydutta123.github.io"
     image: /img/people/hriday.jpeg
-    bio: PhD Scholar (Aug, 2017 - Present)
-    area: "Topic: Malicious activities in OSNs"
+    bio: PhD Scholar
+    area: "Detecting and reasoning collusive activities in online media."
+    current_affiliation: Postdoctoral Researcher, Cambridge University
 
 # grad-b:
 #     display_name: "Shivangi Singhal (TCS PhD Fellow)"

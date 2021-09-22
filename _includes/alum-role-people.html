@@ -4,6 +4,7 @@
 {% assign ra_flag = 0 %}
 {% assign master_flag = 0 %}
 {% assign bach_flag = 0 %}
+{% assign phd_flag = 0 %}
 
 
 {% for role in site.roles %}
@@ -11,6 +12,31 @@
         <h3 class="pt-3"> {{ role.name }} </h3>
         <!-- <div class="role {{ role.key }}"> -->
         <div>
+
+            {% for item in site.data.people %}
+                {% assign person = item[1] %}
+                {% if person.role == "alum" %}
+                    {% if person.bio == "PhD Scholar" %}
+                        {% if postdoc_flag == 0 %}
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        <h5> <i>Graduate Students</i></h5>
+                        <div class="col-md-3"><hr></div><div class="col-md-9"></div>        
+                        
+                        {% assign phd_flag = 1 %}
+                        {% endif %}
+                    {% else %}
+                    {% continue %} 
+                    {% endif %}
+
+
+                {% endif %}
+                <!-- if laga ke for loop banan padega to call each category manually -->
+                
+                {% if person.role == role.key %}
+                    {% include person.html person=person image=include.image %}
+                {% endif %}
+            {% endfor %}
+
 
             {% for item in site.data.people %}
                 {% assign person = item[1] %}

@@ -27,7 +27,7 @@ there by default by Bootstrap columns.
     {% assign name = person.display_name %}
 {% endif %}
 
-{% if include.image %}
+{% if include.image and person.role != "alum" %}
     <div class="person person-with-image row align-items-center">
         <div class="col-auto">
             {% include person-image.html person=person %}
@@ -71,7 +71,7 @@ there by default by Bootstrap columns.
             <span class="bio">{{person.bio}}</span>
         {% endif %} -->
         {% if person.area %}
-            <span class="area" style="font-size: small;">{{person.area}}</span>
+            <span class="area" style="font-size: small;">Thesis Title: {{person.area}}</span>
         {% endif %}
     </div>
 {% endif %}
