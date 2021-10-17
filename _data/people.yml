@@ -680,6 +680,12 @@ ugrad-aw:
     bio: Undergrad student
     role: ugrad
 
+ugrad-ax:
+    display_name: "Tanya Gupta"
+    bio: Undergrad student
+    role: ugrad
+
+
 
 
 pgrad-a:
