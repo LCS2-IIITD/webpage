@@ -13,3 +13,6 @@
 [submodule "CONSTRAINT-2022"]
 	path = CONSTRAINT-2022
 	url = https://github.com/LCS2-IIITD/CONSTRAINT-2022.git
+[submodule "ACSS-2021"]
+	path = ACSS-2021
+	url = https://github.com/LCS2-IIITD/ACSS-2021.git
