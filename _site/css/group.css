@@ -49,8 +49,8 @@ section { margin-bottom: 2em; }
 .card .profile { height: 40px; width: 40px; margin: 3px; }
 .card .card-footer { padding: 0.5em; }
 
-.person { margin-bottom: 6px; }
-.person .profile { height: 60px; width: 60px; }
+.person { margin-bottom: 10px; }
+.person .profile { height: 50px; width: 50px; }
 .person .bio { color: #999; }
 .person .person-name { margin: 0; }
 
