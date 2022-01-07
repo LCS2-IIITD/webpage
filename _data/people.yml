@@ -158,7 +158,15 @@ grad-n:
     image: /img/people/ayan.jpg
     webpage: "https://victor7246.github.io/"
     bio: PhD Scholar (August 2021 - Present)
-    area: "Topic: Natural Language Processing"
+    area: "Topic: Representation Learning"
+
+grad-o:
+    display_name: "Anam Fatima"
+    role: grad
+    image: /img/people/anam.png
+    webpage: "https://www.linkedin.com/in/anam-fatima-b03b1154"
+    bio: PhD Scholar (January 2022 - Present)
+    area: "Topic: TBD"
 
 
 ra-a:
