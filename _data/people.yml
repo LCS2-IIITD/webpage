@@ -175,7 +175,7 @@ ra-a:
     image: /img/people/udit.jpg
     webpage: "https://uditarora.github.io/"
     bio: Research Associate
-    current_affiliation: New York University
+    current_affiliation: Google
 
 
 ra-c:
@@ -662,7 +662,9 @@ ugrad-ap:
 ugrad-aq:
     display_name: "Aditya Rastogi"
     bio: Undergrad student
-    role: ugrad
+    role: alum
+    webpage: https://www.linkedin.com/in/aditya-rastogi-95538816a
+    current_affiliation: Mathworks
 
 ugrad-ar:
     display_name: "Anunay Yadav"
@@ -710,7 +712,38 @@ ugrad-az:
     bio: Undergrad student
     role: ugrad
 
+ugrad-ba:
+    display_name: "Rohan Jain"
+    bio: Undergrad student
+    role: ugrad
 
+ugrad-ba:
+    display_name: "Udit Narang"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ba:
+    display_name: "Kushal Juneja"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ba:
+    display_name: "Joykirat Singh"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ba:
+    display_name: "Shounak Ghatak"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-ba:
+    display_name: "Soham Das"
+    bio: Undergrad student
+    role: ugrad
+
+
+# ------------ MTPs ------------
 
 
 pgrad-a:
@@ -804,6 +837,8 @@ pgrad-o:
     display_name: "Desai Poorav Akshay"
     bio: Masters student
     role: alum
+    current_affiliation: Oracle
+    webpage: www.linkedin.com/in/pooravdesai
 pgrad-p:
     display_name: "Krishna Yadav"
     bio: Masters student
@@ -814,19 +849,30 @@ pgrad-p:
 pgrad-q:
     display_name: "Priya Mehta"
     bio: Masters student
-    role: pgrad
+    role: alum
+    webpage: www.linkedin.com/in/priyamehta2772
+    current_affiliation: Walmart
+
+
 pgrad-r:
     display_name: "Meet Maheshwari"
     bio: Masters student
-    role: pgrad
+    role: alum
+    current_affiliation: Walmart
+    webpage: https://www.linkedin.com/in/meet18091998-m
 pgrad-s:
     display_name: "Abhishek Madaan"
     bio: Masters student
-    role: pgrad
+    role: alum
+    current_affiliation: Dell EMC
+    webpage: https://www.linkedin.com/in/abhishek-madaan
+
 pgrad-t:
     display_name: "Neha Rana"
     bio: Masters student
-    role: pgrad
+    role: alum
+    current_affiliation: Dell EMC
+    webpage: https://www.linkedin.com/in/neha-rana-032108163
 
 # pgrad-k:
 #     display_name: "Himanshu Sundriyal"
@@ -840,7 +886,9 @@ pgrad-t:
 pgrad-u:
     display_name: "Srishti Sahni"
     bio: Masters student
-    role: pgrad
+    role: alum
+    webpage: https://www.linkedin.com/in/srishtisahni/
+    current_affiliation: Mathworks
 
 pgrad-v:
     display_name: "T G Narayanan"
@@ -849,5 +897,25 @@ pgrad-v:
 
 pgrad-y:
     display_name: "Tharun Suresh"
+    bio: Masters student
+    role: pgrad
+
+pgrad-z:
+    display_name: "Giridhar S"
+    bio: Masters student
+    role: pgrad
+
+pgrad-aa:
+    display_name: "Simran"
+    bio: Masters student
+    role: pgrad
+
+pgrad-ab:
+    display_name: "Drishya Uniyal"
+    bio: Masters student
+    role: pgrad
+
+pgrad-ac:
+    display_name: "Sehban Fazili"
     bio: Masters student
     role: pgrad
