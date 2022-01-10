@@ -717,30 +717,42 @@ ugrad-ba:
     bio: Undergrad student
     role: ugrad
 
-ugrad-ba:
+ugrad-bb:
     display_name: "Udit Narang"
     bio: Undergrad student
     role: ugrad
 
-ugrad-ba:
+ugrad-bc:
     display_name: "Kushal Juneja"
     bio: Undergrad student
     role: ugrad
 
-ugrad-ba:
+ugrad-bd:
     display_name: "Joykirat Singh"
     bio: Undergrad student
     role: ugrad
 
-ugrad-ba:
+ugrad-be:
     display_name: "Shounak Ghatak"
     bio: Undergrad student
     role: ugrad
 
-ugrad-ba:
+ugrad-bf:
     display_name: "Soham Das"
     bio: Undergrad student
     role: ugrad
+
+ugrad-bg:
+    display_name: "Shabeg Singh Gill"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-bh:
+    display_name: "Varun Khurana"
+    bio: Undergrad student
+    role: ugrad
+
+
 
 
 # ------------ MTPs ------------
