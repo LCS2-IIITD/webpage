@@ -752,6 +752,11 @@ ugrad-bh:
     bio: Undergrad student
     role: ugrad
 
+ugrad-bi:
+    display_name: "Sarthak Johari"
+    bio: Undergrad student
+    role: ugrad
+
 
 
 
