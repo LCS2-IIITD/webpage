@@ -748,7 +748,7 @@ ugrad-bg:
     role: ugrad
 
 ugrad-bh:
-    display_name: "Varun Khurana"
+    display_name: "Bhavesh Sood"
     bio: Undergrad student
     role: ugrad
 
@@ -756,13 +756,6 @@ ugrad-bi:
     display_name: "Sarthak Johari"
     bio: Undergrad student
     role: ugrad
-
-ugrad-bj:
-    display_name: "Bhavesh Sood"
-    bio: Undergrad student
-    role:  ugrad
-
-
 
 
 
