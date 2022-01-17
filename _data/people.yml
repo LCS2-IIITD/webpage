@@ -757,6 +757,12 @@ ugrad-bi:
     bio: Undergrad student
     role: ugrad
 
+ugrad-bj:
+    display_name: "Bhavesh Sood"
+    bio: Undergrad student
+    role:  ugrad
+
+
 
 
 
