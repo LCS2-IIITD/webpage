@@ -757,6 +757,11 @@ ugrad-bi:
     bio: Undergrad student
     role: ugrad
 
+ugrad-bj:
+    display_name: "Vishwajeet Kumar"
+    bio: Undergrad student
+    role: ugrad
+
 
 
 # ------------ MTPs ------------
@@ -854,7 +859,7 @@ pgrad-o:
     bio: Masters student
     role: alum
     current_affiliation: Oracle
-    webpage: www.linkedin.com/in/pooravdesai
+    webpage: https://www.linkedin.com/in/pooravdesai
 pgrad-p:
     display_name: "Krishna Yadav"
     bio: Masters student
@@ -866,7 +871,7 @@ pgrad-q:
     display_name: "Priya Mehta"
     bio: Masters student
     role: alum
-    webpage: www.linkedin.com/in/priyamehta2772
+    webpage: https://www.linkedin.com/in/priyamehta2772
     current_affiliation: Walmart
 
 
