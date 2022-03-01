@@ -676,11 +676,10 @@ ugrad-as:
     bio: Undergrad student
     role: ugrad
 
-ugrad-at:
-    display_name: "Harman Singh"
-    bio: Undergrad student
-    role: ugrad
-
+# ugrad-at:
+#     display_name: "Harman Singh"
+#     bio: Undergrad student
+#     role: ugrad
 
 ugrad-au:
     display_name: "Himanshi Mathur"
@@ -762,6 +761,15 @@ ugrad-bj:
     bio: Undergrad student
     role: ugrad
 
+ugrad-bj:
+    display_name: "Palani Vigneshwar"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-bj:
+    display_name: "Saksham Mrig"
+    bio: Undergrad student
+    role: ugrad
 
 
 # ------------ MTPs ------------
@@ -938,5 +946,15 @@ pgrad-ab:
 
 pgrad-ac:
     display_name: "Sehban Fazili"
+    bio: Masters student
+    role: pgrad
+
+pgrad-ad:
+    display_name: "Shashwat Vaibhav"
+    bio: Masters student
+    role: pgrad
+
+pgrad-ae:
+    display_name: "Asmita Mukherjee"
     bio: Masters student
     role: pgrad
