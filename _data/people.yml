@@ -150,7 +150,7 @@ grad-m:
     image: /img/people/karangoyal.jpg
     webpage: "https://www.linkedin.com/in/karan-goyal-757727a6/?originalSubdomain=in"
     bio: PhD Scholar (July 2021 - Present)
-    area: "Topic: Misinformation"
+    area: "Topic: Graph Representation Learning"
 
 grad-n:
     display_name: "Ayan Sengupta"
@@ -166,7 +166,7 @@ grad-o:
     image: /img/people/anam.png
     webpage: "https://www.linkedin.com/in/anam-fatima-b03b1154"
     bio: PhD Scholar (January 2022 - Present)
-    area: "Topic: TBD"
+    area: "Topic: Combating Online Hate Speech via Counterspeech"
 
 
 ra-a:
