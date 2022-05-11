@@ -6,6 +6,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>ICON 2022 | Home</title>
+
+
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -13,11 +15,13 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
+    <body style="text-align: justify; text-justify: inter-word">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#about">ICON 2022</a>
+                <a class="navbar-brand" href="#about">
+                    <img src="./assets/images/icon_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp ICON 2022
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -25,25 +29,26 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programme</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Conference Programme</a></li>
+                                <li><a class="dropdown-item" href="conference_program.html">Conference Programme</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <!-- <li><a class="dropdown-item" href="#!">Accepted Papers</a></li> -->
-                                <li><a class="dropdown-item" href="#!">Workshops</a></li>
-                                <li><a class="dropdown-item" href="#!">Tutorials</a></li>
-                                <li><a class="dropdown-item" href="#!">Social Programme</a></li>
+                                <li><a class="dropdown-item" href="workshops.html">Workshops</a></li>
+                                <li><a class="dropdown-item" href="tutorials.html">Tutorials</a></li>
+                                <li><a class="dropdown-item" href="keynote.html">Keynote Sessions</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calls</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Call for Papers</a></li>
+                                <li><a class="dropdown-item" href="cfp.html">Call for Papers</a></li>
                                 <!-- <li><hr class="dropdown-divider" /></li> -->
-                                <li><a class="dropdown-item" href="#!">Call for Workshops</a></li>
-                                <li><a class="dropdown-item" href="#!">Call for Tutorials</a></li>
+                                <li><a class="dropdown-item" href="cfw.html">Call for Workshops</a></li>
+                                <li><a class="dropdown-item" href="cft.html">Call for Tutorials</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item"><a class="nav-link" href="organizer.html">Organizers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dates">Important Dates</a></li>
                     </ul>
                     <div class="d-flex">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -51,10 +56,10 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">General</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#!">Venue</a></li>
+                                    <li><a class="dropdown-item" target="_blank" href="https://goo.gl/maps/4ucsYXi8LG26hUWs9">Venue</a></li>
                                     <!-- <li><hr class="dropdown-divider" /></li> -->
-                                    <li><a class="dropdown-item" href="#!">Accomodation</a></li>
-                                    <li><a class="dropdown-item" href="#!">Enjoying Delhi</a></li>
+                                    <li><a class="dropdown-item" href="accomodation.html">Accomodation</a></li>
+                                    <li><a class="dropdown-item" href="delhi.html">Enjoying Delhi</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -77,24 +82,47 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="bg-light py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h2 class="fw-bolder">19th International Conference on Natural Language Processing</h1>
-                    <span class="lead fw-normal text-white-50 mb-0">December 16th - 19th, 2022</p>
+                    <h2 class="fw-bolder" style="color: black;">19th International Conference on Natural Language Processing</h2>
+                    <span class="lead fw-normal mb-0" style="color: black;">December 16th - 19th, 2022</p>
+                    
+                        <span></span>
                 </div>
             </div>
         </header>
+
+        <!-- <div class="py-5 bg-image-full" style="background-image: url('./assets/images/delhi.png'); width: 500px;"> -->
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <!-- <div style="height: 120rem"></div> -->
+        <!-- </div> -->
+        <div class="text-center">
+            <!-- <img class="img-fluid rounded-circle mb-4" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg" alt="..." />
+            <sp class="text-white-50 mb-0">December 16th - 19th, 2022</p> -->
+            <img src = "assets/images/delhi.png" style='height: 100%; margin-top: -10px; width: 50%; object-fit: contain'/>
+        </div>
+        
+        
+        <!-- Header - set the background image for the header in the line below-->
+        <!-- <header class="py-5 bg-image-full" style="background-image: url('./assets/images/bg_home.png');"> -->
+            <!-- <div class="text-center my-5"> -->
+                <!-- <img class="img-fluid rounded-circle mb-4" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg" alt="..." /> -->
+                <!-- <sp class="text-white-50 mb-0">December 16th - 19th, 2022</p> -->
+            <!-- </div> -->
+        <!-- </header> -->
+
+        
         <!-- Section-->
          <!-- About section-->
         <section id="about" class="my-5">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" style="text-align: justify;">
                         <h2>Welcome to ICON 2022!</h2>
                         <!-- <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p> -->
                         <p>
-                            The nineteenth International Conference on Natural Language Processing (ICON-2019) will be held at IIIT Delhi, India during December 16-19, 2022. The ICON Conference series is a forum for promoting interaction among researchers in the field of Natural Language Processing (NLP) and Computational Linguistics (CL) in India and abroad. 
+                            The nineteenth International Conference on Natural Language Processing (ICON-2022) will be held at IIIT Delhi, India during December 15-18, 2022. The ICON Conference series is a forum for promoting interaction among researchers in the field of Natural Language Processing (NLP) and Computational Linguistics (CL) in India and abroad. The main conference is on December 16-17, 2022. This will be preceded by one day of pre-conference tutorials / workshops on December 15, 2021 and one day of post conference shared tasks / tools / demos on December 18, 2022.
                         </p>
                         <p>
                             Papers in ICON proceedings will be indexed in ACL Anthology. ACL Anthology is a digital archive of research papers in Computational Linguistics for major international conferences under Association for Computational Linguistics (ACL), which is one of the most well-known associations for NLP and CL.
@@ -103,9 +131,112 @@
                             Papers are invited on substantial, original and unpublished research on all aspects of Natural Language Processing, with a particular focus on South Asian languages and other less resourced languages, issues, and applications relevant to South Asia. However, other languages of the world are not excluded. The areas of interest include, but are not limited to:
                         </p>
                         <p style="font-style: italic; color: grey;">
-                            Phonology, Morphology, Syntax, Semantics, Discourse, POS Tagging, Parsing, Pragmatics, Ontology, Word Sense Disambiguation, Machine Translation Statistical, Machine Translation, Computational Psycholinguistics, Statistical Methods, Knowledge-based Methods, Annotation and Annotated Corpora, Lexical Resources, Sentiment Analysis, Machine Learning in NLP, NLP-based Recommendation Systems, Performance Evaluation of NLP Systems, Information Retrieval, Information Extraction, Automatic Text Summarization, Question Answering, Dialog Systems, Speech Corpora, Speech Recognition, Speech Synthesis, NLP for Language Documentation and Preservation, NLP for Educational Purposes, NLP for Digital Humanities.
+                            <!-- <div class="d-inline p-2 bg-primary text-white">d-inline</div> -->
+                            <!-- <div class="d-inline p-2 bg-primary text-white">Phonology</div>
+                            <div class="d-inline p-2 bg-primary text-white">Morphology</div>
+                            <div class="d-inline p-2 bg-primary text-white">Syntax</div>
+                            <div class="d-inline p-2 bg-primary text-white">Semantics</div>
+                            <div class="d-inline p-2 bg-primary text-white">Discourse</div>
+                            <div class="d-inline p-2 bg-primary text-white">POS Tagging</div>
+                            <div class="d-inline p-2 bg-primary text-white">Parsing</div>
+                            <div class="d-inline p-2 bg-primary text-white">Pragmatics</div>
+                            <div class="d-inline p-2 bg-primary text-white">Ontology</div>
+
+                            <div class="d-inline p-2 bg-primary text-white">Word Sense Disambiguation</div>
+                            <div class="d-inline p-2 bg-primary text-white">Machine Translation Statistical</div>
+                            <div class="d-inline p-2 bg-primary text-white">Machine Translation</div>
+                            <div class="d-inline p-2 bg-primary text-white">Computational Psycholinguistics</div>
+                            <div class="d-inline p-2 bg-primary text-white">Statistical Methods</div>
+                            <div class="d-inline p-2 bg-primary text-white">Knowledge-based Methods</div>
+                            <div class="d-inline p-2 bg-primary text-white">Annotation and Annotated Corpora</div>
+                            <div class="d-inline p-2 bg-primary text-white">Lexical Resources</div>
+                            <div class="d-inline p-2 bg-primary text-white">Sentiment Analysis</div>
+
+                            <div class="d-inline p-2 bg-primary text-white">Machine Learning in NLP</div>
+                            <div class="d-inline p-2 bg-primary text-white">NLP-based Recommendation Systems</div>
+                            <div class="d-inline p-2 bg-primary text-white">Performance Evaluation of NLP Systems</div>
+                            <div class="d-inline p-2 bg-primary text-white">Information Retrieval</div>
+                            <div class="d-inline p-2 bg-primary text-white">Information Extraction</div>
+                            <div class="d-inline p-2 bg-primary text-white">Question Answering, Dialog Systems</div>
+                            <div class="d-inline p-2 bg-primary text-white">Speech Corpora, Speech Recognition</div>
+                            <div class="d-inline p-2 bg-primary text-white">Speech Synthesis</div>
+                            <div class="d-inline p-2 bg-primary text-white">NLP for Language Documentation and Preservation</div>
+                            <div class="d-inline p-2 bg-primary text-white">NLP for Educational Purposes</div>
+                            <div class="d-inline p-2 bg-primary text-white">NLP for Digital Humanities</div>
+                             -->
+                             
+                             <!-- <nav class="nav nav-pills nav-justified">
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Phonology</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Morphology</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Syntax</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Semantics</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Discourse</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">POS Tagging</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Parsing</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Pragmatics</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Ontology</a></li>
+    
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Word Sense Disambiguation</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Machine Translation Statistical</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Machine Translation</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Computational Psycholinguistics</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Statistical Methods</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Knowledge-based Methods</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Annotation and Annotated Corpora</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Lexical Resources</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Sentiment Analysis</a></li>
+    
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Machine Learning in NLP</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP-based Recommendation Systems</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Performance Evaluation of NLP Systems</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Information Retrieval</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Information Extraction</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Question Answering, Dialog Systems</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Speech Corpora, Speech Recognition</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Speech Synthesis</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP for Language Documentation and Preservation</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP for Educational Purposes</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP for Digital Humanities</a></li>
+                            </nav> -->
+                            
+                            
+                            <!-- Phonology, Morphology, Syntax, Semantics, Discourse, POS Tagging, Parsing, Pragmatics, Ontology, Word Sense Disambiguation, Machine Translation Statistical, Machine Translation, Computational Psycholinguistics, Statistical Methods, Knowledge-based Methods, Annotation and Annotated Corpora, Lexical Resources, Sentiment Analysis, Machine Learning in NLP, NLP-based Recommendation Systems, Performance Evaluation of NLP Systems, Information Retrieval, Information Extraction, Automatic Text Summarization, Question Answering, Dialog Systems, Speech Corpora, Speech Recognition, Speech Synthesis, NLP for Language Documentation and Preservation, NLP for Educational Purposes, NLP for Digital Humanities. -->
                         </p>
-                        
+
+                        <ul class="list-inline">
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Phonology</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Morphology</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Syntax</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Semantics</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Discourse</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">POS Tagging</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Parsing</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Pragmatics</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Ontology</a></li>
+    
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Word Sense Disambiguation</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Machine Translation Statistical</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Machine Translation</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Computational Psycholinguistics</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Statistical Methods</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Knowledge-based Methods</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Annotation and Annotated Corpora</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Lexical Resources</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Sentiment Analysis</a></li>
+    
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Machine Learning in NLP</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP-based Recommendation Systems</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Performance Evaluation of NLP Systems</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Information Retrieval</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Information Extraction</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Question Answering, Dialog Systems</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Speech Corpora, Speech Recognition</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">Speech Synthesis</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP for Language Documentation and Preservation</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP for Educational Purposes</a></li>
+                                <li class="list-inline-item"><a class="nav-link disabled" href="#">NLP for Digital Humanities</a></li>
+                         
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -117,15 +248,22 @@
                     <div class="col-lg-8">
                         <h2>Important Dates</h2>
                         <ul>
-                            <li>Paper Submission Deadline &nbsp - &nbsp Aug 25, 2022</li>
-                            <li>Doctoral Consortium Deadline &nbsp - &nbsp Aug 25, 2022</li>
-                            <li>Tutorial / Workshop Proposals Deadline &nbsp - &nbsp Aug 28, 2022</li>
-                            <li>Tutorial / Workshop Acceptance Notification	&nbsp - &nbsp Sep 30, 2022</li>
-                            <li>Paper Acceptance Notification &nbsp - &nbsp Oct 10, 2022</li>
-                            <li>Camera Ready Copy Submission Deadline &nbsp - &nbsp Nov 15, 2022</li>
-                            
+                            <li>Paper Submission Deadline: &nbsp Sep 25, 2022</li>
+                            <li>Doctoral Consortium Deadline: &nbsp Sep 25, 2022</li>
+                            <li>Workshop Proposals Deadline: &nbsp Sep 15, 2022</li>
+                            <li>Workshop Acceptance Notification: &nbsp Sep 30, 2022</li>
+                            <li>Tutorial Proposals Deadline: &nbsp Oct 15, 2022</li>
+                            <li>Tutorial Acceptance Notification: &nbsp Oct 30, 2022</li>
+                            <li>Paper (Main and Doctoral Consortium) Acceptance Notification: &nbsp Nov 15, 2022</li>
+                            <li>Camera-ready Submission Deadline: &nbsp Dec 01, 2022</li>
+                            <li>Conference: &nbsp Dec 15 - 18, 2022</li>
+                                <ul>
+                                    <li> Pre-conference Tutorial / Workshop: &nbsp Dec 15, 2022</li>
+                                    <li> Main Program: &nbsp Dec 16 - 17, 2022</li>
+                                    <li> Post-conference Tutorial / Workshop: &nbsp Dec 18, 2022</li>
+                                </ul>
                         </ul>
-                        <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p> -->
+                        <p class="lead">All deadlines are 11:59:59 PM IST (GMT +5:30).</p>
                     </div>
                 </div>
             </div>
