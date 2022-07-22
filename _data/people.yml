@@ -128,13 +128,13 @@ grad-j:
     bio: PhD Scholar (August 2020 - Present)
     area: "Topic: Conversational AI for Healthcare"
 
-grad-k:
-    display_name: "Mayank Kharbanda"
-    role: grad
-    image: /img/people/mayank_kharbanda.jpg
-    webpage: "https://www.iiitd.edu.in/~mayankk/"
-    bio: PhD Scholar (August 2020 - Present)
-    area: "Topic: Community Detection and Deception"
+# grad-k:
+#     display_name: "Mayank Kharbanda"
+#     role: grad
+#     image: /img/people/mayank_kharbanda.jpg
+#     webpage: "https://www.iiitd.edu.in/~mayankk/"
+#     bio: PhD Scholar (August 2020 - Present)
+#     area: "Topic: Community Detection and Deception"
 
 grad-l:
     display_name: "Shivam Sharma"
@@ -144,13 +144,13 @@ grad-l:
     bio: PhD Scholar (August 2020 - Present)
     area: "Topic: Meme Analysis"
 
-grad-m:
-    display_name: "Karan Goyal"
-    role: grad
-    image: /img/people/karangoyal.jpg
-    webpage: "https://www.linkedin.com/in/karan-goyal-757727a6/?originalSubdomain=in"
-    bio: PhD Scholar (July 2021 - Present)
-    area: "Topic: Graph Representation Learning"
+# grad-m:
+#     display_name: "Karan Goyal"
+#     role: grad
+#     image: /img/people/karangoyal.jpg
+#     webpage: "https://www.linkedin.com/in/karan-goyal-757727a6/?originalSubdomain=in"
+#     bio: PhD Scholar (July 2021 - Present)
+#     area: "Topic: Graph Representation Learning"
 
 grad-n:
     display_name: "Ayan Sengupta"
@@ -160,13 +160,13 @@ grad-n:
     bio: PhD Scholar (August 2021 - Present)
     area: "Topic: Representation Learning"
 
-grad-o:
-    display_name: "Anam Fatima"
-    role: grad
-    image: /img/people/anam.png
-    webpage: "https://www.linkedin.com/in/anam-fatima-b03b1154"
-    bio: PhD Scholar (January 2022 - Present)
-    area: "Topic: Combating Online Hate Speech via Counterspeech"
+# grad-o:
+#     display_name: "Anam Fatima"
+#     role: grad
+#     image: /img/people/anam.png
+#     webpage: "https://www.linkedin.com/in/anam-fatima-b03b1154"
+#     bio: PhD Scholar (January 2022 - Present)
+#     area: "Topic: Combating Online Hate Speech via Counterspeech"
 
 
 ra-a:
@@ -249,10 +249,11 @@ ra-k:
 
 ra-l:
     display_name: "Manasi Mittal"
-    role: ra
+    role: alum
     image: /img/people/manasi.jpg
     webpage: "https://www.linkedin.com/in/manasimittal33/"
     bio: Research Associate
+    current_affiliation: Tokopedia
 
 intern-a:
     display_name: "Rachit Bansal"
