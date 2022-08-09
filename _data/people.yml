@@ -242,16 +242,32 @@ ra-j:
 
 ra-k:
     display_name: "Atharva Kulkarni"
-    role: ra
+    role: alum
     image: /img/people/atharva.jpg
     webpage: "https://mr-atharva-kulkarni.github.io/"
     bio: Research Associate
+    current_affiliation: Carnegie Mellon University
 
 ra-l:
     display_name: "Manasi Mittal"
     role: alum
     image: /img/people/manasi.jpg
     webpage: "https://www.linkedin.com/in/manasimittal33/"
+    bio: Research Associate
+    current_affiliation: Tokopedia
+
+ra-m:
+    display_name: "Priyanshi Gupta"
+    role: ra
+    image: /img/people/priyanshi.jpg
+    webpage: "https://www.linkedin.com/in/priyanshiguptaaa/"
+    bio: Research Associate
+
+ra-n:
+    display_name: "Sheryl Agarwal"
+    role: ra
+    image: /img/people/sheyril.jpg
+    webpage: "https://www.linkedin.com/in/sheyril-agarwal/"
     bio: Research Associate
     current_affiliation: Tokopedia
 
@@ -622,13 +638,13 @@ ugrad-ah:
 ugrad-ai:
     display_name: "Vasu Goel"
     bio: Undergrad student
-    role: ugrad
+    role: alum
     current_affiliation: Goldman Sachs
 
 ugrad-aj:
     display_name: "Dhruv Sahnan"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-ak:
     display_name: "Nishant Grover"
@@ -643,12 +659,13 @@ ugrad-al:
 ugrad-am:
     display_name: "Rahul Kukreja"
     bio: Undergrad student
-    role: ugrad
+    role: alum
+    current_affiliation: LinkedIn
 
 ugrad-an:
     display_name: "Ansh Kumar Sharma"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 # ugrad-ao:
 #     display_name: "Mukul"
@@ -658,7 +675,7 @@ ugrad-an:
 ugrad-ap:
     display_name: "Atishay Jain"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-aq:
     display_name: "Aditya Rastogi"
@@ -670,7 +687,7 @@ ugrad-aq:
 ugrad-ar:
     display_name: "Anunay Yadav"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-as:
     display_name: "Mohammad Aflah Khan"
@@ -762,10 +779,6 @@ ugrad-bj:
     bio: Undergrad student
     role: ugrad
 
-ugrad-bj:
-    display_name: "Palani Vigneshwar"
-    bio: Undergrad student
-    role: ugrad
 
 ugrad-bj:
     display_name: "Saksham Mrig"
@@ -923,12 +936,13 @@ pgrad-u:
 pgrad-v:
     display_name: "T G Narayanan"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 pgrad-y:
     display_name: "Tharun Suresh"
     bio: Masters student
-    role: pgrad
+    role: alum
+    current_affiliation: UMass
 
 pgrad-z:
     display_name: "Giridhar S"
@@ -943,7 +957,7 @@ pgrad-aa:
 pgrad-ab:
     display_name: "Drishya Uniyal"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 pgrad-ac:
     display_name: "Sehban Fazili"
@@ -957,5 +971,10 @@ pgrad-ad:
 
 pgrad-ae:
     display_name: "Asmita Mukherjee"
+    bio: Masters student
+    role: pgrad
+
+pgrad-af:
+    display_name: "Palani Vigneshwar"
     bio: Masters student
     role: pgrad
