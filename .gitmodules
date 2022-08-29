@@ -13,3 +13,6 @@
 [submodule "ACSS-2021"]
 	path = ACSS-2021
 	url = https://github.com/LCS2-IIITD/ACSS-2021.git
+[submodule "ICON-2022"]
+	path = ICON-2022
+	url = https://github.com/LCS2-IIITD/ICON-2022.git
