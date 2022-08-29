@@ -1,6 +1,3 @@
-[submodule "acss19"]
-	path = acss19
-	url = https://github.com/uditarora/acss19
 [submodule "cofad"]
 	path = cofad
 	url = https://github.com/AnnuJoshi/cofad2020.git
