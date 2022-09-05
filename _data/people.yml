@@ -780,14 +780,69 @@ ugrad-bj:
     role: ugrad
 
 
-ugrad-bj:
-    display_name: "Saksham Mrig"
+ugrad-bk:
+    display_name: "Udit Narang"
     bio: Undergrad student
     role: ugrad
 
+ugrad-bl:
+    display_name: "Sumit Soni"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-bm:
+    display_name: "Mudit Gupta"
+    bio: Undergrad student
+    role: ugrad
+ugrad-bn:
+    display_name: "Siddhant Agarwal"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-bo:
+    display_name: "Rohan Jain"
+    bio: Undergrad student
+    role: ugrad
+ugrad-bp:
+    display_name: "Joykirat Singh"
+    bio: Undergrad student
+    role: ugrad
+ugrad-bq:
+    display_name: "Abhinav Sagar"
+    bio: Undergrad student
+    role: ugrad
+ugrad-br:
+    display_name: "Vishal Bansal"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-bs:
+    display_name: "Ishan Pandey"
+    bio: Undergrad student
+    role: ugrad
+ugrad-bt:
+    display_name: "Mohammad Aflah Khan "
+    bio: Undergrad student
+    role: ugrad
+ugrad-bu:
+    display_name: "Kushal Juneja"
+    bio: Undergrad student
+    role: ugrad
+ugrad-bv:
+    display_name: "Diksha Sethi"
+    bio: Undergrad student
+    role: ugrad
+
+ugrad-bw:
+    display_name: "Neemesh Yadav"
+    bio: Undergrad student
+    role: ugrad
+ugrad-bx:
+    display_name: "Tarini Sharma"
+    bio: Undergrad student
+    role: ugrad
 
 # ------------ MTPs ------------
-
 
 pgrad-a:
     display_name: "Subhankar Adak"
@@ -976,5 +1031,15 @@ pgrad-ae:
 
 pgrad-af:
     display_name: "Palani Vigneshwar"
+    bio: Masters student
+    role: pgrad
+
+pgrad-ag:
+    display_name: "Shashwat Vaibhav"
+    bio: Masters student
+    role: pgrad
+    
+pgrad-ah:
+    display_name: "Giridhar S"
     bio: Masters student
     role: pgrad
