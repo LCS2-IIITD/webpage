@@ -1033,13 +1033,3 @@ pgrad-af:
     display_name: "Palani Vigneshwar"
     bio: Masters student
     role: pgrad
-
-pgrad-ag:
-    display_name: "Shashwat Vaibhav"
-    bio: Masters student
-    role: pgrad
-    
-pgrad-ah:
-    display_name: "Giridhar S"
-    bio: Masters student
-    role: pgrad
