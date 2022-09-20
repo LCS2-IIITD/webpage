@@ -17,6 +17,7 @@ profx:
     role: faculty
     image: /img/people/prof-x.png
     bio: Associate Professor
+    area: IIT Delhi
 
 profx-a:
     display_name: "Dr. Md. Shad Akhtar"
@@ -25,6 +26,7 @@ profx-a:
     role: faculty
     image: /img/people/shad.jpg
     bio: Assistant Professor
+    area: IIIT Delhi
 
 postdoc-a:
     display_name: "Dr. Nitish Prajapati"
