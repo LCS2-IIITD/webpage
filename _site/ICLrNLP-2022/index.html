@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ICLrNLP 2021</title>
+
+    <!-- favicon -->
+    <!-- <link href="favicon.png" rel=icon> -->
+
+
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        @media only screen and (max-width: 600px) {
+            #google-form
+            {
+                display:none;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            #google-form-link
+            {
+                visibility: hidden;
+            }
+        }
+
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/acss_logo_new.png" alt="" style="height:40px; width:250px;"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#section-intro">About</a></li>
+                        <li><a class="page-scroll" href="#section-speaker">Speakers</a></li>
+                        <li><a class="page-scroll" href="#section-agenda">Agenda</a></li>
+                        <!-- <li><a class="page-scroll" href="#section-pricing">Awards</a></li> -->
+                        <li><a class="page-scroll" href="#section-contact">Contact Us</a></li>
+                        <li><a class="page-scroll" href="#section-partner">Sponsors</a></li>
+                        <li><a class="page-scroll" href="#register">Register</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- .nav -->
+
+    </header>
+
+    <div class="jumbotron text-center">
+        <div class="content">
+            <h1>Workshop on Indian Code-mixed and Low-resource Natural Language Processing</h1>
+
+            <div class="event-date">15<sup>th</sup> - 19<sup>th</sup> December 2022, IIIT Delhi</div>
+            <a class="page-scroll" href="#register"><button type="button" class="btn btn-default btn-lg">REGISTER</button></a>
+        </div>
+    </div>
+    <!-- .Jumbotron-->
+
+
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p align="justify" class="lead">
+                        The majority of the recent advancement in AI and related fields involve English as the primary language. Despite having the global footprint of the English speaking population, a significant number of people are not comfortable with it, especially in a developing country like India. Even with the combined efforts of government, industry, and academia, the research in regional languages (e.g., Hindi, Bengali, etc.) and their code-mixed variants (e.g., Hinglish, Bengalish, etc.) are yet to excel. A prime reason is the insufficient resources to motivate young and to-be researchers to explore the research in low-resource languages. 
+                        
+                        Therefore, with the proposed workshop on Indian Code-mixed and Low-resource Natural Language Processing (aka. ICLrNLP), we aim to provide a platform to the young researchers to showcase their research skills for the growth of AI-based technologies in these linguistic setups. The theme of the workshop would span across the complete spectrum of NLP research -- classical NLP tasks, generative models, conversational dialogue, representation learning, cross-linguality, multi-linguality, multimodality, etc.  We also plan to organize a three days long tutorial and laboratory sessions for the skill development, conduct shared tasks on real world problems, and invite the eminent experts from academia and industry for the keynotes and invited talks.
+
+                    </p>
+                    <p class="lead">
+                        It is being organized by the <a href="" target="_blank">Laboratory for Computational Social Systems (LCS2)</a>, <a href="https://ihub-anubhuti-iiitd.org/" target="_blank">iHuB Anubhuti IIITD Foundation</a> and the <a href="https://cse.iiitd.ac.in/" target="_blank">Department of CSE, IIIT Delhi</a>
+                    </p>
+                </div>
+                <!-- <div class="col-md-4">
+                    <address>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <strong>A007, R&D Block, IIIT Delhi</strong><br>
+                        Okhla Industrial Estate, Phase III<br>
+                        Near Govind Puri Metro Station<br>
+                        New Delhi, Delhi 110020<br>
+                    </address>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- .about-event -->
+
+    <section id="section-speaker" class="section-wrapper team gray-bg">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>KEYNOTE</h1>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <figure class="thumbnail">
+                        <a href="https://www.cs.umn.edu/people/faculty"><img src="img/speaker/srivastava.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Jaideep Srivastava
+                                <small>University of Minnesota</small>
+                            </h3> -->
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        <!-- </figcaption>
+                    </figure>
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>SPEAKERS</h1>
+                        <h3>DAY 1</h3>
+                        <h4> --  VIRTUAL -- </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                  <!-- <div class="col-sm-6 col-md-4 col-md-offset-2"> -->
+                    <div class="col-sm-6 col-md-3 ">
+                    <figure class="thumbnail">
+                        <a href="https://www.cse.iitb.ac.in/~soumen/" target="_blank"><img src="img/speaker/soumen.png" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Soumen Chakrabarti
+                                <br><small> IIT Bombay </small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                  <div class="col-sm-6 col-md-3 ">
+                    <figure class="thumbnail">
+                        <a href="https://www.hbku.edu.qa/en/staff/dr-preslav-nakov" target="_blank"><img src="img/speaker/nakov.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Preslav Nakov
+                                <br><small>Qatar Computing Research Institute</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+
+                <div class="col-sm-6 col-md-3 col-md-offset-0">
+                    <figure class="thumbnail">
+                        <a href="https://iris.ucl.ac.uk/iris/browse/profile?upi=FCACC19" target="_blank"><img src="img/speaker/fabio.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;" ></a>
+                        <figcaption class="caption text-center">
+                            <h4>Fabio Caccioli
+                                <br><small>Professor, University College London</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-3 ">
+                    <figure class="thumbnail">
+                        <a href="https://www.linkedin.com/in/vassilis-plachouras-2223992/?originalSubdomain=uk" target="_blank"><img src="img/speaker/vassilis.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Vassilis Plachouras
+                                <br><small>Facebook</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+
+            <!-- .row -->
+            <div class="row">
+               
+                <div class="col-sm-6 col-md-3 ">
+                    <figure class="thumbnail">
+                        <a href="https://www.hbku.edu.qa/en/staff/dr-ingmar-weber" target="_blank"><img src="img/speaker/ingmar.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Ingmar Weber
+                                <br><small> Qatar Computing Research Institute </small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                
+
+                <div class="col-sm-6 col-md-3 col-md-offset-0">
+                    <figure class="thumbnail">
+                        <a href="https://dlab.epfl.ch/people/west/" target="_blank"><img src="img/speaker/robertwest.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;" ></a>
+                        <figcaption class="caption text-center">
+                            <h4>Robert West
+                                <br><small>Assistant Professor, EPFL </small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-3 ">
+                    <figure class="thumbnail">
+                        <a href="https://talukdar.net/"><img src="img/speaker/partha.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Partha Talukdar 
+                               <br> <small>Google, IISc Banglore</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                 <div class="col-sm-6 col-md-3 ">
+                    
+                </div>
+            </div>
+
+           
+            <!-- day 2 -->
+
+             <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <hr>
+                        <h3>DAY 2</h3>
+                        <h4> --  PHYSICAL  -- </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                  <!-- <div class="col-sm-6 col-md-4 col-md-offset-2"> -->
+                  <div class="col-sm-6 col-md-3 ">
+                    <figure class="thumbnail">
+                        <a href="https://research.google/people/106704/" target="_blank"><img src="img/speaker/manish.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Manish Gupta
+                                <br><small>Director, Google Research India</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+
+                <div class="col-sm-6 col-md-3 col-md-offset-0">
+                    <figure class="thumbnail">
+                        <a href="https://www.cse.iitd.ac.in/~srikanta/" target="_blank"><img src="img/speaker/srikanta.jpeg" class="img-responsive" alt="Image" style="height:300px; width:250px;" ></a>
+                        <figcaption class="caption text-center">
+                            <h4>Srikanta Bedathur
+                                <br><small>Associate Professor, IIT Delhi</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-3 col-md-offset-0">
+                    <figure class="thumbnail">
+                        <a href="https://www.logically.ai/team/leadership/lyric-jain"><img src="img/speaker/lyric.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;" ></a>
+                        <figcaption class="caption text-center">
+                            <h4>Lyric Jain
+                                <br><small>CEO, Logically </small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-3 ">
+                    <figure class="thumbnail">
+                        <a href="https://www.linkedin.com/in/vijaysrinivasagneeswaran" target="_blank"><img src="img/speaker/vijay.jpeg" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Vijay Srinivas Agneeswaran
+                                <br><small>Walmart Global Labs</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+             <div class="row">
+                  <!-- <div class="col-sm-6 col-md-4 col-md-offset-2"> -->
+                  
+                <!-- /.col-sm-6 -->
+
+                <div class="col-sm-6 col-md-3 col-md-offset-0">
+                    <figure class="thumbnail">
+                        <a href="https://www.linkedin.com/in/suyashsangwan/" target="_blank"><img src="img/speaker/suyash.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;" ></a>
+                        <figcaption class="caption text-center">
+                            <h4>Suyash Sangwan
+                                <br><small>TCS Research</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-3 col-md-offset-0 col-md-offset-0">
+                    <figure class="thumbnail">
+                        <a href="https://www.icegov.org/people/saibal-kumar-pal/" target="_blank"><img src="img/speaker/saibal.png" class="img-responsive" alt="Image" style="height:300px; width:250px;" ></a>
+                        <figcaption class="caption text-center">
+                            <h4>Saibal Kumar Pal
+                                <br><small>DRDO </small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-3 col-md-offset-0">
+                    <figure class="thumbnail">
+                        <a href="https://www.linkedin.com/in/vidhya-thyagarajan-56b6754/" target="_blank"><img src="img/speaker/vidhya.jpg" class="img-responsive" alt="Image" style="height:300px; width:250px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Vidhya Thyagarajan
+                                <br><small>Intel Corporation</small>
+                            </h4>
+                            <!-- <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>ORGANIZING COMMITTEE</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-2">
+                        <figure class="thumbnail">
+                            <a href="#"><img src="img/lcs2.png" class="img-responsive" alt="Image"></a>
+                            <figcaption class="caption text-center">
+                                <h3>Members of LCS2
+                                    <!-- <small>Research Group, IIIT Delhi</small> -->
+                                </h3>
+                                <!-- <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <figure class="thumbnail">
+                            <a href="#"><img src="img/partners/tih.png" alt="Image"></a>
+                            <!-- <a href="#"><img src="img/lcs2.png" class="img-responsive" alt="Image"></a> -->
+                            <figcaption class="caption text-center">
+                                <h3>Members of LCS2
+                                    <!-- <small>Research Group, IIIT Delhi</small> -->
+                                </h3>
+                                <!-- <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-2">
+                        <figure class="thumbnail">
+                            <a href="#"><img src="img/partners/cseiiitd.jpg" width="360" height="130" alt="Image"></a>
+                            <figcaption class="caption text-center">
+                                <h3>Members of LCS2
+                                    <!-- <small>Research Group, IIIT Delhi</small> -->
+                                </h3>
+                                <!-- <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <!-- .row -->
+        <!-- /.container -->
+    </section>
+
+    <!-- .team -->
+
+    <section id="section-agenda" class="section-wrapper section-agenda">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>AGENDA</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>Day 1 (Virtual)</h1>
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="session">
+                        <time>5:00 - 5:30 PM (IST)</time>
+                        <h2>Inauguration</h2>
+                        <h3>Ranjan Bose <span>IIIT Delhi</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>5:30 - 6:00 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Soumen Chakrabarti<span>IIT Bombay</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>6:00 - 6:30 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Fabio Caccioli<span>University College London</span></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="session">
+                        <time>6:30 - 7:00 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Robert West<span>EPFL</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>7:00 - 7:15 PM (IST)</time>
+                        <h2>BREAK</h2>
+                    </div>
+
+                    <div class="session">
+                        <time>7:15 - 7:45 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Partha Talukdar<span>Google, IISC Bangalore</span></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">    
+                    <div class="session">
+                        <time>7:45 - 8:15 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Ingmar Weber<span>Qatar Computing Research Institute</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>8:15 - 8:45 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Vassilis Plachouras<span>Facebook</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>8:45 - 9:15 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Preslav Nakov<span>Qatar Computing Research Institute</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>Day 2 (On Campus)</h1>
+                    </div>
+                </div>
+
+            
+                <div class="col-md-4" class="collapse in">
+                    <div class="session">
+                        <time>8:00 - 9:00 AM (IST)</time>
+                        <h2>Registration</h2>
+                    </div>
+
+                    <div class="session">
+                        <time>9:00 - 9:30 AM (IST)</time>
+                        <h2>Inaugration</h2>
+                        <h3>Organising Team<span>LCS2</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>9:30 - 10:15 AM (IST)</time>
+                        <h2>Keynote</h2>
+                        <h3>Manish Gupta<span>Google</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>10:15 - 10:30 AM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Mukesh Malhotra<span>TIH</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>10:30 - 11:00 AM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Saibal Kumar Pal<span>DRDO</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>11:00 - 11:15 AM (IST)</time>
+                        <h2>Student Speaker</h2>
+                        <h3>Dhruv Shanan & Vasu Goel<span>LCS2</span></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="session">
+                        <time>11:15 - 11:30 AM (IST)</time>
+                        <h2>Student Speaker</h2>
+                        <h3>Shivani Kumar<span>LCS2</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>11:30 - 11:45 AM (IST)</time>
+                        <h2>BREAK</h2>
+                    </div>
+
+                    <div class="session">
+                        <time>11:45 - 12:15 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Suyash Sangwan<span>TCS Research</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>12:15 - 12:45 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Srikanta Bedathur<span>IIT Delhi</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>12:45 - 1:15 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Lyric Jain<span>Logically</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>1:15 - 2:30 PM (IST)</time>
+                        <h2>LUNCH</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="session">
+                        <time>2:30 - 3:00 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Vijay Srinivas Agneeswaran<span>Walmart Labs</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>3:00 - 3:15 PM (IST)</time>
+                        <h2>Student Speaker</h2>
+                        <h3>Yash Kumar<span>LCS2</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>3:15 - 3:30 PM (IST)</time>
+                        <h2>Student Speaker</h2>
+                        <h3>Sarah Masud<span>LCS2</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>3:30 - 4:00 PM (IST)</time>
+                        <h2>Speaker</h2>
+                        <h3>Vidhya Thyagarajan<span>Intel</span></h3>
+                    </div>
+
+                    <div class="session">
+                        <time>4:00 - 5:00 PM (IST)</time>
+                        <h2>Student Paper Competition</h2>
+                    </div>
+
+                    <div class="session">
+                        <time>5:00 - 5:20 PM (IST)</time>
+                        <h2>Conclusion & Prize Distribution</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section-contact" class="section-wrapper client-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>CONTACT US</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8599961833356!2d77.2692578154063!3d28.543927594835793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce36d07074563%3A0x899f8bbdbff7da90!2sIIITD+New+Academic+Block!5e0!3m2!1sen!2sin!4v1532875838153" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-5">
+                <h4><strong>Get in Touch</strong></h4>
+                
+                <p> For any queries related to the workshop, kindly drop us an email and one of us will get back to you on that thread. 
+                    <br>
+                    Email ID: <a href="mailto:acss@iiitd.ac.in">acss@iiitd.ac.in</a>
+                <br><br>We are present on below social media handles. Follow us to stay updated with latest news.</p>
+                <!-- <form method="POST" action="https://formspree.io/acss@iiitd.ac.in">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" value="" placeholder="E-mail">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                  </div>
+                  <button class="btn btn-primary" type="submit" name="button">
+                      Submit
+                  </button>
+                </form> -->
+                <br/>
+              <div class="container">
+              <div class="row">
+                
+                <div id="socialicons">
+                  <a class="icon" href="https://twitter.com/lcs2iiitd" title="Follow with Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                  &nbsp;&nbsp;
+                  <a class="icon" href="https://www.facebook.com/lcs2iiitd/" title="Follow with Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                  &nbsp;&nbsp;
+                  <a class="icon" href="https://www.linkedin.com/company/lcs2iiitd/" title="Follow with LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <!--end of .container -->
+
+    </section>
+    <section id="section-partner" class="section-wrapper client-logo  gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>SPONSORS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-2 col-md-offset-5"> -->
+               <!--  <div class="col-md-2 col-sm-4 col-xs-6 section-margin col-md-offset-2">
+                    <a href="#"><img src="img/partners/google.png" alt="Image"></a>
+                </div> -->
+                <!-- <div class="col-md-2 col-md-offset-5"> -->
+                
+
+                <!-- <div class="col-md-2">
+                    
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#"><img src="img/partners/tih.png" alt="Image"></a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#"><img src="img/partners/lcs2.jpg" alt="Image"></a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#"><img src="img/partners/cseiiitd.jpg" alt="Image"></a>
+                </div>
+ -->
+                <div class="col-md-2 col-md-offset-5">
+                    <a href="#"><img src="img/partners/AIJ.jpg" alt="Image"></a>
+                </div>
+
+                <div class="col-md-2">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="register" class="section-wrapper client-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>REGISTER</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdL3ppgQ-oJKvkPYN8akL1Zi0poSHugznFk54nhS3GO9dKh7g/viewform?embedded=true" width="800" height="4100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+
+        </div>
+        <!--end of .container -->
+
+    </section>
+
+    <!-- .client-logo -->
+
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center">&copy; Conference. All rights reserved | Template By: <a href="https://uicookies.com">uiCookies</a></div>
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
