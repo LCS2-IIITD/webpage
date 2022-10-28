@@ -271,7 +271,20 @@ ra-n:
     image: /img/people/sheyril.jpg
     webpage: "https://www.linkedin.com/in/sheyril-agarwal/"
     bio: Research Associate
-    current_affiliation: Tokopedia
+
+ra-o:
+    display_name: "Shaily Desai"
+    role: ra
+    image: /img/people/shaily.jpeg
+    webpage: "https://www.linkedin.com/in/shaily-desai-a711011b6/"
+    bio: Research Associate
+
+ra-p:
+    display_name: "Palash Nandi"
+    role: ra
+    image: /img/people/palash.jpeg
+    webpage: "https://www.linkedin.com/in/palash-nandi-937b64bb/"
+    bio: Research Associate
 
 intern-a:
     display_name: "Rachit Bansal"
