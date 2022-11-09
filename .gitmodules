@@ -19,3 +19,6 @@
 [submodule "ICON-2022"]
 	path = ICON-2022
 	url = https://github.com/LCS2-IIITD/ICON-2022.git
+[submodule "CONSTRAINT-2023"]
+	path = CONSTRAINT-2023
+	url = https://github.com/LCS2-IIITD/CONSTRAINT-2023.git
