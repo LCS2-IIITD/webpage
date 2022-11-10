@@ -22,3 +22,6 @@
 [submodule "CONSTRAINT-2023"]
 	path = CONSTRAINT-2023
 	url = https://github.com/LCS2-IIITD/CONSTRAINT-2023.git
+[submodule "tcs_icon2022_tutorial"]
+	path = tcs_icon2022_tutorial
+	url = https://github.com/LCS2-IIITD/tcs_icon2022_tutorial.git
