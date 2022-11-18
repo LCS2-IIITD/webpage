@@ -163,6 +163,18 @@
             }
             function computeFee() 
             {
+                // ======
+                var ind_stu=false;
+                var ind_acad=false;
+                var ind_ind=false;
+
+                var ind_stu=false;
+                var ind_acad=false;
+                var ind_ind=false;
+
+                var dollar_fee = 25; 
+                // ======
+
                 var myTbl = "";
                 var bDollar = false;
                 if (document.getElementById('indian').checked)
@@ -184,12 +196,19 @@
                 else
                     selectedRow = 3;
 
-                if (document.getElementById("ind_student").checked)
+                if (document.getElementById("ind_student").checked){
                     selectedRow = selectedRow;
-                else if (document.getElementById("ind_academia").checked)
+                    ind_stu=true;
+                }
+                else if (document.getElementById("ind_academia").checked){
                     selectedRow = selectedRow + 3;  
-                else if (document.getElementById("ind_industry").checked)
+                    ind_acad=true;
+                }
+                else if (document.getElementById("ind_industry").checked){
                     selectedRow = selectedRow + 6;
+                    ind_ind=true;
+                }
+
                 
                 var checkMain = document.getElementById("main-participation").checked; 
                 var checkpre = document.getElementById("pre-participation").checked;
@@ -207,6 +226,22 @@
                 else if (checkMain && !(checkpre || checkpost))
                     amount = myTbl.rows[selectedRow].cells[1].innerHTML;
 
+                
+                var not_nlpaimember = document.getElementById("non_nlpai_member").checked
+
+                if (not_nlpaimember) {
+                    if (ind_stu){
+                        amount = parseInt(amount)+500;
+                    }
+                    else if (ind_ind){
+                        amount = parseInt(amount)+3000;
+                    }
+                    else if (ind_acad){
+                        amount = parseInt(amount)+2000;
+                    }                   
+                }
+
+                
                 document.getElementById("total").innerHTML = "Total Payable Fee: " + amount + ((bDollar)? ' (USD)' : ' (INR)');
             }
         </script>
@@ -230,8 +265,8 @@
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programme</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <!-- <li><a class="dropdown-item" href="keynote.html">Keynote Sessions</a></li> -->
-                                <li><a class="dropdown-item" href="workshops.html">Workshops & Tutorials</a></li>
-                                <li><a class="dropdown-item" href="sharedTask.html">Shared Task</a></li>
+                                <li><a class="dropdown-item" href="workshops.html">Workshops, Tutorials & Shared Task</a></li>
+                                <!-- <li><a class="dropdown-item" href="sharedTask.html">Shared Task</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -271,18 +306,23 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8" style="text-align: justify;">
-                        <h3>Registration</h3>
+                        <h2>Registration</h2>
                         <p>
-                            On acceptance of the paper, one of the authors must register to present the paper at the conference. Without registration, the paper will not appear in the final proceedings. Exact amount for the registration is shared below; to check your registration cost, select your preferences of number of days/program you wish to attend below and our tool will display the final registration cost. Follow the steps shown below to register for the ICON-2022 conference.
+                            ICON-2022 welcomes participations of all interested individuals. After adequate deliberation, the ICON-2022 committee has finalized the registration fees. Please follow the following three steps to complete the registration.
+
+                            <br>
+                            Note:
+                            <ul>
+                                <li>One of the authors of each accepted paper must register to present the paper at the conference. Without registration, the paper will not appear in the final proceeding.</li>
+
+                                <li>If a participant has more than one papers accepted as an author, he/she must register for all papers. In such cases, participants can register for additional papers at a dicounted rate of 50%. However, they must register for the first paper at the normal rate. For example, if an author has two papers, the payable fee would be 1.5x of the registration fee, i.e., 100% for the first paper + 50% for the second paper.</li>
+
+                                <li>Registration for all accepted papers must be completed by 30th Nov 2022 (i.e., during Early bid).</li>
+
+                                <li> NLPAI membership is mandatory for all ICON 2022 participants.
+
+                            </ul>
                         </p>
-
-
-                        <!-- registration JS content -->
-
-                        <!-- <div class="container px-4">
-                            <div class="row gx-4 justify-content-center"> -->
-                        
-
                         
                     </div>
                 </div>
@@ -290,63 +330,154 @@
         </section>
 
 
-        <!-- CFTW section-->
+       
+
+        <!-- CFTW section -->
          <section id="about" class="my-5">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8" style="text-align: justify;">
-                        <h3>Schedule</h3>
-                        <table class="table small text-center" >
-                          <thead>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th colspan="2" scope="col">15th December</th>
-                              <th colspan="2" scope="col">18th December</th>
-                            </tr>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">First Half</th>
-                              <th scope="col">Second Half</th>
-                              <th scope="col">First Half</th>
-                              <th scope="col">Second Half</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>CoLI-Kanglish: Word Level Language Identification in Code-mixed Kannada-English Texts</td>
-                              <td>WORKSHOP ON MULTIMODAL MACHINE LEARNING IN LOW-RESOURCE LANGUAGES</td>
-                              <td>Natural Language Processing in Agriculture and Livestock Management</td>
-                              <td>WNLPe-Health 2022: The First Workshop on Context-aware NLP in eHealth</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Tutorial on Legal Text Analytics</td>
-                              <td>Workshop on AI and Law</td>
-                              <td>Towards Process Knowledge-infused Learning for Explainable Mental Healthcare</td>
-                              <td>Workshop on Indian Code-mixed and Low-resource Natural Language Processing (ICLrNLP)</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td>Knowledge Graph driven Business Text Processing</td>
-                              <td>Advances in NLP Research for Automated Business Intelligence</td>
-                              <td colspan="2">Discourse Structure Analysis of Indian Languages (DSAIL 2022)</td>
-                            </tr>
-
-                            <tr>
-                              <th scope="row">3</th>
-                              <td colspan="2">"Dialog Systems: Trends and Challenges</td>
-                              <td>Social Bias Detection and Mitigation in Text</td>
-                              <td>-</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <!-- <h3>Conference Registration Details</h3> -->
                         
+                        <!--             <div class="container px-4">
+                <div class="row gx-4 justify-content-center"> -->
+            <h3>Step 1: Know your Registration Fee.</h3>
+ 
+            <div>Registration</div>
+            <input type="radio" id="early" name="registration" checked = "false" /> Early [18th Nov 2022 - 30th Nov 2022]
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="late" name="registration" disabled = "false"/> Late [1st Dec 2022 - 11th Dec 2022]
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="spot" name="registration" disabled = "false"/> On-spot [15th Dec 2022 - 18th Dec 2022]
+            <!--<input type="radio" id="early" name="registration" /> Early [15th Nov 2022 - 31st Nov 2022]
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="late" name="registration" /> Late [1st Dec 2022 - 11th Dec 2022]
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="spot" name="registration" /> On-spot [15th Dec 2022 - 18th Dec 2022] -->
+
+            <br> <br><div> Affiliation</div>
+            <input type="radio" id="indian" name="affiliation" onclick="toggleIndTable();"/> Affiliation to Indian Subcontinent &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="non_indian" name="affiliation" onclick="toggleNonIndTable()";/> Affiliation to Non-Indian Subcontinent
+
+            <br> <br> <div id = "category"> Category: </div>
+            <!-- <p class="indian_expandable"> </p> -->
+            <input type="radio" id="ind_student" name="ind_category"/> Student
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="ind_academia" name="ind_category"/> Academia or Non-Profit Organization
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="ind_industry" name="ind_category"/> Industry
+
+            <!-- <p class="non_indian_expandable"> Category - [Non-indian affiliation]
+            <br> <input type="radio" id="non_ind_student" name="non_ind_category"/> Student
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="non_ind_academia" name="non_ind_category"/> Academia or Non-Profit Organization
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="non_ind_industry" name="non_ind_category"/> Industry
+            </p> -->
+
+
+            <br> <br> <div>Participation</div>
+            <input type="checkbox" id="main-participation" name="participation"/> Main conference - 16th and 17th Dec 2022
+            <br> <input type="checkbox" id="pre-participation" name="participation" /> Pre-conference WS/Tutorial/Shared tasks - 15th Dec 2022
+            <br> <input type="checkbox" id="post-participation" name="participation"/> Post-conference WS/Tutorial/Shared tasks - 18th Dec 2022
+            <br> <a href="https://www.lcs2.in/ICON-2022/workshops.html" target="_blank">Click here</a> to know the workshop schedule.
+            
+            <br> <br> <div id = "nlpai"> NLPAI Membership: </div>
+            <input type="radio" id="nlpai_member" name="nlpai_category"/> Already a NLPAI Member
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="non_nlpai_member" name="nlpai_category"/> Become NLPAI member with ICON Registration
+            <br><br>
+            <div id="getMsg" class="small">
+                <i>Note: If you are not a NLPAI mmeber, an additional fee for NLPAI membership is applicable. Standard fee is INR 500 for students, INR 2000 for non-profit and academia, and INR 3000 for industry. The email for membership confirmation will be delivered after registration.</i>
+            </div>
+            
+            <div>
+            <table id="ind" style="display: none; width: 800px; align-self: center;">
+                <tr>
+                    <td style="width: 240px;"></td><td class="expandable-main" style="width: 100px; text-align: center; font-weight: bold; color: #50c7c7;">Main</td><td class="expandable-one"style="width: 135px; font-weight: bold;  color: #50c7c7;">One-day WS/Tutorial/SharedTask</td><td class="expandable-two"style="width: 135px; font-weight: bold;  color: #50c7c7;">Two-days WS/Tutorial/SharedTask</td><td class="expandable-full"style="width: 100px; font-weight: bold; color: #50c7c7;">Full</td>
+                </tr>
+                <tr class="expandable-student" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Student - Early</td><td class="expandable-main">3500</td><td class="expandable-one">1000</td><td class="expandable-two">1500</td><td class="expandable-full">4500</td>
+                </tr>
+                <tr class="expandable-student" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Student - Late</td><td class="expandable-main">4000</td><td class="expandable-one">1500</td><td class="expandable-two">2000</td><td class="expandable-full">5000</td>
+                </tr>
+                <tr class="expandable-student" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Student - On-Spot</td><td class="expandable-main">4500</td><td class="expandable-one">2000</td><td class="expandable-two">2500</td><td class="expandable-full">6000</td>
+                </tr>
+                <tr class="expandable-academia" style="">
+                    <td style="text-align: left;">Non-Profit and Academia - Early</td><td class="expandable-main">6000</td><td class="expandable-one">2000</td><td class="expandable-two">3000</td><td class="expandable-full">8000</td>
+                </tr>
+                <tr class="expandable-academia" style="">
+                    <td style="text-align: left;">Non-Profit and Academia - Late</td><td class="expandable-main">7000</td><td class="expandable-one">2500</td><td class="expandable-two">3500</td><td class="expandable-full">10000</td>
+                </tr>
+                <tr class="expandable-academia" style="">
+                    <td style="text-align: left;">Non-Profit and Academia - On-Spot</td><td class="expandable-main">8000</td><td class="expandable-one">3000</td><td class="expandable-two">4000</td><td class="expandable-full">12000</td>
+                </tr>
+                <tr class="expandable-industry" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Industry - Early</td><td class="expandable-main">15000</td><td class="expandable-one">3000</td><td class="expandable-two">5000</td><td class="expandable-full">18000</td>
+                </tr>
+                <tr class="expandable-industry" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Industry - Late</td><td class="expandable-main">16000</td><td class="expandable-one">4000</td><td class="expandable-two">6000</td><td class="expandable-full">20000</td>
+                </tr>
+                <tr class="expandable-industry" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Industry - On-Spot</td><td class="expandable-main">17000</td><td class="expandable-one">5000</td><td class="expandable-two">7000</td><td class="expandable-full">22000</td>
+                </tr>
+            </table>
+            </div>
+
+            <table id="nind" style="display: none; width: 800px; align-self: center;">
+                <tr>
+                    <td style="width: 240px;"></td><td class="expandable-main" style="width: 100px; text-align: center; font-weight: bold; color: #50c7c7;">Main</td><td class="expandable-one"style="width: 135px; font-weight: bold;  color: #50c7c7;">One-day WS/Tutorial/SharedTask</td><td class="expandable-two"style="width: 135px; font-weight: bold;  color: #50c7c7;">Two-days WS/Tutorial/SharedTask</td><td class="expandable-full"style="width: 100px; font-weight: bold; color: #50c7c7;">Full</td>
+                </tr>
+                <tr class="expandable-student" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Student - Early</td><td>$100</td><td>$50</td><td>$90</td><td>$150</td>
+                </tr>
+                <tr class="expandable-student" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Student - Late<td>$130</td><td>$70</td><td>$120</td><td>$200</td>
+                </tr>
+                <tr class="expandable-student" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Student - On-Spot</td><td>$160</td><td>$90</td><td>$150</td><td>$250</td>
+                </tr>
+                <tr class="expandable-academia" style="">
+                    <td style="text-align: left;">Non-Profit and Academia - Early</td><td>$220</td><td>$90</td><td>$160</td><td>$310</td>
+                </tr>
+                <tr class="expandable-academia" style="">
+                    <td style="text-align: left;">Non-Profit and Academia - Late</td><td>$250</td><td>$120</td><td>$180</td><td>$370</td>
+                </tr>
+                <tr class="expandable-academia" style="">
+                    <td style="text-align: left;">Non-Profit and Academia - On-Spot</td><td>$280</td><td>$150</td><td>$200</td><td>$430</td>
+                </tr>
+                <tr class="expandable-industry" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Industry - Early</td><td>$350</td><td>$120</td><td>$220</td><td>$470</td>
+                </tr>
+                <tr class="expandable-industry" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Industry - Late</td><td>$380</td><td>$160</td><td>$280</td><td>$540</td>
+                </tr>
+                <tr class="expandable-industry" style="background-color: #D6EEEE;">
+                    <td style="text-align: left;">Industry - On-Spot</td><td>$410</td><td>$200</td><td>$320</td><td>$610</td>
+                </tr>
+            </table>
+
+
+            <br><br>
+            <button onclick="computeFee()">Compute payable registration fee</button> <br><br> <div id="total" style="font-size: large; font-weight: bold; color: red;">Total Payable Fee: </div>
+
+            <br>
+            <h3>Step 2: Pay your Registration fee.</h3>
+            <ul>
+                <li>Proceed to the <a href="https://payments.iiitd.edu.in/pg/fees/pg.html">payment</a> link.</li>
+                <li>Fill necessary details. Choose <b>"<u>ICON-2022 Conference Payment</u>"</b> as the payment purpose.</li>
+                <li>Pay registration fee as computed in the first step.</li>
+                <li>Save/Note down the Transaction/Ref id of the payment.</li>
+            </ul>
+            
+            <br>
+            <h3>Step 3: Fill the form.</h3>
+            <a href="https://forms.gle/Mm9pcVRvMakxCRW6A" target="_blank">Click here</a> to open the form in a new tab.
+            <br>
+            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevlSLvqaP6vbwGOrBm1SIGJkL3Y01f5qkKSyuJtpS48gHXuA/viewform?embedded=true" width="640" height="845" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+<!--              </div>
+            </div> -->
+            <hr>
                     </div>
                 </div>
             </div>
         </section>
 
+
+         
 
         <!-- Section-->
          <!-- CFP section-->
@@ -393,28 +524,14 @@
                             </ul>
                            <br><br>
                         </p>
-
+                        <hr>
                     </div>
                 </div>
+
             </div>
         </section>
 
-         <!-- CFTW section
-         <section id="about" class="my-5">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8" style="text-align: justify;">
-                        <h2>Call for Tutorials/Workshops/Shared Task</h2>
-                        <p>
-                            Proposals are invited for pre-conference tutorials/workshops. Tutorials/Workshops can be of half-day or full-day duration. The proposal should be presented in the form of an extended abstract (1-2 pages) as per the ICON 2022 template (ACL template). This should contain a topical outline of the content, description of the proposers and their qualifications relating to the tutorial content.
-                        </p>
-                        <p>
-                            Proposals for Tutorial/Workshop can be submitted via an email sent to <a href="mailto:icon2022@iiitd.ac.in">icon2022@iiitd.ac.in</a> with subject headline "ICON 2022 - Tutorial/Workshop Proposal".
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+         
         <!-- CFTW section-->
         <section id="about" class="my-5">
             <div class="container px-4">
