@@ -243,6 +243,7 @@
 
                 
                 document.getElementById("total").innerHTML = "Total Payable Fee: " + amount + ((bDollar)? ' (USD)' : ' (INR)');
+                document.getElementById("finalNote").innerHTML = "<i>Note: The final payable fee is inclusive of GST.</i>";
             }
         </script>
     </head>
@@ -313,13 +314,13 @@
                             <br>
                             Note:
                             <ul>
-                                <li>One of the authors of each accepted paper must register to present the paper at the conference. Without registration, the paper will not appear in the final proceeding.</li>
+                                <li><b>One of the authors of each accepted paper must register</b> to present the paper at the conference. Without registration, the paper will not appear in the final proceeding.</li>
 
-                                <li>If a participant has more than one papers accepted as an author, he/she must register for all papers. In such cases, participants can register for additional papers at a dicounted rate of 50%. However, they must register for the first paper at the normal rate. For example, if an author has two papers, the payable fee would be 1.5x of the registration fee, i.e., 100% for the first paper + 50% for the second paper.</li>
+                                <li>If a participant has more than one papers accepted as an author, he/she must register for all papers. In such cases, participants can register for <b>additional papers at a dicounted rate of 50%.</b> However, they must register for the first paper at the normal rate. For example, if an author has two papers, the payable fee would be <b>1.5x</b> of the registration fee, i.e., <b>100% for the first paper + 50% for the second paper.</b></li>
 
                                 <li>Registration for all accepted papers must be completed by 30th Nov 2022 (i.e., during Early bid).</li>
 
-                                <li> NLPAI membership is mandatory for all ICON 2022 participants.
+                                <li><b>NLPAI membership is mandatory for all ICON 2022 participants.</b></li>
 
                             </ul>
                         </p>
@@ -452,12 +453,14 @@
 
 
             <br><br>
-            <button onclick="computeFee()">Compute payable registration fee</button> <br><br> <div id="total" style="font-size: large; font-weight: bold; color: red;">Total Payable Fee: </div>
+            <button onclick="computeFee()">Compute payable registration fee</button> <br><br> 
+            <div id="total" style="font-size: large; font-weight: bold; color: red;">Total Payable Fee: </div>
+            <div id="finalNote" class="small"><i></i></div>
 
             <br>
             <h3>Step 2: Pay your Registration fee.</h3>
             <ul>
-                <li>Proceed to the <a href="https://payments.iiitd.edu.in/pg/fees/pg.html">payment</a> link.</li>
+                <li>Proceed to the <a href="https://payments.iiitd.edu.in/pg/fees/pg.html" target="_blank">payment</a> link.</li>
                 <li>Fill necessary details. Choose <b>"<u>ICON-2022 Conference Payment</u>"</b> as the payment purpose.</li>
                 <li>Pay registration fee as computed in the first step.</li>
                 <li>Save/Note down the Transaction/Ref id of the payment.</li>
@@ -490,8 +493,7 @@
                             With the generous support of SERB, our Printing and Travel sponsor, we are happy to announce  partial travel support for ICON-2022 attendees.
                        </p>
                         <ul>
-                                <li  > Registration in the main conference is a must.
-                                </li>
+                                <li  > Registration in the main conference is a must.</li>
                                 <li  > Travel support is applicable for students of Indian origin with Indian affiliation only.
                                 </li>
                                 <li  > It is valid for a direct travel from/to a location in India to Delhi only for the purpose of physically attending ICON-2022. Break journeys are not allowed. 
