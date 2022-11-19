@@ -168,9 +168,9 @@
                 var ind_acad=false;
                 var ind_ind=false;
 
-                var ind_stu=false;
-                var ind_acad=false;
-                var ind_ind=false;
+                var int_stu=false;
+                var int_acad=false;
+                var int_ind=false;
 
                 var dollar_fee = 25; 
                 // ======
@@ -227,18 +227,38 @@
                     amount = myTbl.rows[selectedRow].cells[1].innerHTML;
 
                 
+                var nation = "indian"
+                if (document.getElementById("non_indian").checked){
+                    nation = "international";
+                }
+
                 var not_nlpaimember = document.getElementById("non_nlpai_member").checked
 
                 if (not_nlpaimember) {
-                    if (ind_stu){
-                        amount = parseInt(amount)+500;
+                    
+                    if (nation=="indian"){
+                        if (ind_stu){
+                            amount = parseInt(amount)+500;
+                        }
+                        else if (ind_ind){
+                            amount = parseInt(amount)+3000;
+                        }
+                        else if (ind_acad){
+                            amount = parseInt(amount)+2000;
+                        }
                     }
-                    else if (ind_ind){
-                        amount = parseInt(amount)+3000;
-                    }
-                    else if (ind_acad){
-                        amount = parseInt(amount)+2000;
-                    }                   
+                    else if (nation=="international"){
+                        amount = amount.toString();
+                        if (ind_stu){
+                            amount = parseInt(amount)+7;
+                        }
+                        else if (ind_ind){
+                            amount = parseInt(amount)+37;
+                        }
+                        else if (ind_acad){
+                            amount = parseInt(amount)+25;
+                        }
+                    }                      
                 }
 
                 
