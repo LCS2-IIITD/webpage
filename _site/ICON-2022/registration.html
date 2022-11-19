@@ -247,8 +247,15 @@
                             amount = parseInt(amount)+2000;
                         }
                     }
-                    else if (nation=="international"){
-                        amount = amount.toString();
+                else if (nation=="international"){
+                    console.log(amount);
+                    amount = amount.toString();
+                    console.log(amount);
+
+                    if (amount.indexOf('$') > -1){
+                      amount = amount.slice(1);
+                    }
+                    console.log(amount)
                         if (ind_stu){
                             amount = parseInt(amount)+7;
                         }
@@ -569,7 +576,7 @@
        
         <!-- Footer-->
         <footer class="py-5 bg-dark" style="position: absolute; width: 100%;">
-            <div class="container"><p class="m-0 text-center text-white">The site is being managed by <a href="https://lcs2.iiitd.edu.in/" target="_blank">LCS2</a> Lab</p></div>
+            <div class="container"><p class="m-0 text-center text-white">The site is being managed by <a href="https://as3eem.github.io/" target="_blank">Aseem Srivastava</a></p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
