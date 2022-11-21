@@ -226,6 +226,37 @@
                 else if (checkMain && !(checkpre || checkpost))
                     amount = myTbl.rows[selectedRow].cells[1].innerHTML;
 
+
+                var checkMain = document.getElementById("main-participation").checked; 
+                var checkpre = document.getElementById("pre-participation").checked;
+                var checkpost = document.getElementById("post-participation").checked;
+
+                var amountMain = 0;
+                var amountWS = 0;
+                var amount = 0;
+                if (checkMain && (checkpre || checkpost))
+                {
+                    amountMain = processDollar(myTbl.rows[selectedRow].cells[1].innerHTML, bDollar);
+                    amountWS = processDollar(myTbl.rows[selectedRow].cells[2].innerHTML, bDollar);
+                }
+                else if (checkpre && checkpost)
+                {
+                    amountMain = 0;
+                    amountWS = processDollar(myTbl.rows[selectedRow].cells[3].innerHTML, bDollar);
+                }
+                else if ((checkpre && !checkpost) || (checkpost && !checkpre))
+                {
+                   amountMain = 0;
+                    amountWS = processDollar(myTbl.rows[selectedRow].cells[2].innerHTML, bDollar);
+                }
+                else if (checkMain && !(checkpre || checkpost))
+                {
+                    amountMain = processDollar(myTbl.rows[selectedRow].cells[1].innerHTML, bDollar);
+                    amountWS = 0;
+                }
+
+                var number_papers = document.getElementById("num_papers").value;
+                amount = (number_papers > 1) ? parseInt(amountWS) + parseInt(amountMain) + ((number_papers - 1)*0.5*amountMain): parseInt(amountMain) + parseInt(amountWS);
                 
                 var nation = "indian"
                 if (document.getElementById("non_indian").checked){
@@ -401,6 +432,22 @@
             <br> <input type="checkbox" id="pre-participation" name="participation" /> Pre-conference WS/Tutorial/Shared tasks - 15th Dec 2022
             <br> <input type="checkbox" id="post-participation" name="participation"/> Post-conference WS/Tutorial/Shared tasks - 18th Dec 2022
             <br> <a href="https://www.lcs2.in/ICON-2022/workshops.html" target="_blank">Click here</a> to know the workshop schedule.
+
+            <br> <br> <div>Do you have accpeted paper(s) at ICON-2022?</div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please select number of papers:&nbsp;&nbsp;
+              <select id="num_papers">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
             
             <br> <br> <div id = "nlpai"> NLPAI Membership: </div>
             <input type="radio" id="nlpai_member" name="nlpai_category"/> Already a NLPAI Member
@@ -419,19 +466,19 @@
                     <td style="text-align: left;">Student - Early</td><td class="expandable-main">3500</td><td class="expandable-one">1000</td><td class="expandable-two">1500</td><td class="expandable-full">4500</td>
                 </tr>
                 <tr class="expandable-student" style="background-color: #D6EEEE;">
-                    <td style="text-align: left;">Student - Late</td><td class="expandable-main">4000</td><td class="expandable-one">1500</td><td class="expandable-two">2000</td><td class="expandable-full">5000</td>
+                    <td style="text-align: left;">Student - Late</td><td class="expandable-main">4000</td><td class="expandable-one">1500</td><td class="expandable-two">2000</td><td class="expandable-full">5500</td>
                 </tr>
                 <tr class="expandable-student" style="background-color: #D6EEEE;">
-                    <td style="text-align: left;">Student - On-Spot</td><td class="expandable-main">4500</td><td class="expandable-one">2000</td><td class="expandable-two">2500</td><td class="expandable-full">6000</td>
+                    <td style="text-align: left;">Student - On-Spot</td><td class="expandable-main">4500</td><td class="expandable-one">2000</td><td class="expandable-two">2500</td><td class="expandable-full">6500</td>
                 </tr>
                 <tr class="expandable-academia" style="">
                     <td style="text-align: left;">Non-Profit and Academia - Early</td><td class="expandable-main">6000</td><td class="expandable-one">2000</td><td class="expandable-two">3000</td><td class="expandable-full">8000</td>
                 </tr>
                 <tr class="expandable-academia" style="">
-                    <td style="text-align: left;">Non-Profit and Academia - Late</td><td class="expandable-main">7000</td><td class="expandable-one">2500</td><td class="expandable-two">3500</td><td class="expandable-full">10000</td>
+                    <td style="text-align: left;">Non-Profit and Academia - Late</td><td class="expandable-main">7000</td><td class="expandable-one">3000</td><td class="expandable-two">4000</td><td class="expandable-full">10000</td>
                 </tr>
                 <tr class="expandable-academia" style="">
-                    <td style="text-align: left;">Non-Profit and Academia - On-Spot</td><td class="expandable-main">8000</td><td class="expandable-one">3000</td><td class="expandable-two">4000</td><td class="expandable-full">12000</td>
+                    <td style="text-align: left;">Non-Profit and Academia - On-Spot</td><td class="expandable-main">8000</td><td class="expandable-one">4000</td><td class="expandable-two">5000</td><td class="expandable-full">12000</td>
                 </tr>
                 <tr class="expandable-industry" style="background-color: #D6EEEE;">
                     <td style="text-align: left;">Industry - Early</td><td class="expandable-main">15000</td><td class="expandable-one">3000</td><td class="expandable-two">5000</td><td class="expandable-full">18000</td>
