@@ -286,6 +286,14 @@ ra-p:
     webpage: "https://www.linkedin.com/in/palash-nandi-937b64bb/"
     bio: Research Associate
 
+ra-q:
+    display_name: "Sahil Mishra"
+    role: ra
+    image: /img/people/sahil.jpeg
+    webpage: "https://www.linkedin.com/in/sahilmishra0012/"
+    bio: Research Associate
+
+
 intern-a:
     display_name: "Rachit Bansal"
     role: alum
