@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ICON 2022 tutorial</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+       </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">ICON 2022 WORKSHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Committee</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Dialog Systems: Trends and Challenges</h1>
+                <p class="lead"><b>Thursday, 15th December from 9:00 am to  1:00 pm </b></p>
+                <!-- <a class="btn btn-lg btn-light" href="#about">LEARN MORE</a> -->
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8" >
+                        <h2 class="fw-bolder"><center>ABSTRACT</center></h2>
+                        <p class="lead" align="justify"> Dialog systems play a crucial role in providing human-like conversational experience to the user. Several components work in unison to deliver natural and intelligible response from the Conversational Agents (CA). Some of the key components include but not limited to Dialog Understanding, Dialog Manager, Information Retrieval system and Dialog Generation. This tutorial focuses on providing an overview of the research trends and associated challenges to build end-to-end dialog systems. </p>
+                        <!-- <p class="lead" align="justify"> A knowledge-graph captures real-world knowledge in the form of a network of real-world entities and their relations, assimilated from a multitude of sources. It contains nodes which represent the entities, edges which represent the inter-entity relationships and labels, that capture the semantics or meaning of the relationships. Existing knowledge graphs like YAGO, DbPedia, Freebase etc. capture knowledge about significant world entities like business organizations, business concepts, intra and inter-organizational relationships, people knowledge etc. which can be fused with information obtained from business texts to enable contextual interpretation. Domain specific ontologies like The Gene Ontology for Genomics, Financial Industry Business Ontology (FIBO) ontology for the financial industry, the Geopolitical Ontology built by Food and Agricultural Organization (FAO) have extensive use in processing natural language content in the respective domains.</p> -->
+                        <!-- <h3>Focus of the tutorial</h3> -->
+                        
+                        <ul class="lead" align="justify">
+                            <li class="fw-bolder">Dialog Understanding and Manager</li>
+                            <ul>
+                                <li> We extract different information from conversation as per the requirements of the task. The extracted information help conversational agent to continue with the conversation. This information may include task specific information such as domain, slots, intents, and dialogue acts among others. If we consider the task of reserving a table at a restaurant, the domain is ‘restaurant’. The restaurant domain may include slots such as restaurant name, number of people, date, time, cuisine, location, availability of parking space and other information that would be helpful for successfully booking a table. The captured intent from the utterance symbolizes the motive of the user. In the restaurant domain, the intents could be: booking confirmation, asking for cuisine information, rejecting the suggestion, so on. The information is extracted and aggregated at each turn of the conversation to represent the current state of the conversation, also known as Dialogue State (DS). The process of tracking the Dialog state at every turn in a conversation is called Dialog State Tracking (DST), which is a crucial module in a CA. Policy Manager (PM), another important component of the Dialog Manager, makes use of Dialog States to decide the next course of action and accordingly generate the response. Another sub-problem within the dialogue systems is of closed or open domain Question Answering (QA), wherein the users intend to seek answers or information regarding a query. The QA module explores different information sources to find the relevant answer and frame it as a response.</li>
+                                <br><p> This session aims at exploring the “What”, “Why” and “How” part of the DST and QA systems. We will study how the DST component interacts with other important modules of a conversational agent. We will talk about different domains in which DST and QA have been explored and successfully deployed, the most recent and state-of-the-art works, the evaluation methods, and the key challenges involved in designing such systems.</p>
+                            
+                            </ul>
+                            <li class="fw-bolder">Response Generation</li>
+                            <ul>
+                                <li> Conventional conversational agents rely on rule based systems which use pre-defined templates to generate responses. However, this makes the chatbots monotonous and may result in low user engagement capability. With the advancements in deep learning and introduction of Large Language Models (LLMs), applicability of text generation has seen a surge in many domains such as question-answering, document summarization etc.  Dialog turn generation using LLMs have picked up interest in the research community to make the conversations more natural and contextual. The advantages include but are not limited to:
+                                    <ul>
+                                        <li>Multi-turn contextual information encoding in the current turn.</li>
+                                        <li>Controlled dialog generation using dialog acts to incorporate specific piece of texts.</li>
+                                        <li>Enriching dialogs with paralinguistic information such as emotions, empathy, persona etc. </li>
+                                        <li>Conduct multi-turn engaging conversation </li>
+                                    
+                                    </ul>
+                               <br><p>As such, this tutorial aims to explore several state-of-the-art dialog generation techniques, which employs LLMs. Fine-tuning of auto-regressive models such as GPT, for generating next turn by taking previous turns as context will be discussed. Controlled text generation using dialog acts will also be discussed, which inherently helps to steer the conversation in accordance with the controlling parameters.</p>
+                                </li>
+                            </ul>
+                            <li class="fw-bolder">Multimodal AI</li>
+                            <ul>
+                                <li> Multimodal AI is a multi-disciplinary research area that constitutes various heterogeneous and interconnected sources of data including linguistic, visual and acoustic. It addresses some end goals of AI by integrating and modelling multiple modalities to solve numerous real-world problems in multimedia, healthcare, robotics, finance and Human-computer interactions. With the advancement in machine learning techniques from automatic speech recognition to more recent LLMs, the research area brings some unique challenges to researchers, that involve the study of individual data characteristics as well as cross-alignment between the modalities. In this tutorial, we start with a historical overview of the multimodal research area, then investigate the transition from unimodal to multimodal models, discuss the fundamental technical aspects along with the recent advances in multimodal AI. We will also provide some future directions and underlying challenges to build real-world applications at scale.</li>
+                               
+                            </ul>
+                        </ul>
+                        
+                    
+                        <h3>Presenters</h3>
+    
+                        <ul class="lead" align="justify">
+                            <li>Siddhartha Mukherjee ( Director of Voice Service NLU at Samsung )</li>
+                            <li>Raghavendra HR ( Leader, Voice Service NLU at Samsung )</li>
+                            <li>Vivek Sridhar ( Architect, Voice Service NLU at Samsung)</li>
+                            <li>Abhijit Nargund ( Architect, Voice Service NLU at Samsung )</li>
+                            <li>Dr. Aniruddha Tammewar  ( Architect, Voice Service NLU at Samsung )</li>
+                            <li>Dr. Sandeep Pandey  ( Architect, Voice Service NLU at Samsung )</li>
+                            <li>Dr. Rituraj Singh   ( Architect, Voice Service NLU at Samsung )</li>
+
+                           
+                            
+                        </ul>
+                    </div>
+                   
+                </div>
+                        
+            </div>
+        </section>
+        <!-- Services section-->
+        <!-- <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bolder"><center>ORGANIZING COMMITTEE</center></h2>
+                        
+                         </div>
+                         <div class="row">
+                            <div class="col-md-6">
+                                <figure class="thumbnail">
+                                 <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjU4OLNhaH7AhV1muYKHap4BdwQFnoECA8QAQ&url=https%3A%2F%2Fwww.tcs.com%2Fblog-authors%2Flipikadey&usg=AOvVaw3uB5fBmttIZXq0ZK2gT_CF"><img src="https://www.tcs.com/content/dam/tcs/images/blogs/research-and-innovation/wp-content/authors/lipikadey.jpeg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                                     <figcaption class="caption text-center">
+                                         <h4>Dr. Lipika Dey
+                                             <br><small>Principal scientist at Tata Consultancy Services (TCS) Research</small>
+                                         </h4>
+                                        
+                                     </figcaption>
+                                     <center><a href="mailto:lipika.dey@tcs.com">lipika.dey@tcs.com</a></center> 
+                                 </figure>
+                             </div>
+                         
+                            <div class="col-md-6">
+                                <figure class="thumbnail">
+                                    <a href="https://www.applieddatascience.qmul.ac.uk/people/mliakata"><img src="https://lh3.googleusercontent.com/a-/AOh14GgF0pDtd2HAdM9O_5AM2cfmwu0kNjxJ-ZpdR5elsg=s96-c" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                                    <figcaption class="caption text-center"><h4>Dr. Tirthankar Dasgupta <br><small> Scientist at Tata Consultancy Services (TCS) Research </small></h4></figcaption>
+                                    <center><a href="mailto:dasgupta.tirthankar@tcs.com">dasgupta.tirthankar@tcs.com</a></center> 
+                                </figure>
+                            </div>
+                            
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- Contact section-->
+        <!-- <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bolder"><center>CONTACT US</center></h2>
+                        <table>
+                            <tr>
+                              <th><h2>Email</h2></th>  
+                            </tr>
+                            <tr>
+                              <td><h4><i class="fa fa-envelope-o" style="font-size:36px"></i>  <a href="mailto:shad.akhtar@iiitd.ac.in">shad.akhtar@iiitd.ac.in</a></h4></td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; ICON 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+    </body>
+</html>

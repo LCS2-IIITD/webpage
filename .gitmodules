@@ -25,3 +25,6 @@
 [submodule "tcs_icon2022_tutorial"]
 	path = tcs_icon2022_tutorial
 	url = https://github.com/LCS2-IIITD/tcs_icon2022_tutorial.git
+[submodule "samsung_icon2022_tutorial"]
+	path = samsung_icon2022_tutorial
+	url = https://github.com/LCS2-IIITD/samsung_icon2022_tutorial.git
