@@ -171,6 +171,29 @@ grad-n:
 #     area: "Topic: Combating Online Hate Speech via Counterspeech"
 
 
+grad-o:
+    display_name: "Palash Nandi"
+    role: grad
+    image: /img/people/palash.jpeg
+    webpage: "https://www.linkedin.com/in/palash-nandi-937b64bb/"
+    bio: PhD Scholar (January 2023 - Present)
+    area: "Topic: TBD"
+
+grad-p:
+    display_name: "Sahil Mishra"
+    role: grad
+    image: /img/people/sahil.jpeg
+    webpage: "https://www.linkedin.com/in/sahilmishra0012/"
+    bio: PhD Scholar (January 2023 - Present)
+    area: "Topic: TBD"
+
+# grad-q:
+#     display_name: "This could be you!"
+#     role: grad
+#     image: /img/people/user.png
+#     webpage: "https://lcs2.in/job_post.html"
+#     bio: Click to know oppurtunities @ LCS2
+
 ra-a:
     display_name: "Udit Arora"
     role: alum
@@ -267,7 +290,7 @@ ra-m:
 
 ra-n:
     display_name: "Sheyril Agarwal"
-    role: ra
+    role: alum
     image: /img/people/sheyril.jpg
     webpage: "https://www.linkedin.com/in/sheyril-agarwal/"
     bio: Research Associate
@@ -277,20 +300,6 @@ ra-o:
     role: ra
     image: /img/people/shaily.jpeg
     webpage: "https://www.linkedin.com/in/shaily-desai-a711011b6/"
-    bio: Research Associate
-
-ra-p:
-    display_name: "Palash Nandi"
-    role: ra
-    image: /img/people/palash.jpeg
-    webpage: "https://www.linkedin.com/in/palash-nandi-937b64bb/"
-    bio: Research Associate
-
-ra-q:
-    display_name: "Sahil Mishra"
-    role: ra
-    image: /img/people/sahil.jpeg
-    webpage: "https://www.linkedin.com/in/sahilmishra0012/"
     bio: Research Associate
 
 
