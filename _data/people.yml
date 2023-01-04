@@ -187,7 +187,31 @@ grad-p:
     bio: PhD Scholar (January 2023 - Present)
     area: "Topic: TBD"
 
-# grad-q:
+grad-q:
+    display_name: "Pooja Singh"
+    role: grad
+    image: /img/people/pooja.jpg
+    webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
+    bio: PhD Scholar (January 2023 - Present)
+    area: "Topic: TBD"
+
+grad-r:
+    display_name: ""
+    role: grad
+    image: /img/people/white.jpg
+    webpage: ""
+    # bio: PhD Scholar (January 2023 - Present)
+    # area: "Topic: TBD"
+
+# grad-s:
+#     display_name: ""
+#     role: grad
+#     image: /img/people/white.jpg
+#     webpage: ""
+#     # bio: PhD Scholar (January 2023 - Present)
+#     # area: "Topic: TBD"
+
+# grad-t:
 #     display_name: "This could be you!"
 #     role: grad
 #     image: /img/people/user.png
