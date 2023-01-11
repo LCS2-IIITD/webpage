@@ -196,6 +196,22 @@ grad-q:
     area: "Topic: TBD"
 
 grad-r:
+    display_name: "Neeraj Ranga"
+    role: grad
+    image: /img/people/neeraj.jpeg
+    webpage: "https://www.linkedin.com/in/ranganeeraj/"
+    bio: PhD Scholar (January 2023 - Present)
+    area: "Topic: TBD"
+
+grad-s:
+    display_name: "Faraaz"
+    role: grad
+    # image: /img/people/pooja.jpg
+    # webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
+    bio: PhD Scholar (January 2023 - Present)
+    area: "Topic: TBD"
+
+grad-t:
     display_name: ""
     role: grad
     image: /img/people/white.jpg
@@ -897,6 +913,22 @@ ugrad-bx:
     display_name: "Tarini Sharma"
     bio: Undergrad student
     role: ugrad
+ugrad-by:
+    display_name: "Arunim Gupta"
+    bio: Undergrad student
+    role: ugrad
+ugrad-bz:
+    display_name: "Aniket Goel"
+    bio: Undergrad student
+    role: ugrad
+ugrad-ca:
+    display_name: "Manav Saini"
+    bio: Undergrad student
+    role: ugrad
+ugrad-cb:
+    display_name: "Shantanu Dixit"
+    bio: Undergrad student
+    role: ugrad
 
 # ------------ MTPs ------------
 
@@ -1089,3 +1121,18 @@ pgrad-af:
     display_name: "Palani Vigneshwar"
     bio: Masters student
     role: pgrad
+pgrad-ag:
+    display_name: "Ayush Agarwal"
+    bio: Masters student
+    role: pgrad
+pgrad-ah:
+    display_name: "Indrayudh Talukdar"
+    bio: Masters student
+    role: pgrad
+pgrad-ai:
+    display_name: "Akshara Nair"
+    bio: Masters student
+    role: pgrad
+
+
+
