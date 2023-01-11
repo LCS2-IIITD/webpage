@@ -126,7 +126,7 @@ grad-j:
     display_name: "Aseem Srivastava"
     role: grad
     image: /img/people/aseem.jfif
-    webpage: "https://www.linkedin.com/in/as3eem"
+    webpage: "https://as3eem.github.io"
     bio: PhD Scholar (August 2020 - Present)
     area: "Topic: Conversational AI for Healthcare"
 
@@ -1126,7 +1126,7 @@ pgrad-ag:
     bio: Masters student
     role: pgrad
 pgrad-ah:
-    display_name: "Indrayudh Talukdar"
+    display_name: "Indraayudh Talukdar"
     bio: Masters student
     role: pgrad
 pgrad-ai:
