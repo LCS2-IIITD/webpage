@@ -342,6 +342,22 @@ ra-o:
     webpage: "https://www.linkedin.com/in/shaily-desai-a711011b6/"
     bio: Research Associate
 
+ra-q:
+    display_name: "Siddhant Saxena"
+    role: ra
+    image: /img/people/SiddhantSaxena_Mumbai.png
+    webpage: "https://www.linkedin.com/in/siddhant-saxena-445964182/"
+    bio: Research Associate
+
+
+ra-r:
+    display_name: "Anik Chatterjee"
+    role: ra
+    image: /img/people/AnikChatterjee_Kolkata.jpeg
+    webpage: "https://www.linkedin.com/in/anik-chatterjee-257a82182/"
+    bio: Research Associate
+
+
 
 intern-a:
     display_name: "Rachit Bansal"
