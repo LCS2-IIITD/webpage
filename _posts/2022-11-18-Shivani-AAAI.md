@@ -5,4 +5,4 @@ icon: newspaper-o
 award: false
 ---
 
-<i>Paper accepted at AAAI 2023</i> <b>Shivani Kumar, Ishani Mondal, Md Shad Akhtar, Tanmoy Chakraborty.</b> <font color="blue"> Explaining (Sarcastic) Utterances to Enhance Affect Understanding in Multimodal Dialogues.</font>
+<b>AAAI 2023</b>: Shivani Kumar, Ishani Mondal, Md Shad Akhtar, Tanmoy Chakraborty. <font color="blue"> Explaining (Sarcastic) Utterances to Enhance Affect Understanding in Multimodal Dialogues.</font>

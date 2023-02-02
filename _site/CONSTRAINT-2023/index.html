@@ -1,233 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>CONSTRAINT 2023</title>
-    <!-- favicon -->
-    <!-- <link href="favicon.png" rel=icon> -->
-    <!-- web-fonts -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'> -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700,500' rel='stylesheet' type='text/css'>
-    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <head>
+        <title>Laboratory for Computational Social Systems (LCS2): CONSTRAINT-2023</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="/css/slider.css">
+        <script type="text/javascript" src="/js/slider.js"></script>
+    </head>
+    <body>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <style type="text/css">
-    @media only screen and (max-width: 600px) {
-        #google-form
-        {
-            display:none;
-        }
-    }
-    @media only screen and (min-width: 600px) {
-        #google-form-link
-        {
-            visibility: hidden;
-        }
-    }
-</style>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar">
-    <div id="main-wrapper">
-        <!-- Page Preloader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="status-mes"></div>
-            </div>
-        </div>
-
-        <header class="header">
-            <!-- Navigation -->
-            <nav class="navbar main-menu" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" width="150" height="80" alt=""></a>
-                    </div>
-
-                  </div>
-                  <!-- /.container -->
-              </nav>
-
-              <!-- .nav -->
-
-          </header>
-
-
-          <div class="jumbotron text-center">
-            <div class="content">
-                <h1>CONSTRAINT 2023</h1>
-                <h3 style="color:white;">Third Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situations (CONSTRAINT)</h3>
-                <h3 style="color: #FFFFFF;"><b>Special Theme</b></h3>
-                <p>Defense Against Multimodal Sensational and Harmful Online Content</p>
-                <!-- <a class="page-scroll" href="#section-intro"><button type="button" class="btn btn-default btn-lg">LEARN MORE</button></a> -->
-                <br>
-            </div>
-        </div>
-        <!-- .Jumbotron-->
-
-
-
-        <section id="section-intro" class="section-wrapper about-event">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>ABOUT THE WORKSHOP</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p align="justify">
-                        The increasing accessibility of the Internet has dramatically changed the way we consume information. The ease of social media usage not only encourages individuals to freely express their opinion (freedom of speech) but also provides content polluters with ecosystems to spread hostile posts (hate speech, fake news, cyberbullying, propaganda, etc.).  Such hostile activities are expected to increase manifold during emergencies such as the presidential election and COVID-19 pandemic spreading. Most of such hostile posts are written in regional languages, and therefore can easily evade online surveillance engines that are majority trained on the posts written in resource-rich languages such as English and Chinese. Therefore, regions such as Asia, Africa, South America, where low-resource regional languages are used for day-to-day communication, suffer due to the lack of tools, benchmark datasets and learning techniques. Other developing countries such as Italy, Spain, where the used languages (pseudo-low-resource) are not as equipped with sophisticated computational resources as English, might also be facing the same issues. <br/>
-
-                        Following the success of the <a href="http://lcs2.iiitd.edu.in/CONSTRAINT-2021/" target="_blank">first edition of CONSTRAINT (collocated with AAAI-21)</a>, the second edition will encourage researchers from interdisciplinary domains working on multilingual social media analytics to think beyond the conventional way of combating online hostile posts.  The workshop will broadly focus on three major points: <br/>
-                        <ol>
-                            <li><b>Regional language:</b> The offensive posts under inspection may be written in low-resource regional languages (e.g., Tamil, Urdu, Bangali, Polish, Czech, Lithuanian, etc.).</li> 
-                            <li><b>Emergency situation:</b> ​The proposed solutions should be able to tackle misinformation during emergency situations where due to the lack of enough historical data, learning models need to adopt additional intelligence to handle emerging and novel posts.</li>
-                            <li><b>Early detection:</b> ​Since the effect of misinformation during emergency situations is highly detrimental for society (e.g., health-related misadvice during a pandemic may take human’s life), we encourage the solutions to be able to detect such hostile posts as early as possible after their appearance on social media.</li>
-                        </ol>
-                        <br/>
-
-                        <strong>Special Theme: </strong> We particularly encourage researchers to submit their papers (opinion, position, resource, tool, etc.) which may focus on the <span style="color: red;">Developing Methods to Detect Multimodal Hostile Content on Social Media</span>. It has been established that multimodal content attracts more audience and thus qualifies to be viral rapidly. During an emergency situation such as COVID-19, such viral multimodal harmful posts can be detrimental to society. We seek research papers which will develop methods for detecting multimodal harmful social media content.
-
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- .about-event -->
-
-
-
-
- <section id="section-organizingcommittee" class="section-wrapper team client-logo">
-            <div class="container">
-                <div class="row">
-                   <div class="col-md-12">
-                       <div class="section-title">
-                           <h1>ORGANIZING COMMITTEE</h1>
-                       </div>
-                   </div>
-               </div>
-               <div class="row">
-                   
-                   <div class="col-md-4">
-                       <figure class="thumbnail">
-                           <a href="http://faculty.iiitd.ac.in/~tanmoy/"><img src="img/committee/tanmoy.png" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                           <figcaption class="caption text-center">
-                               <h3> Tanmoy Chakraborty
-                                   <small> IIIT Delhi, India </small>
-                               </h3>
-                           </figcaption>
-                       </figure>
-                   </div>
-                   <div class="col-md-4">
-                       <figure class="thumbnail">
-                           <a href="https://www.iiitd.ac.in/shad"><img src="img/committee/shad.jpeg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                           <figcaption class="caption text-center">
-                               <h3>Md. Shad Akhtar
-                                   <small> IIIT Delhi, India </small>
-                               </h3>
-                           </figcaption>
-                       </figure>
-                   </div>
-
-
-                   <div class="col-md-4">
-                       <figure class="thumbnail">
-                            <a href="http://people.ischool.berkeley.edu/~nakov/"><img src="img/speaker/preslav.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                            <figcaption class="caption text-center">
-                                <h3>  Preslav Nakov <small>Principal Scientist, Qatar Computing Research Institute (QCRI) </small> </h3>
-                            </figcaption>
-                        </figure>
-                   </div>
-
-                <!-- row 2 -->
-               <div class="row">
-
-                    <div class="col-md-4">
-                       <figure class="thumbnail">
-                            <a href="https://sites.google.com/site/firojalam/"><img src="img/speaker/firoj.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                            <figcaption class="caption text-center">
-                                <h3>  Firoj Alam <small>Scientist, Qatar Computing Research Institute (QCRI) </small> </h3>
-                            </figcaption>
-                        </figure>
-                   </div>
-                   
-                   <div class="col-md-4">
-                       <figure class="thumbnail">
-                        <a href="https://shesc.asu.edu/people/h-russell-bernard"><img src="img/committee/russell.png" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                            <figcaption class="caption text-center">
-                                <h3>H. Russell Bernard
-                                    <small>Arizona State University, USA</small>
-                                </h3>
-                            </figcaption>
-                        </figure>
-                    </div>
-                
-                   <div class="col-md-4">
-                       <figure class="thumbnail">
-                           <a href="https://www.applieddatascience.qmul.ac.uk/people/mliakata"><img src="img/committee/maria.jpeg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                           <figcaption class="caption text-center"><h3>Maria Liakata<small>Queen Mary, University of London</small></h3></figcaption>
-                       </figure>
-                   </div>
-
-                   
-                   
-                </div>                
-            </div>
-
-            <div id="task2"></div>
-        </section>
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+      <a class="navbar-brand" href="/"><img src="img/logo.png" alt="" height="60"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
         
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>People</strong>
+        </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/people.html">Current Members</a>
+                <a class="dropdown-item" href="/alumni.html">Alumni</a>
+              </div>
+        </li>
 
 
-
-<footer class="footer">
-    <div class="copyright-section gray-bg">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="copytext text-center">&copy; CONSTRAINT 2023. All rights reserved | Template By: <a href="https://uicookies.com">uiCookies</a></div>
-            </div>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Research</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/research.html">Research@LCS2</a>
+          <a class="dropdown-item" href="/funding.html">Funded Projects</a>
+          <a class="dropdown-item" href="/resources.html">Resources@LCS2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/job_post.html">Opportunities@LCS2</a>
         </div>
-        <!-- .container -->
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Publications</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/publications.html">Research Papers</a>
+            <a class="dropdown-item" href="/tutorials.html">Tutorials</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Events</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/talks.html">Talks@LCS2</a>
+            <a class="dropdown-item" href="/events.html">Events@LCS2</a>
+            <a class="dropdown-item" href="/media.html">Media Coverage</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Others</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/achievements.html">Achievements</a>
+            <a class="dropdown-item" href="/gallery.html">Gallery</a>
+            <!-- <a class="dropdown-item" href="/contact.html">Contacts</a> -->
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html"><strong>Contact Us</strong></a>
+        </li>
+
+      </ul>
+      </div>
+      </nav>  
     </div>
-    <!-- .copyright-section -->
-</footer>
-<!-- .footer -->
+  </div>
+  
+            
 
-</div>
-<!-- #main-wrapper -->
+            <div class="row" style="margin-top: 100px;"></div>
+           
+            
+
+            
+                <h1>CONSTRAINT-2023</h1>
+            
+
+            <h1 id="constraint-2023">CONSTRAINT-2023</h1>
 
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+            <div class="footer">
+                <p>
+                    <a href="/">Laboratory for Computational Social Systems (LCS2)</a>
+                    at
+                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a><br/>Template by <a href="https://github.com/uwsampa/research-group-web">Research Group Website Template</a> </p>
+            </div>
 
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+        </div> <!-- /container -->
 
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
+        </div>
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129817111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-<!--<script src="js/one-page-nav.js"></script>-->
-<script src="js/scripts.js"></script>
+          gtag('config', 'UA-129817111-1');
+        </script>
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
