@@ -1,1 +1,3 @@
-# CONSTRAINT-2023
+# CONSTRAINT 2022 Workshop
+Website for CONSTRAINT Workshop
+
