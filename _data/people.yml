@@ -177,7 +177,7 @@ grad-o:
     image: /img/people/palash.jpeg
     webpage: "https://www.linkedin.com/in/palash-nandi-937b64bb/"
     bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: TBD"
+    area: "Topic: Large Language Models"
 
 grad-p:
     display_name: "Sahil Mishra"
@@ -185,7 +185,7 @@ grad-p:
     image: /img/people/sahil.jpeg
     webpage: "https://www.linkedin.com/in/sahilmishra0012/"
     bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: TBD"
+    area: "Topic: Counter Hate Speech"
 
 grad-q:
     display_name: "Pooja Singh"
@@ -193,7 +193,7 @@ grad-q:
     image: /img/people/pooja.jpg
     webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
     bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: TBD"
+    area: "Topic: Graph Representation Learning"
 
 grad-r:
     display_name: "Neeraj Ranga"
@@ -201,12 +201,12 @@ grad-r:
     image: /img/people/neeraj.jpeg
     webpage: "https://www.linkedin.com/in/ranganeeraj/"
     bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: TBD"
+    area: "Topic: AI for Mental Health"
 
 grad-s:
     display_name: "Faraaz"
     role: grad
-    # image: /img/people/pooja.jpg
+    image: /img/people/faraaz.jpeg
     # webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
     bio: PhD Scholar (January 2023 - Present)
     area: "Topic: TBD"
