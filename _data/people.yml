@@ -146,14 +146,6 @@ grad-l:
     bio: PhD Scholar (August 2020 - Present)
     area: "Topic: Meme Analysis"
 
-grad-ashutosh_bajpai:
-    display_name: "Ashutosh Bajpai"
-    role: grad
-    image: /img/people/AshutoshBajpai.jpeg
-    webpage: "https://www.linkedin.com/in/ashutosh-bajpai-98363325/"
-    bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: Lightweight Language Modeling"
-
 # grad-m:
 #     display_name: "Karan Goyal"
 #     role: grad
