@@ -1,2 +1,8 @@
-For News:
+* Creation and Modification in _site is done through compilation. 
+* For News:
 	* Create a new .md file in .../webpage/_posts/
+	
+	
+* For achievements: 
+	* Flip the flag 'award:' to true in .../webpage/_posts/xxx.md
+
