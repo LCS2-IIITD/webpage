@@ -1,0 +1,2 @@
+For News:
+	* Create a new .md file in .../webpage/_posts/
