@@ -329,12 +329,12 @@ ra-l:
     bio: Research Associate
     current_affiliation: Tokopedia
 
-ra-m:
-    display_name: "Priyanshi Gupta"
-    role: ra
-    image: /img/people/priyanshi.jpg
-    webpage: "https://www.linkedin.com/in/priyanshiguptaaa/"
-    bio: Research Associate
+# ra-m:
+#     display_name: "Priyanshi Gupta"
+#     role: ra
+#     image: /img/people/priyanshi.jpg
+#     webpage: "https://www.linkedin.com/in/priyanshiguptaaa/"
+#     bio: Research Associate
 
 ra-n:
     display_name: "Sheyril Agarwal"
