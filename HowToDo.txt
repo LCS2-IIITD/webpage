@@ -8,3 +8,5 @@
 	
 * talks
 
+* Publications -> Research Papers : _includes/pubs.html
+
