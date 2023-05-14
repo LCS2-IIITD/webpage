@@ -9,3 +9,4 @@
 * talks: webpage/talks.html
 * Publications: Research Papers : _includes/pubs.html
 * People: webpage/_data/people.yml
+* Hardware resources: webpage/resources.html
