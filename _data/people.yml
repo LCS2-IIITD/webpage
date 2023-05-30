@@ -343,12 +343,12 @@ ra-n:
     webpage: "https://www.linkedin.com/in/sheyril-agarwal/"
     bio: Research Associate
 
-ra-o:
-    display_name: "Shaily Desai"
-    role: ra
-    image: /img/people/shaily.jpeg
-    webpage: "https://www.linkedin.com/in/shaily-desai-a711011b6/"
-    bio: Research Associate
+# ra-o:
+#     display_name: "Shaily Desai"
+#     role: ra
+#     image: /img/people/shaily.jpeg
+#     webpage: "https://www.linkedin.com/in/shaily-desai-a711011b6/"
+#     bio: Research Associate
 
 ra-q:
     display_name: "Siddhant Saxena"
@@ -365,7 +365,19 @@ ra-r:
     webpage: "https://www.linkedin.com/in/anik-chatterjee-257a82182/"
     bio: Research Associate
 
+ra-shaonli_pal:
+    display_name: "Shaonli Pal"
+    role: ra
+    image: /img/people/shaonli_pal.jpeg
+    webpage: "https://www.linkedin.com/in/shaonli-pal-891727153/"
+    bio: Research Associate
 
+ra-aswini_kumar_padhi:
+    display_name: "Aswini Kumar Padhi"
+    role: ra
+    image: /img/people/aswini_kumar_padhi.jpeg
+    webpage: "https://www.linkedin.com/in/aswini-kumar-08925572/"
+    bio: Research Associate
 
 intern-a:
     display_name: "Rachit Bansal"
