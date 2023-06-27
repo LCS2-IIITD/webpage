@@ -28,3 +28,6 @@
 [submodule "CLAIMSCAN-2023"]
 	path = CLAIMSCAN-2023
 	url = https://github.com/LCS2-IIITD/CLAIMSCAN-2023
+[submodule "hatenorm-2023"]
+	path = hatenorm-2023
+	url = https://github.com/LCS2-IIITD/hatenorm-2023.git

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HateNorm 2023</title>
+    <!-- favicon -->
+    <!-- <link href="favicon.png" rel=icon> -->
+    <!-- web-fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700,500' rel='stylesheet' type='text/css'>
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+    @media only screen and (max-width: 600px) {
+        #google-form
+        {
+            display:none;
+        }
+    }
+    @media only screen and (min-width: 600px) {
+        #google-form-link
+        {
+            visibility: hidden;
+        }
+    }
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+    <div id="main-wrapper">
+        <!-- Page Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
+        </div>
+
+        <header class="header">
+            <!-- Navigation -->
+            <nav class="navbar main-menu" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/hn.png" width="150" height="40" alt=""></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <!-- <li><a class="page-scroll" href="#section-news">News</a></li> -->
+
+                            <li>
+                                <li><a class="page-scroll" href="#section-intro">About</a></li>
+                                <li><a class="page-scroll" href="#section-imp-dates">Important Dates</a>  
+                                <li><a class="page-scroll" href="#section-organizingcommittee">Organizers</a>   
+                                <li><a class="page-scroll" href="#section-contact">Contact Us</a></li>
+                                <!-- <li><a href="http://lcs2.iiitd.edu.in/CONSTRAINT-2021/" target="_blank">CONSTRAINT-2021</a></li> -->
+                          </ul>
+                      </div>
+                      <!-- /.navbar-collapse -->
+                  </div>
+                  <!-- /.container -->
+              </nav>
+
+              <!-- .nav -->
+
+          </header>
+
+
+          <div class="jumbotron text-center">
+            <div class="content">
+                <h1>HateNorm 2023</h1>
+                <h3 style="color:white;">Shared Task on<br>Identification of Tokens Contributing to Explicit Hate in Text by Hate Span Detection</h3>
+
+                <!-- <div class="event-date">11<sup>th</sup> January 2021, IIIT Delhi</div> -->
+                <!-- <div class="event-date">Collocated with AAAI 2021</div> -->
+                <!-- <h3 style="color: #FFFFFF;"><b>Special Theme</b></h3> -->
+                <!-- <p>Multimodal Low-Resource Language Processing to Combat COVID-19 Related Online Hostile Content</p> -->
+                <a class="page-scroll" href="#section-intro"><button type="button" class="btn btn-default btn-lg">LEARN MORE</button></a>
+                <br>
+            </div>
+        </div>
+        
+
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>ABOUT</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p align="justify">
+                        This task aims to detect the various hateful spans within a sentence already considered hateful. A hate span is a set of continuous tokens that, in tandem, communicate the explicit hatefulness in a sentence. For instance, in the statement, <span style="font-style: italic;">Women ... Can't live with them ... <span style="color: brown;">Can't shoot them</span></span> the portion highlighted in red will be considered as a hateful span. This shared task aims to extract all such spans inside a hateful text. 
+                        <!-- To accomplish this, we propose two sub-tasks:  <br/> -->
+
+                        <!-- <ol>
+                            <li><b>Claim Detection:</b> This involves detecting the presence of a claim within the given text. This can be a challenging task, as claims can take various forms and may be embedded within larger pieces of text. Therefore, the system must be able to recognize patterns and language cues that are characteristic of claims, such as assertive language, specific claims about a topic, and references to evidence or sources.  <br> Codalab Link: <a href="https://codalab.lisn.upsaclay.fr/competitions/13556">https://codalab.lisn.upsaclay.fr/competitions/13556</a> </li>
+                            <br>
+                            <li><b>Claim Span Identification:</b> Once a claim has been detected, the next step is to identify its specific span or location within the text. The system must be able to pinpoint the exact words or phrases that make up the claim, as this information is crucial for assessing its veracity and determining its potential impact. <br> Codalab Link: <a href="https://codalab.lisn.upsaclay.fr/competitions/13557">https://codalab.lisn.upsaclay.fr/competitions/13557</a> </li>
+                        </ol> -->
+                        <br/>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- .about-event -->
+
+    <section id="section-imp-dates" class="section-wrapper pricing-section gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>IMPORTANT DATES</h1><br/>
+                        <!-- <h2>TBD</h2> -->
+                        <p>June 5, 2023: Release of the training set</p>
+                        <!-- <p>July 25, 2023: Release of the test set</p>
+                        <p>August 10, 2023: Deadline for submitting final results</p> -->
+                        <p>August 15, 2023: Results announcement</p>
+                        <!-- <p>October 1, 2023: Notification of acceptance</p>
+                        <p>October 15, 2023: Camera-ready papers due</p>
+                        <p>December 15, 2023: FIRE 2023</p> -->
+                        <br>
+                        <p>Note: These are tenstive dates. Kindly check the website regularly for timely updates.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-organizingcommittee" class="section-wrapper team client-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>ORGANIZING COMMITTEE</h1>
+                        <!-- <p>TBD</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://www.linkedin.com/in/sundriyalmegha/"><img src="img/committee/sarah.jpeg" class="img-responsive img-circle" alt="Image" style="height:170px; width:170px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4> Sarah Masud
+                                <br><small> IIIT Delhi, India</small>
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://www.linkedin.com/in/sundriyalmegha/"><img src="img/committee/aflah.jpeg" class="img-responsive img-circle" alt="Image" style="height:170px; width:170px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4> Md. Aflah Khan
+                                <br><small> IIIT Delhi, India</small>
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://www.tanmoychak.com/"><img src="img/committee/tanmoy.png" class="img-responsive img-circle" alt="Image" style="height:170px; width:170px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4> Tanmoy Chakraborty
+                                <br><small> IIT Delhi, India </small>
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://www.iiitd.ac.in/shad"><img src="img/committee/shad.jpeg" class="img-responsive img-circle" alt="Image" style="height:170px; width:170px;"></a>
+                        <figcaption class="caption text-center">
+                            <h4>Md. Shad Akhtar
+                                <br><small> IIIT Delhi, India </small>
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+            </div>
+                
+            </div> 
+        </div>
+
+        <div id="task2"></div>
+    </section>
+    
+
+
+
+
+
+
+
+  </section>
+  <section id="section-contact" class="section-wrapper about-event" style="margin-top: -4%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>CONTACT US</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row w-50 mx-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="trow">
+                       <td><i class="fa fa-envelope" style="font-size: 20px;"></i>
+                           &nbsp;&nbsp; <a href="mailto:sarahm@iiitd.ac.in">sarahm@iiitd.ac.in</a></td>
+                    </tr>
+                    <!-- <tr class="trow">
+                        <td><i class="fa fa-envelope" style="font-size: 20px;"></i>
+                            &nbsp;&nbsp; <a href="mailto:ttanchak@iitd.ac.in">tanchak@iitd.ac.in</a></td>
+                    </tr> -->
+                       <!-- <tr class="trow">
+                        <td >
+                            <a class="icon" href="https://twitter.com/lcs2lab" title="Follow with Twitter" target="_blank"><i class="fa fa-twitter" style="font-size: 20px;"></i>&nbsp;&nbsp;&nbsp; Follow us on Twitter</a>
+                        </td>
+                       </tr> -->
+                   </tbody>
+               </table>
+
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdeu_zjGSdSxViwy-IPB9C_Zr7s4J5ft8XfgwLIps6zSM04kA/viewform?embedded=true" width="840" height="945" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end of .container -->
+
+</section>
+
+<footer class="footer">
+    <div class="copyright-section gray-bg">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="copytext text-center">&copy; HateNorm 2023. All rights reserved.</div>
+            </div>
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- .copyright-section -->
+</footer>
+<!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
