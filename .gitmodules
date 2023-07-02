@@ -31,3 +31,6 @@
 [submodule "hatenorm-2023"]
 	path = hatenorm-2023
 	url = https://github.com/LCS2-IIITD/hatenorm-2023.git
+[submodule "SemEval2024-EDiReF"]
+	path = SemEval2024-EDiReF
+	url = https://github.com/LCS2-IIITD/SemEval2024-EDiReF.git
