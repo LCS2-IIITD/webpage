@@ -379,6 +379,13 @@ ra-aswini_kumar_padhi:
     webpage: "https://www.linkedin.com/in/aswini-kumar-08925572/"
     bio: Research Associate
 
+ra-amey_hengle:
+    display_name: "Amey Hengle"
+    role: ra
+    image: /img/people/amey_hengle.jpeg
+    webpage: "https://www.linkedin.com/in/amey-hengle"
+    bio: Research Associate
+
 intern-a:
     display_name: "Rachit Bansal"
     role: alum
