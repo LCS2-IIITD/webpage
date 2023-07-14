@@ -1,7 +1,7 @@
 {
     "name": "SemEval 2024 Task: Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)",
     "tagline": "Task Home Page",
-    "body": "The __EDiReF__ shared task at [SemEval2014](https://semeval.github.io/SemEval2024/)is an amalgamation of three subtasks tasks- (i) Emotion Recognition in Conversation __(ERC)__ in Hindi-English code-mixed conversations, (ii) Emotion Flip Reasoning __(EFR)__ in Hindi-English code-mixed conversations, and (iii) __EFR__ in English conversations. The definition for the tasks of ERC and EFR are as illustrated below:\r\n\r\n* __ERC__:  Given a dialogue, ERC aims to assign an emotion to each utterance from a predefined set of possible emotions. * __EFR__: Given a dialogue, EFR aims to identify the trigger utterance(s) and instigators for an emotion-flip in a multi-party conversation dialogue.",
+    "body": "The __EDiReF__ shared task at [SemEval2014](https://semeval.github.io/SemEval2024/)is an amalgamation of three subtasks tasks- (i) Emotion Recognition in Conversation __(ERC)__ in Hindi-English code-mixed conversations, (ii) Emotion Flip Reasoning __(EFR)__ in Hindi-English code-mixed conversations, and (iii) __EFR__ in English conversations. The definition for the tasks of ERC and EFR are as illustrated below:\r\n\r\n* __ERC__:  Given a dialogue, ERC aims to assign an emotion to each utterance from a predefined set of possible emotions. * __EFR__: Given a dialogue, EFR aims to identify the trigger utterance(s) for an emotion-flip in a multi-party conversation dialogue.",
     "google": "",
     "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
