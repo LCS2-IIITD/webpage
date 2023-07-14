@@ -1,273 +1,220 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Laboratory for Computational Social Systems (LCS2): SemEval 2024 Task: Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-              crossorigin="anonymous">
-        <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/group.css">
-        <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-        <link rel="stylesheet" href="/css/slider.css">
-        <script type="text/javascript" src="/js/slider.js"></script>
-    </head>
-    <body>
-
-        <div class="container">
-            <div class="row">
-    <div class="col-12">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
-      <a class="navbar-brand" href="/"><img src="img/logo.png" alt="" height="60"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <strong>People</strong>
-        </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/people.html">Current Members</a>
-                <a class="dropdown-item" href="/alumni.html">Alumni</a>
-              </div>
-        </li>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>SemEval 2024 Task: Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">SemEval 2024 Task: Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)</h1>
+      <h2 class="project-tagline">Task Home Page</h2>
+    </section>
 
 
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <strong>Research</strong>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/research.html">Research@LCS2</a>
-          <a class="dropdown-item" href="/funding.html">Funded Projects</a>
-          <a class="dropdown-item" href="/resources.html">Resources@LCS2</a>
-          <!-- <div class="dropdown-divider"></div> -->
-          <!-- <a class="dropdown-item" href="/job_post.html">Opportunities@LCS2</a> -->
-        </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <strong>Publications</strong>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/publications.html">Research Papers</a>
-            <a class="dropdown-item" href="/tutorials.html">Tutorials</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <strong>Events</strong>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/talks.html">Talks@LCS2</a>
-            <a class="dropdown-item" href="/events.html">Events@LCS2</a>
-            <a class="dropdown-item" href="/media.html">Media Coverage</a>
-          </div>
-        </li>
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <strong>Others</strong>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/achievements.html">Achievements</a>
-            <a class="dropdown-item" href="/gallery.html">Gallery</a>
-            <!-- <a class="dropdown-item" href="/contact.html">Contacts</a> -->
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html"><strong>Contact Us</strong></a>
-        </li>
-
-      </ul>
-      </div>
-      </nav>  
-    </div>
-  </div>
-  
-            
-
-            <div class="row" style="margin-top: 100px;"></div>
-           
-            
-
-            
-                <h1>SemEval 2024 Task: Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)</h1>
-            
-
-            <p>The <strong>EDiReF</strong> shared task at <a href="https://semeval.github.io/SemEval2024/">SemEval 2024</a> is an amalgamation of three subtasks tasks- (i) Emotion Recognition in Conversation <strong>(ERC)</strong> in Hindi-English code-mixed conversations, (ii) Emotion Flip Reasoning <strong>(EFR)</strong> in Hindi-English code-mixed conversations, and (iii) <strong>EFR</strong> in English conversations. The definition for the tasks of ERC and EFR are as illustrated below:</p>
-
+<section class="main-content">
+      <p>The <strong>EDiReF</strong> shared task at <a href="https://semeval.github.io/SemEval2024/">SemEval 2024</a> is an amalgamation of three subtasks tasks- (i) Emotion Recognition in Conversation <strong>(ERC)</strong> in Hindi-English code-mixed conversations, (ii) Emotion Flip Reasoning <strong>(EFR)</strong> in Hindi-English code-mixed conversations, and (iii) <strong>EFR</strong> in English conversations. The definition for the tasks of ERC and EFR are as illustrated below:</p>
 <ul>
-  <li><strong>ERC</strong>:  Given a dialogue, ERC aims to assign an emotion to each utterance from a predefined set of possible emotions.</li>
-  <li><strong>EFR</strong>: Given a dialogue, EFR aims to identify the trigger utterance(s) for an emotion-flip in a multi-party conversation dialogue.</li>
+<li><strong>ERC</strong>:  Given a dialogue, ERC aims to assign an emotion to each utterance from a predefined set of possible emotions.</li>
+<li><strong>EFR</strong>: Given a dialogue, EFR aims to identify the trigger utterance(s) for an emotion-flip in a multi-party conversation dialogue.</li>
 </ul>
 
+<h2>
+<a id="task-example" class="anchor" href="#task-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task Example</h2>
 <p>For example, given a sample dialogue below:</p>
-
 <table>
-  <thead>
-    <tr>
-      <th>Speaker</th>
-      <th>Utterance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>I had an awful day today!</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>2</sub></td>
-      <td>Oh no! What happened?</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>Somebody ate my sandwich!</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>2</sub></td>
-      <td>I can make you a new one right now!</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>That would be great! Thanks!</td>
-    </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Utterance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>I had an awful day today!</td>
+</tr>
+<tr>
+<td>Sp<sub>2</sub></td>
+<td>Oh no! What happened?</td>
+</tr>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>Somebody ate my sandwich!</td>
+</tr>
+<tr>
+<td>Sp<sub>2</sub></td>
+<td>I can make you a new one right now!</td>
+</tr>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>That would be great! Thanks!</td>
+</tr>
+</tbody>
 </table>
-
 <p>ERC aims to assign emotions to each utterance</p>
-
 <table>
-  <thead>
-    <tr>
-      <th>Speaker</th>
-      <th>Utterance</th>
-      <th>Emotion</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>I had an awful day today!</td>
-      <td>Sad</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>2</sub></td>
-      <td>Oh no! What happened?</td>
-      <td>Sad</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>Somebody ate my sandwich!</td>
-      <td>Sad</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>2</sub></td>
-      <td>I can make you a new one right now!</td>
-      <td>Joy</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>That would be great! Thanks!</td>
-      <td>Joy</td>
-    </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Utterance</th>
+<th>Emotion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>I had an awful day today!</td>
+<td>Sad</td>
+</tr>
+<tr>
+<td>Sp<sub>2</sub></td>
+<td>Oh no! What happened?</td>
+<td>Sad</td>
+</tr>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>Somebody ate my sandwich!</td>
+<td>Sad</td>
+</tr>
+<tr>
+<td>Sp<sub>2</sub></td>
+<td>I can make you a new one right now!</td>
+<td>Joy</td>
+</tr>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>That would be great! Thanks!</td>
+<td>Joy</td>
+</tr>
+</tbody>
+</table>
+<p>The example dialogue has two emotion flips. Sp<sub>1</sub>&#39;s emotion changed from Sad to Joy while Sp<sub>2</sub>&#39;s emotion also shifted from Sad to joy. EFR aims to justify such emotion flips using triggers.</p>
+<table>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Utterance</th>
+<th>Emotion</th>
+<th>Trigger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>I had an awful day today!</td>
+<td>Sad</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sp<sub>2</sub></td>
+<td>Oh no! What happened?</td>
+<td>Sad</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>Somebody ate my sandwich!</td>
+<td>Sad</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sp<sub>2</sub></td>
+<td>I can make you a new one right now!</td>
+<td>Joy</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sp<sub>1</sub></td>
+<td>That would be great! Thanks!</td>
+<td>Joy</td>
+<td>0</td>
+</tr>
+</tbody>
 </table>
 
-<p>The example dialogue has two emotion flips. Sp<sub>1</sub>’s emotion changed from Sad to Joy while Sp<sub>2</sub>’s emotion also shifted from Sad to joy. EFR aims to justify such emotion flips using triggers.</p>
+
+<h2>
+<a id="important-dates" class="anchor" href="#important-dates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Important Dates</h2>
 
 <table>
-  <thead>
-    <tr>
-      <th>Speaker</th>
-      <th>Utterance</th>
-      <th>Emotion</th>
-      <th>Trigger</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>I had an awful day today!</td>
-      <td>Sad</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>2</sub></td>
-      <td>Oh no! What happened?</td>
-      <td>Sad</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>Somebody ate my sandwich!</td>
-      <td>Sad</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>2</sub></td>
-      <td>I can make you a new one right now!</td>
-      <td>Joy</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Sp<sub>1</sub></td>
-      <td>That would be great! Thanks!</td>
-      <td>Joy</td>
-      <td>0</td>
-    </tr>
-  </tbody>
+<tbody>
+  <tr>
+    <td>Tasks announced (with sample data available)</td>
+    <td>17 July 2023</td>
+  </tr>
+  <tr>
+    <td>Training data ready</td>
+    <td>4 September 2023</td>
+  </tr>
+  <tr>
+    <td>Evaluation start</td>
+    <td>10 January 2024</td>
+  </tr>
+  <tr>
+    <td>Evaluation end</td>
+    <td>20 January 2024</td>
+  </tr>
+  <tr>
+    <td>Paper submission due</td>
+    <td>29 February 2024</td>
+  </tr>
+  <tr>
+    <td>Notification to authors</td>
+    <td>1 April 2024</td>
+  </tr>
+  <tr>
+    <td>Camera ready due</td>
+    <td>22 April 2024</td>
+  </tr>
+  <tr>
+    <td>SemEval workshop</td>
+    <td>TBD, 2024 (co-located with a Major NLP conference)</td>
+  </tr>
+</tbody>
 </table>
 
-<h2 id="organization">Organization</h2>
+<h2>
+<a id="codalab" class="anchor" href="#codalab" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CodaLab</h2>
+
+<p>The tasks will be hosted on CodaLab and the link will be available here.</p>
+
+<h2>
+<a id="downloads" class="anchor" href="#downloads" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Downloads</h2>
+
+<p>Training and validation data will be made available here for download.</p>
+
+<h2>
+<a id="organization" class="anchor" href="#organization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Organization</h2>
+
+<!-- <p>Please subscribe to <a href="https://groups.google.com/group/dimsum16">https://groups.google.com/group/dimsum16</a> for announcements about the task.</p>
+
+<p>See the <a href="http://alt.qcri.org/semeval2016/task10/index.php?id=important-dates">schedule</a> for planned data releases and deadlines.</p> -->
 
 <p>The organizers are:</p>
 
 <ul>
-  <li><a href="https://sites.google.com/iiitd.ac.in/shivani-kumar/home">Shivani Kumar</a>,  IIIT Delhi</li>
-  <li><a href="https://faculty.iiitd.ac.in/~shad.akhtar/">Md Shad Akhtar</a>,  IIIT Delhi</li>
-  <li><a href="https://www.tanmoychak.com/">Tanmoy Chakraborty</a>,  IIT Delhi</li>
-  <li><a href="https://dr.ntu.edu.sg/cris/rp/rp00927">Eric Cambria</a>, NTU, Singapore</li>
+<li>
+<a href="https://sites.google.com/iiitd.ac.in/shivani-kumar/home">Shivani Kumar</a>, IIIT, Delhi</li>
+<li>
+<a href="https://faculty.iiitd.ac.in/~shad.akhtar//">Md Shad Akhtar</a>, IIIT, Delhi</li>
+<li>
+<a href="https://www.tanmoychak.com/">Tanmoy Chakraborty</a>, IIT, Delhi</li>
+<li>
+<a href="https://dr.ntu.edu.sg/cris/rp/rp00927">Erik Cambria</a>, NTU, Singapore</li>
 </ul>
 
+      <footer class="site-footer">
 
-            <div class="footer">
-                <p>
-                    <a href="/">Laboratory for Computational Social Systems (LCS2)</a>
-                    at
-                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a><br/>Template by <a href="https://github.com/uwsampa/research-group-web">Research Group Website Template</a> </p>
-            </div>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-        </div> <!-- /container -->
+    </section>
 
-        </div>
-        <!-- Support retina images. -->
-        <script type="text/javascript"
-                src="/js/srcset-polyfill.js"></script>
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129817111-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-129817111-1');
-        </script>
-
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+  
+  </body>
 </html>
