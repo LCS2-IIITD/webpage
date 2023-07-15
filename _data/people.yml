@@ -219,13 +219,29 @@ grad-s:
     bio: PhD Scholar (January 2023 - Present)
     area: "Topic: TBD"
 
-grad-t:
-    display_name: ""
+grad-aswini_kumar_padhi:
+    display_name: "Aswini Kumar Padhi"
     role: grad
-    image: /img/people/white.jpg
-    webpage: ""
-    # bio: PhD Scholar (January 2023 - Present)
-    # area: "Topic: TBD"
+    image: /img/people/aswini_kumar_padhi.jpeg
+    webpage: "https://www.linkedin.com/in/aswini-kumar-08925572/"
+    bio: PhD Scholar ( July '23 - Present )
+    area: "Topic: Counterspeech Generation"
+
+grad-Anwoy_Chatterjee:
+    display_name: "Anwoy Chatterjee"
+    role: grad
+    image: /img/people/anwoy_chatterjee.jpeg
+    webpage: "https://in.linkedin.com/in/anwoy-chatterjee"
+    bio: PhD Scholar ( July '23 - Present )
+    area: "Topic: TBD"
+
+# grad-t:
+#     display_name: ""
+#     role: grad
+#     image: /img/people/white.jpg
+#     webpage: ""
+#     # bio: PhD Scholar (January 2023 - Present)
+#     # area: "Topic: TBD"
 
 # grad-s:
 #     display_name: ""
@@ -372,12 +388,6 @@ ra-shaonli_pal:
     webpage: "https://www.linkedin.com/in/shaonli-pal-891727153/"
     bio: Research Associate
 
-ra-aswini_kumar_padhi:
-    display_name: "Aswini Kumar Padhi"
-    role: ra
-    image: /img/people/aswini_kumar_padhi.jpeg
-    webpage: "https://www.linkedin.com/in/aswini-kumar-08925572/"
-    bio: Research Associate
 
 ra-amey_hengle:
     display_name: "Amey Hengle"
