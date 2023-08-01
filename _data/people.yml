@@ -396,6 +396,13 @@ ra-amey_hengle:
     webpage: "https://www.linkedin.com/in/amey-hengle"
     bio: Research Associate
 
+ra-sahajpreet_singh:
+    display_name: "Sahajpreet Singh"
+    role: ra
+    image: /img/people/sahajpreet_singh.png
+    webpage: "https://www.linkedin.com/in/sahajpreet-singh"
+    bio: Research Associate
+
 intern-a:
     display_name: "Rachit Bansal"
     role: alum
