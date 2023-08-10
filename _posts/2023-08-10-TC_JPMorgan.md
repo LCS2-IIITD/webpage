@@ -5,4 +5,4 @@ icon: newspaper-o
 award: true
 ---
 
-Dr. Tanmoy Chakraborty received the <font color="blue"> JP Morgan Faculty Award</font> 2023.
+<b>Dr. Tanmoy Chakraborty</b> received the <font color="blue"> JP Morgan Faculty Award</font> 2023.
