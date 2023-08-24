@@ -403,6 +403,13 @@ ra-sahajpreet_singh:
     webpage: "https://www.linkedin.com/in/sahajpreet-singh"
     bio: Research Associate
 
+ra-eshaan_tanwar:
+    display_name: "Eshaan Tanwar"
+    role: ra
+    image: /img/people/Eshaan_Tanwar.jpeg
+    webpage: "https://www.linkedin.com/in/eshaan-tanwar-33726b168/"
+    bio: Research Associate
+
 intern-a:
     display_name: "Rachit Bansal"
     role: alum
