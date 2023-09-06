@@ -410,6 +410,14 @@ ra-eshaan_tanwar:
     webpage: "https://www.linkedin.com/in/eshaan-tanwar-33726b168/"
     bio: Research Associate
 
+ra-shubhanshu_khatana:
+    display_name: "Shubhanshu Khatana"
+    role: ra
+    image: /img/people/Shubhanshu_Khatana.png
+    webpage: "https://www.linkedin.com/in/shubhanshu-khatana-4b5562214"
+    bio: Research Associate
+
+
 intern-a:
     display_name: "Rachit Bansal"
     role: alum
