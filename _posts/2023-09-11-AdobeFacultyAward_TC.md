@@ -6,4 +6,4 @@ award: true
 ---
 
 
-<b>Dr. Tanmoy Chakraborty</b> received the <font color="blue">Adobe Faculty Award 2023</font>.
+<b>Dr. Tanmoy Chakraborty</b> received the <font color="blue">Adobe Faculty Award</font> 2023.
