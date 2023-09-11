@@ -2,7 +2,7 @@
 layout: post
 shortnews: true
 icon: newspaper-o
-award: true
+award: false
 ---
 
 
