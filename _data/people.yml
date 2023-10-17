@@ -796,12 +796,12 @@ ugrad-aj:
 ugrad-ak:
     display_name: "Nishant Grover"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-al:
     display_name: "Siddharth Sadhwani"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-am:
     display_name: "Rahul Kukreja"
@@ -817,7 +817,7 @@ ugrad-an:
 # ugrad-ao:
 #     display_name: "Mukul"
 #     bio: Undergrad student
-#     role: ugrad
+#     role: alum
 
 ugrad-ap:
     display_name: "Atishay Jain"
@@ -839,301 +839,315 @@ ugrad-ar:
 ugrad-as:
     display_name: "Mohammad Aflah Khan"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 # ugrad-at:
 #     display_name: "Harman Singh"
 #     bio: Undergrad student
-#     role: ugrad
+#     role: alum
 
 ugrad-au:
     display_name: "Himanshi Mathur"
     bio: Masters student
-    role: ugrad
+    role: alum
 
 ugrad-av:
     display_name: "Manvi Goel"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-aw:
     display_name: "Jahnvi Kumari"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-ax:
     display_name: "Tanya Gupta"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-ay:
     display_name: "Karish Grover"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-az:
     display_name: "Yash Aggarwal"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-ba:
     display_name: "Rohan Jain"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bb:
     display_name: "Udit Narang"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bc:
     display_name: "Kushal Juneja"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bd:
     display_name: "Joykirat Singh"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-be:
     display_name: "Shounak Ghatak"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bf:
     display_name: "Soham Das"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bg:
     display_name: "Shabeg Singh Gill"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bh:
     display_name: "Bhavesh Sood"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bi:
     display_name: "Sarthak Johari"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bj:
     display_name: "Vishwajeet Kumar"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 
 ugrad-bk:
     display_name: "Udit Narang"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bl:
     display_name: "Sumit Soni"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bm:
     display_name: "Mudit Gupta"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bn:
     display_name: "Siddhant Agarwal"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bo:
     display_name: "Rohan Jain"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bp:
     display_name: "Joykirat Singh"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bq:
     display_name: "Abhinav Sagar"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-br:
     display_name: "Vishal Bansal"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bs:
     display_name: "Ishan Pandey"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bt:
     display_name: "Mohammad Aflah Khan "
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bu:
     display_name: "Kushal Juneja"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bv:
     display_name: "Diksha Sethi"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 
 ugrad-bw:
     display_name: "Neemesh Yadav"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bx:
     display_name: "Tarini Sharma"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-by:
     display_name: "Arunim Gupta"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-bz:
     display_name: "Aniket Goel"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-ca:
     display_name: "Manav Saini"
     bio: Undergrad student
-    role: ugrad
+    role: alum
 ugrad-cb:
     display_name: "Shantanu Dixit"
     bio: Undergrad student
+    role: alum
+
+# ------------ MTPs ------------ pgrad / ugrad
+pgrad-std1:
+    display_name: "TDB"
     role: ugrad
-
-# ------------ MTPs ------------
-
-pgrad-a:
-    display_name: "Subhankar Adak"
-    bio: Masters student (2017-2019)
-    image: /img/people/subhankar.jpg
-    role: alum
-    current_affiliation: Dell Technologies
-
-pgrad-b:
-    display_name: "Arpan Mukherjee"
-    image: /img/people/arpan.jpg
-    bio: Masters student (2017-2019)
-    role: alum
-    current_affiliation: Amazon India
-pgrad-c:
-    display_name: "Sarika"
-    bio: Masters student (2016-2018)
-    role: alum
-pgrad-d:
-    display_name: "Tanya Gautam"
-    bio: Masters student (2018-2020)
-    role: alum
-    webpage: linkedin.com/in/gautam-tanya
-    current_affiliation: Dell EMC
-
-pgrad-e:
-    display_name: "Suraj Pandey"
-    bio: Masters student (2018-2020)
-    role: alum
-    current_affiliation: Applied Scientist, Amazon
-pgrad-f:
-    display_name: "William Scott Paka"
-    bio: Masters student (2018-2020)
-    role: alum
-    webpage: https://www.linkedin.com/in/williamscottp/
-    current_affiliation: TCS Research
-
-pgrad-g:
-    display_name: "Sutapa Mondal"
-    bio: Masters student (2018-2020)
-    role: alum
-
-pgrad-h:
-    display_name: "Sakshi Makkar"
-    bio: Masters student (2019-2020)
-    role: alum
-    webpage: https://www.linkedin.com/in/sakshi-makkar-681730188
-    current_affiliation: Dell Technologies
-
-pgrad-i:
-    display_name: "Chhavi Jain"
-    bio: Masters student
-    role: alum
-    webpage: https://www.linkedin.com/in/chhavijain2212
-    current_affiliation: Morgan Stanley
-
-pgrad-j:
-    display_name: "Anubhav Shrimal"
-    bio: Masters student (2018-2020)
-    role: alum
-    webpage: https://www.linkedin.com/in/anubhavshrimal
-    current_affiliation: Applied Scientist, Amazon
-
-pgrad-k:
-    display_name: "Snehil"
-    bio: Masters student (2019 - 2021)
-    role: alum
-    current_affiliation: Goldman Sachs
-    webpage: https://www.linkedin.com/in/snehil-dahiya-935b27151
-pgrad-l:
-    display_name: "Sanjana Soni"
-    bio: Masters student (2019 - 2021)
-    role: alum
-    webpage: https://www.linkedin.com/in/sanjana-soni-30a63b132
-    current_affiliation: IBM
-pgrad-m:
-    display_name: "Mohit Bhardwaj"
-    bio: Masters student (2019 - 2021)
-    role: alum
-    webpage: https://www.linkedin.com/in/mohit-bhardwaj-36a3b1158
-    current_affiliation: TCS Research
-pgrad-n:
-    display_name: "Shubham Dudeja"
-    bio: Masters student (2019 - 2021)
-    role: alum 
-    current_affiliation: McKinsey & Company
-    webpage: https://www.linkedin.com/in/shubhamdudeja
-
-pgrad-o:
-    display_name: "Desai Poorav Akshay"
-    bio: Masters student
-    role: alum
-    current_affiliation: Oracle
-    webpage: https://www.linkedin.com/in/pooravdesai
-pgrad-p:
-    display_name: "Krishna Yadav"
-    bio: Masters student
-    role: alum
-    webpage: https://www.linkedin.com/in/krishna1432
-    current_affiliation: Amazon India
-
-pgrad-q:
-    display_name: "Priya Mehta"
-    bio: Masters student
-    role: alum
-    webpage: https://www.linkedin.com/in/priyamehta2772
-    current_affiliation: Walmart
+    bio: ''
+    image: ''
+    current_affiliation: ''
 
 
-pgrad-r:
-    display_name: "Meet Maheshwari"
-    bio: Masters student
-    role: alum
-    current_affiliation: Walmart
-    webpage: https://www.linkedin.com/in/meet18091998-m
-pgrad-s:
-    display_name: "Abhishek Madaan"
-    bio: Masters student
-    role: alum
-    current_affiliation: Dell EMC
-    webpage: https://www.linkedin.com/in/abhishek-madaan
+pgrad-std2:
+    display_name: "TDB"
+    role: pgrad
+    bio: ''
+    image: '' 
+    current_affiliation: ''
 
-pgrad-t:
-    display_name: "Neha Rana"
-    bio: Masters student
-    role: alum
-    current_affiliation: Dell EMC
-    webpage: https://www.linkedin.com/in/neha-rana-032108163
+# pgrad-a:
+#     display_name: "Subhankar Adak"
+#     bio: Masters student (2017-2019)
+#     image: /img/people/subhankar.jpg
+#     role: alum
+#     current_affiliation: Dell Technologies
+
+# pgrad-b:
+#     display_name: "Arpan Mukherjee"
+#     image: /img/people/arpan.jpg
+#     bio: Masters student (2017-2019)
+#     role: alum
+#     current_affiliation: Amazon India
+# pgrad-c:
+#     display_name: "Sarika"
+#     bio: Masters student (2016-2018)
+#     role: alum
+# pgrad-d:
+#     display_name: "Tanya Gautam"
+#     bio: Masters student (2018-2020)
+#     role: alum
+#     webpage: linkedin.com/in/gautam-tanya
+#     current_affiliation: Dell EMC
+
+# pgrad-e:
+#     display_name: "Suraj Pandey"
+#     bio: Masters student (2018-2020)
+#     role: alum
+#     current_affiliation: Applied Scientist, Amazon
+# pgrad-f:
+#     display_name: "William Scott Paka"
+#     bio: Masters student (2018-2020)
+#     role: alum
+#     webpage: https://www.linkedin.com/in/williamscottp/
+#     current_affiliation: TCS Research
+
+# pgrad-g:
+#     display_name: "Sutapa Mondal"
+#     bio: Masters student (2018-2020)
+#     role: alum
+
+# pgrad-h:
+#     display_name: "Sakshi Makkar"
+#     bio: Masters student (2019-2020)
+#     role: alum
+#     webpage: https://www.linkedin.com/in/sakshi-makkar-681730188
+#     current_affiliation: Dell Technologies
+
+# pgrad-i:
+#     display_name: "Chhavi Jain"
+#     bio: Masters student
+#     role: alum
+#     webpage: https://www.linkedin.com/in/chhavijain2212
+#     current_affiliation: Morgan Stanley
+
+# pgrad-j:
+#     display_name: "Anubhav Shrimal"
+#     bio: Masters student (2018-2020)
+#     role: alum
+#     webpage: https://www.linkedin.com/in/anubhavshrimal
+#     current_affiliation: Applied Scientist, Amazon
+
+# pgrad-k:
+#     display_name: "Snehil"
+#     bio: Masters student (2019 - 2021)
+#     role: alum
+#     current_affiliation: Goldman Sachs
+#     webpage: https://www.linkedin.com/in/snehil-dahiya-935b27151
+# pgrad-l:
+#     display_name: "Sanjana Soni"
+#     bio: Masters student (2019 - 2021)
+#     role: alum
+#     webpage: https://www.linkedin.com/in/sanjana-soni-30a63b132
+#     current_affiliation: IBM
+# pgrad-m:
+#     display_name: "Mohit Bhardwaj"
+#     bio: Masters student (2019 - 2021)
+#     role: alum
+#     webpage: https://www.linkedin.com/in/mohit-bhardwaj-36a3b1158
+#     current_affiliation: TCS Research
+# pgrad-n:
+#     display_name: "Shubham Dudeja"
+#     bio: Masters student (2019 - 2021)
+#     role: alum 
+#     current_affiliation: McKinsey & Company
+#     webpage: https://www.linkedin.com/in/shubhamdudeja
+
+# pgrad-o:
+#     display_name: "Desai Poorav Akshay"
+#     bio: Masters student
+#     role: alum
+#     current_affiliation: Oracle
+#     webpage: https://www.linkedin.com/in/pooravdesai
+# pgrad-p:
+#     display_name: "Krishna Yadav"
+#     bio: Masters student
+#     role: alum
+#     webpage: https://www.linkedin.com/in/krishna1432
+#     current_affiliation: Amazon India
+
+# pgrad-q:
+#     display_name: "Priya Mehta"
+#     bio: Masters student
+#     role: alum
+#     webpage: https://www.linkedin.com/in/priyamehta2772
+#     current_affiliation: Walmart
+
+
+# pgrad-r:
+#     display_name: "Meet Maheshwari"
+#     bio: Masters student
+#     role: alum
+#     current_affiliation: Walmart
+#     webpage: https://www.linkedin.com/in/meet18091998-m
+# pgrad-s:
+#     display_name: "Abhishek Madaan"
+#     bio: Masters student
+#     role: alum
+#     current_affiliation: Dell EMC
+#     webpage: https://www.linkedin.com/in/abhishek-madaan
+
+# pgrad-t:
+#     display_name: "Neha Rana"
+#     bio: Masters student
+#     role: alum
+#     current_affiliation: Dell EMC
+#     webpage: https://www.linkedin.com/in/neha-rana-032108163
 
 # pgrad-k:
 #     display_name: "Himanshu Sundriyal"
@@ -1165,49 +1179,50 @@ pgrad-y:
 pgrad-z:
     display_name: "Giridhar S"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 pgrad-aa:
     display_name: "Simran"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 pgrad-ab:
     display_name: "Drishya Uniyal"
     bio: Masters student
+    role: aluers student
     role: alum
 
 pgrad-ac:
     display_name: "Sehban Fazili"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 pgrad-ad:
     display_name: "Shashwat Vaibhav"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 pgrad-ae:
     display_name: "Asmita Mukherjee"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 pgrad-af:
     display_name: "Palani Vigneshwar"
     bio: Masters student
-    role: pgrad
+    role: alum
 pgrad-ag:
     display_name: "Ayush Agarwal"
     bio: Masters student
-    role: pgrad
+    role: alum
 pgrad-ah:
     display_name: "Indraayudh Talukdar"
     bio: Masters student
-    role: pgrad
+    role: alum
 pgrad-ai:
     display_name: "Akshara Nair"
     bio: Masters student
-    role: pgrad
+    role: alum
 
 
 
