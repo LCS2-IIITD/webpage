@@ -79,7 +79,7 @@ grad-c:
     display_name: "Subhabrata Dutta"
     role: grad
     image: /img/people/subha.jpg
-    bio: PhD Scholar (Jan 2018 - Present)
+    bio: PhD Scholar (January'18 - Present)
     webpage: "https://scholar.google.co.in/citations?user=aoaCs08AAAAJ&hl=en"
     area: "Topic: Argumentation mining in online media"
 
@@ -94,16 +94,16 @@ grad-f:
     display_name: "Shivani Kumar"
     role: grad
     image: /img/people/shivani.jpg
-    bio: PhD Scholar (Aug 2019 - Present)
+    bio: PhD Scholar (August'19 - Present)
     webpage: "https://sites.google.com/iiitd.ac.in/shivani-kumar/home"
     area: "Topic: Conversation Analysis"
 
 grad-g:
-    display_name: "Sarah Masud (Prime Minister PhD Fellow)"
+    display_name: "Sarah Masud"
     role: grad
     image: /img/people/sarah.jpg
     webpage: "https://github.com/sara-02"
-    bio: PhD Scholar (Jan 2020 - Present)
+    bio: PMRF PhD Scholar (January'20 - Present)
     area: "Topic: Hate speech diffusion"
 
 grad-h:
@@ -111,7 +111,7 @@ grad-h:
     role: grad
     image: /img/people/yash.jpg
     webpage: "https://www.linkedin.com/in/yashkumaratri/"
-    bio: PhD Scholar (Jan 2020 - Present)
+    bio: PhD Scholar (January'20 - Present)
     area: "Topic: Summarization"
 
 grad-i:
@@ -119,7 +119,7 @@ grad-i:
     role: grad
     image: /img/people/megha.jpg
     webpage: "https://www.linkedin.com/in/sundriyalmegha"
-    bio: PhD Scholar (August 2020 - Present)
+    bio: PhD Scholar (August'20 - Present)
     area: "Topic: Fake News and Claims"
 
 grad-j:
@@ -127,7 +127,7 @@ grad-j:
     role: grad
     image: /img/people/aseem.jfif
     webpage: "https://as3eem.github.io"
-    bio: PhD Scholar (August 2020 - Present)
+    bio: PhD Scholar (August'20 - Present)
     area: "Topic: Conversational AI for Healthcare"
 
 # grad-k:
@@ -143,16 +143,9 @@ grad-l:
     role: grad
     image: /img/people/shivam.jfif
     webpage: "https://www.linkedin.com/in/shivam-sharma-36221040"
-    bio: PhD Scholar (August 2020 - Present)
+    bio: PhD Scholar (August '20 - Present)
     area: "Topic: Meme Analysis"
 
-grad-ashutosh_bajpai:
-    display_name: "Ashutosh Bajpai"
-    role: grad
-    image: /img/people/AshutoshBajpai.jpeg
-    webpage: "https://www.linkedin.com/in/ashutosh-bajpai-98363325/"
-    bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: Lightweight Language Modeling"
 
 # grad-m:
 #     display_name: "Karan Goyal"
@@ -162,6 +155,14 @@ grad-ashutosh_bajpai:
 #     bio: PhD Scholar (July 2021 - Present)
 #     area: "Topic: Graph Representation Learning"
 
+grad-xxx:
+    # display_name: ""
+    # role: grad
+    # image: /img/people/ayan.jpg
+    # webpage: "https://victor7246.github.io/"
+    # bio: PhD Scholar (August 2021 - Present)
+    # area: ""
+    
 grad-n:
     display_name: "Ayan Sengupta"
     role: grad
@@ -169,6 +170,14 @@ grad-n:
     webpage: "https://victor7246.github.io/"
     bio: PhD Scholar (August 2021 - Present)
     area: "Topic: Representation Learning"
+
+grad-ashutosh_bajpai:
+    display_name: "Ashutosh Bajpai"
+    role: grad
+    image: /img/people/AshutoshBajpai.jpeg
+    webpage: "https://www.linkedin.com/in/ashutosh-bajpai-98363325/"
+    bio: PhD Scholar (January '23 - Present)
+    area: "Topic: Lightweight Language Modeling"
 
 # grad-o:
 #     display_name: "Anam Fatima"
@@ -184,15 +193,15 @@ grad-o:
     role: grad
     image: /img/people/palash.jpeg
     webpage: "https://www.linkedin.com/in/palash-nandi-937b64bb/"
-    bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: Large Language Models"
+    bio: PhD Scholar (January '23 - Present)
+    area: "Topic: Meme Analysis"
 
 grad-p:
-    display_name: "Sahil Mishra ( Prime Minister PhD Fellow)"
+    display_name: "Sahil Mishra"
     role: grad
     image: /img/people/sahil.jpeg
     webpage: "https://www.linkedin.com/in/sahilmishra0012/"
-    bio: PhD Scholar (January 2023 - Present)
+    bio: PMRF PhD Scholar (January '23 - Present)
     area: "Topic: Heterogeneous Information Networks"
 
 grad-q:
@@ -200,7 +209,7 @@ grad-q:
     role: grad
     image: /img/people/pooja.jpg
     webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
-    bio: PhD Scholar (January 2023 - Present)
+    bio: PhD Scholar (January '23 - Present)
     area: "Topic: Graph Representation Learning"
 
 grad-r:
@@ -208,23 +217,23 @@ grad-r:
     role: grad
     image: /img/people/neeraj.jpeg
     webpage: "https://www.linkedin.com/in/ranganeeraj/"
-    bio: PhD Scholar (January 2023 - Present)
+    bio: PhD Scholar (January '23 - Present)
     area: "Topic: AI for Mental Health"
 
-grad-s:
-    display_name: "Faraaz"
-    role: grad
-    image: /img/people/faraaz.jpeg
-    # webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
-    bio: PhD Scholar (January 2023 - Present)
-    area: "Topic: TBD"
+# grad-s:
+#     display_name: "Faraaz"
+#     role: alum
+#     image: /img/people/faraaz.jpeg
+#     # webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
+#     bio: PhD Scholar (January '23 - Present)
+#     area: "Topic: TBD"
 
 grad-aswini_kumar_padhi:
     display_name: "Aswini Kumar Padhi"
     role: grad
     image: /img/people/aswini_kumar_padhi.jpeg
     webpage: "https://www.linkedin.com/in/aswini-kumar-08925572/"
-    bio: PhD Scholar ( July '23 - Present )
+    bio: PhD Scholar (July '23 - Present)
     area: "Topic: Counterspeech Generation"
 
 grad-Anwoy_Chatterjee:
@@ -232,15 +241,24 @@ grad-Anwoy_Chatterjee:
     role: grad
     image: /img/people/anwoy_chatterjee.jpeg
     webpage: "https://in.linkedin.com/in/anwoy-chatterjee"
-    bio: PhD Scholar ( July '23 - Present )
+    bio: PhD Scholar (July '23 - Present)
     area: "Topic: TBD"
+
+# dummy to fix alignment
+grad-wbg:
+    display_name: ""
+    role: grad
+    image: /img/wbg.png
+    # webpage: "https://www.linkedin.com/in/ashutosh-bajpai-98363325/"
+    # bio: PhD Scholar (January '23 - Present)
+    # area: "Topic: Lightweight Language Modeling"
 
 # grad-t:
 #     display_name: ""
 #     role: grad
 #     image: /img/people/white.jpg
 #     webpage: ""
-#     # bio: PhD Scholar (January 2023 - Present)
+#     # bio: PhD Scholar (January '23 - Present)
 #     # area: "Topic: TBD"
 
 # grad-s:
@@ -248,7 +266,7 @@ grad-Anwoy_Chatterjee:
 #     role: grad
 #     image: /img/people/white.jpg
 #     webpage: ""
-#     # bio: PhD Scholar (January 2023 - Present)
+#     # bio: PhD Scholar (January '23 - Present)
 #     # area: "Topic: TBD"
 
 # grad-t:
