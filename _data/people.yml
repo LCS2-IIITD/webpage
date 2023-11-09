@@ -242,7 +242,7 @@ grad-Anwoy_Chatterjee:
     image: /img/people/anwoy_chatterjee.jpeg
     webpage: "https://in.linkedin.com/in/anwoy-chatterjee"
     bio: PhD Scholar (July '23 - Present)
-    area: "Topic: TBD"
+    area: "Topic: Context Learning with LLM"
 
 # dummy to fix alignment
 grad-wbg:
@@ -435,6 +435,12 @@ ra-shubhanshu_khatana:
     webpage: "https://www.linkedin.com/in/shubhanshu-khatana-4b5562214"
     bio: Research Associate
 
+ra-arinjay_pathak:
+    display_name: "Arinjay Pathak"
+    role: ra
+    image: /img/people/Arinjay_Pathak.jpeg
+    webpage: "https://www.linkedin.com/in/arinjay-pathak-773b5019a/"
+    bio: Research Associate
 
 intern-a:
     display_name: "Rachit Bansal"
