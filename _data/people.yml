@@ -60,14 +60,24 @@ postdoc-d:
     bio: Postdoctoral Researcher
     current_affiliation: Centre for Data Sciences, IIIT Bangalore
 
-grad-a:
+postdoc-hsd:
     display_name: "Hridoy Sankar Dutta"
-    role: alum
     webpage: "http://hridaydutta123.github.io"
+    role: alum
     image: /img/people/hriday.jpeg
     bio: PhD Scholar
-    area: "Detecting and reasoning collusive activities in online media."
     current_affiliation: Postdoctoral Researcher, Cambridge University
+    area: Detecting and reasoning collusive activities in online media.
+    
+postdoc-sd:
+    display_name: "Dr. Subhabrata Dutta"
+    webpage: "https://scholar.google.co.in/citations?user=aoaCs08AAAAJ&hl=en"
+    role: alum
+    image: /img/people/subha.jpg
+    bio: Postdoctoral Researcher
+    current_affiliation: TBD
+    area: "Engagement to Persuasion: A Computational Study on Online Social Discourse"
+    
 
 # grad-b:
 #     display_name: "Shivangi Singhal (TCS PhD Fellow)"
@@ -75,13 +85,6 @@ grad-a:
 #     image: /img/people/shivangi.jpg
 #     bio: PhD Scholar
 
-grad-c:
-    display_name: "Subhabrata Dutta"
-    role: grad
-    image: /img/people/subha.jpg
-    bio: PhD Scholar (January'18 - Present)
-    webpage: "https://scholar.google.co.in/citations?user=aoaCs08AAAAJ&hl=en"
-    area: "Topic: Argumentation mining in online media"
 
 # grad-d:
 #     display_name: "Sivacharan Gangireddy (TCS PhD Fellow)"
@@ -204,21 +207,21 @@ grad-p:
     bio: PMRF PhD Scholar (January '23 - Present)
     area: "Topic: Heterogeneous Information Networks"
 
-grad-q:
-    display_name: "Pooja Singh"
-    role: grad
-    image: /img/people/pooja.jpg
-    webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
-    bio: PhD Scholar (January '23 - Present)
-    area: "Topic: Graph Representation Learning"
+# grad-q:
+#     display_name: "Pooja Singh"
+#     role: grad
+#     image: /img/people/pooja.jpg
+#     webpage: "https://www.linkedin.com/in/pooja-singh-9807b3252/"
+#     bio: PhD Scholar (January '23 - Present)
+#     area: "Topic: Graph Representation Learning"
 
-grad-r:
-    display_name: "Neeraj Ranga"
-    role: grad
-    image: /img/people/neeraj.jpeg
-    webpage: "https://www.linkedin.com/in/ranganeeraj/"
-    bio: PhD Scholar (January '23 - Present)
-    area: "Topic: AI for Mental Health"
+# grad-r:
+#     display_name: "Neeraj Ranga"
+#     role: grad
+#     image: /img/people/neeraj.jpeg
+#     webpage: "https://www.linkedin.com/in/ranganeeraj/"
+#     bio: PhD Scholar (January '23 - Present)
+#     area: "Topic: AI for Mental Health"
 
 # grad-s:
 #     display_name: "Faraaz"
@@ -243,6 +246,14 @@ grad-Anwoy_Chatterjee:
     webpage: "https://in.linkedin.com/in/anwoy-chatterjee"
     bio: PhD Scholar (July '23 - Present)
     area: "Topic: Context Learning with LLM"
+
+grad-Prottay_Kumar_Adhikary:
+    display_name: "Prottay Kumar Adhikary"
+    role: grad
+    image: /img/people/ProttayKumarAdhikary.jpeg
+    webpage: "https://www.linkedin.com/in/proadhikary/"
+    bio: PhD Scholar (January '24 - Present)
+    area: "Topic: AI for Mental Health"
 
 # dummy to fix alignment
 grad-wbg:
@@ -392,12 +403,12 @@ ra-q:
     bio: Research Associate
 
 
-ra-r:
-    display_name: "Anik Chatterjee"
-    role: ra
-    image: /img/people/AnikChatterjee_Kolkata.jpeg
-    webpage: "https://www.linkedin.com/in/anik-chatterjee-257a82182/"
-    bio: Research Associate
+# ra-r:
+#     display_name: "Anik Chatterjee"
+#     role: ra
+#     image: /img/people/AnikChatterjee_Kolkata.jpeg
+#     webpage: "https://www.linkedin.com/in/anik-chatterjee-257a82182/"
+#     bio: Research Associate
 
 ra-shaonli_pal:
     display_name: "Shaonli Pal"
