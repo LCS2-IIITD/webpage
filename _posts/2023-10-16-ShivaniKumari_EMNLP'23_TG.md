@@ -6,4 +6,4 @@ award: true
 ---
 
 
-<b>Shivani Kumari</b> has received the Microsoft travel grant for EMNLP 2023. 
+<b>Shivani Kumar</b> has received the Microsoft travel grant for EMNLP 2023. 
