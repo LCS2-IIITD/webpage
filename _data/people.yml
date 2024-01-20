@@ -453,6 +453,12 @@ ra-arinjay_pathak:
     webpage: "https://www.linkedin.com/in/arinjay-pathak-773b5019a/"
     bio: Research Associate
 
+ra-Isha_Motiyani:
+    display_name: "Isha Motiyani"
+    role: ra
+    image: /img/people/isha_motiyani.jpeg
+    webpage: "https://www.linkedin.com/in/isha-motiyani-28738a217/"
+    bio: Research Associate
 intern-a:
     display_name: "Rachit Bansal"
     role: alum
