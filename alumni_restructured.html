@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laboratory for Computational Social Systems (LCS2): Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="/css/slider.css">
+        <script type="text/javascript" src="/js/slider.js"></script>
+        <style type="text/css">
+  
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  --text-gray: hsl(0, 0%, 30%);
+}
+
+body {
+  background: whitesmoke;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.85em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+.description {
+  white-space: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: flex;
+  justify: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 14px;
+  background: #fff;
+}
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.box-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+.user-follow-info {
+  color: hsl(0, 0%, 60%);
+}
+
+.button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 9px;
+  color: #000;
+  background: transparent;
+  box-shadow: 0px 0px 0px 1px black inset;
+  transition: background 0.4s ease;
+}
+
+.button:hover {
+  background: var(--purple);
+}
+
+.fill-one {
+  background: var(--light-bg);
+}
+
+.fill-two {
+  background: var(--pink);
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (min-width: 320px) {
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
+  }
+}
+
+</style>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+      <a class="navbar-brand" href="/"><img src="../img/logo.png" alt="" height="60"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>People</strong>
+        </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/people.html">Current Members</a>
+                <a class="dropdown-item" href="/alumni.html">Alumni</a>
+              </div>
+        </li>
+
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Research</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/research.html">Research@LCS2</a>
+          <a class="dropdown-item" href="/funding.html">Funded Projects</a>
+          <a class="dropdown-item" href="/resources.html">Resources@LCS2</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <!-- <a class="dropdown-item" href="/job_post.html">Opportunities@LCS2</a> -->
+        </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Publications</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/publications.html">Research Papers</a>
+            <a class="dropdown-item" href="/tutorials.html">Tutorials</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Events</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/talks.html">Talks@LCS2</a>
+            <a class="dropdown-item" href="/events.html">Events@LCS2</a>
+            <a class="dropdown-item" href="/media.html">Media Coverage</a>
+            <a class="dropdown-item" href="/paper_readings.html">Paper Reading</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Others</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/achievements.html">Achievements</a>
+            <a class="dropdown-item" href="/gallery.html">Gallery</a>
+            <!-- <a class="dropdown-item" href="/contact.html">Contacts</a> -->
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html"><strong>Contact Us</strong></a>
+        </li>
+
+      </ul>
+      </div>
+      </nav>  
+    </div>
+  </div>
+  
+  
+            
+
+            <div class="row" style="margin-top: 100px;"></div>
+  
+  
+
+
+<h1>&nbsp;&nbsp;Alumni</h1> </br>
+
+<h2>&nbsp;&nbsp;Graduate Students at LCS2</h2>
+<div class="wrap">
+
+  <!-- 1 -->
+  <div class="box">
+      <a href='https://www.linkedin.com/in/hridoy-sankar-dutta-18448a63/?ppe=1' target="_blank">
+        <div class="box-top">
+          <img class="box-image" src="img/people/hriday.jpeg">
+          <div class="title-flex">
+            <h5>Dr. Hriday Sankar Dutta</h5>
+            <p>Postdoctoral Researcher at Cambridge University</p>
+            <p>Thesis Title: Detecting and reasoning collusive activities in online media.</p>
+          </div>
+        </div>
+      </a>
+  </div>
+            
+  <!-- 2 -->
+  <div class="box">
+      <a href='https://scholar.google.co.in/citations?user=aoaCs08AAAAJ&hl=en' target="_blank">
+        <div class="box-top">
+          <img class="box-image" src="img/people/subhabrata_dutta.jpg">
+          <div class="title-flex">
+            <h5>Dr. Subhabrata Dutta</h5>
+            <p>Postdoctoral Researcher</p>
+            <p> Thesis Title: Engagement to Persuasion: A Computational Study on Online Social Discourse.</p>
+          </div>
+        </div>
+      </a>
+  </div>
+
+  
+
+
+</div>  <!-- wrap --></br></hr></br>
+
+
+<h2>&nbsp;&nbsp;Postdoctoral Researchers at LCS2</h2>
+<div class="wrap">
+
+  <!-- 1 -->
+  <div class="box">
+      <a href='https://www.linkedin.com/in/nitish-prajapati-9834a0b7/' target="_blank">
+        <div class="box-top">
+          <img class="box-image" src="img/people/default.png">
+          <div class="title-flex">
+            <h5>Dr. Nitish Prajapati</h5>
+            <p>Founder and Managing Director, Exponential Learning Centre.</p>
+            </div>
+        </div>
+      </a>
+  </div>
+
+  <!-- 2 -->
+  <div class="box">
+      <a href='https://scholar.google.com/citations?hl=en&user=FlvGeckAAAAJ' target="_blank">
+        <div class="box-top">
+          <img class="box-image" src="img/people/Shaurya_Shriyam.jpg">
+          <div class="title-flex">
+            <h5>Dr. Shaurya Shriyam</h5>
+            <p>Assistant Professor, Mechanical Engineering, IIT Delhi.</p>
+            </div>
+        </div>
+      </a>
+  </div>
+
+  <!-- 3 -->
+  <div class="box">
+      <a href='https://scholar.google.co.in/citations?user=crCsIoUAAAAJ&hl=en' target="_blank">
+        <div class="box-top">
+          <img class="box-image" src="img/people/Partha_Sarathi_Paul.jpg">
+          <div class="title-flex">
+            <h5>Dr. Partha Sarathi Paul</h5>
+            <p>Associate Professor, School of Computer Engineering, Kalinga Institute of Industrial Technology.</p>
+            </div>
+        </div>
+      </a>
+  </div>
+
+  <!-- 4 -->
+  <div class="box">
+      <a href='https://www.ctanujit.org/' target="_blank">
+        <div class="box-top">
+          <img class="box-image" src="img/people/Tanujit_Chakraborty.png">
+          <div class="title-flex">
+            <h5>Dr. Tanujit Chakraborty</h5>
+            <p>Assistant Professor of Mathematics (Statistics & AI) at Sorbonne University and Sorbonne Center for AI.</p>
+            </div>
+        </div>
+      </a>
+  </div>
+</div> <!-- wrap --></br></hr></br>
+
+
+
+<!-- RA -->
+<h2>&nbsp;&nbsp;Research Associate </h2>
+<div class="wrap">
+<table style="text-align:left; width:100%">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Google Scholar</th>
+    <th>Github</th>
+    <th>LinkedIn</th>
+    <th>Others</th>
+    
+  </tr>
+
+  <tr>
+      <td>1.</td>
+      <td>Udit Arora</td>
+      <td><a href="https://scholar.google.co.in/citations?user=tTYGhmMAAAAJ&hl=en" target="_blank">Available</a></td> <!-- Google Scholar -->
+      <td><a href="https://github.com/uditarora/" target="_blank">Available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/uditarora09" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="https://uditarora.com/" target="_blank">Available</a></td><!-- others -->
+  </tr>
+      
+  <tr>
+      <td>2.</td>
+      <td>Kartik Sharma</td>
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/iamkartik/" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+  <tr>
+      <td>3.</td>
+      <td>Manoj Bedi</td>
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/manjot-bedi-42843333/" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+  <tr>
+      <td>4.</td>
+      <td>Shreya Gupta</td>
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="" target="_blank">Not available</a></td><!-- LinkedIn -->
+      <td><a href="https://sites.google.com/view/shreyagupta/home" target="_blank">Available</a></td><!-- others -->
+  </tr>
+  <tr>
+      <td>5.</td>
+      <td>Kartik Aggarwal</td>
+      <td><a href="https://scholar.google.dk/citations?user=7GG0zxUAAAAJ&hl=en" target="_blank">Available</a></td><!-- Google Scholar -->
+      <td><a href="https://github.com/kartikaggarwal98" target="_blank">Available</a></td><!-- Github -->
+      <td><a href="" target="_blank">Not available</a></td><!-- LinkedIn -->
+      <td><a href="https://kartikaggarwal.me/" target="_blank">Available</a></td><!-- others -->
+  </tr>
+
+  <tr>
+      <td>6.</td>
+      <td>Shraman Pramanick</td>
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/shramanpramanick/" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+
+  <tr>
+      <td>7.</td> <!-- Seq. id -->
+      <td>Rituparna Mukherjee</td> <!-- Name -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/mritu/" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+  <tr>
+      <td>8.</td> <!-- Seq. id -->
+      <td>Tanmay Garg</td> <!-- Name -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/tanmay17061" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+  
+  <tr>
+      <td>9.</td> <!-- Seq. id -->
+      <td> Atharva Kulkarni</td> <!-- Name -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/atharvajk/" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+
+  <tr>
+      <td>10.</td> <!-- Seq. id -->
+      <td>Manasi Mittal</td> <!-- Name -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/manasimittal33/" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+  <tr>
+      <td>10.</td> <!-- Seq. id -->
+      <td>Sheyril Agarwal</td> <!-- Name -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="https://www.linkedin.com/in/sheyril-agarwal/" target="_blank">Available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+  <tr style='visibility: hidden;'>
+      <td>*</td> <!-- Seq. id -->
+      <td>*</td> <!-- Name -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Google Scholar -->
+      <td><a href="" target="_blank">Not available</a></td><!-- Github -->
+      <td><a href="" target="_blank">Not available</a></td><!-- LinkedIn -->
+      <td><a href="" target="_blank">Not available</a></td><!-- others -->
+  </tr>
+
+</table>
+
+</div> <!-- wrap -->
+
+
+<!-- Finished -->
+            <div class="footer">
+                <p>
+                    <a href="/">Laboratory for Computational Social Systems (LCS2)</a>
+                    at
+                    <a href="http://www.iiitd.ac.in/">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</a><br/>Template by <a href="https://github.com/uwsampa/research-group-web">Research Group Website Template</a> </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        </div>
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129817111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-129817111-1');
+        </script>
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
