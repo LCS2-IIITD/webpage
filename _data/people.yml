@@ -93,13 +93,13 @@ postdoc-sd:
 #     bio: PhD Scholar (Dec 2018 - Present)
 #     area: "Topic: Collective deception in online discussion platforms"
 
-grad-f:
-    display_name: "Shivani Kumar"
-    role: grad
-    image: /img/people/shivani.jpg
-    bio: PhD Scholar (August'19 - Present)
-    webpage: "https://sites.google.com/iiitd.ac.in/shivani-kumar/home"
-    area: "Topic: Conversation Analysis"
+# grad-f:
+#     display_name: "Shivani Kumar"
+#     role: grad
+#     image: /img/people/shivani.jpg
+#     bio: PhD Scholar (August'19 - Present)
+#     webpage: "https://sites.google.com/iiitd.ac.in/shivani-kumar/home"
+#     area: "Topic: Conversation Analysis"
 
 grad-g:
     display_name: "Sarah Masud"
